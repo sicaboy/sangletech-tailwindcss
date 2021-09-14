@@ -1,7 +1,22 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { InboxIcon, SparklesIcon } from "@heroicons/react/outline";
+import * as Icon from "@heroicons/react/outline";
 
-export default function AlternatingWithOptionalTestimonial() {
+interface Props {
+  iconName?: {};
+  title?: string;
+  description?: string;
+  buttonName?: string;
+  buttonSrc?: string;
+  appleSrc?: string;
+  googleSrc?: string;
+  webSrc?: string;
+  testimonial?: string;
+  author?: string;
+  imgSrc?: string;
+  alt?: string;
+}
+
+export default function AlternatingWithOptionalTestimonial(props: Props) {
   return (
     <div className="relative pt-16 pb-32 overflow-hidden bg-white">
       <div className="relative">
@@ -10,59 +25,62 @@ export default function AlternatingWithOptionalTestimonial() {
             <div>
               <div>
                 <span className="flex items-center justify-center w-12 h-12 bg-indigo-600 rounded-md">
-                  <InboxIcon
-                    className="w-6 h-6 text-white"
-                    aria-hidden="true"
-                  />
+                  {props.iconName || (
+                    <Icon.InboxIcon
+                      className="w-6 h-6 text-white"
+                      aria-hidden="true"
+                    />
+                  )}
                 </span>
               </div>
               <div className="mt-6">
                 <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
-                  Stay on top of customer support
+                  {props.title || "Stay on top of customer support"}
                 </h2>
                 <p className="mt-4 text-lg text-gray-500">
-                  Semper curabitur ullamcorper posuere nunc sed. Ornare iaculis
-                  bibendum malesuada faucibus lacinia porttitor. Pulvinar
-                  laoreet sagittis viverra duis. In venenatis sem arcu pretium
-                  pharetra at. Lectus viverra dui tellus ornare pharetra.
+                  {props.description ||
+                    "Semper curabitur ullamcorper posuere nunc sed. Ornare iaculisbibendum malesuada faucibus lacinia porttitor. Pulvinar laoreet sagittis viverra duis. In venenatis sem arcu pretium pharetra at. Lectus viverra dui tellus ornare pharetra."}
                 </p>
                 <div className="mt-6 mb-3">
                   <a
-                    href="#"
+                    href={props.buttonSrc || "#"}
                     className="inline-flex px-4 py-2 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700"
                   >
-                    Get started
+                    {props.buttonName || "Get started"}
                   </a>
                 </div>
                 <div className="flex mb-3">
                   <a
-                    href="/"
+                    href={props.appleSrc || "/"}
                     className="mr-3 transition duration-300 hover:shadow-lg"
                   >
                     <img
-                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/1000px-Download_on_the_App_Store_Badge.svg.png"
+                      src={
+                        props.imgSrc ||
+                        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/1000px-Download_on_the_App_Store_Badge.svg.png"
+                      }
                       className="object-cover object-top w-32 mx-auto"
-                      alt=""
+                      alt={"sangletech"}
                     />
                   </a>
                   <a
-                    href="/"
+                    href={props.googleSrc || "/"}
                     className="transition duration-300 hover:shadow-lg"
                   >
                     <img
                       src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/1000px-Google_Play_Store_badge_EN.svg.png"
                       className="object-cover object-top w-32 mx-auto"
-                      alt=""
+                      alt="sangletech"
                     />
                   </a>
                   <a
-                    href="/"
+                    href={props.webSrc || "/"}
                     className="transition duration-300 hover:shadow-lg"
                   >
                     <img
                       src="https://blueislanddigital.com/wp-content/uploads/2019/10/Progressive-Web-App.png"
                       className="object-cover object-top w-32 mx-auto"
-                      alt=""
+                      alt="sangletech"
                     />
                   </a>
                 </div>
@@ -72,9 +90,10 @@ export default function AlternatingWithOptionalTestimonial() {
               <blockquote>
                 <div>
                   <p className="text-base text-gray-500">
-                    &ldquo;Cras velit quis eros eget rhoncus lacus ultrices sed
-                    diam. Sit orci risus aenean curabitur donec aliquet. Mi
-                    venenatis in euismod ut.&rdquo;
+                    &ldquo;
+                    {props.testimonial ||
+                      "Cras velit quis eros eget rhoncus lacus ultrices sed diam. Sit orci risus aenean curabitur donec aliquet. Mi venenatis in euismod ut"}
+                    .&rdquo;
                   </p>
                 </div>
                 <footer className="mt-3">
@@ -111,7 +130,7 @@ export default function AlternatingWithOptionalTestimonial() {
             <div>
               <div>
                 <span className="flex items-center justify-center w-12 h-12 bg-indigo-600 rounded-md">
-                  <SparklesIcon
+                  <Icon.SparklesIcon
                     className="w-6 h-6 text-white"
                     aria-hidden="true"
                   />

@@ -2,7 +2,7 @@
 export default function Example() {
   return (
     <div className="bg-indigo-700">
-      <div className="max-w-4xl px-4 py-16 mx-auto text-center sm:py-20 sm:px-6 lg:px-8">
+      <div className="max-w-4xl px-4 py-16 mx-auto text-center sm:py-20 sm:px-6 lg:px-8 ">
         <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
           <span className="block">Kết Nối.</span>
           <span className="block">Start using Workflow today.</span>
@@ -11,7 +11,7 @@ export default function Example() {
           Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
           Malesuada adipiscing sagittis vel nulla nec.
         </p>
-        <div className="flex items-center flex-shrink-0 pt-16 mx-auto space-x-4 md:ml-auto md:mr-0">
+        <div className="flex items-center flex-shrink-0 pt-16 mx-auto space-x-4 md:ml-auto md:mr-0 ">
           <button className="inline-flex items-center px-5 py-3 bg-gray-100 rounded-lg hover:bg-gray-200 focus:outline-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"

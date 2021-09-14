@@ -34,21 +34,21 @@ const data = [
 export default function Example() {
   return (
     <div className="relative mt-16 overflow-hidden bg-white">
+      <div className="relative mx-auto max-w-7xl">
+        <div className="text-center">
+          <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            From the blog
+          </h2>
+          <p className="max-w-2xl mx-auto mt-3 text-xl text-gray-500 sm:mt-4">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa
+            libero labore natus atque, ducimus sed.
+          </p>
+        </div>
+      </div>
       <div
         className="hidden lg:block lg:absolute lg:inset-0"
         aria-hidden="true"
       >
-        <div className="relative mx-auto max-w-7xl">
-          <div className="text-center">
-            <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-              From the blog
-            </h2>
-            <p className="max-w-2xl mx-auto mt-3 text-xl text-gray-500 sm:mt-4">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa
-              libero labore natus atque, ducimus sed.
-            </p>
-          </div>
-        </div>
         <svg
           className="absolute top-0 transform translate-x-64 -translate-y-8 left-1/2"
           width={640}
