@@ -38,9 +38,9 @@ https://heroicons.com/
 */
 
 const hero = {
-  titleHighLight: "From",
-  titleNormal: "Sang",
-  description: `It's a description`,
+  titleHighLight: "Online",
+  titleNormal: "Sang Le",
+  description: `It's a description here`,
   buttonNormal: "I Dont like",
   buttonHighlight: "Watch",
   imgSrc: "",

@@ -4,7 +4,7 @@ import Footer from "./Footer";
 
 function Layout({ children }) {
   return (
-    <div className="bg-white ">
+    <div className="overflow-hidden bg-white">
       <Header />
       {children}
       <Footer />
