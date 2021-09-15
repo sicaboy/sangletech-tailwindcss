@@ -14,13 +14,13 @@ import rehypeRaw from "rehype-raw";
 interface Props {
   mainTitle?: string;
   mainDescription?: string;
-  leftIconOne?: string;
+  leftIconOne?: {};
   leftIconOneTitle?: string;
   leftIconOneDescription?: string;
-  leftIconTwo?: string;
+  leftIconTwo?: {};
   leftIconTwoTitle?: string;
   leftIconTwoDescription?: string;
-  leftIconThree?: string;
+  leftIconThree?: {};
   leftIconThreeTitle?: string;
   leftIconThreeDescription?: string;
   leftTitle?: string;
