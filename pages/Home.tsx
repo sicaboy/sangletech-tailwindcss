@@ -107,10 +107,6 @@ const projectYou = {
   rightAlt: "",
 };
 
-const finProSection = {
-  mainTitle: "",
-  mainDescription: ``,
-};
 const fin = {
   leftTitle: "FIN X.0",
   leftDescription: `Cho dù bạn đang tiết kiệm cho kỳ nghỉ mơ ước, lên kế hoạch cho tài chính trong tương lai của mình hay chỉ đơn giản là mong muốn quản lý tốt tài chính của bản thân - Fin X.0 là dành cho bạn.`,

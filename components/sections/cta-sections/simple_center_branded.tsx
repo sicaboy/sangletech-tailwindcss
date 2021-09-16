@@ -52,7 +52,7 @@ export default function Example(props: Props) {
         />
 
         {/* Buttons  */}
-        <div className="flex-wrap items-center justify-center flex-1 flex-grow-0 flex-shrink-0 pt-16 space-x-4 space-y-4">
+        <div className="flex-wrap justify-center flex-1 pt-16 space-x-4 space-y-4 ">
           <button className="inline-flex items-center px-5 py-3 bg-gray-100 rounded-lg hover:bg-gray-200 focus:outline-none">
             <FacebookFilled style={{ fontSize: 24 }} />
             <span className="flex flex-col items-start ml-4 leading-none">

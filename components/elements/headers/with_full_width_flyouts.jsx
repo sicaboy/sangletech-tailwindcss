@@ -21,6 +21,7 @@ import {
   XIcon,
 } from "@heroicons/react/outline";
 import { ChevronDownIcon } from "@heroicons/react/solid";
+import Link from "next/link";
 
 const solutions = [
   {
@@ -96,25 +97,25 @@ export default function WithFullWithFlyOuts() {
   return (
     <Popover className="relative bg-white">
       <div
-        className="absolute inset-0 shadow z-30 pointer-events-none"
+        className="absolute inset-0 z-30 shadow pointer-events-none"
         aria-hidden="true"
       />
       <div className="relative z-20">
-        <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-5 sm:px-6 sm:py-4 lg:px-8 md:justify-start md:space-x-10">
+        <div className="flex items-center justify-between px-4 py-5 mx-auto max-w-7xl sm:px-6 sm:py-4 lg:px-8 md:justify-start md:space-x-10">
           <div>
             <a href="#" className="flex">
               <span className="sr-only">Workflow</span>
               <img
-                className="h-8 w-auto sm:h-10"
+                className="w-auto h-8 sm:h-10"
                 src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
                 alt=""
               />
             </a>
           </div>
-          <div className="-mr-2 -my-2 md:hidden">
-            <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+          <div className="-my-2 -mr-2 md:hidden">
+            <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
               <span className="sr-only">Open menu</span>
-              <MenuIcon className="h-6 w-6" aria-hidden="true" />
+              <MenuIcon className="w-6 h-6" aria-hidden="true" />
             </Popover.Button>
           </div>
           <div className="hidden md:flex-1 md:flex md:items-center md:justify-between">
@@ -147,19 +148,19 @@ export default function WithFullWithFlyOuts() {
                       leaveFrom="opacity-100 translate-y-0"
                       leaveTo="opacity-0 -translate-y-1"
                     >
-                      <Popover.Panel className="hidden md:block absolute z-10 top-full inset-x-0 transform shadow-lg bg-white">
-                        <div className="max-w-7xl mx-auto grid gap-y-6 px-4 py-6 sm:grid-cols-2 sm:gap-8 sm:px-6 sm:py-8 lg:grid-cols-4 lg:px-8 lg:py-12 xl:py-16">
+                      <Popover.Panel className="absolute inset-x-0 z-10 hidden transform bg-white shadow-lg md:block top-full">
+                        <div className="grid px-4 py-6 mx-auto max-w-7xl gap-y-6 sm:grid-cols-2 sm:gap-8 sm:px-6 sm:py-8 lg:grid-cols-4 lg:px-8 lg:py-12 xl:py-16">
                           {solutions.map((item) => (
                             <a
                               key={item.name}
                               href={item.href}
-                              className="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50"
+                              className="flex flex-col justify-between p-3 -m-3 rounded-lg hover:bg-gray-50"
                             >
                               <div className="flex md:h-full lg:flex-col">
                                 <div className="flex-shrink-0">
-                                  <span className="inline-flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
+                                  <span className="inline-flex items-center justify-center w-10 h-10 text-white bg-indigo-500 rounded-md sm:h-12 sm:w-12">
                                     <item.icon
-                                      className="h-6 w-6"
+                                      className="w-6 h-6"
                                       aria-hidden="true"
                                     />
                                   </span>
@@ -183,15 +184,15 @@ export default function WithFullWithFlyOuts() {
                           ))}
                         </div>
                         <div className="bg-gray-50">
-                          <div className="max-w-7xl mx-auto space-y-6 px-4 py-5 sm:flex sm:space-y-0 sm:space-x-10 sm:px-6 lg:px-8">
+                          <div className="px-4 py-5 mx-auto space-y-6 max-w-7xl sm:flex sm:space-y-0 sm:space-x-10 sm:px-6 lg:px-8">
                             {callsToAction.map((item) => (
                               <div key={item.name} className="flow-root">
                                 <a
                                   href={item.href}
-                                  className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-100"
+                                  className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 rounded-md hover:bg-gray-100"
                                 >
                                   <item.icon
-                                    className="flex-shrink-0 h-6 w-6 text-gray-400"
+                                    className="flex-shrink-0 w-6 h-6 text-gray-400"
                                     aria-hidden="true"
                                   />
                                   <span className="ml-3">{item.name}</span>
@@ -205,12 +206,11 @@ export default function WithFullWithFlyOuts() {
                   </>
                 )}
               </Popover>
-              <a
-                href="#"
-                className="text-base font-medium text-gray-500 hover:text-gray-900"
-              >
-                Pricing
-              </a>
+              <Link href="/About">
+                <a className="text-base font-medium text-gray-500 hover:text-gray-900">
+                  About
+                </a>
+              </Link>
               <a
                 href="#"
                 className="text-base font-medium text-gray-500 hover:text-gray-900"
@@ -245,13 +245,13 @@ export default function WithFullWithFlyOuts() {
                       leaveFrom="opacity-100 translate-y-0"
                       leaveTo="opacity-0 -translate-y-1"
                     >
-                      <Popover.Panel className="hidden md:block absolute z-10 top-full inset-x-0 transform shadow-lg">
+                      <Popover.Panel className="absolute inset-x-0 z-10 hidden transform shadow-lg md:block top-full">
                         <div className="absolute inset-0 flex">
-                          <div className="bg-white w-1/2" />
-                          <div className="bg-gray-50 w-1/2" />
+                          <div className="w-1/2 bg-white" />
+                          <div className="w-1/2 bg-gray-50" />
                         </div>
-                        <div className="relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2">
-                          <nav className="grid gap-y-10 px-4 py-8 bg-white sm:grid-cols-2 sm:gap-x-8 sm:py-12 sm:px-6 lg:px-8 xl:pr-12">
+                        <div className="relative grid grid-cols-1 mx-auto max-w-7xl lg:grid-cols-2">
+                          <nav className="grid px-4 py-8 bg-white gap-y-10 sm:grid-cols-2 sm:gap-x-8 sm:py-12 sm:px-6 lg:px-8 xl:pr-12">
                             <div>
                               <h3 className="text-sm font-medium tracking-wide text-gray-500 uppercase">
                                 Company
@@ -261,10 +261,10 @@ export default function WithFullWithFlyOuts() {
                                   <li key={item.name} className="flow-root">
                                     <a
                                       href={item.href}
-                                      className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
+                                      className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 rounded-md hover:bg-gray-50"
                                     >
                                       <item.icon
-                                        className="flex-shrink-0 h-6 w-6 text-gray-400"
+                                        className="flex-shrink-0 w-6 h-6 text-gray-400"
                                         aria-hidden="true"
                                       />
                                       <span className="ml-4">{item.name}</span>
@@ -282,10 +282,10 @@ export default function WithFullWithFlyOuts() {
                                   <li key={item.name} className="flow-root">
                                     <a
                                       href={item.href}
-                                      className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
+                                      className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 rounded-md hover:bg-gray-50"
                                     >
                                       <item.icon
-                                        className="flex-shrink-0 h-6 w-6 text-gray-400"
+                                        className="flex-shrink-0 w-6 h-6 text-gray-400"
                                         aria-hidden="true"
                                       />
                                       <span className="ml-4">{item.name}</span>
@@ -295,7 +295,7 @@ export default function WithFullWithFlyOuts() {
                               </ul>
                             </div>
                           </nav>
-                          <div className="bg-gray-50 px-4 py-8 sm:py-12 sm:px-6 lg:px-8 xl:pl-12">
+                          <div className="px-4 py-8 bg-gray-50 sm:py-12 sm:px-6 lg:px-8 xl:pl-12">
                             <div>
                               <h3 className="text-sm font-medium tracking-wide text-gray-500 uppercase">
                                 From the blog
@@ -305,16 +305,16 @@ export default function WithFullWithFlyOuts() {
                                   <li key={post.id} className="flow-root">
                                     <a
                                       href={post.href}
-                                      className="-m-3 p-3 flex rounded-lg hover:bg-gray-100"
+                                      className="flex p-3 -m-3 rounded-lg hover:bg-gray-100"
                                     >
-                                      <div className="hidden sm:block flex-shrink-0">
+                                      <div className="flex-shrink-0 hidden sm:block">
                                         <img
-                                          className="w-32 h-20 object-cover rounded-md"
+                                          className="object-cover w-32 h-20 rounded-md"
                                           src={post.imageUrl}
                                           alt=""
                                         />
                                       </div>
-                                      <div className="w-0 flex-1 sm:ml-8">
+                                      <div className="flex-1 w-0 sm:ml-8">
                                         <h4 className="text-base font-medium text-gray-900 truncate">
                                           {post.name}
                                         </h4>
@@ -354,7 +354,7 @@ export default function WithFullWithFlyOuts() {
               </a>
               <a
                 href="#"
-                className="ml-8 inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+                className="inline-flex items-center justify-center px-4 py-2 ml-8 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700"
               >
                 Sign up
               </a>
@@ -374,22 +374,22 @@ export default function WithFullWithFlyOuts() {
       >
         <Popover.Panel
           focus
-          className="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+          className="absolute inset-x-0 top-0 z-30 p-2 transition origin-top-right transform md:hidden"
         >
-          <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
-            <div className="pt-5 pb-6 px-5 sm:pb-8">
+          <div className="bg-white divide-y-2 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 divide-gray-50">
+            <div className="px-5 pt-5 pb-6 sm:pb-8">
               <div className="flex items-center justify-between">
                 <div>
                   <img
-                    className="h-8 w-auto"
+                    className="w-auto h-8"
                     src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
                     alt="Workflow"
                   />
                 </div>
                 <div className="-mr-2">
-                  <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                  <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                     <span className="sr-only">Close menu</span>
-                    <XIcon className="h-6 w-6" aria-hidden="true" />
+                    <XIcon className="w-6 h-6" aria-hidden="true" />
                   </Popover.Button>
                 </div>
               </div>
@@ -400,10 +400,10 @@ export default function WithFullWithFlyOuts() {
                       <a
                         key={item.name}
                         href={item.href}
-                        className="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50"
+                        className="flex items-center p-3 -m-3 rounded-lg hover:bg-gray-50"
                       >
-                        <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
-                          <item.icon className="h-6 w-6" aria-hidden="true" />
+                        <div className="flex items-center justify-center flex-shrink-0 w-10 h-10 text-white bg-indigo-500 rounded-md sm:h-12 sm:w-12">
+                          <item.icon className="w-6 h-6" aria-hidden="true" />
                         </div>
                         <div className="ml-4 text-base font-medium text-gray-900">
                           {item.name}
@@ -423,46 +423,46 @@ export default function WithFullWithFlyOuts() {
                 </nav>
               </div>
             </div>
-            <div className="py-6 px-5">
+            <div className="px-5 py-6">
               <div className="grid grid-cols-2 gap-4">
                 <a
                   href="#"
-                  className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
+                  className="text-base font-medium text-gray-900 rounded-md hover:text-gray-700"
                 >
                   Pricing
                 </a>
 
                 <a
                   href="#"
-                  className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
+                  className="text-base font-medium text-gray-900 rounded-md hover:text-gray-700"
                 >
                   Docs
                 </a>
 
                 <a
                   href="#"
-                  className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
+                  className="text-base font-medium text-gray-900 rounded-md hover:text-gray-700"
                 >
                   Company
                 </a>
 
                 <a
                   href="#"
-                  className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
+                  className="text-base font-medium text-gray-900 rounded-md hover:text-gray-700"
                 >
                   Resources
                 </a>
 
                 <a
                   href="#"
-                  className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
+                  className="text-base font-medium text-gray-900 rounded-md hover:text-gray-700"
                 >
                   Blog
                 </a>
 
                 <a
                   href="#"
-                  className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700"
+                  className="text-base font-medium text-gray-900 rounded-md hover:text-gray-700"
                 >
                   Contact Sales
                 </a>
@@ -470,11 +470,11 @@ export default function WithFullWithFlyOuts() {
               <div className="mt-6">
                 <a
                   href="#"
-                  className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+                  className="flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700"
                 >
                   Sign up
                 </a>
-                <p className="mt-6 text-center text-base font-medium text-gray-500">
+                <p className="mt-6 text-base font-medium text-center text-gray-500">
                   Existing customer?{" "}
                   <a href="#" className="text-indigo-600 hover:text-indigo-500">
                     Sign in

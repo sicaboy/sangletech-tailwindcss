@@ -70,15 +70,15 @@ ${props.description}
               </a>
             </div>
           </div>
-          <div className="self-center aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
-            <div className="relative w-full mx-auto rounded-lg shadow-lg lg:max-w-md">
+          <div className="self-center aspect-w-16 aspect-h-3 md:aspect-w-2 md:aspect-h-1 ">
+            <div className="relative w-full mx-auto rounded-lg lg:max-w-md ">
               <button
                 type="button"
                 className="relative block w-full overflow-hidden bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
               >
-                <span className="sr-only">Watch our video to learn more</span>
+                <span className="">Giúp Bạn Bước Đi Tự Tin</span>
                 <img
-                  className="w-full"
+                  className="object-fill w-full sm:w-full r"
                   src={
                     props.imgSrc ||
                     "https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
