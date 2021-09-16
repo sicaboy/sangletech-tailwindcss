@@ -238,19 +238,7 @@ ${props.mainDescription}
           />
         </svg>
 
-        <div className="relative">
-          <h2 className="text-3xl font-extrabold leading-8 tracking-tight text-center text-gray-900 sm:text-4xl">
-            {props.mainTitle || "A better way to send money"}
-          </h2>
-          <ReactMarkdown
-            children={mainDescription}
-            rehypePlugins={[rehypeRaw]}
-            remarkPlugins={[remarkGfm]}
-            className="max-w-3xl mx-auto mt-4 text-xl text-center text-gray-500"
-          />
-        </div>
-
-        <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
+        <div className="relative mt-12 lg:mt-8 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
           <div className="relative">
             <h3 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
               {props.leftTitle || "Transfer funds world-wide"}

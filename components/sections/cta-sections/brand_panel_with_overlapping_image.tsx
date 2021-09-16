@@ -14,7 +14,32 @@
   }
   ```
 */
-export default function BrandPanelWithOverlappingImage() {
+
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
+
+interface Props {
+  title?: string;
+  description?: string;
+  buttonName?: string;
+  imgSrc?: string;
+  alt?: string;
+}
+
+export default function BrandPanelWithOverlappingImage(props: Props) {
+  const description = props.description
+    ? `<div class="note">
+
+${props.description}
+
+</div>`
+    : `<div class="note">
+
+"Semper curabitur ullamcorper posuere nunc sed. Ornare iaculisbibendum malesuada faucibus lacinia porttitor. Pulvinar laoreet sagittis viverra duis. In venenatis sem arcu pretium pharetra at. Lectus viverra dui tellus ornare pharetra."
+
+</div>`;
+
   return (
     <div className="relative py-16 bg-white">
       <div
@@ -32,8 +57,11 @@ export default function BrandPanelWithOverlappingImage() {
               <div className="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
                 <img
                   className="object-cover object-center shadow-2xl rounded-3xl"
-                  src="https://images.unsplash.com/photo-1507207611509-ec012433ff52?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=934&q=80"
-                  alt=""
+                  src={
+                    props.imgSrc ||
+                    "https://images.unsplash.com/photo-1507207611509-ec012433ff52?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=934&q=80"
+                  }
+                  alt={props.alt || "sangletech"}
                 />
               </div>
             </div>
@@ -116,18 +144,21 @@ export default function BrandPanelWithOverlappingImage() {
                 className="text-3xl font-extrabold text-white"
                 id="join-heading"
               >
-                Join our team
+                {props.title || "Title"}
               </h2>
-              <p className="text-lg text-white">
-                Varius facilisi mauris sed sit. Non sed et duis dui leo,
-                vulputate id malesuada non. Cras aliquet purus dui laoreet diam
-                sed lacus, fames.
-              </p>
+
+              <ReactMarkdown
+                children={description}
+                rehypePlugins={[rehypeRaw]}
+                remarkPlugins={[remarkGfm]}
+                className="text-white ext-lg"
+              />
+
               <a
                 className="block w-full px-5 py-3 text-base font-medium text-center text-indigo-700 bg-white border border-transparent rounded-md shadow-md hover:bg-gray-50 sm:inline-block sm:w-auto"
                 href="#"
               >
-                Explore open positions
+                {props.buttonName || "Enter Button name"}
               </a>
             </div>
           </div>

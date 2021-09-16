@@ -16,33 +16,84 @@
 */
 import { Fragment } from "react";
 
-const data = [
-  {
-    id: 1,
-    src: "",
-  },
-  {
-    id: 2,
-    src: "",
-  },
-  {
-    id: 3,
-    src: "",
-  },
-];
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
 
-export default function Example() {
+interface Props {
+  title?: string;
+  description?: string;
+  buttonName?: string;
+  buttonLink?: string;
+
+  videoOneThumbnail?: string;
+  videoOneLink?: string;
+  videoOneAlt?: string;
+
+  videoTwoThumbnail?: string;
+  videoTwoLink?: string;
+  videoTwoAlt?: string;
+
+  videoThreeThumbnail?: string;
+  videoThreeLink?: string;
+  videoThreeAlt?: string;
+}
+
+export default function Example(props: Props) {
+  const data = [
+    {
+      id: 1,
+      thumbnail:
+        props.videoOneThumbnail ||
+        "https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      link: props.videoOneLink,
+      alt: props.videoOneAlt,
+    },
+    {
+      id: 2,
+      thumbnail:
+        props.videoTwoThumbnail ||
+        "https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      link: props.videoTwoLink,
+      alt: props.videoTwoAlt,
+    },
+    {
+      id: 3,
+      thumbnail:
+        props.videoThreeThumbnail ||
+        "https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      link: props.videoThreeLink,
+      alt: props.videoThreeAlt,
+    },
+  ];
+
+  const description = props.description
+    ? `<div class="note">
+
+${props.description}
+
+</div>`
+    : `<div class="note">
+
+"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa
+libero labore natus atque, ducimus sed.."
+
+</div>`;
+
   return (
     <div className="relative mt-16 overflow-hidden bg-white">
-      <div className="relative mx-auto max-w-7xl">
+      <div className="relative z-10 mx-auto max-w-7xl">
         <div className="text-center">
           <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            From the blog
+            {props.title || "From the blog"}
           </h2>
-          <p className="max-w-2xl mx-auto mt-3 text-xl text-gray-500 sm:mt-4">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa
-            libero labore natus atque, ducimus sed.
-          </p>
+
+          <ReactMarkdown
+            children={description}
+            rehypePlugins={[rehypeRaw]}
+            remarkPlugins={[remarkGfm]}
+            className="max-w-2xl mx-auto mt-3 text-xl text-gray-500 sm:mt-4"
+          />
         </div>
       </div>
       <div
@@ -147,13 +198,11 @@ export default function Example() {
                       type="button"
                       className="relative block w-full overflow-hidden bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                     >
-                      <span className="sr-only">
-                        Watch our video to learn more
-                      </span>
+                      <span className="sr-only">Watch our video to</span>
                       <img
                         className="w-full"
-                        src="https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-                        alt=""
+                        src={item.thumbnail}
+                        alt={item.alt}
                       />
                       <div
                         className="absolute inset-0 flex items-center justify-center w-full h-full"

@@ -75,9 +75,9 @@ const sow = {
 `,
   leftButtonName: "Tìm hiểu thêm",
   leftButtonSrc: "",
-  leftAppleSrc: "",
-  leftGoogleSrc: "",
-  leftWebSrc: "",
+  leftAppleSrc: "2",
+  leftGoogleSrc: "2",
+  leftWebSrc: "2",
   leftTestimonial: ``,
   leftAuthor: "",
   leftAuthorImgSrc: "",
@@ -99,152 +99,173 @@ const projectYou = {
   <br><br> _**Việc hiểu được con người thực sự của bạn là điều cơ bản nhất để bắt đầu bước đi trên Hành Trình Làm Giàu X.0. Bạn cần biết bạn là ai và bạn có thể làm gì tốt nhất cho cuộc sống của bản thân, gia đình và xã hội.**_ `,
   rightButtonName: "Tìm hiểu thêm",
   rightButtonSrc: "",
-  rightAppleSrc: "",
-  rightGoogleSrc: "",
-  rightWebSrc: "",
+  rightAppleSrc: "ss",
+  rightGoogleSrc: "ss",
+  rightWebSrc: "ss",
   rightImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1629429447/Galatek.io%20Website/Beige_Minimal_Phone_Mockup_Download_Now_Instagram_Post-3_emlzak.png",
   rightAlt: "",
 };
 
 const finProSection = {
-  mainTitle: "FIN X.0",
-  mainDescription: `Cho dù bạn đang tiết kiệm cho kỳ nghỉ mơ ước, lên kế hoạch cho tài chính trong tương lai của mình hay chỉ đơn giản là mong muốn quản lý tốt tài chính của bản thân - Fin X.0 là dành cho bạn.`,
+  mainTitle: "",
+  mainDescription: ``,
 };
 const fin = {
-  leftTitle: "",
-  leftDescription: ``,
+  leftTitle: "FIN X.0",
+  leftDescription: `Cho dù bạn đang tiết kiệm cho kỳ nghỉ mơ ước, lên kế hoạch cho tài chính trong tương lai của mình hay chỉ đơn giản là mong muốn quản lý tốt tài chính của bản thân - Fin X.0 là dành cho bạn.`,
 
   leftIconOne: Icon.GlobeAltIcon,
-  leftIconOneTitle: "",
-  leftIconOneDescription: ``,
+  leftIconOneTitle: "Lập kế hoạch",
+  leftIconOneDescription: `Suy nghĩ lớn để bạn có thể đặt ra các mục tiêu thực tế, lập kế hoạch, theo dõi tiến trình của mình từng ngày và bắt tay vào hành động cho đến khi ước mơ của bạn trở thành hiện thực.`,
 
   leftIconTwo: Icon.ScaleIcon,
-  leftIconTwoTitle: "",
-  leftIconTwoDescription: ``,
+  leftIconTwoTitle: "Thực hiện ước mơ",
+  leftIconTwoDescription: `Phát triển một con đường rõ ràng để đạt được ước mơ phù hợp với giá trị của bản thân, sử dụng dữ liệu thực tế từ cuộc sống của bạn (không chỉ là hy vọng và ước mơ).`,
 
   leftIconThree: Icon.LightningBoltIcon,
-  leftIconThreeTitle: "",
-  leftIconThreeDescription: ``,
+  leftIconThreeTitle: "Xây dựng sự giàu có",
+  leftIconThreeDescription: `Tập trung vào việc tạo ra các mục tiêu và xây dựng sự giàu có thông qua sự đơn giản và minh bạch của công cụ này.`,
 
   leftButtonName: "",
   leftButtonSrc: "",
   leftAppleSrc: "",
   leftGoogleSrc: "",
   leftWebSrc: "",
-  leftImgSrc: "",
+  leftImgSrc:
+    "https://res.cloudinary.com/sang-le-tech/image/upload/v1629428694/Galatek.io%20Website/Sangletech.com/Beige_Minimal_Phone_Mockup_Download_Now_Instagram_Post_wfssti.png",
   leftAlt: "",
 };
 
 const pro = {
   rightIconOne: "",
-  rightIconOneTitle: "",
-  rightIconOneDescription: ``,
+  rightIconOneTitle: "Bạn Có Biết?",
+  rightIconOneDescription: `Pro X.0 là chuương trình được trực tiếp xây dựng và phát triển độc quyền bởi Sang Lê và Galatek`,
 
   rightIconTwo: "",
-  rightIconTwoTitle: "",
-  rightIconTwoDescription: ``,
+  rightIconTwoTitle: "Pro X.0 Là Gì?",
+  rightIconTwoDescription: `**PRO X.0** là 1 nền tảng học trực tuyến mới đầy thú vị được tạo ra bởi Sang Lê. Với các chương trình giảng dạy từ phát triển cá nhân đến kinh doanh online, **giúp bạn bước đi tự tin trong thời đại 4.0**.`,
 
   rightIconThree: "",
-  rightIconThreeTitle: "",
-  rightIconThreeDescription: ``,
+  rightIconThreeTitle: "Vừa Học Vừa Chơi",
+  rightIconThreeDescription: `Tất cả đều được cung cấp trên 1 nền tảng học tập trực tuyến mang tính giải trí, học cùng 1 cộng đồng và hành động nhỏ mỗi ngày để **tạo ra những kết quả mới cho bản thân và công việc kinh doanh của bạn** theo những cách mà chương trình học truyền thống không thể làm được.`,
 
-  rightTitle: "",
-  rightDescription: ``,
+  rightTitle: "PRO X.0",
+  rightDescription: `KHÁM PHÁ NGAY ỨNG DỤNG HỌC TRỰC TUYẾN 4.0`,
   rightButtonName: "",
   rightButtonSrc: "",
   rightAppleSrc: "",
   rightGoogleSrc: "",
   rightWebSrc: "",
-  rightImgSrc: "",
+  rightImgSrc:
+    "https://res.cloudinary.com/sang-le-tech/image/upload/v1626085141/Galatek.io%20Website/3D-Freelancers-illustration0023_srsafb.png",
   rightAlt: "",
 };
 
 const startup = {
-  title: "",
-  description: ``,
-  buttonName: "",
-  imgSrc: "",
+  title: "Startup X.0",
+  description: `Sau hơn 10 năm hoạt động kinh doanh ở nhiều lĩnh vực khác nhau, tổn thất hàng trăm ngàn đô la và nhiều đêm mất ngủ, Sang Lê đã học được vô số bài học đắt giá và đưa vào chương trình Startup X.0 để có thể giúp bạn **XÂY DỰNG ƯỚC MƠ KHỞI NGHIỆP**, và bước trên **CON ĐƯỜNG NGẮN NHẤT đến THÀNH CÔNG** trong thời đại 4.0 này.`,
+  buttonName: "Tìm Hiểu Ngay",
+  imgSrc:
+    "https://res.cloudinary.com/sang-le-tech/image/upload/v1625651836/Galatek.io%20Website/IMG_8057-1024x682_fa7z6z.jpg",
   alt: "",
 };
 
 const youtube = {
-  title: "",
-  description: ``,
-  buttonName: "",
-  buttonSrc: "",
+  title: "Video Youtube Nổi Bật",
+  description: `Nếu bạn muốn đi nhanh thì đi một mình, nếu bạn muốn đi xa thì hãy đi cùng nhau!`,
+  buttonName: "Theo Dõi Ngay",
+  buttonLink: "",
 
-  videoOneThumbnail: "",
-  videoOneSrc: "",
-  videoOneAlt: "",
+  videoOneThumbnail:
+    "https://res.cloudinary.com/sang-le-tech/image/upload/v1631780175/Galatek.io%20Website/Sangletech.com/maxresdefault_cztyhf.jpg",
+  videoOneLink: "https://www.youtube.com/watch?v=BmY-ye6j12k",
+  videoOneAlt: "Sang Le Tech - 3 ly do ban nen but pha ngay thoi diem nay",
 
-  videoTwoThumbnail: "",
-  videoTwoSrc: "",
-  videoTwoAlt: "",
+  videoTwoThumbnail:
+    "https://res.cloudinary.com/sang-le-tech/image/upload/v1631780254/Galatek.io%20Website/Sangletech.com/maxresdefault_r6poir.jpg",
+  videoTwoLink: "https://www.youtube.com/watch?v=TnJErB8dwA4",
+  videoTwoAlt: "Sang Le Tech - 3 buoc giup ban ban san pham online thanh cong",
 
-  videoThreeThumbnail: "",
-  videoThreeSrc: "",
-  videoThreeAlt: "",
+  videoThreeThumbnail:
+    "https://res.cloudinary.com/sang-le-tech/image/upload/v1631779915/Galatek.io%20Website/Sangletech.com/Artboard_2_copy-100_e6ruzq.jpg",
+  videoThreeLink: "https://www.youtube.com/watch?v=fDhBKfIsUx4",
+  videoThreeAlt: "Sang Le Tech - Lam sao xay dung pheu ban hang de ra tien",
 };
 
 const blog = {
-  title: "",
-  description: ``,
+  title: "Sang Le Blog",
+  description: `Đây là nơi Sang muốn chia sẻ những câu chuyện, kinh nghiệm mà Sang có được trên Hành trình làm giàu X.0`,
   buttonIconName: (
     <Icon.InboxInIcon className="w-6 h-6 text-white" aria-hidden="true" />
   ),
-  buttonName: "",
+  buttonName: "Đọc thêm",
 
   blogOneThumbnail: "",
-  blogOneTag: "",
-  blogOneTitle: "",
-  blogOneDescription: ``,
-  blogOneAuthorImgSrc: "",
-  blogOneAuthorName: "",
-  blogOneAuthorCaption: "",
+  blogOneLink: "",
+  blogOneCategory: "Startup",
+  blogOneTitle: "Làm thế nào thiết kế Website bán được hàng?",
+  blogOneDescription: `"Hầu hết các doanh nghiệp cho rằng Website chỉ để làm cảnh và ngốn rất nhiều chi phí. Nhưng bạn biết không, với một website được xây dựng hiệu quả thì khách hàng sẽ xuống tiền và đặt hàng nhanh hơn bất cứ nền tảng nào khác."`,
+  blogOneAuthorImgSrc:
+    "https://res.cloudinary.com/sang-le-tech/image/upload/v1625719158/Galatek.io%20Website/sangle-profilePic_k2xxkw.jpg",
+  blogOneAuthorName: "Sang Le",
+  blogOneReadingTime: "5 min",
 
   blogTwoThumbnail: "",
-  blogTwoTag: "",
-  blogTwoTitle: "",
-  blogTwoDescription: ``,
-  blogTwoAuthorImgSrc: "",
-  blogTwoAuthorName: "",
-  blogTwoAuthorCaption: "",
+  blogTwoLink: "",
+  blogTwoCategory: "Marketing",
+  blogTwoTitle: "Có phải THƯƠNG HIỆU chỉ đơn giản là LOGO?",
+  blogTwoDescription: `"Bạn có biết những thương hiệu "khổng lồ" trên thế giới như Apple, Google, Starbucks,.. đã phải liên tục "lột xác" bằng cách thay đổi Logo để tồn tại?"`,
+  blogTwoAuthorImgSrc:
+    "https://res.cloudinary.com/sang-le-tech/image/upload/v1625719158/Galatek.io%20Website/sangle-profilePic_k2xxkw.jpg",
+  blogTwoAuthorName: "Sang Le",
+  blogTwoReadingTime: "2 min",
 
   blogThreeThumbnail: "",
-  blogThreeTag: "",
-  blogThreeTitle: "",
-  blogThreeDescription: ``,
-  blogThreeAuthorImgSrc: "",
-  blogThreeAuthorName: "",
-  blogThreeAuthorCaption: "",
+  blogThreeLink: "",
+  blogThreeCategory: "Marketing",
+  blogThreeTitle: "Quảng cáo Facebook & Google đã đủ chưa?",
+  blogThreeDescription: `"Mặc dù online marketing bắt đầu phát triển từ những năm 1995, khi các công ty công nghệ bắt đầu bùng nổ trong đó có Ebay, Amazon, Google và nhiều công ty công nghệ khác nữa... Nhưng khi Sang làm việc với các chủ doanh nghiệp, thì họ hầu như chưa nắm rõ định nghĩa về Online Marketing là gì hoặc nói nôm na là Quảng cáo Online."`,
+  blogThreeAuthorImgSrc:
+    "https://res.cloudinary.com/sang-le-tech/image/upload/v1625719158/Galatek.io%20Website/sangle-profilePic_k2xxkw.jpg",
+  blogThreeAuthorName: "Sang Le",
+  blogThreeReadingTime: "4 min",
 };
 
 const social = {
-  title: "",
-  desctiption: ``,
+  titleMain: "Kết nối",
+  titleSecondary: "Hãy kết nối ngay với Sang!",
+  description: `☞ Click để đăng ký tham gia miễn phí cùng hàng ngàn người theo dõi khác ngay trên Facebook Messenger. 
+  <br></br>☞ Bạn sẽ nhận các thông tin và bí quyết từ Sang mỗi tuần để giúp bạn bước đi tự tin trên hành trình 4.0!`,
 
-  buttonFacebookLink: "",
-  buttonYoutubeLink: "",
-  buttonLinkedinLink: "",
-  buttonInstagramLink: "",
+  buttonFacebookLink: "https://www.facebook.com/sangletech/",
+  buttonYoutubeLink: "http://youtube.sangletech.com",
+  buttonLinkedinLink: "http://linkedin.sangletech.com",
+  buttonInstagramLink: "http://instagram.sangletech.com",
 };
 
 const company = {
+  title: "Mảng Kinh Doanh",
+
   logoOneName: (
     <Icon.InboxInIcon className="w-6 h-6 text-white" aria-hidden="true" />
   ),
-  logoOneSrc: "",
+  logoOneSrc:
+    "https://res.cloudinary.com/sang-le-tech/image/upload/v1626171786/Galatek.io%20Website/updated-galatek-logo-300x101_ajkugi.png",
+
+  logoOneAlt: "",
 
   logoTwoName: (
     <Icon.InboxInIcon className="w-6 h-6 text-white" aria-hidden="true" />
   ),
-  logoTwoSrc: "",
+  logoTwoSrc:
+    "https://res.cloudinary.com/sang-le-tech/image/upload/v1626171832/Galatek.io%20Website/whitebg-cafes-logo011x-600x228-1.png_ubdsbd.webp",
 
   logoThreeName: (
     <Icon.InboxInIcon className="w-6 h-6 text-white" aria-hidden="true" />
   ),
-  logoThreeSrc: "",
+  logoThreeSrc:
+    "https://res.cloudinary.com/sang-le-tech/image/upload/v1626171957/Galatek.io%20Website/print-spmet-logo.png_ex1cvm.webp",
 };
 
 function Home() {

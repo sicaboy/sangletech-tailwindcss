@@ -1,62 +1,154 @@
 /* This example requires Tailwind CSS v2.0+ */
-const posts = [
-  {
-    title: "Boost your conversion rate",
-    href: "#",
-    category: { name: "Article", href: "#" },
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.",
-    date: "Mar 16, 2020",
-    datetime: "2020-03-16",
-    imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80",
-    readingTime: "6 min",
-    author: {
-      name: "Roel Aufderehar",
-      href: "#",
-      imageUrl:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    },
-  },
-  {
-    title: "How to use search engine optimization to drive sales",
-    href: "#",
-    category: { name: "Video", href: "#" },
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi., tempore temporibus quo laudantium.",
-    date: "Mar 10, 2020",
-    datetime: "2020-03-10",
-    imageUrl:
-      "https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80",
-    readingTime: "4 min",
-    author: {
-      name: "Brenna Goyette",
-      href: "#",
-      imageUrl:
-        "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    },
-  },
-  {
-    title: "Improve your customer experience",
-    href: "#",
-    category: { name: "Case Study", href: "#" },
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum rerum voluptatem quo recusandae magni placeat saepe molestiae, sed excepturi cumque corporis perferendis hic.",
-    date: "Feb 12, 2020",
-    datetime: "2020-02-12",
-    imageUrl:
-      "https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80",
-    readingTime: "11 min",
-    author: {
-      name: "Daniela Metz",
-      href: "#",
-      imageUrl:
-        "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    },
-  },
-];
 
-export default function ThreeColumnCards() {
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
+
+interface Props {
+  title?: string;
+  description?: string;
+  buttonIconName: {};
+  buttonName?: string;
+
+  blogOneThumbnail?: string;
+  blogOneLink?: string;
+  blogOneCategory?: string;
+  blogOneTitle?: string;
+  blogOneDescription?: string;
+  blogOneAuthorImgSrc?: string;
+  blogOneAuthorName?: string;
+  blogOneReadingTime?: string;
+
+  blogTwoThumbnail?: string;
+  blogTwoLink?: string;
+  blogTwoCategory?: string;
+  blogTwoTitle?: string;
+  blogTwoDescription?: string;
+  blogTwoAuthorImgSrc?: string;
+  blogTwoAuthorName?: string;
+  blogTwoReadingTime?: string;
+
+  blogThreeThumbnail?: string;
+  blogThreeLink?: string;
+  blogThreeCategory?: string;
+  blogThreeTitle?: string;
+  blogThreeDescription?: string;
+  blogThreeAuthorImgSrc?: string;
+  blogThreeAuthorName?: string;
+  blogThreeReadingTime?: string;
+}
+
+export default function ThreeColumnCards(props: Props) {
+  const blogOneDescription = props.blogOneDescription
+    ? `<div class="note">
+
+  ${props.blogOneDescription}
+  
+  </div>`
+    : `<div class="note">
+
+"Cras velit quis eros eget rhoncus lacus ultrices sed diam. Sit orci risus aenean curabitur donec aliquet. Mi venenatis in euismod ut."
+
+</div>`;
+
+  const blogTwoDescription = props.blogTwoDescription
+    ? `<div class="note">
+
+  ${props.blogTwoDescription}
+  
+  </div>`
+    : `<div class="note">
+
+"Cras velit quis eros eget rhoncus lacus ultrices sed diam. Sit orci risus aenean curabitur donec aliquet. Mi venenatis in euismod ut."
+
+</div>`;
+
+  const blogThreeDescription = props.blogThreeDescription
+    ? `<div class="note">
+
+  ${props.blogThreeDescription}
+  
+  </div>`
+    : `<div class="note">
+
+"Cras velit quis eros eget rhoncus lacus ultrices sed diam. Sit orci risus aenean curabitur donec aliquet. Mi venenatis in euismod ut."
+
+</div>`;
+
+  const posts = [
+    {
+      title: props.blogOneTitle || "Boost your conversion rate",
+      href: props.blogOneLink || "",
+      category: { name: props.blogOneCategory || "Article", href: "" },
+      description: blogOneDescription,
+      date: "",
+      datetime: "",
+      imageUrl:
+        props.blogOneAuthorImgSrc ||
+        "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80",
+      readingTime: props.blogOneReadingTime || "5 min",
+      author: {
+        name: props.blogOneAuthorName || "Roel Aufderehar",
+        href: "",
+        imageUrl:
+          props.blogOneAuthorImgSrc ||
+          "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      },
+    },
+    {
+      title:
+        props.blogTwoTitle ||
+        "How to use search engine optimization to drive sales",
+      href: props.blogTwoLink || "",
+      category: { name: props.blogTwoCategory || "Video", href: "" },
+      description: blogTwoDescription,
+      date: "",
+      datetime: "",
+      imageUrl:
+        props.blogTwoThumbnail ||
+        "https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80",
+      readingTime: props.blogTwoReadingTime || "2 mins",
+      author: {
+        name: props.blogTwoAuthorName || "Brenna Goyette",
+        href: "",
+        imageUrl:
+          props.blogTwoAuthorImgSrc ||
+          "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      },
+    },
+    {
+      title: props.blogThreeTitle || "Improve your customer experience",
+      href: props.blogThreeLink || "",
+      category: { name: props.blogThreeCategory || "Case Study", href: "" },
+      description: blogThreeDescription,
+      date: "",
+      datetime: "",
+      imageUrl:
+        props.blogThreeThumbnail ||
+        "https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80",
+      readingTime: props.blogThreeReadingTime || "11 min",
+      author: {
+        name: props.blogThreeAuthorName || "Daniela Metz",
+        href: "",
+        imageUrl:
+          props.blogThreeAuthorImgSrc ||
+          "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      },
+    },
+  ];
+
+  const description = props.description
+    ? `<div class="note">
+
+  ${props.description}
+  
+  </div>`
+    : `<div class="note">
+
+"Cras velit quis eros eget rhoncus lacus ultrices sed diam. Sit orci risus aenean curabitur donec aliquet. Mi venenatis in euismod ut."
+
+</div>`;
+
   return (
     <div className="relative px-4 pt-16 pb-20 bg-gray-50 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
       <div className="absolute inset-0">
@@ -65,12 +157,15 @@ export default function ThreeColumnCards() {
       <div className="relative mx-auto max-w-7xl">
         <div className="text-center">
           <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            From the blog
+            {props.title || "From the blog"}
           </h2>
-          <p className="max-w-2xl mx-auto mt-3 text-xl text-gray-500 sm:mt-4">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa
-            libero labore natus atque, ducimus sed.
-          </p>
+
+          <ReactMarkdown
+            children={description}
+            rehypePlugins={[rehypeRaw]}
+            remarkPlugins={[remarkGfm]}
+            className="max-w-2xl mx-auto mt-3 text-xl text-gray-500 sm:mt-4"
+          />
         </div>
         <div className="grid max-w-lg gap-5 mx-auto mt-12 lg:grid-cols-3 lg:max-w-none">
           {posts.map((post) => (
@@ -96,9 +191,13 @@ export default function ThreeColumnCards() {
                     <p className="text-xl font-semibold text-gray-900">
                       {post.title}
                     </p>
-                    <p className="mt-3 text-base text-gray-500">
-                      {post.description}
-                    </p>
+
+                    <ReactMarkdown
+                      children={post.description}
+                      rehypePlugins={[rehypeRaw]}
+                      remarkPlugins={[remarkGfm]}
+                      className="mt-3 text-base text-gray-500"
+                    />
                   </a>
                 </div>
                 <div className="flex items-center mt-6">
@@ -106,7 +205,7 @@ export default function ThreeColumnCards() {
                     <a href={post.author.href}>
                       <span className="sr-only">{post.author.name}</span>
                       <img
-                        className="w-10 h-10 rounded-full"
+                        className="object-cover w-10 h-10 rounded-full"
                         src={post.author.imageUrl}
                         alt=""
                       />
@@ -120,7 +219,7 @@ export default function ThreeColumnCards() {
                     </p>
                     <div className="flex space-x-1 text-sm text-gray-500">
                       <time dateTime={post.datetime}>{post.date}</time>
-                      <span aria-hidden="true">&middot;</span>
+                      {/* <span aria-hidden="true">&middot;</span> */}
                       <span>{post.readingTime} read</span>
                     </div>
                   </div>
@@ -132,7 +231,7 @@ export default function ThreeColumnCards() {
 
         <div className="pt-32 text-center">
           <a
-            href="#"
+            href=""
             className="inline-flex items-center px-5 py-3 bg-indigo-600 rounded-lg hover:bg-indigo-700 focus:outline-none"
           >
             <svg
@@ -151,7 +250,7 @@ export default function ThreeColumnCards() {
             </svg>
             <span className="flex flex-col items-start ml-4 leading-none">
               <span className="font-medium text-white title-font">
-                Tìm Hiểu Thêm
+                {props.buttonName || "Tìm Hiểu Thêm"}
               </span>
             </span>
           </a>
