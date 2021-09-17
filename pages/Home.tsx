@@ -270,7 +270,7 @@ function Home() {
       <HeroWithAngelImageOnRight {...hero} />
       <BrandPanelWithAppScreenShot {...jow} />
       <AlternatingWithOptionalTestimonial {...sow} {...projectYou} />
-      <AlternativeSideBySideWithImages {...finProSection} {...fin} {...pro} />
+      <AlternativeSideBySideWithImages {...fin} {...pro} />
       <BrandPanelWithOverlappingImage {...startup} />
       <Youtube {...youtube} />
       <ThreeColumnCards {...blog} />

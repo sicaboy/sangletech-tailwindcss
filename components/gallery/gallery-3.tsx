@@ -1,6 +1,34 @@
 import React from "react";
 
-function GalleryTwoPhotos() {
+import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
+import remarkGfm from "remark-gfm";
+
+function GalleryTwoPhotos(props) {
+  const descriptionOne = props.certificateOneDescription
+    ? `<div class="note">
+
+${props.certificateOneDescription}
+
+</div>`
+    : `<div class="note">
+
+"Semper curabitur ullamcorper posuere nunc sed. Ornare iaculisbibendum malesuada faucibus lacinia porttitor. Pulvinar laoreet sagittis viverra duis. In venenatis sem arcu ."
+
+</div>`;
+
+  const descriptionTwo = props.certificateTwoDescription
+    ? `<div class="note">
+
+${props.certificateTwoDescription}
+
+</div>`
+    : `<div class="note">
+
+"Semper curabitur ullamcorper posuere nunc sed. Ornare iaculisbibendum malesuada faucibus lacinia porttitor. Pulvinar laoreet sagittis viverra duis. In venenatis sem arcu."
+
+</div>`;
+
   return (
     <div>
       <section className="text-gray-600 body-font">
@@ -9,34 +37,44 @@ function GalleryTwoPhotos() {
             <div className="px-4 mb-10 sm:w-1/2">
               <div className="h-64 overflow-hidden rounded-lg">
                 <img
-                  alt="content"
-                  className="object-cover object-center w-full h-full"
-                  src="https://dummyimage.com/1201x501"
+                  alt={props.certificateOneImgAlt || "sang le tech"}
+                  className="object-contain object-center w-full h-full"
+                  src={
+                    props.certificateOneImgSrc ||
+                    "https://dummyimage.com/1201x501"
+                  }
                 />
               </div>
               <h2 className="mt-6 mb-3 text-2xl font-medium text-gray-900 title-font">
-                Buy YouTube Videos
+                {props.certificateOneTitle || " Buy YouTube Videos"}
               </h2>
-              <p className="text-base leading-relaxed">
-                Williamsburg occupy sustainable snackwave gochujang. Pinterest
-                cornhole brunch, slow-carb neutra irony.
-              </p>
+              <ReactMarkdown
+                children={descriptionOne}
+                rehypePlugins={[rehypeRaw]}
+                remarkPlugins={[remarkGfm]}
+                className="mt-4 text-lg text-gray-500"
+              />
             </div>
             <div className="px-4 mb-10 sm:w-1/2">
               <div className="h-64 overflow-hidden rounded-lg">
                 <img
-                  alt="content"
-                  className="object-cover object-center w-full h-full"
-                  src="https://dummyimage.com/1202x502"
+                  alt={props.certificateTwoImgAlt || "sang le tech"}
+                  className="object-contain object-center w-full h-full"
+                  src={
+                    props.certificateTwoImgSrc ||
+                    "https://dummyimage.com/1201x501"
+                  }
                 />
               </div>
               <h2 className="mt-6 mb-3 text-2xl font-medium text-gray-900 title-font">
-                The Catalyzer
+                {props.certificateTwoTitle || " Buy YouTube Videos"}
               </h2>
-              <p className="text-base leading-relaxed">
-                Williamsburg occupy sustainable snackwave gochujang. Pinterest
-                cornhole brunch, slow-carb neutra irony.
-              </p>
+              <ReactMarkdown
+                children={descriptionTwo}
+                rehypePlugins={[rehypeRaw]}
+                remarkPlugins={[remarkGfm]}
+                className="mt-4 text-lg text-gray-500"
+              />
             </div>
           </div>
         </div>

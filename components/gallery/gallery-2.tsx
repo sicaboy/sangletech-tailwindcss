@@ -1,6 +1,55 @@
 import React from "react";
 
-function GalleryTwo() {
+function GalleryTwo(props) {
+  const images = [
+    {
+      id: 1,
+      src: props.imgOneSrc || "https://dummyimage.com/600x360",
+      alt: props.imgOneAlt || "sang le tech",
+    },
+    {
+      id: 2,
+      src: props.imgTwoSrc || "https://dummyimage.com/600x360",
+      alt: props.imgTwoAlt || "sang le tech",
+    },
+    {
+      id: 3,
+      src: props.imgThreeSrc || "https://dummyimage.com/600x360",
+      alt: props.imgThreeAlt || "sang le tech",
+    },
+    {
+      id: 4,
+      src: props.imgFourSrc || "https://dummyimage.com/600x360",
+      alt: props.imgFourAlt || "sang le tech",
+    },
+    {
+      id: 5,
+      src: props.imgFiveSrc || "https://dummyimage.com/600x360",
+      alt: props.imgFiveAlt || "sang le tech",
+    },
+    {
+      id: 6,
+      src: props.imgSixSrc || "https://dummyimage.com/600x360",
+      alt: props.imgSixAlt || "sang le tech",
+    },
+
+    {
+      id: 7,
+      src: props.imgSevenSrc || "https://dummyimage.com/600x360",
+      alt: props.imgSevenAlt || "sang le tech",
+    },
+    {
+      id: 8,
+      src: props.imgEightSrc || "https://dummyimage.com/600x360",
+      alt: props.imgEightAlt || "sang le tech",
+    },
+    {
+      id: 9,
+      src: props.imgNineSrc || "https://dummyimage.com/600x360",
+      alt: props.imgNineAlt || "sang le tech",
+    },
+  ];
+
   return (
     <div>
       <section className="text-gray-600 body-font">
@@ -16,132 +65,17 @@ function GalleryTwo() {
             </p>
           </div>
           <div className="flex flex-wrap -m-4">
-            <div className="p-4 lg:w-1/3 sm:w-1/2">
-              <div className="relative flex">
-                <img
-                  alt="gallery"
-                  className="absolute inset-0 object-cover object-center w-full h-full"
-                  src="https://dummyimage.com/600x360"
-                />
-                <div className="relative z-10 w-full px-8 py-10 bg-white border-4 border-gray-200 opacity-0 hover:opacity-100">
-                  <h2 className="mb-1 text-sm font-medium tracking-widest text-indigo-500 title-font">
-                    THE SUBTITLE
-                  </h2>
-                  <h1 className="mb-3 text-lg font-medium text-gray-900 title-font">
-                    Shooting Stars
-                  </h1>
-                  <p className="leading-relaxed">
-                    Photo booth fam kinfolk cold-pressed sriracha leggings
-                    jianbing microdosing tousled waistcoat.
-                  </p>
+            {images.map((item) => (
+              <div className="p-4 lg:w-1/3 sm:w-1/2">
+                <div className="relative flex " key={item.id}>
+                  <img
+                    alt={item.alt}
+                    className="inset-0 object-cover object-center w-full h-full "
+                    src={item.src}
+                  />
                 </div>
               </div>
-            </div>
-            <div className="p-4 lg:w-1/3 sm:w-1/2">
-              <div className="relative flex">
-                <img
-                  alt="gallery"
-                  className="absolute inset-0 object-cover object-center w-full h-full"
-                  src="https://dummyimage.com/601x361"
-                />
-                <div className="relative z-10 w-full px-8 py-10 bg-white border-4 border-gray-200 opacity-0 hover:opacity-100">
-                  <h2 className="mb-1 text-sm font-medium tracking-widest text-indigo-500 title-font">
-                    THE SUBTITLE
-                  </h2>
-                  <h1 className="mb-3 text-lg font-medium text-gray-900 title-font">
-                    The Catalyzer
-                  </h1>
-                  <p className="leading-relaxed">
-                    Photo booth fam kinfolk cold-pressed sriracha leggings
-                    jianbing microdosing tousled waistcoat.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="p-4 lg:w-1/3 sm:w-1/2">
-              <div className="relative flex">
-                <img
-                  alt="gallery"
-                  className="absolute inset-0 object-cover object-center w-full h-full"
-                  src="https://dummyimage.com/603x363"
-                />
-                <div className="relative z-10 w-full px-8 py-10 bg-white border-4 border-gray-200 opacity-0 hover:opacity-100">
-                  <h2 className="mb-1 text-sm font-medium tracking-widest text-indigo-500 title-font">
-                    THE SUBTITLE
-                  </h2>
-                  <h1 className="mb-3 text-lg font-medium text-gray-900 title-font">
-                    The 400 Blows
-                  </h1>
-                  <p className="leading-relaxed">
-                    Photo booth fam kinfolk cold-pressed sriracha leggings
-                    jianbing microdosing tousled waistcoat.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="p-4 lg:w-1/3 sm:w-1/2">
-              <div className="relative flex">
-                <img
-                  alt="gallery"
-                  className="absolute inset-0 object-cover object-center w-full h-full"
-                  src="https://dummyimage.com/602x362"
-                />
-                <div className="relative z-10 w-full px-8 py-10 bg-white border-4 border-gray-200 opacity-0 hover:opacity-100">
-                  <h2 className="mb-1 text-sm font-medium tracking-widest text-indigo-500 title-font">
-                    THE SUBTITLE
-                  </h2>
-                  <h1 className="mb-3 text-lg font-medium text-gray-900 title-font">
-                    Neptune
-                  </h1>
-                  <p className="leading-relaxed">
-                    Photo booth fam kinfolk cold-pressed sriracha leggings
-                    jianbing microdosing tousled waistcoat.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="p-4 lg:w-1/3 sm:w-1/2">
-              <div className="relative flex">
-                <img
-                  alt="gallery"
-                  className="absolute inset-0 object-cover object-center w-full h-full"
-                  src="https://dummyimage.com/605x365"
-                />
-                <div className="relative z-10 w-full px-8 py-10 bg-white border-4 border-gray-200 opacity-0 hover:opacity-100">
-                  <h2 className="mb-1 text-sm font-medium tracking-widest text-indigo-500 title-font">
-                    THE SUBTITLE
-                  </h2>
-                  <h1 className="mb-3 text-lg font-medium text-gray-900 title-font">
-                    Holden Caulfield
-                  </h1>
-                  <p className="leading-relaxed">
-                    Photo booth fam kinfolk cold-pressed sriracha leggings
-                    jianbing microdosing tousled waistcoat.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="p-4 lg:w-1/3 sm:w-1/2">
-              <div className="relative flex">
-                <img
-                  alt="gallery"
-                  className="absolute inset-0 object-cover object-center w-full h-full"
-                  src="https://dummyimage.com/606x366"
-                />
-                <div className="relative z-10 w-full px-8 py-10 bg-white border-4 border-gray-200 opacity-0 hover:opacity-100">
-                  <h2 className="mb-1 text-sm font-medium tracking-widest text-indigo-500 title-font">
-                    THE SUBTITLE
-                  </h2>
-                  <h1 className="mb-3 text-lg font-medium text-gray-900 title-font">
-                    Alper Kamu
-                  </h1>
-                  <p className="leading-relaxed">
-                    Photo booth fam kinfolk cold-pressed sriracha leggings
-                    jianbing microdosing tousled waistcoat.
-                  </p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>

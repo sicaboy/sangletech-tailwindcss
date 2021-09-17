@@ -14,7 +14,6 @@ export default function Main() {
 
       <Layout>
         <Home />
-        <About />
       </Layout>
     </div>
   );
