@@ -1,32 +1,6 @@
-import React from "react";
-/*
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
-
-import {
-  AnnotationIcon,
-  GlobeAltIcon,
-  LightningBoltIcon,
-  MailIcon,
-  ScaleIcon,
-} from "@heroicons/react/outline";
-
 import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
+import remarkGfm from "remark-gfm";
 
 interface Props {
   leftTitle?: string;
@@ -108,7 +82,7 @@ ${props.leftDescription}
 
         <div className="relative mt-12 lg:mt-8 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
           <div className="relative">
-            <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
+            <h2 className="text-3xl font-extrabold tracking-tight text-black sm:text-3xl">
               {props.leftTitle || "Transfer funds world-wide"}
             </h2>
             <ReactMarkdown
@@ -160,8 +134,11 @@ ${props.leftDescription}
                 <span className="">{props.leftVideoCaption}</span>
                 <img
                   className="w-full"
-                  src="https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-                  alt=""
+                  src={
+                    props.leftImgSrc ||
+                    "https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                  }
+                  alt={props.leftAlt || "sang le tech"}
                 />
                 {props.leftVideoSrc && (
                   <div
@@ -226,7 +203,7 @@ ${props.leftDescription}
         <div className="relative mt-12 sm:mt-16 lg:mt-24">
           <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
             <div className="lg:col-start-2">
-              <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
+              <h2 className="text-3xl font-extrabold tracking-tight text-black sm:text-3xl">
                 {props.rightTitle || "Always in the loop"}
               </h2>
 
@@ -280,8 +257,11 @@ ${props.leftDescription}
                   <span className="">{props.rightVideoCaption}</span>
                   <img
                     className="w-full"
-                    src="https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-                    alt=""
+                    src={
+                      props.rightImgSrc ||
+                      "https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    }
+                    alt={props.rightAlt || "sang le tech"}
                   />
                   {props.rightVideoSrc && (
                     <div

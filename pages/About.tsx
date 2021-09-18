@@ -18,9 +18,9 @@ import * as Icon from "@heroicons/react/outline";
 import Layout from "../components/Layout";
 
 const hero = {
-  caption: "Sang Lê Là Ai?",
-  titleNormal: "Công Nghệ Bằng Cả Trái Tim",
-  titleHighlight: "",
+  caption: "Công Nghệ Bằng Cả Trái Tim",
+  titleNormal: "là ai?",
+  titleHighlight: "Sang Lê ",
   description: `Sang hiện là CEO của Công ty Công nghệ Galatek & là Phó Hiệu trưởng của trường Cao đẳng Kĩ thuật & Thiết bị y tế Miền Nam (SPMET). Giống như bao người, bản thân Sang cũng đã từng phải nếm trải những thất bại cay đắng trước khi tạo dựng sự nghiệp như ngày hôm nay. Những kinh nghiệm “xương máu” đó đã dạy cho Sang vô số bài học đắt giá để đến bây giờ, Sang có thể giúp đỡ cho rất nhiều khởi nghiệp, các doanh nghiệp vừa và nhỏ ở Việt Nam lẫn nước ngoài. Năm 2019, Sang bắt đầu tiếp cận với học sinh tại Việt Nam để dẫn dắt, rèn luyện cho các bạn trẻ về cách sống và làm việc trong thời đại Công nghiệp 4.0.`,
   imgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1631863511/Galatek.io%20Website/Sangletech.com/maxresdefault_qiw40s.jpg",
@@ -117,17 +117,9 @@ const giaiDoanDauDoi = {
     <Icon.BookOpenIcon className="w-6 h-6 text-white" aria-hidden="true" />
   ),
   leftTitle: "Giai Đoạn Đầu Đời",
-  leftDescription: `**Một Chàng Trai Nghiện Game**
+  leftDescription: `Một Chàng Trai Nghiện Game
   <br><br> Nếu bạn nhìn vào Sang của thời điểm hiện tại, bạn sẽ không thể nghĩ được rằng trước đây, Sang cũng từng là một học sinh cá biệt, một “con nghiện” game chính hiệu, sống không có mục đích. Cho đến khi Sang 18 tuổi, một sự kiện khủng khiếp trong cuộc đời như muốn đẩy Sang đến gần với cái chết từ tầng 13 tại một khách sạn ở Malaysia. Bạn biết không, trải nghiệm cận tử đó dường như đã tạo ra một “chiến binh” trong Sang và đã khiến cuộc đời của Sang thay đổi hoàn toàn kể từ đó.
 `,
-  leftButtonName: "",
-  leftButtonSrc: "",
-  leftAppleSrc: "2",
-  leftGoogleSrc: "2",
-  leftWebSrc: "2",
-  leftTestimonial: ``,
-  leftAuthor: "",
-  leftAuthorImgSrc: "",
   leftImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1627896818/Galatek.io%20Website/1936102_139724759226_7973379_n_ahhfrx.jpg",
   leftAlt: "Hinh anh Sang Le - Giai Doan Dau Doi",
@@ -138,13 +130,8 @@ const giaoduc = {
     <Icon.InboxInIcon className="w-6 h-6 text-white" aria-hidden="true" />
   ),
   rightTitle: "Giáo Dục",
-  rightDescription: `**Không Gì Là Không Thể**
+  rightDescription: `Không Gì Là Không Thể
   <br></br> Sau sự kiện cận kề cái chết, Sang như được tái sinh một lần nữa. Sang bắt đầu hành trình du học của mình một cách nghiêm túc tại **3 quốc gia: Singapore, Hong Kong và Hoa Kỳ**. Và vì thế ngoài tiếng mẹ đẻ của mình, Sang có thể giao tiếp tốt bằng 2 thứ tiếng khác đó là: **tiếng Anh & tiếng Hoa**.<br></br> Nhưng trong lúc đang học tại nước ngoài, Sang bất ngờ nhận một cuộc gọi từ ba. Ba nói răng do khủng hoảng kinh tế toàn cầu năm 2008, nên tình hình kinh tế gia đình cũng gặp khó khăn và rất có thể Sang phải dừng lại việc học của mình bất cứ lúc nào! Sau cú điện thoại đó, Sang quyết định là Sang phải nỗ lực gấp trăm lần để gấp rút hoàn thành việc học của mình và lấy được **bằng cấp 3 Canada tại Hong Kong** (lớp 11 & 12) trong **9 tháng (thay vì 2 năm)** và nhận **bằng Đại học tại Mỹ** chỉ sau **2 năm 9 tháng (thay vì 4-5 năm)**.`,
-  rightButtonName: "",
-  rightButtonSrc: "",
-  rightAppleSrc: "ss",
-  rightGoogleSrc: "ss",
-  rightWebSrc: "ss",
   rightImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1625719158/Galatek.io%20Website/sangle-profilePic_k2xxkw.jpg",
   rightAlt: "Hinh anh Sang Le - Giao Duc",
@@ -328,19 +315,19 @@ const coreValue = {
   description: `*Từ Sang Lê & Đội ngũ*`,
   buttonName: false,
 
-  listOneTitle: "Cải tiến nhỏ một cách liên tục.",
-  listTwoTitle: "Tăng trưởng một cách bền vững.",
-  listThreeTitle: "Luôn học hỏi và trao dồi thêm kinh nghiệm.",
-  listFourTitle: "Hăng hái và đam mê trong công việc.",
-  listFiveTitle: "Làm việc hiệu quả, sáng tạo và cởi mở.",
-  listSixTitle: "Khách quan và trung thực trong giao tiếp.",
-  listSevenTitle: "Đi tiên phong trong công việc.",
-  listEightTitle: "Xây dựng một đội ngũ tích cực và có tinh thần gia đình.",
-  listNineTitle: "Tiết kiệm nhưng hiệu quả.",
-  listTenTitle: "Khiêm tốn.",
+  listOneText: "Cải tiến nhỏ một cách liên tục.",
+  listTwoText: "Tăng trưởng một cách bền vững.",
+  listThreeText: "Luôn học hỏi và trao dồi thêm kinh nghiệm.",
+  listFourText: "Hăng hái và đam mê trong công việc.",
+  listFiveText: "Làm việc hiệu quả, sáng tạo và cởi mở.",
+  listSixText: "Khách quan và trung thực trong giao tiếp.",
+  listSevenText: "Đi tiên phong trong công việc.",
+  listEightText: "Xây dựng một đội ngũ tích cực và có tinh thần gia đình.",
+  listNineText: "Tiết kiệm nhưng hiệu quả.",
+  listTenText: "Khiêm tốn.",
 };
 
-const teams = {
+const ourTeam = {
   title: "Các Chiến Binh Ngầu Nhất",
   description: `Đang đồng hành cùng Sang`,
 
@@ -456,7 +443,7 @@ function About() {
   return (
     <Layout>
       <Hero {...hero} />
-      <AlternatingWithOptionalTestimonial {...giaiDoanDauDoi} {...giaoduc} />
+      <AlternativeSideBySideWithVideo {...giaiDoanDauDoi} {...giaoduc} />
       <GalleryOne {...galleryOne} />
       <GalleryTwo {...galleryTwo} />
       <GalleryThree {...galleryThree} />
@@ -465,10 +452,10 @@ function About() {
       <MyAchievement {...myAchivement} />
       <Logos {...logos} />
       <Certificates {...certificates} />
-      <CoreValues />
-      <OurTeam />
-      <CompanyAchivement />
-      <Features />
+      <CoreValues {...coreValue} />
+      <OurTeam {...ourTeam} />s
+      <CompanyAchivement {...companyAchivement} />
+      <Features {...features} />
       <SocialConnect {...social} />
       <MyCompanies {...company} />
     </Layout>

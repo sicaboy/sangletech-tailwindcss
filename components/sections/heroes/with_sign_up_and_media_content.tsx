@@ -104,12 +104,13 @@ ${props.description}
                 <span className="block text-sm font-semibold tracking-wide text-gray-500 uppercase sm:text-base lg:text-sm xl:text-base">
                   {props.caption || "Coming soon"}
                 </span>
-                <span className="block mt-1 text-4xl font-extrabold tracking-tight sm:text-5xl xl:text-6xl">
-                  <span className="block text-gray-900">
-                    {props.titleNormal || "Data to enrich your"}
-                  </span>
-                  <span className="block text-indigo-600">
+
+                <span className="mt-1 text-4xl font-extrabold tracking-tight  sm:text-5xl xl:text-6xl">
+                  <span className="text-indigo-600 ">
                     {props.titleHighlight || "online business"}
+                  </span>
+                  <span className="text-gray-900 ">
+                    {props.titleNormal || "Data to enrich your"}
                   </span>
                 </span>
               </h1>
