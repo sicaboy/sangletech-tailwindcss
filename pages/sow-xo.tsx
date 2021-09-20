@@ -1,0 +1,71 @@
+import React from "react";
+import Hero from "../components/sections/heroes/with_sign_up_and_media_content";
+import AlternativeSideBySideWithVideoOrImg from "../components/AlternativeSideBySideWithVideo";
+import Layout from "../components/Layout";
+
+function SowXO() {
+  //TODO: Change the layout to Sections/Content Sections/Centered
+  const hero = {
+    caption: "",
+    titleNormal: " Là Gì?",
+    titleHighlight: "Hành Trình Làm Giàu X.0",
+    description: `*Ba ơi, làm sao học dở mà vẫn giàu hả ba?* 
+    <br></br>Sang tự thấy rằng trong cuộc đời mình, có rất nhiều khoảnh khắc làm thay đổi tất cả. Một trong những cột mốc đó là lúc Sang hỏi ba của mình câu hỏi trên. Một câu hỏi buồn cười đúng không? Nhưng hồi đó Sang thắc mắc như thế thật. Không chỉ học dở, Sang còn nghiện chơi game nữa. Nhưng mà còn nhỏ mà, nên Sang ngang ngược lắm. Học dở thì học dở, nghiện game thì nghiện game, chứ vẫn muốn giàu.
+    <br></br>Bạn biết ba trả lời Sang thế nào không?
+    <br></br>**- Con tự đi tìm con đường đó đi. Chỉ cần đừng bỏ cuộc là được!**
+    <br></br>Lúc đó còn nhỏ, Sang chỉ thấy thật kỳ lạ khi ba không đưa cho mình một câu trả lời rõ ràng, trong khi không hề biết rằng, trong câu nói lấp lửng nửa đùa nửa thật đó của ba đã có sẵn đáp án. 
+    <br></br>Bẵng đi một thời gian, Sang vẫn... học dở, và vẫn là học sinh cá biệt như ngày nào. Sang không nói quá lên đâu. Ký ức mà Sang nhớ nhất từ lớp Sáu tới lớp Mười là vô phòng thi được các bạn chỉ bài – tất cả các môn, bao gồm cả môn máy tính. Giữa năm lớp 12, Sang được ba cho qua Singapore để học tiếng Anh, một bước chuẩn bị trước khi đi Mỹ du học. **30 ngày ở Singapore, Sang chơi game hết 30 ngày.** Ngày cuối cùng, cô chủ nhà hốt hoảng, hỏi Sang tại sao qua Singapore 30 ngày rồi mà vẫn chưa đi xin giấy nhập học để kéo dài thời hạn visa. Sang thảng thốt. <br></br>Như mọi khi, Sang nghĩ rằng luôn có người ở đó lo cho mình. **Kết quả là Sang bị "đuổi" về Việt Nam.** 30 ngày ở Singapore, Sang chẳng làm được gì cả. Ý tưởng về cái chết đến với Sang như một lựa chọn hiển nhiên. Sang không dám đối diện với ba mẹ và bạn bè. Sang bước ra ban công, suýt nữa đã nhảy xuống. **Nhưng có tiếng nói bên trong giữ Sang lại.** Sang gọi điện về cho ba, xin lỗi ba, và hứa sẽ trở thành một con người khác. Sau khi bị "đuổi" về Việt Nam, Sang bay lại qua Singapore...`,
+    imgSrc:
+      "https://res.cloudinary.com/sang-le-tech/image/upload/v1628152808/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0000_ucdad0.png",
+    videoSrc: "https://youtu.be/NSMBks66BpE",
+    videoCaption: `Hành Trình Làm Giàu X.0`,
+    alt: "Sang Le - Video JOW",
+  };
+
+  const textOne = {
+    leftCaption: "Giai Đoạn Lột Xác",
+    leftTitle: "Xuất phát sau cũng không sao. Chạy nhanh hơn là được.",
+    leftDescription: `Có một câu mà Sang thấy rất hay và rất đúng với cuộc đời mình, đó là: **Khi rơi xuống vực thẳm, bạn chỉ còn một đường duy nhất, đó là leo lên. Nói cách khác, khi bạn đã chạm đáy, bạn chỉ có duy nhất một sự lựa chọn, đó là tìm cách trèo lên.** <br></br>Thời gian ở Sing và Hồng Kông, Sang cắm mặt vào những cuốn sách, kéo "vali" đi học vì phải đựng quá nhiều sách vở, và học miệt mài từ sáng đến tối. Sang luôn giữ trong mình ý nghĩ: *"Mình không giỏi, vì thế mình phải cố gắng hơn người khác, nghiêm khắc với bản thân hơn người khác."* Cứ thế, sau nhiều năm, Sang tham gia biết bao nhiêu chương trình, đọc biết bao nhiêu sách, đi biết bao nhiêu nước. Cho đến khi có một người khen Sang, với những tính từ mà thậm chí Sang còn không nghĩ rằng những điều đó đang mô tả về mình. **Thì ra, Sang đã không còn là cậu nhóc học dở, sống không mục đích và nghiện game ngày nào nữa.**
+    <br></br>Sang bất giác nhận ra một điều, rằng **khi bạn siêng năng và không bỏ cuộc, điểm xuất phát của bạn trở nên ít quan trọng.** Bởi vì bạn sẽ sớm bỏ xa điểm xuất phát ấy khi đã có đủ quyết tâm. Sang tin rằng, có lẽ ba của Sang đã biết trước điều này, nên ông mới bảo Sang tự đi tìm con đường, "chỉ cần không bỏ cuộc là được". Hóa ra khi bạn không bỏ cuộc, khi bạn đủ quyết tâm, thì con đường mà bạn chọn và trạng thái hiện tại của bạn chỉ trở thành điều thứ yếu. <br></br>Xuất phát sau cũng không sao. Chạy nhanh hơn là được!
+    <br></br>Điều thú vị là, khi Sang đi tìm câu trả lời cho câu hỏi: *"Ba ơi, làm sao học dở mà vẫn giàu hả ba?"*, Sang lại thu hoạch được những thành quả khác. Sang mường tượng toàn bộ quá trình mà mình đã đi qua giống như một hành trình đi tìm kho báu – ở đó, người ta đồn rằng, có rất nhiều vàng. Nhưng khi đến nơi, Sang không chỉ tìm thấy vàng, mà còn nhìn thấy rất nhiều kim cương – thứ đáng giá hơn vàng rất nhiều.
+    <br></br>***Đó là câu trả lời cho một câu hỏi thậm chí còn quan trọng hơn.***`,
+    leftImgSrc:
+      "https://super-static-assets.s3.amazonaws.com/8090ac7d-2195-4ec8-96be-1457b54a8900/images/ac4ca78f-1555-4abd-8bff-315ec71e1f67.png?w=288&f=webp",
+    leftAlt: "Hinh anh Logo Hanh Trinh Lam Giau X.0",
+  };
+
+  const textTwo = {
+    rightCaption: false,
+    rightTitle:
+      "Liệu có một tấm bản đồ dẫn đến một cuộc sống thịnh vượng không?",
+    rightDescription: `Nếu bạn có trong tay tấm bản đồ ấy thì sao? Có cách nào để bạn – người không trải qua những chuyện như Sang – có được kết quả như Sang đang có hay không?
+    <br></br>Sang thường nói rằng, **nếu có tấm bản đồ đó trong tay, con đường dẫn đến thành công của bạn sẽ giống như đường cao tốc.** Bạn sẽ không phải đụng ổ gà như Sang, đạp trúng đinh tán như Sang, bị xẹp lốp xe giữa đường và phải loay hoay đi tìm tiệm sửa xe như Sang. Vì Sang đã trải qua và đã trả giá, nên cái giá mà bạn phải trả sẽ “rẻ” hơn rất nhiều.
+    <br></br>Và Sang gọi hành trình đó – hành trình mà bạn sắp đi qua;
+    <br></br>Đó chính là: 
+    <br></br>**Hành Trình Làm Giàu X.0.**`,
+    rightImgSrc: false,
+    rightAlt: false,
+  };
+
+  const textThree = {};
+
+  const textFour = {
+    //TODO: Change the layout into AlternativeSideBySideWithVideoOrImg
+    rightCaption: "Một Chàng Trai Nghiện Game",
+    rightTitle: "Giai Đoạn Đầu Đời",
+    rightDescription: `Nếu bạn nhìn vào Sang của thời điểm hiện tại, bạn sẽ không thể nghĩ được rằng trước đây, Sang cũng từng là một học sinh cá biệt, một “con nghiện” game chính hiệu, sống không có mục đích. Cho đến khi Sang 18 tuổi, một sự kiện khủng khiếp trong cuộc đời như muốn đẩy Sang đến gần với cái chết từ tầng 13 tại một khách sạn ở Malaysia. Bạn biết không, trải nghiệm cận tử đó dường như đã tạo ra một “chiến binh” trong Sang và đã khiến cuộc đời của Sang thay đổi hoàn toàn kể từ đó.`,
+    rightImgSrc:
+      "https://res.cloudinary.com/sang-le-tech/image/upload/v1627896818/Galatek.io%20Website/1936102_139724759226_7973379_n_ahhfrx.jpg",
+    rightAlt: "Hinh anh Sang Le - Giai Doan Dau Doi",
+  };
+
+  return (
+    <Layout>
+      <Hero {...hero} />
+      <AlternativeSideBySideWithVideoOrImg {...textOne} {...textTwo} />
+      <AlternativeSideBySideWithVideoOrImg {...textThree} {...textFour} />
+    </Layout>
+  );
+}
+
+export default SowXO;

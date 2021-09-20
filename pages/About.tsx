@@ -1,7 +1,7 @@
 import React from "react";
 import Hero from "../components/sections/heroes/with_sign_up_and_media_content";
-import AlternatingWithOptionalTestimonial from "../components/sections/feature-sections/alternating_with_optional_testimonial";
-import AlternativeSideBySideWithVideo from "../components/AlternativeSideBySideWithVideo";
+
+import AlternativeSideBySideWithVideoOrImg from "../components/AlternativeSideBySideWithVideo";
 import GalleryOne from "../components/gallery/gallery-1";
 import GalleryTwo from "../components/gallery/gallery-2";
 import GalleryThree from "../components/gallery/gallery-1";
@@ -54,7 +54,7 @@ const galleryOne = {
 
 const galleryTwo = {
   title: "Sang Đi Học",
-  description: `**Từ Các Công Ty Startup Công nghệ Top Thế Giới**`,
+  description: `**Từ Các Công Ty Startup Công Nghệ Top Thế Giới**`,
   imgOneSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1627800779/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0003_f6hiix.jpg",
   imgOneAlt: "Sang Le - Pinterest Company",
@@ -113,12 +113,10 @@ const galleryThree = {
 };
 
 const giaiDoanDauDoi = {
-  leftIconName: (
-    <Icon.BookOpenIcon className="w-6 h-6 text-white" aria-hidden="true" />
-  ),
+  leftCaption: "Một Chàng Trai Nghiện Game",
   leftTitle: "Giai Đoạn Đầu Đời",
-  leftDescription: `Một Chàng Trai Nghiện Game
-  <br><br> Nếu bạn nhìn vào Sang của thời điểm hiện tại, bạn sẽ không thể nghĩ được rằng trước đây, Sang cũng từng là một học sinh cá biệt, một “con nghiện” game chính hiệu, sống không có mục đích. Cho đến khi Sang 18 tuổi, một sự kiện khủng khiếp trong cuộc đời như muốn đẩy Sang đến gần với cái chết từ tầng 13 tại một khách sạn ở Malaysia. Bạn biết không, trải nghiệm cận tử đó dường như đã tạo ra một “chiến binh” trong Sang và đã khiến cuộc đời của Sang thay đổi hoàn toàn kể từ đó.
+  leftDescription: `
+  Nếu bạn nhìn vào Sang của thời điểm hiện tại, bạn sẽ không thể nghĩ được rằng trước đây, Sang cũng từng là một học sinh cá biệt, một “con nghiện” game chính hiệu, sống không có mục đích. Cho đến khi Sang 18 tuổi, một sự kiện khủng khiếp trong cuộc đời như muốn đẩy Sang đến gần với cái chết từ tầng 13 tại một khách sạn ở Malaysia. Bạn biết không, trải nghiệm cận tử đó dường như đã tạo ra một “chiến binh” trong Sang và đã khiến cuộc đời của Sang thay đổi hoàn toàn kể từ đó.
 `,
   leftImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1627896818/Galatek.io%20Website/1936102_139724759226_7973379_n_ahhfrx.jpg",
@@ -126,21 +124,18 @@ const giaiDoanDauDoi = {
 };
 
 const giaoduc = {
-  rightIconName: (
-    <Icon.InboxInIcon className="w-6 h-6 text-white" aria-hidden="true" />
-  ),
+  rightCaption: "Không Gì Là Không Thể",
   rightTitle: "Giáo Dục",
-  rightDescription: `Không Gì Là Không Thể
-  <br></br> Sau sự kiện cận kề cái chết, Sang như được tái sinh một lần nữa. Sang bắt đầu hành trình du học của mình một cách nghiêm túc tại **3 quốc gia: Singapore, Hong Kong và Hoa Kỳ**. Và vì thế ngoài tiếng mẹ đẻ của mình, Sang có thể giao tiếp tốt bằng 2 thứ tiếng khác đó là: **tiếng Anh & tiếng Hoa**.<br></br> Nhưng trong lúc đang học tại nước ngoài, Sang bất ngờ nhận một cuộc gọi từ ba. Ba nói răng do khủng hoảng kinh tế toàn cầu năm 2008, nên tình hình kinh tế gia đình cũng gặp khó khăn và rất có thể Sang phải dừng lại việc học của mình bất cứ lúc nào! Sau cú điện thoại đó, Sang quyết định là Sang phải nỗ lực gấp trăm lần để gấp rút hoàn thành việc học của mình và lấy được **bằng cấp 3 Canada tại Hong Kong** (lớp 11 & 12) trong **9 tháng (thay vì 2 năm)** và nhận **bằng Đại học tại Mỹ** chỉ sau **2 năm 9 tháng (thay vì 4-5 năm)**.`,
+  rightDescription: `
+  Sau sự kiện cận kề cái chết, Sang như được tái sinh một lần nữa. Sang bắt đầu hành trình du học của mình một cách nghiêm túc tại **3 quốc gia: Singapore, Hong Kong và Hoa Kỳ**. Và vì thế ngoài tiếng mẹ đẻ của mình, Sang có thể giao tiếp tốt bằng 2 thứ tiếng khác đó là: **tiếng Anh & tiếng Hoa**.<br></br> Nhưng trong lúc đang học tại nước ngoài, Sang bất ngờ nhận một cuộc gọi từ ba. Ba nói răng do khủng hoảng kinh tế toàn cầu năm 2008, nên tình hình kinh tế gia đình cũng gặp khó khăn và rất có thể Sang phải dừng lại việc học của mình bất cứ lúc nào! Sau cú điện thoại đó, Sang quyết định là Sang phải nỗ lực gấp trăm lần để gấp rút hoàn thành việc học của mình và lấy được **bằng cấp 3 Canada tại Hong Kong** (lớp 11 & 12) trong **9 tháng (thay vì 2 năm)** và nhận **bằng Đại học tại Mỹ** chỉ sau **2 năm 9 tháng (thay vì 4-5 năm)**.`,
   rightImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1625719158/Galatek.io%20Website/sangle-profilePic_k2xxkw.jpg",
   rightAlt: "Hinh anh Sang Le - Giao Duc",
 };
 
 const hanhtrinh = {
-  leftCaption: "Chương Trình Hành Trình X.0 của Sang Lê",
-  leftTitleNormal: "Áp Dụng Công Nghệ Vào Cuộc Sống",
-  leftTitleHighlight: "",
+  leftCaption: "Chương Trình Hành Trình X.0",
+  leftTitle: "Áp Dụng Công Nghệ Vào Cuộc Sống",
   leftDescription: `Với nhiều năm kinh nghiệm làm việc trong ngành công nghệ, Sang mong muốn tạo ra khoá học: Industrial X.0 – Đây là không gian dành cho CEO – những người chủ doanh nghiệp, các bạn học sinh trung học và sinh viên đại học nhằm trang bị tốt các kỹ năng cho họ và sẵn sàng bước vào thời đại Công nghiệp 4.0.`,
   leftImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1631869650/Galatek.io%20Website/Sangletech.com/Screen_Shot_2021-09-17_at_4.07.11_PM_bd9qvw.png",
@@ -150,9 +145,8 @@ const hanhtrinh = {
 };
 
 const spmet = {
-  rightCaption: "Trường Cao Đẳng Kỹ Thuật Thiết Bị Y Tế Miền Nam",
-  rightTitleNormal: "Công Nghệ & Giáo Dục Là Cuộc Sống Của Sang!",
-  rightTitleHighlight: "",
+  rightCaption: "Công Nghệ & Giáo Dục Là Cuộc Sống Của Sang!",
+  rightTitle: "Trường Cao Đẳng Kỹ Thuật Thiết Bị Y Tế Miền Nam",
   rightDescription: `Sang luôn tin vào giáo dục. **Trường Cao đẳng Kỹ thuật và Thiết bị y tế miền Nam (SPMET)** được Sang thành lập nhằm tạo ra những cơ hội mới trong ngành Y tế tại Việt Nam. Hàng ngàn sinh viên tại trường SPMET với 100% số lượng sinh viên đều có cơ hội nghề nghiệp phong phú và đạt được mức thu nhập cao sau khi các bạn ra trường.`,
   rightImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1631871209/Galatek.io%20Website/Sangletech.com/Screen_Shot_2021-09-17_at_4.33.14_PM_huehhz.png",
@@ -163,8 +157,8 @@ const spmet = {
 
 const galatek = {
   leftCaption: "Công Ty Công Nghệ GALATEK",
-  leftTitleNormal: "Đam mệ công nghệ từ nhỏ!",
-  leftTitleHighlight: "",
+  leftTitle: "Đam mệ công nghệ từ nhỏ!",
+
   leftDescription: `Công nghệ luôn là niềm đam mê của Sang. Sang đã đTn Hồng Kông và thành lập Galatek vào năm 2015 nhằm mang đến những giải pháp thực tế về marketing và công nghệ cho rất nhiều công ty khởi nghiệp, những doanh nghiệp vừa và nhỏ.`,
   leftImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1627802599/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0001_vzdxhu.jpg",
@@ -175,8 +169,8 @@ const galatek = {
 
 const cafes = {
   rightCaption: "CafeS – Ươm Mầm Ý Tưởng",
-  rightTitleNormal: "Vườn Ươm Khởi Nghiệp",
-  rightTitleHighlight: "",
+  rightTitle: "Vườn Ươm Khởi Nghiệp",
+
   rightDescription: `Năm 2019, Sang quyết định mở rộng kinh doanh sang Việt Nam. Với mong muốn mang đến một sân chơi cho các bạn trẻ vẫn đang ngồi trên ghế nhà trường, các doanh nhân đang khao khát sự thay đổi lớn và các cá nhân có ý chí vươn ra thế giới. CafeS được thành lập với sứ mệnh xây dựng một cộng đồng cùng chung tay vì một tương lai tốt đẹp hơn cho cộng đồng khởi nghiệp Việt Nam.`,
   rightImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1631871947/Galatek.io%20Website/Sangletech.com/Screen_Shot_2021-09-17_at_4.45.01_PM_zllsqy.png",
@@ -226,45 +220,45 @@ const myAchivement = {
   title: "Từ Sang Lê",
   description: ``,
 
-  listOneTitle: "",
+  listOneTitle: false,
   listOneDescription: `Học, sống và làm việc tại Singapore, Hồng Kông, Mỹ và Trung Quốc.`,
 
-  listTwoTitle: "",
+  listTwoTitle: false,
   listTwoDescription: `Hoàn thành lớp 11-12 với tấm bằng Canada trong 9 tháng thay vì 2 năm.`,
 
-  listThreeTitle: "",
+  listThreeTitle: false,
   listThreeDescription: `Tốt nghiệp đại học Mỹ trong vòng 2 năm 9 tháng thay vì 4-5 năm.`,
 
-  listFourTitle: "",
+  listFourTitle: false,
   listFourDescription: `Có thể nói tiếng Anh, tiếng Trung Quốc và tiếng Hồng Kông.`,
 
-  listFiveTitle: "",
+  listFiveTitle: false,
   listFiveDescription: `Đồng sáng lập và là CEO Công ty Công nghệ Galatek Hồng Kông và Việt Nam.`,
 
-  listSixTitle: "",
+  listSixTitle: false,
   listSixDescription: `Đồng sáng lập và là Phó Hiệu Trưởng trường Cao đẳng Kỹ Thuật Thiết Bị Y Tế Miền Nam.`,
 
-  listSevenTitle: "",
+  listSevenTitle: false,
   listSevenDescription: `Nhà sáng lập trang báo CafeS.vn.`,
 
-  listEightTitle: "",
+  listEightTitle: false,
   listEightDescription: `Đưa các giải pháp công nghệ và quản lý cho công ty khởi nghiệp, vừa và nhỏ trong nước và quốc tế.`,
 
-  listNineTitle: "",
+  listNineTitle: false,
   listNineDescription: `Làm việc với các lập trình viên tầm cỡ thế giới trên nền tảng Topcoders.`,
 
-  listTenTitle: "",
+  listTenTitle: false,
   listTenDescription: `Được Mentor là 1 triệu phú người Singapore huấn luyện từ năm 19 tuổi.`,
 
-  listElevenTitle: "",
+  listElevenTitle: false,
   listElevenDescription: `Đã từng làm việc và gặp mặt với nhiều triệu phú và ngay cả tỷ phú ở nước ngoài và trong nước.`,
 
-  listTwelveTitle: "",
+  listTwelveTitle: false,
   listTwelveDescription: `Xuất hiện trên các kênh của đài Saigon FM, Đài Truyền Hình Bình Dương, Bắc Ninh, HTV9, Yan News, truyền thông Khang và VIVU TV.`,
 };
 
 const logos = {
-  title: "",
+  title: "Các Kênh Truyền Thông Đã Tham Gia",
   description: "",
 
   logoOneSrc:
@@ -301,13 +295,13 @@ const certificates = {
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1627969581/Galatek.io%20Website/sangle-graduation-certificate0000.jpg_fxgjky.webp",
   certificateOneImgAlt: "Sang Le - Bang Cap 3",
   certificateOneTitle: "Bằng Cấp 3 của Canada",
-  certificateOneDescription: ``,
+  certificateOneDescription: `**Bằng cấp 3 Canada tại Hong Kong** (lớp 11 & 12) trong vòng **9 tháng** (thay vì 2 năm)`,
 
   certificateTwoImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1627969582/Galatek.io%20Website/sangle-graduation-certificate0001.jpg_mm9rpt.webp",
   certificateTwoImgAlt: "Sang Le - Bang Dai Hoc",
   certificateTwoTitle: "Bằng Đại học của Mỹ",
-  certificateTwoDescription: ``,
+  certificateTwoDescription: `**Bằng Đại học tại Mỹ** chỉ sau **2 năm 9 tháng** (thay vì 4-5 năm)`,
 };
 
 const coreValue = {
@@ -443,17 +437,17 @@ function About() {
   return (
     <Layout>
       <Hero {...hero} />
-      <AlternativeSideBySideWithVideo {...giaiDoanDauDoi} {...giaoduc} />
+      <AlternativeSideBySideWithVideoOrImg {...giaiDoanDauDoi} {...giaoduc} />
       <GalleryOne {...galleryOne} />
       <GalleryTwo {...galleryTwo} />
-      <GalleryThree {...galleryThree} />
-      <AlternativeSideBySideWithVideo {...hanhtrinh} {...spmet} />
-      <AlternativeSideBySideWithVideo {...galatek} {...cafes} />
+      {/* <GalleryThree {...galleryThree} /> */}
+      <AlternativeSideBySideWithVideoOrImg {...hanhtrinh} {...spmet} />
+      <AlternativeSideBySideWithVideoOrImg {...galatek} {...cafes} />
       <MyAchievement {...myAchivement} />
       <Logos {...logos} />
       <Certificates {...certificates} />
       <CoreValues {...coreValue} />
-      <OurTeam {...ourTeam} />s
+      <OurTeam {...ourTeam} />
       <CompanyAchivement {...companyAchivement} />
       <Features {...features} />
       <SocialConnect {...social} />

@@ -4,6 +4,7 @@ import remarkGfm from "remark-gfm";
 
 interface Props {
   leftTitle?: string;
+  leftCaption?: string;
   leftDescription?: string;
   leftImgSrc?: string;
   leftVideoSrc?: string;
@@ -11,6 +12,7 @@ interface Props {
   leftAlt?: string;
 
   rightTitle?: string;
+  rightCaption?: string;
   rightDescription?: string;
   rightImgSrc?: string;
   rightVideoSrc?: string;
@@ -18,7 +20,7 @@ interface Props {
   rightAlt?: string;
 }
 
-function AlternativeSideBySideWithVideo(props: Props) {
+function AlternativeSideBySideWithVideoOrImg(props: Props) {
   const rightDescription = props.rightDescription
     ? `<div class="note">
 
@@ -82,6 +84,9 @@ ${props.leftDescription}
 
         <div className="relative mt-12 lg:mt-8 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
           <div className="relative">
+            <button className="block px-3 py-1 mb-3 text-sm font-semibold tracking-wide text-white uppercase bg-indigo-600 rounded-full cursor-text sm:text-base lg:text-sm xl:text-base">
+              {props.leftCaption || "Coming soon"}
+            </button>
             <h2 className="text-3xl font-extrabold tracking-tight text-black sm:text-3xl">
               {props.leftTitle || "Transfer funds world-wide"}
             </h2>
@@ -203,6 +208,9 @@ ${props.leftDescription}
         <div className="relative mt-12 sm:mt-16 lg:mt-24">
           <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
             <div className="lg:col-start-2">
+              <button className="block px-3 py-1 mb-3 text-sm font-semibold tracking-wide text-white uppercase bg-indigo-600 rounded-full cursor-text sm:text-base lg:text-sm xl:text-base">
+                {props.rightCaption || "Coming soon"}
+              </button>
               <h2 className="text-3xl font-extrabold tracking-tight text-black sm:text-3xl">
                 {props.rightTitle || "Always in the loop"}
               </h2>
@@ -294,4 +302,4 @@ ${props.leftDescription}
   );
 }
 
-export default AlternativeSideBySideWithVideo;
+export default AlternativeSideBySideWithVideoOrImg;

@@ -40,7 +40,7 @@ https://heroicons.com/
 const hero = {
   titleHighlight: "VƯƠN TẦM BẢN THÂN",
   titleNormal: "Sang Le Tech",
-  description: `Bước Đi Tự Tin Trên **Hành Trình 4.0**`,
+  description: `Giúp Bạn Bước Đi Tự Tin Trên **Hành Trình 4.0**`,
   buttonNormal: "Sang Lê là ai?",
   buttonHighlight: "Xem Video",
   imgSrc:

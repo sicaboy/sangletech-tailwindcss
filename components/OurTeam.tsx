@@ -1,264 +1,158 @@
 import React from "react";
+import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
+import remarkGfm from "remark-gfm";
 
-function OurTeam() {
+function OurTeam(props) {
+  const description = props.description
+    ? `<div class="note">
+
+${props.description}
+
+</div>`
+    : `<div class="note">
+
+"Semper curabitur ullamcorper posuere nunc sed. Ornare iaculisbibendum malesuada faucibus lacinia porttitor. Pulvinar laoreet sagittis viverra duis. In venenatis sem arcu pretium pharetra at. Lectus viverra dui tellus ornare pharetra."
+
+</div>`;
+
+  const members = [
+    {
+      id: 1,
+      imgSrc:
+        props.personOneImgSrc ||
+        "https://dummyimage.com/600x400/000/e0e0e0.jpg",
+      alt: props.personOneImgAlt || "sang le",
+      name: props.personOneName || "",
+      position: props.personOnePosition || "",
+      description: props.personOneDescription || "",
+    },
+    {
+      id: 2,
+      imgSrc:
+        props.personTwoImgSrc ||
+        "https://dummyimage.com/600x400/000/e0e0e0.jpg",
+      alt: props.personTwoImgAlt || "sang le",
+      name: props.personTwoName || "",
+      position: props.personTwoPosition || "",
+      description: props.personTwoDescription || "",
+    },
+    {
+      id: 3,
+      imgSrc:
+        props.personThreeImgSrc ||
+        "https://dummyimage.com/600x400/000/e0e0e0.jpg",
+      alt: props.personThreeImgAlt || "sang le",
+      name: props.personThreeName || "",
+      position: props.personThreePosition || "",
+      description: props.personThreeDescription || "",
+    },
+    {
+      id: 4,
+      imgSrc:
+        props.personFourImgSrc ||
+        "https://dummyimage.com/600x400/000/e0e0e0.jpg",
+      alt: props.personFourImgAlt || "sang le",
+      name: props.personFourName || "",
+      position: props.personFourPosition || "",
+      description: props.personFourDescription || "",
+    },
+    {
+      id: 5,
+      imgSrc:
+        props.personFiveImgSrc ||
+        "https://dummyimage.com/600x400/000/e0e0e0.jpg",
+      alt: props.personFiveImgAlt || "sang le",
+      name: props.personFiveName || "",
+      position: props.personFivePosition || "",
+      description: props.personFiveDescription || "",
+    },
+    {
+      id: 6,
+      imgSrc:
+        props.personSixImgSrc ||
+        "https://dummyimage.com/600x400/000/e0e0e0.jpg",
+      alt: props.personSixImgAlt || `sangletech`,
+      name: props.personSixName || "",
+      position: props.personSixPosition || "",
+      description: props.personSixDescription || "",
+    },
+  ];
+
   return (
-    <div>
-      <section className="text-gray-600 body-font">
-        <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-col w-full mb-20 text-center">
-            <h1 className="mb-4 text-2xl font-medium tracking-widest text-gray-900 title-font">
-              OUR TEAM
-            </h1>
-            <p className="mx-auto text-base leading-relaxed lg:w-2/3">
-              Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-              gentrify, subway tile poke farm-to-table. Franzen you probably
-              haven't heard of them.
-            </p>
-          </div>
-          <div className="flex flex-wrap -m-4">
-            <div className="p-4 lg:w-1/2">
-              <div className="flex flex-col items-center justify-center h-full text-center sm:flex-row sm:justify-start sm:text-left">
+    <div className="p-4">
+      <p className="text-3xl font-bold text-center text-gray-800">
+        {props.title || "Professional team"}
+      </p>
+
+      <ReactMarkdown
+        children={description}
+        rehypePlugins={[rehypeRaw]}
+        remarkPlugins={[remarkGfm]}
+        className="mb-32 text-xl font-normal text-center text-gray-500"
+      />
+      <div className="flex flex-col flex-wrap items-center space-y-24 align-top md:space-y-0 md:flex-row justify-evenly ">
+        {members.map((item) => (
+          <div className="relative p-4 ">
+            <div className="absolute mb-4 text-center transform translate-x-1/2 -top-16 right-1/2">
+              <a href="#" className="relative block">
                 <img
-                  alt="team"
-                  className="flex-shrink-0 object-cover object-center w-48 h-48 mb-4 rounded-lg sm:mb-0"
-                  src="https://dummyimage.com/200x200"
+                  alt={item.alt || "sang le tech"}
+                  src={
+                    item.imgSrc ||
+                    "https://dummyimage.com/600x400/000/e0e0e0.jpg"
+                  }
+                  className="object-cover w-40 h-40 mx-auto border-2 border-white rounded-lg dark:border-gray-800"
                 />
-                <div className="flex-grow sm:pl-8">
-                  <h2 className="text-lg font-medium text-gray-900 title-font">
-                    Holden Caulfield
-                  </h2>
-                  <h3 className="mb-3 text-gray-500">UI Developer</h3>
-                  <p className="mb-4">
-                    DIY tote bag drinking vinegar cronut adaptogen squid fanny
-                    pack vaporware.
-                  </p>
-                  <span className="inline-flex">
-                    <a className="text-gray-500">
-                      <svg
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        className="w-5 h-5"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                      </svg>
-                    </a>
-                    <a className="ml-2 text-gray-500">
-                      <svg
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        className="w-5 h-5"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                      </svg>
-                    </a>
-                    <a className="ml-2 text-gray-500">
-                      <svg
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        className="w-5 h-5"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                      </svg>
-                    </a>
-                  </span>
-                </div>
-              </div>
+              </a>
             </div>
-            <div className="p-4 lg:w-1/2">
-              <div className="flex flex-col items-center justify-center h-full text-center sm:flex-row sm:justify-start sm:text-left">
-                <img
-                  alt="team"
-                  className="flex-shrink-0 object-cover object-center w-48 h-48 mb-4 rounded-lg sm:mb-0"
-                  src="https://dummyimage.com/201x201"
+            <div className="px-8 py-4 pt-24 bg-white rounded-lg shadow dark:bg-gray-800">
+              <div className="text-center">
+                <p className="text-2xl text-gray-800 dark:text-white">
+                  {item.name || "Patrick Sebastien"}
+                </p>
+                <p className="text-xl font-light text-gray-500 dark:text-gray-200">
+                  {item.position || "Developpeur"}
+                </p>
+
+                <ReactMarkdown
+                  children={item.description}
+                  rehypePlugins={[rehypeRaw]}
+                  remarkPlugins={[remarkGfm]}
+                  className="py-4 mx-auto font-light text-gray-500 text-md w-60 dark:text-gray-500"
                 />
-                <div className="flex-grow sm:pl-8">
-                  <h2 className="text-lg font-medium text-gray-900 title-font">
-                    Alper Kamu
-                  </h2>
-                  <h3 className="mb-3 text-gray-500">Designer</h3>
-                  <p className="mb-4">
-                    DIY tote bag drinking vinegar cronut adaptogen squid fanny
-                    pack vaporware.
-                  </p>
-                  <span className="inline-flex">
-                    <a className="text-gray-500">
-                      <svg
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        className="w-5 h-5"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                      </svg>
-                    </a>
-                    <a className="ml-2 text-gray-500">
-                      <svg
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        className="w-5 h-5"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                      </svg>
-                    </a>
-                    <a className="ml-2 text-gray-500">
-                      <svg
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        className="w-5 h-5"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                      </svg>
-                    </a>
-                  </span>
-                </div>
               </div>
-            </div>
-            <div className="p-4 lg:w-1/2">
-              <div className="flex flex-col items-center justify-center h-full text-center sm:flex-row sm:justify-start sm:text-left">
-                <img
-                  alt="team"
-                  className="flex-shrink-0 object-cover object-center w-48 h-48 mb-4 rounded-lg sm:mb-0"
-                  src="https://dummyimage.com/204x204"
-                />
-                <div className="flex-grow sm:pl-8">
-                  <h2 className="text-lg font-medium text-gray-900 title-font">
-                    Atticus Finch
-                  </h2>
-                  <h3 className="mb-3 text-gray-500">UI Developer</h3>
-                  <p className="mb-4">
-                    DIY tote bag drinking vinegar cronut adaptogen squid fanny
-                    pack vaporware.
-                  </p>
-                  <span className="inline-flex">
-                    <a className="text-gray-500">
-                      <svg
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        className="w-5 h-5"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                      </svg>
-                    </a>
-                    <a className="ml-2 text-gray-500">
-                      <svg
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        className="w-5 h-5"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                      </svg>
-                    </a>
-                    <a className="ml-2 text-gray-500">
-                      <svg
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        className="w-5 h-5"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                      </svg>
-                    </a>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div className="p-4 lg:w-1/2">
-              <div className="flex flex-col items-center justify-center h-full text-center sm:flex-row sm:justify-start sm:text-left">
-                <img
-                  alt="team"
-                  className="flex-shrink-0 object-cover object-center w-48 h-48 mb-4 rounded-lg sm:mb-0"
-                  src="https://dummyimage.com/206x206"
-                />
-                <div className="flex-grow sm:pl-8">
-                  <h2 className="text-lg font-medium text-gray-900 title-font">
-                    Henry Letham
-                  </h2>
-                  <h3 className="mb-3 text-gray-500">Designer</h3>
-                  <p className="mb-4">
-                    DIY tote bag drinking vinegar cronut adaptogen squid fanny
-                    pack vaporware.
-                  </p>
-                  <span className="inline-flex">
-                    <a className="text-gray-500">
-                      <svg
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        className="w-5 h-5"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                      </svg>
-                    </a>
-                    <a className="ml-2 text-gray-500">
-                      <svg
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        className="w-5 h-5"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                      </svg>
-                    </a>
-                    <a className="ml-2 text-gray-500">
-                      <svg
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        className="w-5 h-5"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                      </svg>
-                    </a>
-                  </span>
-                </div>
+              <div className="flex items-center justify-center w-40 pt-8 mx-auto text-gray-500 border-t border-gray-200">
+                <a href="#">
+                  <svg
+                    width="30"
+                    height="30"
+                    fill="currentColor"
+                    className="text-xl transition-colors duration-200 hover:text-gray-800 dark:hover:text-white"
+                    viewBox="0 0 1792 1792"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z"></path>
+                  </svg>
+                </a>
+
+                <a href="#">
+                  <svg
+                    width="30"
+                    height="30"
+                    fill="currentColor"
+                    className="text-xl transition-colors duration-200 hover:text-gray-800 dark:hover:text-white"
+                    viewBox="0 0 1792 1792"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z"></path>
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        ))}
+      </div>
     </div>
   );
 }

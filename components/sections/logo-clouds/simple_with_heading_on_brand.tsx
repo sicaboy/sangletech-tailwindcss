@@ -65,8 +65,11 @@ export default function Example(props) {
                 <div className="flex flex-wrap justify-between flex-grow flex-shrink-0 mt-4 ml-8 lg:flex-grow-0 lg:ml-4">
                   <img
                     className="h-12"
-                    src="https://tailwindui.com/img/logos/tuple-logo-indigo-300.svg"
-                    alt="Tuple"
+                    src={
+                      item.src ||
+                      "https://tailwindui.com/img/logos/tuple-logo-indigo-300.svg"
+                    }
+                    alt={item.alt || "Sang Le Tech tren tv va saigonfm"}
                   />
                 </div>
               </div>
