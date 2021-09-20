@@ -102,29 +102,39 @@ export default function Example(props) {
             {props.title || " All-in-one platform"}
           </p>
 
-          <ReactMarkdown
-            children={description}
-            rehypePlugins={[rehypeRaw]}
-            remarkPlugins={[remarkGfm]}
-            className="mt-4 text-lg text-gray-500"
-          />
+          {props.description && (
+            <ReactMarkdown
+              children={description}
+              rehypePlugins={[rehypeRaw]}
+              remarkPlugins={[remarkGfm]}
+              className="mt-4 text-lg text-gray-500"
+            />
+          )}
         </div>
-        <div className="mt-12 lg:mt-0 lg:col-span-2">
-          <dl className="space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:grid-rows-6 sm:grid-flow-col sm:gap-x-6 sm:gap-y-10 lg:gap-x-8">
-            {features.map((feature) => (
-              <div key={feature.name} className="relative">
-                <dt>
-                  <CheckIcon
-                    className="absolute w-6 h-6 text-green-500"
-                    aria-hidden="true"
-                  />
-                  <p className="text-lg font-medium leading-6 text-gray-900 ml-9">
-                    {feature.name}
-                  </p>
-                </dt>
-                <dd className="mt-2 text-base text-gray-500 ml-9">
-                  {feature.description}
-                </dd>
+        <div className="mt-16 lg:mt-0 lg:col-span-2">
+          <dl className="sm:grid sm:grid-cols-2 sm:grid-rows-6 sm:grid-flow-col">
+            {features.map((item) => (
+              <div className="w-full p-2 sm:w-full" key={item.name}>
+                <div className="flex items-center h-full p-4 bg-gray-100 rounded ">
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                    className="flex-shrink-0 w-6 h-6 mr-4 text-indigo-500"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                    <path d="M22 4L12 14.01l-3-3"></path>
+                  </svg>
+                  <div>
+                    <p className="text-base text-gray-500 ">
+                      {item.description ||
+                        "Skate ipsum dolor sit amet, alley oop vert mute-air Colby Carter flail 180 berm. Half-cab camel back ollie transition ledge Wes Humpston 1080."}
+                    </p>
+                  </div>
+                </div>
               </div>
             ))}
           </dl>

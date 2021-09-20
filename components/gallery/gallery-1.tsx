@@ -8,11 +8,17 @@ interface Props {
   title?: string;
   description?: string;
   imgSmallOneSrc?: string;
+  imgSmallOneAlt?: string;
   imgSmallTwoSrc?: string;
+  imgSmallTwoAlt?: string;
   imgSmallThreeSrc?: string;
+  imgSmallThreeAlt?: string;
   imgSmallFourSrc?: string;
+  imgSmallFourAlt?: string;
   imgLargeOneSrc?: string;
+  imgLargeOneAlt?: string;
   imgLargeTwoSrc?: string;
+  imgLargeTwoAlt?: string;
 }
 
 function Example(props: Props) {
@@ -43,50 +49,50 @@ ${props.description}
             />
           </div>
           <div className="flex flex-wrap -m-1 md:-m-2">
-            <div className="flex flex-wrap w-1/2">
-              <div className="w-1/2 p-1 md:p-2">
+            <div className="flex flex-wrap gap-3 sm:w-1/2">
+              <div className="p-1 sm:w-1/2 md:p-2">
                 <img
-                  alt="gallery"
-                  className="block object-cover object-center w-full h-full"
+                  alt={props.imgSmallOneAlt || "sang le tech"}
+                  className="block w-full h-full rounded objec t-center ob-lgject-cover"
                   src={props.imgSmallOneSrc || "https://dummyimage.com/500x300"}
                 />
               </div>
-              <div className="w-1/2 p-1 md:p-2">
+              <div className="p-1 sm:w-1/2 md:p-2">
                 <img
-                  alt="gallery"
-                  className="block object-cover object-center w-full h-full"
+                  alt={props.imgSmallTwoAlt || "sang le tech"}
+                  className="block w-full h-full rounded objec t-center ob-lgject-cover"
                   src={props.imgSmallTwoSrc || "https://dummyimage.com/501x301"}
                 />
               </div>
-              <div className="w-full p-1 md:p-2">
+              <div className="p-1 sm:w-full md:p-2">
                 <img
-                  alt="gallery"
-                  className="block object-cover object-center w-full h-full"
+                  alt={props.imgLargeOneAlt || "sang le tech"}
+                  className="block w-full h-full rounded objec t-center ob-lgject-cover"
                   src={props.imgLargeOneSrc || "https://dummyimage.com/601x361"}
                 />
               </div>
             </div>
-            <div className="flex flex-wrap w-1/2">
-              <div className="w-full p-1 md:p-2">
+            <div className="flex flex-wrap gap-3 sm:w-1/2">
+              <div className="p-1 sm:w-full md:p-2">
                 <img
-                  alt="gallery"
-                  className="block object-cover object-center w-full h-full"
+                  alt={props.imgLargeTwoAlt || "sang le tech"}
+                  className="block object-cover object-center w-full h-full rounded-lg"
                   src={props.imgLargeTwoSrc || "https://dummyimage.com/601x361"}
                 />
               </div>
-              <div className="w-1/2 p-1 md:p-2">
+              <div className="p-1 sm:w-1/2 md:p-2">
                 <img
-                  alt="gallery"
-                  className="block object-cover object-center w-full h-full"
+                  alt={props.imgSmallThreeAlt || "sang le tech"}
+                  className="block object-cover object-center w-full h-full rounded-lg"
                   src={
                     props.imgSmallThreeSrc || "https://dummyimage.com/502x302"
                   }
                 />
               </div>
-              <div className="w-1/2 p-1 md:p-2">
+              <div className="p-1 sm:w-1/2 md:p-2">
                 <img
-                  alt="gallery"
-                  className="block object-cover object-center w-full h-full"
+                  alt={props.imgSmallFourAlt || "sang le tech"}
+                  className="block object-cover object-center w-full h-full rounded-lg"
                   src={
                     props.imgSmallFourSrc || "https://dummyimage.com/503x303"
                   }

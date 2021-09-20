@@ -18,7 +18,7 @@ interface Props {
 
 export default function Example(props: Props) {
   return (
-    <div className="bg-indigo-200 bg-opacity-25">
+    <div className="my-16 bg-indigo-200 bg-opacity-25">
       <div className="px-4 py-16 mx-auto max-w-7xl sm:py-24 sm:px-6 lg:px-8">
         <div className="lg:grid lg:grid-cols-2 lg:gap-8">
           <h2 className="max-w-md mx-auto text-3xl font-extrabold text-center text-indigo-900 lg:max-w-xl lg:text-left">

@@ -382,31 +382,31 @@ const ourTeam = {
 
 const companyAchivement = {
   title: "Thành Tựu",
-  description: `**Từ Đội ngũ**`,
+  description: `Từ Đội ngũ`,
   imgOneSrc: "",
   imgTwoSrc: "",
   imgThreeSrc: "",
 
   listOneIconSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626079598/Galatek.io%20Website/3D_Illustration-Product_Development-Skin-01_f6gpbd.png",
-  listOneTitle: "> 250 Dự Án",
+  listOneTitle: "250 Dự Án",
   listOneDescription: `đã hoàn thành Đa Quốc Gia`,
 
   listTwoIconSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626079584/Galatek.io%20Website/3D_Illustration-Collaborative-Skin-01_hdnobk.png",
-  listTwoTitle: "> 10 Giải Thưởng",
+  listTwoTitle: "10 Giải Thưởng",
   listTwoDescription: `Trao Tặng Bởi TopCoders (nền tảng lập trình và thiết kế viên top thế giới)`,
 
   listThreeIconSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626079608/Galatek.io%20Website/3D_Illustration-Vision_Mission_Skin-01_lnbcgi.png",
-  listThreeTitle: "> 13 Năm",
+  listThreeTitle: " 13 Năm",
   listThreeDescription: `Kinh Nghiệm`,
 };
 
 const features = {
-  caption: "",
+  caption: "Dịch Vụ & Sản Phẩm ",
   title: "Bảo Đảm",
-  description: `**Chất lượng dịch vụ`,
+  description: `Chất lượng dịch vụ`,
 
   listOneIconSrc: "",
   listOneTitle: "Dịch Vụ Khách Hàng.",
@@ -424,8 +424,8 @@ const features = {
   listFourTitle: "Bảo Mật Thông Tin.",
   listFourDescription: `Ý tưởng và thông tin kinh doanh của bạn sẽ được bảo mật an toàn.`,
 
-  listFiveIconSrc: "Thanh Toán Linh Hoạt.",
-  listFiveTitle: "",
+  listFiveIconSrc: "",
+  listFiveTitle: "Thanh Toán Linh Hoạt.",
   listFiveDescription: ``,
 
   listSixIconSrc: "",

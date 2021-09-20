@@ -70,7 +70,7 @@ function GalleryTwo(props) {
                 <div className="relative flex " key={item.id}>
                   <img
                     alt={item.alt}
-                    className="inset-0 object-cover object-center w-full h-full "
+                    className="inset-0 object-cover object-center w-full h-full rounded-lg "
                     src={item.src}
                   />
                 </div>

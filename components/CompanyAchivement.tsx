@@ -1,12 +1,39 @@
 import React from "react";
 
-function CompanyAchivement() {
+function CompanyAchivement(props) {
+  const achivements = [
+    {
+      id: 1,
+      iconSrc: props.listOneIconSrc || "",
+      title: props.listOneTitle || "",
+      description:
+        props.listOneDescription ||
+        "Skate ipsum dolor sit amet, alley oop vert mute-air Colby Carter flail 180 berm. Half-cab camel back ollie transition ledge Wes Humpston 1080.",
+    },
+    {
+      id: 2,
+      iconSrc: props.listTwoIconSrc || "",
+      title: props.listTwoTitle || "",
+      description:
+        props.listTwoDescription ||
+        "Skate ipsum dolor sit amet, alley oop vert mute-air Colby Carter flail 180 berm. Half-cab camel back ollie transition ledge Wes Humpston 1080.",
+    },
+    {
+      id: 3,
+      iconSrc: props.listThreeIconSrc || "",
+      title: props.listThreeTitle || "",
+      description:
+        props.listThreeDescription ||
+        "Skate ipsum dolor sit amet, alley oop vert mute-air Colby Carter flail 180 berm. Half-cab camel back ollie transition ledge Wes Humpston 1080.",
+    },
+  ];
+
   return (
     <div>
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-        <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+        <div className="text-base font-semibold tracking-wide text-indigo-600 uppercase">
           <div>
-            <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
+            <p className="px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:py-24 lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
               Brand new
             </p>
           </div>
@@ -34,106 +61,44 @@ function CompanyAchivement() {
                   height="24"
                 />
               </svg>
-              <span className="relative">The</span>
+              <span className="relative"></span>
             </span>{" "}
-            quick, brown fox jumps over a lazy dog
+            {props.title || "quick, brown fox jumps over a lazy dog"}
           </h2>
           <p className="text-base text-gray-700 md:text-lg">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque rem aperiam, eaque ipsa quae.
+            {props.description ||
+              " Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae."}
           </p>
         </div>
-        <div className="grid max-w-screen-lg gap-8 lg:grid-cols-2 sm:mx-auto">
-          <div className="flex flex-col justify-center">
-            <div className="flex">
-              <div className="mr-4">
-                <div className="flex items-center justify-center w-10 h-10 mb-3 rounded-full bg-indigo-50">
+        <div className="flex flex-col-reverse gap-8 sm:grid sm:max-w-screen-lg lg:grid-cols-2 sm:mx-auto">
+          <div className="flex flex-col justify-center mt-8">
+            {achivements.map((item) => (
+              <div className="w-full p-2 sm:w-full" key={item.id}>
+                <div className="flex items-center h-full p-4 bg-gray-100 rounded">
                   <svg
-                    className="w-8 h-8 text-deep-purple-accent-400"
+                    fill="none"
                     stroke="currentColor"
-                    viewBox="0 0 52 52"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="3"
+                    className="flex-shrink-0 w-6 h-6 mr-4 text-indigo-500"
+                    viewBox="0 0 24 24"
                   >
-                    <polygon
-                      strokeWidth="3"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      fill="none"
-                      points="29 13 14 29 25 29 23 39 38 23 27 23"
-                    />
+                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                    <path d="M22 4L12 14.01l-3-3"></path>
                   </svg>
+                  <div>
+                    <h6 className="text-lg font-semibold leading-6 text-gray-900">
+                      {item.title || " They urge you to put down"}
+                    </h6>
+                    <p className="mt-2 text-base text-gray-500">
+                      {item.description ||
+                        "Skate ipsum dolor sit amet, alley oop vert mute-air Colby Carter flail 180 berm. Half-cab camel back ollie transition ledge Wes Humpston 1080."}
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div>
-                <h6 className="mb-2 font-semibold leading-5">
-                  They urge you to put down
-                </h6>
-                <p className="text-sm text-gray-900">
-                  Skate ipsum dolor sit amet, alley oop vert mute-air Colby
-                  Carter flail 180 berm. Half-cab camel back ollie transition
-                  ledge Wes Humpston 1080.
-                </p>
-                <hr className="w-full my-6 border-gray-300" />
-              </div>
-            </div>
-            <div className="flex">
-              <div className="mr-4">
-                <div className="flex items-center justify-center w-10 h-10 mb-3 rounded-full bg-indigo-50">
-                  <svg
-                    className="w-8 h-8 text-deep-purple-accent-400"
-                    stroke="currentColor"
-                    viewBox="0 0 52 52"
-                  >
-                    <polygon
-                      strokeWidth="3"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      fill="none"
-                      points="29 13 14 29 25 29 23 39 38 23 27 23"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <div>
-                <h6 className="mb-2 font-semibold leading-5">
-                  The powerless in a world
-                </h6>
-                <p className="text-sm text-gray-900">
-                  The first mate and his Skipper too will do their very best to
-                  make the others comfortable in their tropic island nest.
-                  Michael Knight a young loner.
-                </p>
-                <hr className="w-full my-6 border-gray-300" />
-              </div>
-            </div>
-            <div className="flex">
-              <div className="mr-4">
-                <div className="flex items-center justify-center w-10 h-10 mb-3 rounded-full bg-indigo-50">
-                  <svg
-                    className="w-8 h-8 text-deep-purple-accent-400"
-                    stroke="currentColor"
-                    viewBox="0 0 52 52"
-                  >
-                    <polygon
-                      strokeWidth="3"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      fill="none"
-                      points="29 13 14 29 25 29 23 39 38 23 27 23"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <div>
-                <h6 className="mb-2 font-semibold leading-5">
-                  Tell them I hate them
-                </h6>
-                <p className="text-sm text-gray-900">
-                  Chase ball of string eat plants, meow, and throw up because I
-                  ate plants going to catch the red dot today going to catch the
-                  red dot today. I could pee on this if I had the energy.
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
           <div className="grid grid-cols-2 gap-5">
             <img
