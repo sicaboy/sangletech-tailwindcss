@@ -8,6 +8,7 @@ import ThreeColumnCards from "../components/sections/blog-sections/3_column_card
 import SimpleCenterBranded from "../components/sections/cta-sections/simple_center_branded";
 import SimpleWithHeading from "../components/sections/logo-clouds/simple_with_heading";
 import * as Icon from "@heroicons/react/outline";
+import Layout from "../components/Layout";
 
 /* 
 Learn how to use available markdown and HTML 
@@ -58,6 +59,7 @@ const jow = {
   imgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1628152810/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0001_c2ukh5.png",
   alt: "Hinh anh SL Hanh Trinh Lam Giau X.0",
+  videoSrc: "#",
 };
 
 const sow = {
@@ -164,7 +166,7 @@ const startup = {
   buttonName: "Tìm Hiểu Ngay",
   imgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1625651836/Galatek.io%20Website/IMG_8057-1024x682_fa7z6z.jpg",
-  alt: "",
+  alt: "Hinh anh Sang va Royal Wedding",
 };
 
 const youtube = {
@@ -266,7 +268,7 @@ const company = {
 
 function Home() {
   return (
-    <div>
+    <>
       <HeroWithAngelImageOnRight {...hero} />
       <BrandPanelWithAppScreenShot {...jow} />
       <AlternatingWithOptionalTestimonial {...sow} {...projectYou} />
@@ -276,7 +278,7 @@ function Home() {
       <ThreeColumnCards {...blog} />
       <SimpleCenterBranded {...social} />
       <SimpleWithHeading {...company} />
-    </div>
+    </>
   );
 }
 

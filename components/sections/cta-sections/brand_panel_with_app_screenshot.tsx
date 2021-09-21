@@ -25,6 +25,7 @@ interface Props {
   description?: string;
   buttonName?: string;
   imgSrc?: string;
+  videoSrc?: string;
   alt?: string;
 }
 
@@ -46,15 +47,13 @@ ${props.description}
       <div className="px-4 py-16 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="overflow-hidden bg-indigo-700 rounded-lg shadow-xl lg:grid lg:grid-cols-2 lg:gap-4">
           <div className="px-6 pt-10 pb-12 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
-            <div className="lg:self-center">
-              <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
-                <span className="block">
-                  {props.titleFirst || "Ready to dive in?"}
-                </span>
-                <span className="block ">
-                  {props.titleSecond || "Start your free trial today."}
-                </span>
+            <div className="">
+              <h2 className="text-2xl font-extrabold text-left text-white sm:text-3xl">
+                {props.titleFirst || "Ready to dive in?"}
               </h2>
+              <button className="box-border px-3 py-1 mt-3 text-xl font-semibold text-left text-white rounded-lg ring-2 ring-white sm:text-2xl">
+                {props.titleSecond || "Start your free trial today."}
+              </button>
 
               <ReactMarkdown
                 children={description}
@@ -83,21 +82,29 @@ ${props.description}
                     props.imgSrc ||
                     "https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
                   }
-                  alt=""
+                  alt={props.alt || "sang le tech"}
                 />
-                <div
-                  className="absolute inset-0 flex items-center justify-center w-full h-full"
-                  aria-hidden="true"
-                >
-                  <svg
-                    className="w-20 h-20 text-indigo-500"
-                    fill="currentColor"
-                    viewBox="0 0 84 84"
+                {props.videoSrc && (
+                  <div
+                    className="absolute inset-0 flex items-center justify-center w-full h-full"
+                    aria-hidden="true"
                   >
-                    <circle opacity="0.9" cx={42} cy={42} r={42} fill="white" />
-                    <path d="M55.5039 40.3359L37.1094 28.0729C35.7803 27.1869 34 28.1396 34 29.737V54.263C34 55.8604 35.7803 56.8131 37.1094 55.9271L55.5038 43.6641C56.6913 42.8725 56.6913 41.1275 55.5039 40.3359Z" />
-                  </svg>
-                </div>
+                    <svg
+                      className="w-20 h-20 text-indigo-500"
+                      fill="currentColor"
+                      viewBox="0 0 84 84"
+                    >
+                      <circle
+                        opacity="0.9"
+                        cx={42}
+                        cy={42}
+                        r={42}
+                        fill="white"
+                      />
+                      <path d="M55.5039 40.3359L37.1094 28.0729C35.7803 27.1869 34 28.1396 34 29.737V54.263C34 55.8604 35.7803 56.8131 37.1094 55.9271L55.5038 43.6641C56.6913 42.8725 56.6913 41.1275 55.5039 40.3359Z" />
+                    </svg>
+                  </div>
+                )}
               </button>
             </div>
           </div>

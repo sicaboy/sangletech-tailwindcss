@@ -187,7 +187,7 @@ libero labore natus atque, ducimus sed.."
               />
             </svg>
 
-            <div className="grid max-w-lg gap-5 mx-auto mt-12 lg:grid-cols-3 lg:max-w-none">
+            <div className="grid max-w-lg gap-5 mx-auto mt-3 lg:grid-cols-3 lg:max-w-none">
               {data.map((item) => (
                 <div
                   key={item.id}
