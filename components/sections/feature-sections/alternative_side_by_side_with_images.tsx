@@ -309,7 +309,7 @@ ${props.mainDescription}
               />
             </svg>
             <img
-              className="relative mx-auto"
+              className="relative mx-auto rounded-lg ring-1"
               width={490}
               src={
                 props.leftImgSrc ||
@@ -427,7 +427,7 @@ ${props.mainDescription}
                 />
               </svg>
               <img
-                className="relative mx-auto"
+                className="relative mx-auto rounded-lg"
                 width={490}
                 src={
                   props.rightImgSrc ||

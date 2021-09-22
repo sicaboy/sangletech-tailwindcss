@@ -106,7 +106,7 @@ ${props.description}
                 </button>
 
                 <span className="mt-1 text-4xl font-extrabold tracking-tight sm:text-5xl xl:text-6xl">
-                  <span className="text-indigo-600 ">
+                  <span className="text-indigo-600">
                     {props.titleHighlight || "online business"}
                   </span>
                   <span className="text-gray-900 ">

@@ -110,6 +110,7 @@ const projectYou = {
 };
 
 const fin = {
+  //TODO: Add a button "Tìm Hiểu Thêm"
   leftTitle: "FIN X.0",
   leftDescription: `Cho dù bạn đang tiết kiệm cho kỳ nghỉ mơ ước, lên kế hoạch cho tài chính trong tương lai của mình hay chỉ đơn giản là mong muốn quản lý tốt tài chính của bản thân - Fin X.0 là dành cho bạn.`,
 
@@ -125,7 +126,7 @@ const fin = {
   leftIconThreeTitle: "Xây dựng sự giàu có",
   leftIconThreeDescription: `Tập trung vào việc tạo ra các mục tiêu và xây dựng sự giàu có thông qua sự đơn giản và minh bạch của công cụ này.`,
 
-  leftButtonName: "",
+  leftButtonName: "Tìm Hiểu Thêm",
   leftButtonSrc: "",
   leftAppleSrc: "",
   leftGoogleSrc: "",
@@ -136,6 +137,7 @@ const fin = {
 };
 
 const pro = {
+  //TODO: Add a button "Tìm Hiểu Thêm"
   rightIconOne: "",
   rightIconOneTitle: "Bạn Có Biết?",
   rightIconOneDescription: `Pro X.0 là chuương trình được trực tiếp xây dựng và phát triển độc quyền bởi Sang Lê và Galatek`,

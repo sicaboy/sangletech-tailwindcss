@@ -426,7 +426,7 @@ const features = {
 
   listFiveIconSrc: "",
   listFiveTitle: "Thanh Toán Linh Hoạt.",
-  listFiveDescription: ``,
+  listFiveDescription: `Bạn trả tiền cho kết quả, không phải cho quá trình. Sang và đội ngũ sử dụng kinh nghiệm thực tiễn để cung cấp dịch vụ tốt nhất cho bạn.`,
 
   listSixIconSrc: "",
   listSixTitle: "Kinh Nghiệm.",
