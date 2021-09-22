@@ -26,7 +26,7 @@ const textOne = {
 };
 
 const textTwo = {
-  rightCaption: "Tư Duy Thay Đổi",
+  rightCaption: "Thay Đổi Tư Duy",
   rightTitle: "Mở rộng nhận thức - Khám phá bản thân",
   rightDescription: `Là một người tin vào khoa học, từ nhỏ Sang đã không tin vào những gì mà khoa học chưa giải thích được. Thế giới của Sang đã từng rất hợp lý, logic, sáng rõ, cho đến khi Sang lật cuốn sổ kia ra đọc. Thế giới quan của Sang đột nhiên được mở rộng ra thêm. Đương nhiên, một câu chuyện lạ không khiến niềm tin của Sang đối với khoa học và công nghệ giảm đi. Nhưng Sang không thể giả vờ rằng cuốn sổ đó chỉ là sự tình cờ. Sang chỉ chấp nhận một sự thật rằng: Có lẽ đôi khi chúng ta nên chấp nhận sự mơ hồ, không rõ ràng của một số thứ. 
   <br></br>Đôi khi, có những điều mà khoa học cũng không thể lý giải, vì thế, chúng ta cũng chưa đủ tầm để lý giải. Khi bạn thấu suốt sự minh bạch của khoa học, đồng thời chấp nhận rằng vẫn có những vùng đất ta không biết, không nhìn thấy, bạn sẽ học được nhiều bài học hơn.`,
@@ -36,19 +36,20 @@ const textTwo = {
 };
 
 const textThree = {
-  leftCaption: "Câu Chuyện",
-  leftTitle: "Thế ",
-  leftDescription: `Công việc cho phép Sang được đi đây đi đó rất nhiều, và do đó Sang cũng có khá nhiều cơ hội quan sát. Sang được nhìn thấy cách làm việc của những nhà nghiên cứu về Phong thủy và cũng tận tai nghe những câu chuyện phong thủy đã thay đổi sự nghiệp và cuộc sống của một người như thế nào. Phong là gió, và thủy là nước. Nói nôm na, phong thủy là cách mà năng lượng vận hành trên Trái Đất. Và những nhà phong thủy tin rằng những đồ vật xung quanh bạn, hướng của chúng, màu sắc của chúng có thể hấp dẫn nguồn năng lượng tích cực hoặc tiêu cực. `,
+  leftCaption: "Thay Đổi Tư Duy",
+  leftTitle: "Góc Nhìn về Phong Thuỷ",
+  leftDescription: `Công việc cho phép Sang được đi đây đi đó rất nhiều, và do đó Sang cũng có khá nhiều cơ hội quan sát. Sang được nhìn thấy cách làm việc của những nhà nghiên cứu về Phong thủy và cũng tận tai nghe những câu chuyện phong thủy đã thay đổi sự nghiệp và cuộc sống của một người như thế nào. Phong là gió, và thủy là nước. Nói nôm na, phong thủy là cách mà năng lượng vận hành trên Trái Đất. Và những nhà phong thủy tin rằng những đồ vật xung quanh bạn, hướng của chúng, màu sắc của chúng có thể hấp dẫn nguồn năng lượng tích cực hoặc tiêu cực. 
+  <br></br>Rất nhiều những nhà lãnh đạo trên thế giới đã tìm đến bậc thầy phong thủy là ***Marie Diamond***. Họ đã trải nghiệm và cảm nhận rằng phong thủy có sức tác động đáng kể lên đời sống của họ. Có ý kiến cho rằng phong thủy là tâm linh, nhưng cũng có ý kiến cho rằng phong thủy liên quan đến vật lý lượng tử. Sang chưa nghiên cứu đủ sâu để có thể cho ra kết luận, nhưng Sang đã trải nghiệm và thật sự bất ngờ vì những gì phong thủy mang lại.
+  <br></br>Đôi khi, có những điều mà khoa học cũng không thể lý giải, vì thế, chúng ta cũng chưa đủ tầm để lý giải. Khi bạn thấu suốt sự minh bạch của khoa học, đồng thời chấp nhận rằng vẫn có những vùng đất ta không biết, không nhìn thấy, bạn sẽ học được nhiều bài học hơn.`,
   leftImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1627802599/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0001_vzdxhu.jpg",
   leftAlt: "Hinh anh minh hoa Youxo 3",
 };
 
 const textFour = {
-  rightCaption: "Tư Duy Thay Đổi",
-  rightTitle: "Mở rộng nhận thức - Khám phá bản thân",
-  rightDescription: `Là một người tin vào khoa học, từ nhỏ Sang đã không tin vào những gì mà khoa học chưa giải thích được. Thế giới của Sang đã từng rất hợp lý, logic, sáng rõ, cho đến khi Sang lật cuốn sổ kia ra đọc. Thế giới quan của Sang đột nhiên được mở rộng ra thêm. Đương nhiên, một câu chuyện lạ không khiến niềm tin của Sang đối với khoa học và công nghệ giảm đi. Nhưng Sang không thể giả vờ rằng cuốn sổ đó chỉ là sự tình cờ. Sang chỉ chấp nhận một sự thật rằng: Có lẽ đôi khi chúng ta nên chấp nhận sự mơ hồ, không rõ ràng của một số thứ. 
-  <br></br>Đôi khi, có những điều mà khoa học cũng không thể lý giải, vì thế, chúng ta cũng chưa đủ tầm để lý giải. Khi bạn thấu suốt sự minh bạch của khoa học, đồng thời chấp nhận rằng vẫn có những vùng đất ta không biết, không nhìn thấy, bạn sẽ học được nhiều bài học hơn.`,
+  rightCaption: "Thay Đổi Tư Duy",
+  rightTitle: "Góc Nhìn về Thần Số Học",
+  rightDescription: `Thần số học cũng là công cụ đến với Sang khá tình cờ, và Sang thấy rằng đây là một công cụ xứng đáng để chúng ta thử. Sang tin rằng trước khi một phương pháp được chứng minh là đúng, nó cũng từng tồn tại dưới dạng phương pháp thử nghiệm. Nếu vì chưa được chứng minh mà không ai thử nghiệm, rốt cuộc, nhân loại cũng không thể biết phương pháp đó có đúng hay không. Trên tinh thần đó, Sang cũng đã thử Thần số học. **Sang không chắc chắn Thần số học có đúng với bạn không, nhưng Sang đã thử, và nó rất đúng với Sang. Về cơ bản, Thần số học hàm chứa những điều mà Sang tin, nhưng dưới dạng một ngôn ngữ khác.**,
   rightImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1628498050/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0005_hej10l.jpg",
   rightAlt: "Hinh anh minh hoa Youxo 2",
