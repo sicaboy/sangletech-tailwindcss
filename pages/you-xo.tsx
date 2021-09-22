@@ -58,7 +58,7 @@ const textFour = {
 function YouXO() {
   return (
     <Layout>
-      <div>You X.0 Page</div>
+    
       <HeroWithAngelImageOnRight {...hero} />
       <AlternativeSideBySideWithVideoOrImg {...textOne} {...textTwo} />
       <AlternativeSideBySideWithVideoOrImg {...textThree} {...textFour} />
