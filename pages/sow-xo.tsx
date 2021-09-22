@@ -1,7 +1,7 @@
 import React from "react";
 import Hero from "../components/sections/heroes/with_sign_up_and_media_content";
-import AlternativeSideBySideWithVideoOrImg from "../components/AlternativeSideBySideWithVideo";
-import Layout from "../components/Layout";
+import AlternativeSideBySideWithVideoOrImg from "../components/alternative-side-by-side-with-video-img";
+import Layout from "../components/layout";
 import BrandPanelWithAppScreenShot from "../components/sections/cta-sections/brand_panel_with_app_screenshot";
 import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/brand_panel_with_overlapping_image";
 

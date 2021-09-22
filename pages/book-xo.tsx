@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../components/Layout";
+import Layout from "../components/layout";
 import Hero from "../components/sections/heroes/with_sign_up_and_media_content";
 import AlternativeSideBySideWithImages from "../components/sections/feature-sections/alternative_side_by_side_with_images";
 import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/brand_panel_with_overlapping_image";

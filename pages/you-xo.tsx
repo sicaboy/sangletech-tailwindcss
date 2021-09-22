@@ -1,6 +1,6 @@
 import React from "react";
 import HeroWithAngelImageOnRight from "../components/sections/heroes/with_angled_image_on_right";
-import Layout from "../components/Layout";
+import Layout from "../components/layout";
 
 const hero = {
   titleHighlight: "YOU X.0",
