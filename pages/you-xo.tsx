@@ -49,7 +49,7 @@ const textThree = {
 const textFour = {
   rightCaption: "Thay Đổi Tư Duy",
   rightTitle: "Góc Nhìn về Thần Số Học",
-  rightDescription: `Thần số học cũng là công cụ đến với Sang khá tình cờ, và Sang thấy rằng đây là một công cụ xứng đáng để chúng ta thử. Sang tin rằng trước khi một phương pháp được chứng minh là đúng, nó cũng từng tồn tại dưới dạng phương pháp thử nghiệm. Nếu vì chưa được chứng minh mà không ai thử nghiệm, rốt cuộc, nhân loại cũng không thể biết phương pháp đó có đúng hay không. Trên tinh thần đó, Sang cũng đã thử Thần số học. **Sang không chắc chắn Thần số học có đúng với bạn không, nhưng Sang đã thử, và nó rất đúng với Sang. Về cơ bản, Thần số học hàm chứa những điều mà Sang tin, nhưng dưới dạng một ngôn ngữ khác.**,
+  rightDescription: `Thần số học cũng là công cụ đến với Sang khá tình cờ, và Sang thấy rằng đây là một công cụ xứng đáng để chúng ta thử. Sang tin rằng trước khi một phương pháp được chứng minh là đúng, nó cũng từng tồn tại dưới dạng phương pháp thử nghiệm. Nếu vì chưa được chứng minh mà không ai thử nghiệm, rốt cuộc, nhân loại cũng không thể biết phương pháp đó có đúng hay không. Trên tinh thần đó, Sang cũng đã thử Thần số học. **Sang không chắc chắn Thần số học có đúng với bạn không, nhưng Sang đã thử, và nó rất đúng với Sang. Về cơ bản, Thần số học hàm chứa những điều mà Sang tin, nhưng dưới dạng một ngôn ngữ khác.**`,
   rightImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1628498050/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0005_hej10l.jpg",
   rightAlt: "Hinh anh minh hoa Youxo 2",
