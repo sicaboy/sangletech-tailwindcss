@@ -37,7 +37,7 @@ const textTwo = {
 
 const textThree = {
   leftCaption: "Câu Chuyện",
-  leftTitle: "Thế ",
+  leftTitle: "cÂU CHUYỆN",
   leftDescription: `Công việc cho phép Sang được đi đây đi đó rất nhiều, và do đó Sang cũng có khá nhiều cơ hội quan sát. Sang được nhìn thấy cách làm việc của những nhà nghiên cứu về Phong thủy và cũng tận tai nghe những câu chuyện phong thủy đã thay đổi sự nghiệp và cuộc sống của một người như thế nào. Phong là gió, và thủy là nước. Nói nôm na, phong thủy là cách mà năng lượng vận hành trên Trái Đất. Và những nhà phong thủy tin rằng những đồ vật xung quanh bạn, hướng của chúng, màu sắc của chúng có thể hấp dẫn nguồn năng lượng tích cực hoặc tiêu cực. `,
   leftImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1627802599/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0001_vzdxhu.jpg",
