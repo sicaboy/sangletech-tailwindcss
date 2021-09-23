@@ -4,6 +4,7 @@ import Layout from "../components/Layout";
 import AlternativeSideBySideWithVideoOrImg from "../components/AlternativeSideBySideWithVideo";
 import BrandPanelWithAppScreenShot from "../components/sections/cta-sections/brand_panel_with_app_screenshot";
 import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/brand_panel_with_overlapping_image";
+import Layout from "../components/layout";
 
 const hero = {
   titleHighlight: "YOU X.0",
@@ -89,17 +90,17 @@ const textSeven = {
 };
 
 const textEight = {
-    title: "Tại sao cuốn sách của Sang được gọi là BÍ MẬT LÀM GIÀU X.0?",
-    description: `**BẠN CÓ MUỐN ĐỌC THỬ SÁCH ĐIỆN TỬ ĐỘC QUYỀN TỪ SANG?**
+  title: "Tại sao cuốn sách của Sang được gọi là BÍ MẬT LÀM GIÀU X.0?",
+  description: `**BẠN CÓ MUỐN ĐỌC THỬ SÁCH ĐIỆN TỬ ĐỘC QUYỀN TỪ SANG?**
     <br><br>⟐  Làm sao để đứng vững trong Kỷ nguyên 4.0 và Hậu Đại dịch?
     <br><br>⟐  Làm sao để giải phóng tiềm năng của những người trẻ có đam mê?
     <br></br>⟐  Những ý tưởng và những chiến lược mà Sang rút ra từ những doanh nhân tiếng tăm nhất trên thế giới?
 `,
-    buttonName: "Tìm hiểu thêm về Sách",
-    imgSrc:
-      "https://super-static-assets.s3.amazonaws.com/8090ac7d-2195-4ec8-96be-1457b54a8900/images/c2a88c54-5779-493d-83ec-1d2d5429021f.jpg?w=240&f=webp",
-    alt: "Hinh anh Book Cover",
-  };
+  buttonName: "Tìm hiểu thêm về Sách",
+  imgSrc:
+    "https://super-static-assets.s3.amazonaws.com/8090ac7d-2195-4ec8-96be-1457b54a8900/images/c2a88c54-5779-493d-83ec-1d2d5429021f.jpg?w=240&f=webp",
+  alt: "Hinh anh Book Cover",
+};
 
 function YouXO() {
   return (

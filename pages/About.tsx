@@ -1,21 +1,21 @@
 import React from "react";
 import Hero from "../components/sections/heroes/with_sign_up_and_media_content";
 
-import AlternativeSideBySideWithVideoOrImg from "../components/AlternativeSideBySideWithVideo";
+import AlternativeSideBySideWithVideoOrImg from "../components/alternative-side-by-side-with-video-img";
 import GalleryOne from "../components/gallery/gallery-1";
 import GalleryTwo from "../components/gallery/gallery-2";
 import GalleryThree from "../components/gallery/gallery-1";
 import MyAchievement from "../components/sections/feature-sections/with_feature_list";
 import Logos from "../components/sections/logo-clouds/simple_with_heading_on_brand";
 import Certificates from "../components/gallery/gallery-3";
-import CoreValues from "../components/CoreValues";
-import OurTeam from "../components/OurTeam";
-import CompanyAchivement from "../components/CompanyAchivement";
+import CoreValues from "../components/core-values";
+import OurTeam from "../components/our-team";
+import CompanyAchivement from "../components/company-achivement";
 import Features from "../components/sections/feature-sections/centered_2x2_grid";
 import SocialConnect from "../components/sections/cta-sections/simple_center_branded";
 import MyCompanies from "../components/sections/logo-clouds/simple_with_heading";
 import * as Icon from "@heroicons/react/outline";
-import Layout from "../components/Layout";
+import Layout from "../components/layout";
 
 const hero = {
   caption: "Công Nghệ Bằng Cả Trái Tim",

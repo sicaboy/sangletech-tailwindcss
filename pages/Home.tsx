@@ -3,12 +3,15 @@ import AlternatingWithOptionalTestimonial from "../components/sections/feature-s
 import AlternativeSideBySideWithImages from "../components/sections/feature-sections/alternative_side_by_side_with_images";
 import BrandPanelWithAppScreenShot from "../components/sections/cta-sections/brand_panel_with_app_screenshot";
 import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/brand_panel_with_overlapping_image";
-import Youtube from "../components/Youtube";
+
 import ThreeColumnCards from "../components/sections/blog-sections/3_column_cards";
 import SimpleCenterBranded from "../components/sections/cta-sections/simple_center_branded";
 import SimpleWithHeading from "../components/sections/logo-clouds/simple_with_heading";
 import * as Icon from "@heroicons/react/outline";
-import Layout from "../components/Layout";
+import { getAllPosts } from "../utils/api";
+import Post from "../types/post";
+
+// import Blog from "../components/post/3_column_cards";
 
 /* 
 Learn how to use available markdown and HTML 
@@ -37,6 +40,10 @@ https://heroicons.com/
     <Icon.InboxInIcon className="w-6 h-6 text-white" aria-hidden="true" />
   )
 */
+
+type Props = {
+  allPosts: Post[];
+};
 
 const hero = {
   titleHighlight: "VƯƠN TẦM BẢN THÂN",
@@ -268,7 +275,13 @@ const company = {
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626171957/Galatek.io%20Website/print-spmet-logo.png_ex1cvm.webp",
 };
 
-function Home() {
+function Home({ allPosts }: Props) {
+  const test = {
+    title: "test",
+    description: `testing`,
+    allPosts: allPosts,
+  };
+
   return (
     <>
       <HeroWithAngelImageOnRight {...hero} />
@@ -276,8 +289,8 @@ function Home() {
       <AlternatingWithOptionalTestimonial {...sow} {...projectYou} />
       <AlternativeSideBySideWithImages {...fin} {...pro} />
       <BrandPanelWithOverlappingImage {...startup} />
-      <Youtube {...youtube} />
       <ThreeColumnCards {...blog} />
+      {/* <Blog {...test} /> */}
       <SimpleCenterBranded {...social} />
       <SimpleWithHeading {...company} />
     </>
@@ -285,3 +298,20 @@ function Home() {
 }
 
 export default Home;
+
+export const getStaticProps = async () => {
+  const allPosts = getAllPosts([
+    "title",
+    "date",
+    "slug",
+    "author",
+    "coverImage",
+    "excerpt",
+  ]);
+
+  console.log(`allPosts: ${JSON.stringify(allPosts)}`);
+
+  return {
+    props: { allPosts },
+  };
+};
