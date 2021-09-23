@@ -1,7 +1,7 @@
 import React from "react";
 import HeroWithAngelImageOnRight from "../components/sections/heroes/with_angled_image_on_right";
-import Layout from "../components/Layout";
-import AlternativeSideBySideWithVideoOrImg from "../components/AlternativeSideBySideWithVideo";
+import Layout from "../components/layout";
+import AlternativeSideBySideWithVideoOrImg from "../components/alternative-side-by-side-with-video-img";
 import BrandPanelWithAppScreenShot from "../components/sections/cta-sections/brand_panel_with_app_screenshot";
 import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/brand_panel_with_overlapping_image";
 
@@ -51,7 +51,8 @@ const textThree = {
   <br></br>Song, không phải lúc nào bạn cũng có thể tập trung làm việc trong 8 tiếng. Nếu như vậy, bạn phải **kiếm nhiều hơn 48.000 VNĐ/giờ** để đảm bảo mức lương. Sang lấy **48.000 VNĐ x 3**, như vậy bạn phải kiếm được khoảng **145.000 VNĐ/giờ**. 
   <br></br>Tại sao Sang nhân 3? Bởi vì khi bạn đặt mục tiêu mỗi ngày, mỗi giờ cao hơn, thì mục tiêu sau cùng của bạn sẽ luôn nằm trong tầm tay. Cuộc sống luôn chứa đầy những biến số. **Khi đặt mục tiêu cao hơn, kết quả chung cuộc sẽ bớt bị những biến số này ảnh hưởng**.
   <br></br>**Vậy là bạn đã biết mình cần kiếm được 145.000 VNĐ/giờ làm việc để đạt được mục tiêu**. Một con số quá cụ thể. Nhìn vào con số này, bạn biết ngay mình cần phải làm gì. Đây là lúc bạn đi tìm những công việc, ngành nghề có thể giúp bạn kiếm được 145.00 VNĐ/giờ. Bên cạnh đó, bạn cũng có thể học thêm các kỹ năng mới, các kỹ năng cần thiết trong thời đại 4.0 mà bất kỳ công ty nào cũng cần như kỹ năng Marketing, xây dựng Phễu Marketing,...`,
-  leftImgSrc: "https://res.cloudinary.com/sang-le-tech/image/upload/v1632385535/Galatek.io%20Website/IMG_4434_qpajd4.jpg",
+  leftImgSrc:
+    "https://res.cloudinary.com/sang-le-tech/image/upload/v1632385535/Galatek.io%20Website/IMG_4434_qpajd4.jpg",
   leftAlt: "Hinh anh minh hoa Finxo 3",
 };
 
@@ -80,16 +81,16 @@ const textFive = {
 };
 
 const textSix = {
-    title: "Tại sao cuốn sách của Sang được gọi là BÍ MẬT LÀM GIÀU X.0?",
-    description: `**BẠN CÓ MUỐN ĐỌC THỬ SÁCH ĐIỆN TỬ ĐỘC QUYỀN TỪ SANG?**
+  title: "Tại sao cuốn sách của Sang được gọi là BÍ MẬT LÀM GIÀU X.0?",
+  description: `**BẠN CÓ MUỐN ĐỌC THỬ SÁCH ĐIỆN TỬ ĐỘC QUYỀN TỪ SANG?**
     <br><br>⟐  Làm sao để đứng vững trong Kỷ nguyên 4.0 và Hậu Đại dịch?
     <br><br>⟐  Làm sao để giải phóng tiềm năng của những người trẻ có đam mê?
     <br></br>⟐  Những ý tưởng và những chiến lược mà Sang rút ra từ những doanh nhân tiếng tăm nhất trên thế giới?`,
-    buttonName: "Tìm hiểu thêm về Sách",
-    imgSrc:
-      "https://super-static-assets.s3.amazonaws.com/8090ac7d-2195-4ec8-96be-1457b54a8900/images/c2a88c54-5779-493d-83ec-1d2d5429021f.jpg?w=240&f=webp",
-    alt: "Hinh anh Book Cover",
-  };
+  buttonName: "Tìm hiểu thêm về Sách",
+  imgSrc:
+    "https://super-static-assets.s3.amazonaws.com/8090ac7d-2195-4ec8-96be-1457b54a8900/images/c2a88c54-5779-493d-83ec-1d2d5429021f.jpg?w=240&f=webp",
+  alt: "Hinh anh Book Cover",
+};
 
 function FinX0() {
   return (
@@ -102,7 +103,6 @@ function FinX0() {
       <BrandPanelWithOverlappingImage {...textSix} />
     </Layout>
   );
-  
 }
 
 export default FinX0;
