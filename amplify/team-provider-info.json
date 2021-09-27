@@ -19,5 +19,26 @@
                 }
             }
         }
+    },
+    "prod": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-sangletechwebsite-prod-175833-authRole",
+            "UnauthRoleArn": "arn:aws:iam::414159720817:role/amplify-sangletechwebsite-prod-175833-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::414159720817:role/amplify-sangletechwebsite-prod-175833-authRole",
+            "Region": "ap-southeast-1",
+            "DeploymentBucketName": "amplify-sangletechwebsite-prod-175833-deployment",
+            "UnauthRoleName": "amplify-sangletechwebsite-prod-175833-unauthRole",
+            "StackName": "amplify-sangletechwebsite-prod-175833",
+            "StackId": "arn:aws:cloudformation:ap-southeast-1:414159720817:stack/amplify-sangletechwebsite-prod-175833/dd26ea00-1f81-11ec-a6ca-06fec2628e64",
+            "AmplifyAppId": "d256jim1il1jeu"
+        },
+        "categories": {
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d256jim1il1jeu",
+                    "type": "cicd"
+                }
+            }
+        }
     }
 }
