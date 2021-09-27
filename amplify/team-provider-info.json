@@ -1,41 +1,20 @@
 {
     "dev": {
         "awscloudformation": {
-            "AuthRoleName": "amplify-sangletecwebsite-dev-112757-authRole",
-            "UnauthRoleArn": "arn:aws:iam::414159720817:role/amplify-sangletecwebsite-dev-112757-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::414159720817:role/amplify-sangletecwebsite-dev-112757-authRole",
+            "AuthRoleName": "amplify-sangletechwebsite-dev-174443-authRole",
+            "UnauthRoleArn": "arn:aws:iam::414159720817:role/amplify-sangletechwebsite-dev-174443-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::414159720817:role/amplify-sangletechwebsite-dev-174443-authRole",
             "Region": "ap-southeast-1",
-            "DeploymentBucketName": "amplify-sangletecwebsite-dev-112757-deployment",
-            "UnauthRoleName": "amplify-sangletecwebsite-dev-112757-unauthRole",
-            "StackName": "amplify-sangletecwebsite-dev-112757",
-            "StackId": "arn:aws:cloudformation:ap-southeast-1:414159720817:stack/amplify-sangletecwebsite-dev-112757/51b38310-1f4b-11ec-9dbc-023b6dc94fc0",
-            "AmplifyAppId": "dvte5zoxibzk8"
+            "DeploymentBucketName": "amplify-sangletechwebsite-dev-174443-deployment",
+            "UnauthRoleName": "amplify-sangletechwebsite-dev-174443-unauthRole",
+            "StackName": "amplify-sangletechwebsite-dev-174443",
+            "StackId": "arn:aws:cloudformation:ap-southeast-1:414159720817:stack/amplify-sangletechwebsite-dev-174443/efed0b80-1f7f-11ec-a6ca-06fec2628e64",
+            "AmplifyAppId": "d256jim1il1jeu"
         },
         "categories": {
             "hosting": {
                 "amplifyhosting": {
-                    "appId": "dvte5zoxibzk8",
-                    "type": "cicd"
-                }
-            }
-        }
-    },
-    "prod": {
-        "awscloudformation": {
-            "AuthRoleName": "amplify-sangletecwebsite-prod-113405-authRole",
-            "UnauthRoleArn": "arn:aws:iam::414159720817:role/amplify-sangletecwebsite-prod-113405-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::414159720817:role/amplify-sangletecwebsite-prod-113405-authRole",
-            "Region": "ap-southeast-1",
-            "DeploymentBucketName": "amplify-sangletecwebsite-prod-113405-deployment",
-            "UnauthRoleName": "amplify-sangletecwebsite-prod-113405-unauthRole",
-            "StackName": "amplify-sangletecwebsite-prod-113405",
-            "StackId": "arn:aws:cloudformation:ap-southeast-1:414159720817:stack/amplify-sangletecwebsite-prod-113405/26b897d0-1f4c-11ec-9900-0acccaa3241a",
-            "AmplifyAppId": "dvte5zoxibzk8"
-        },
-        "categories": {
-            "hosting": {
-                "amplifyhosting": {
-                    "appId": "dvte5zoxibzk8",
+                    "appId": "d256jim1il1jeu",
                     "type": "cicd"
                 }
             }
