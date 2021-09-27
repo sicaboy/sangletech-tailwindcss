@@ -5,8 +5,7 @@ import BrandPanelWithAppScreenShot from "../components/sections/cta-sections/bra
 import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/brand_panel_with_overlapping_image";
 
 import ThreeColumnCards from "../components/sections/blog-sections/3_column_cards";
-import SimpleCenterBranded from "../components/sections/cta-sections/simple_center_branded";
-import SimpleWithHeading from "../components/sections/logo-clouds/simple_with_heading";
+
 import * as Icon from "@heroicons/react/outline";
 import { getAllPosts } from "../utils/api";
 import Post from "../types/post";
@@ -291,8 +290,6 @@ function Home({ allPosts }: Props) {
       <BrandPanelWithOverlappingImage {...startup} />
       <ThreeColumnCards {...blog} />
       {/* <Blog {...test} /> */}
-      <SimpleCenterBranded {...social} />
-      <SimpleWithHeading {...company} />
     </>
   );
 }
