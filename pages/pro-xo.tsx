@@ -1,6 +1,6 @@
 import React from "react";
 import HeroWithAngelImageOnRight from "../components/sections/heroes/with_angled_image_on_right";
-import Layout from "../components/Layout";
+import Layout from "../components/layout";
 import AlternativeSideBySideWithVideoOrImg from "../components/alternative-side-by-side-with-video-img";
 import BrandPanelWithAppScreenShot from "../components/sections/cta-sections/brand_panel_with_app_screenshot";
 import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/brand_panel_with_overlapping_image";
