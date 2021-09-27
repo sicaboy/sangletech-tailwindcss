@@ -11,51 +11,51 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
 
-interface Props {
-  mainTitle?: string;
-  mainDescription?: string;
-  leftIconOne?: {};
-  leftIconOneTitle?: string;
-  leftIconOneDescription?: string;
-  leftIconTwo?: {};
-  leftIconTwoTitle?: string;
-  leftIconTwoDescription?: string;
-  leftIconThree?: {};
-  leftIconThreeTitle?: string;
-  leftIconThreeDescription?: string;
-  leftTitle?: string;
-  leftDescription?: string;
-  leftButtonName?: string;
-  leftButtonSrc?: string;
-  leftAppleSrc?: string;
-  leftGoogleSrc?: string;
-  leftWebSrc?: string;
-  leftTestimonial?: string;
-  leftAuthor?: string;
-  leftImgSrc?: string;
-  leftAlt?: string;
-  leftAuthorImgSrc?: string;
-  rightIconOne?: string;
-  rightIconOneTitle?: string;
-  rightIconOneDescription?: string;
-  rightIconTwo?: string;
-  rightIconTwoTitle?: string;
-  rightIconTwoDescription?: string;
-  rightIconThree?: string;
-  rightIconThreeTitle?: string;
-  rightIconThreeDescription?: string;
-  rightTitle?: string;
-  rightDescription?: string;
-  rightButtonName?: string;
-  rightButtonSrc?: string;
-  rightAppleSrc?: string;
-  rightGoogleSrc?: string;
-  rightWebSrc?: string;
-  rightImgSrc?: string;
-  rightAlt?: string;
-}
+// interface Props {
+//   mainTitle?: string;
+//   mainDescription?: string;
+//   leftIconOne?: {};
+//   leftIconOneTitle?: string;
+//   leftIconOneDescription?: string;
+//   leftIconTwo?: {};
+//   leftIconTwoTitle?: string;
+//   leftIconTwoDescription?: string;
+//   leftIconThree?: {};
+//   leftIconThreeTitle?: string;
+//   leftIconThreeDescription?: string;
+//   leftTitle?: string;
+//   leftDescription?: string;
+//   leftButtonName?: string;
+//   leftButtonSrc?: string;
+//   leftAppleSrc?: string;
+//   leftGoogleSrc?: string;
+//   leftWebSrc?: string;
+//   leftTestimonial?: string;
+//   leftAuthor?: string;
+//   leftImgSrc?: string;
+//   leftAlt?: string;
+//   leftAuthorImgSrc?: string;
+//   rightIconOne?: string;
+//   rightIconOneTitle?: string;
+//   rightIconOneDescription?: string;
+//   rightIconTwo?: string;
+//   rightIconTwoTitle?: string;
+//   rightIconTwoDescription?: string;
+//   rightIconThree?: string;
+//   rightIconThreeTitle?: string;
+//   rightIconThreeDescription?: string;
+//   rightTitle?: string;
+//   rightDescription?: string;
+//   rightButtonName?: string;
+//   rightButtonSrc?: string;
+//   rightAppleSrc?: string;
+//   rightGoogleSrc?: string;
+//   rightWebSrc?: string;
+//   rightImgSrc?: string;
+//   rightAlt?: string;
+// }
 
-export default function AlternativeSideBySideWithImages(props: Props) {
+export default function AlternativeSideBySideWithImages(props) {
   const leftIconOneDescription = props.leftIconOneDescription
     ? `<div class="note">
 
