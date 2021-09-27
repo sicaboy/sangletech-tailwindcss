@@ -95,7 +95,7 @@ const coursesTwo = {
   buttonIconName: (
     <Icon.InboxInIcon className="w-6 h-6 text-white" aria-hidden="true" />
   ),
-  buttonName: false,
+  buttonName: "",
 
   blogOneThumbnail:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1632479964/Galatek.io%20Website/CHIENBINHX0t.jpg_jk8wja.jpg",

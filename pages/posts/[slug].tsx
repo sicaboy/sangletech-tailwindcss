@@ -38,7 +38,7 @@ const Post = ({ post, morePosts, preview }: Props) => {
     return <ErrorPage statusCode={404} />;
   }
 
-  const mdxSource = post.content;
+  // const mdxSource = post.content;
 
   return (
     <Layout>
@@ -58,7 +58,7 @@ const Post = ({ post, morePosts, preview }: Props) => {
                 date={post.date}
                 author={post.author}
               />
-              <PostBody content={mdxSource} components={components} />
+              <PostBody content={post.content} components={components} />
             </article>
           </>
         )}
