@@ -208,11 +208,14 @@ const company = {
   logoTwoSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626171832/Galatek.io%20Website/whitebg-cafes-logo011x-600x228-1.png_ubdsbd.webp",
 
+  logoTwoAlt: "",
+
   logoThreeName: (
     <Icon.InboxInIcon className="w-6 h-6 text-white" aria-hidden="true" />
   ),
   logoThreeSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626171957/Galatek.io%20Website/print-spmet-logo.png_ex1cvm.webp",
+  logoThreeAlt: "",
 };
 
 const myAchivement = {
