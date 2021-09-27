@@ -274,13 +274,7 @@ const company = {
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626171957/Galatek.io%20Website/print-spmet-logo.png_ex1cvm.webp",
 };
 
-function Home({ allPosts }: Props) {
-  const test = {
-    title: "test",
-    description: `testing`,
-    allPosts: allPosts,
-  };
-
+function Home() {
   return (
     <>
       <HeroWithAngelImageOnRight {...hero} />
@@ -296,19 +290,19 @@ function Home({ allPosts }: Props) {
 
 export default Home;
 
-export const getStaticProps = async () => {
-  const allPosts = getAllPosts([
-    "title",
-    "date",
-    "slug",
-    "author",
-    "coverImage",
-    "excerpt",
-  ]);
+// export const getStaticProps = async () => {
+//   const allPosts = getAllPosts([
+//     "title",
+//     "date",
+//     "slug",
+//     "author",
+//     "coverImage",
+//     "excerpt",
+//   ]);
 
-  console.log(`allPosts: ${JSON.stringify(allPosts)}`);
+//   console.log(`allPosts: ${JSON.stringify(allPosts)}`);
 
-  return {
-    props: { allPosts },
-  };
-};
+//   return {
+//     props: { allPosts },
+//   };
+// };
