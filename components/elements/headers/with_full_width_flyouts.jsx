@@ -18,6 +18,7 @@ import {
   ShieldCheckIcon,
   UserGroupIcon,
   ViewGridIcon,
+  BookOpenIcon,
   XIcon,
 } from "@heroicons/react/outline";
 import { ChevronDownIcon } from "@heroicons/react/solid";
@@ -60,27 +61,28 @@ Khác
 
 const courses = [
   {
-    name: "Analytics",
+  //TODO: This shows on Apps part
+    name: "Quảng Cáo Retargeting",
     description:
-      "Get a better understanding of where your traffic is coming from.",
-    href: "#",
+      "Làm thế nào để Bạn luôn nằm ở vị trí hàng đầu trong tâm trí khách hàng và đưa họ quay trở lại trang web của mình khi họ đã rời đi?",
+    href: "/retargeting-course",
     icon: ChartBarIcon,
   },
   {
-    name: "Engagement",
-    description: "Speak directly to your customers in a more meaningful way.",
+    name: "Phễu Bán Hàng",
+    description: "Bật mí những bí mật từ các Chuyên gia Marketing nổi tiếng thế giới để áp dụng thành công cho việc kinh doanh online của Bạn!",
     href: "#",
     icon: CursorClickIcon,
   },
   {
-    name: "Security",
-    description: "Your customers' data will be safe and secure.",
+    name: "Startup X0",
+    description: "7 Tuần xây dựng khởi nghiệp của bạn từ A-Z & Marketing ra thị trường.",
     href: "#",
     icon: ShieldCheckIcon,
   },
   {
-    name: "Integrations",
-    description: "Connect with third-party tools that you're already using.",
+    name: "Chiến Binh X.0",
+    description: "Trở thành một Chiến Binh X.0 để bước đi tự tin trên Hành trình Làm Giàu X.0",
     href: "#",
     icon: ViewGridIcon,
   },
@@ -88,27 +90,27 @@ const courses = [
 
 const apps = [
   {
-    name: "Analytics",
+    name: "BOOK X.0",
     description:
-      "Get a better understanding of where your traffic is coming from.",
+      "Sách Điện tử Độc quyền từ Sang Le: BÍ MẬT LÀM GIÀU X.0.",
     href: "#",
-    icon: ChartBarIcon,
+    icon: BookOpenIcon,
   },
   {
-    name: "Engagement",
-    description: "Speak directly to your customers in a more meaningful way.",
+    name: "YOU X.0",
+    description: "Ứng dụng Thần Số Học đầu tiên tại Việt Nam.",
     href: "#",
     icon: CursorClickIcon,
   },
   {
-    name: "Security",
-    description: "Your customers' data will be safe and secure.",
+    name: "FIN X.0",
+    description: "Ứng dụng Hỗ trợ Quản lý Tài chính Cá nhân.",
     href: "#",
     icon: ShieldCheckIcon,
   },
   {
-    name: "Integrations",
-    description: "Connect with third-party tools that you're already using.",
+    name: "PRO X.0",
+    description: "Ứng dụng Học Trực tuyến 4.0 với các chương trình giảng dạy từ phát triển cá nhân đến kinh doanh online, giúp bạn bước đi tự tin trong thời đại 4.0.",
     href: "#",
     icon: ViewGridIcon,
   },
@@ -116,11 +118,11 @@ const apps = [
 
 const books = [
   {
-    name: "Analytics",
+    name: "BÍ MẬT LÀM GIÀU X.0",
     description:
-      "Get a better understanding of where your traffic is coming from.",
-    href: "#",
-    icon: ChartBarIcon,
+      "Sách Điện Tử Độc Quyền Từ Sang Le",
+    href: "book-xo",
+    icon: BookOpenIcon,
   },
   {
     name: "Engagement",
@@ -143,9 +145,9 @@ const books = [
 ];
 
 const callsToAction = [
-  { name: "Watch Demo", href: "#", icon: PlayIcon },
-  { name: "View All Products", href: "#", icon: CheckCircleIcon },
-  { name: "Contact Sales", href: "#", icon: PhoneIcon },
+  { name: "Xem Demo", href: "#", icon: PlayIcon },
+  { name: "Xem Tất Cả Sản Phẩm", href: "#", icon: CheckCircleIcon },
+  { name: "Liên Hệ", href: "#", icon: PhoneIcon },
 ];
 
 const company = [
@@ -679,3 +681,4 @@ export default function WithFullWithFlyOuts() {
     </Popover>
   );
 }
+
