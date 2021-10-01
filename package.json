@@ -4,6 +4,7 @@
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start",
+    "postbuild": "next-sitemap",
     "export": "next build && next export -o ./dist"
   },
   "dependencies": {
@@ -38,6 +39,7 @@
     "postcss": "latest",
     "remark-mdx": "latest",
     "tailwindcss": "latest",
-    "typescript": "latest"
+    "typescript": "latest",
+    "next-sitemap": "latest"
   }
 }
