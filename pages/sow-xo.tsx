@@ -17,7 +17,7 @@ function SowXO() {
     <br></br>Lúc đó còn nhỏ, Sang chỉ thấy thật kỳ lạ khi ba không đưa cho mình một câu trả lời rõ ràng, trong khi không hề biết rằng, trong câu nói lấp lửng nửa đùa nửa thật đó của ba đã có sẵn đáp án.`,
     imgSrc:
       "https://res.cloudinary.com/sang-le-tech/image/upload/v1628152808/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0000_ucdad0.png",
-    videoSrc: "https://youtu.be/NSMBks66BpE",
+    videoSrc: "posts/video-hanh-trinh-lam-giau",
     videoCaption: `Hành Trình Làm Giàu X.0`,
     alt: "Sang Le - Video JOW",
   };

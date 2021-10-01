@@ -5,8 +5,7 @@ import BrandPanelWithAppScreenShot from "../components/sections/cta-sections/bra
 import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/brand_panel_with_overlapping_image";
 
 import ThreeColumnCards from "../components/sections/blog-sections/3_column_cards";
-import SimpleCenterBranded from "../components/sections/cta-sections/simple_center_branded";
-import SimpleWithHeading from "../components/sections/logo-clouds/simple_with_heading";
+
 import * as Icon from "@heroicons/react/outline";
 import { getAllPosts } from "../utils/api";
 import Post from "../types/post";
@@ -50,7 +49,9 @@ const hero = {
   titleNormal: "Sang Le Tech",
   description: `Giúp Bạn Bước Đi Tự Tin Trên **Hành Trình 4.0**`,
   buttonNormal: "Sang Lê là ai?",
+  buttonNormalSrc: "/posts/video-khoanh-khac-cuoc-doi",
   buttonHighlight: "Xem Video",
+  buttonHighlightSrc: "/sang-le-la-ai",
   imgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626615071/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0006_mbnffl.jpg",
   alt: "Hinh anh Sang Le",
@@ -66,7 +67,7 @@ const jow = {
   imgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1628152810/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0001_c2ukh5.png",
   alt: "Hinh anh SL Hanh Trinh Lam Giau X.0",
-  videoSrc: "#",
+  videoSrc: "posts/video-hanh-trinh-lam-giau",
 };
 
 const sow = {
@@ -80,8 +81,7 @@ const sow = {
 
   **⟐**  Làm sao để **giải phóng tiềm năng của những người trẻ có đam mê**?
   
-  **⟐  Những ý tưởng và những chiến lược** mà Sang rút ra từ những doanh nhân tiếng tăm nhất trên thế giới?
-`,
+  **⟐  Những ý tưởng và những chiến lược** mà Sang rút ra từ những doanh nhân tiếng tăm nhất trên thế giới?`,
   leftButtonName: "Tìm hiểu thêm",
   leftButtonSrc: "",
   leftAppleSrc: "2",
@@ -275,13 +275,7 @@ const company = {
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626171957/Galatek.io%20Website/print-spmet-logo.png_ex1cvm.webp",
 };
 
-function Home({ allPosts }: Props) {
-  const test = {
-    title: "test",
-    description: `testing`,
-    allPosts: allPosts,
-  };
-
+function Home() {
   return (
     <>
       <HeroWithAngelImageOnRight {...hero} />
@@ -291,27 +285,25 @@ function Home({ allPosts }: Props) {
       <BrandPanelWithOverlappingImage {...startup} />
       <ThreeColumnCards {...blog} />
       {/* <Blog {...test} /> */}
-      <SimpleCenterBranded {...social} />
-      <SimpleWithHeading {...company} />
     </>
   );
 }
 
 export default Home;
 
-export const getStaticProps = async () => {
-  const allPosts = getAllPosts([
-    "title",
-    "date",
-    "slug",
-    "author",
-    "coverImage",
-    "excerpt",
-  ]);
+// export const getStaticProps = async () => {
+//   const allPosts = getAllPosts([
+//     "title",
+//     "date",
+//     "slug",
+//     "author",
+//     "coverImage",
+//     "excerpt",
+//   ]);
 
-  console.log(`allPosts: ${JSON.stringify(allPosts)}`);
+//   console.log(`allPosts: ${JSON.stringify(allPosts)}`);
 
-  return {
-    props: { allPosts },
-  };
-};
+//   return {
+//     props: { allPosts },
+//   };
+// };
