@@ -18,18 +18,111 @@ import {
   ShieldCheckIcon,
   UserGroupIcon,
   ViewGridIcon,
+  BookOpenIcon,
   XIcon,
 } from "@heroicons/react/outline";
 import { ChevronDownIcon } from "@heroicons/react/solid";
 import Link from "next/link";
 
-const solutions = [
+/* 
+Home
+Sang Lê là ai?
+Sách
+  Bí Mật Làm Giàu X.0
+  Bí Mật Khởi Nghiệp X.0
+Phần Mềm
+  Book X.0
+  Fin X.0
+  Pro X.0
+  You X.0
+Chương Trình
+  Retargeting
+  Basic Sales Funnel
+  Basic SPM 
+  Warrior X.0
+  Funnel X.0
+  Startup X.0
+Blog (show featured aricles from the blog)
+Khác
+  Resources
+    Privacy
+    Press
+    Customers
+    Videos
+    Case Study
+  Company
+    Về Galatek
+    Cơ hội công việc
+    Bảo mật
+    Dịch Vụ
+    Tư Vấn
+  From the Blog
+*/
+
+const courses = [
   {
-    name: "Analytics",
+  //TODO: This shows on Apps part
+    name: "Quảng Cáo Retargeting",
     description:
-      "Get a better understanding of where your traffic is coming from.",
-    href: "#",
+      "Làm thế nào để Bạn luôn nằm ở vị trí hàng đầu trong tâm trí khách hàng và đưa họ quay trở lại trang web của mình khi họ đã rời đi?",
+    href: "/retargeting-course",
     icon: ChartBarIcon,
+  },
+  {
+    name: "Phễu Bán Hàng",
+    description: "Bật mí những bí mật từ các Chuyên gia Marketing nổi tiếng thế giới để áp dụng thành công cho việc kinh doanh online của Bạn!",
+    href: "#",
+    icon: CursorClickIcon,
+  },
+  {
+    name: "Startup X0",
+    description: "7 Tuần xây dựng khởi nghiệp của bạn từ A-Z & Marketing ra thị trường.",
+    href: "#",
+    icon: ShieldCheckIcon,
+  },
+  {
+    name: "Chiến Binh X.0",
+    description: "Trở thành một Chiến Binh X.0 để bước đi tự tin trên Hành trình Làm Giàu X.0",
+    href: "#",
+    icon: ViewGridIcon,
+  },
+];
+
+const apps = [
+  {
+    name: "BOOK X.0",
+    description:
+      "Sách Điện tử Độc quyền từ Sang Le: BÍ MẬT LÀM GIÀU X.0.",
+    href: "book-xo",
+    icon: BookOpenIcon,
+  },
+  {
+    name: "YOU X.0",
+    description: "Ứng dụng Thần Số Học đầu tiên tại Việt Nam.",
+    href: "you-xo",
+    icon: CursorClickIcon,
+  },
+  {
+    name: "FIN X.0",
+    description: "Ứng dụng Hỗ trợ Quản lý Tài chính Cá nhân.",
+    href: "fin-xo",
+    icon: ShieldCheckIcon,
+  },
+  {
+    name: "PRO X.0",
+    description: "Ứng dụng Học Trực tuyến 4.0 với các chương trình giảng dạy từ phát triển cá nhân đến kinh doanh online, giúp bạn bước đi tự tin trong thời đại 4.0.",
+    href: "pro-xo",
+    icon: ViewGridIcon,
+  },
+];
+
+const books = [
+  {
+    name: "BÍ MẬT LÀM GIÀU X.0",
+    description:
+      "Sách Điện Tử Độc Quyền Từ Sang Le",
+    href: "book-xo",
+    icon: BookOpenIcon,
   },
   {
     name: "Engagement",
@@ -50,11 +143,13 @@ const solutions = [
     icon: ViewGridIcon,
   },
 ];
+
 const callsToAction = [
-  { name: "Watch Demo", href: "#", icon: PlayIcon },
-  { name: "View All Products", href: "#", icon: CheckCircleIcon },
-  { name: "Contact Sales", href: "#", icon: PhoneIcon },
+  { name: "Xem Demo", href: "#", icon: PlayIcon },
+  { name: "Xem Tất Cả Sản Phẩm", href: "#", icon: CheckCircleIcon },
+  { name: "Liên Hệ", href: "#", icon: PhoneIcon },
 ];
+
 const company = [
   { name: "About", href: "#", icon: InformationCircleIcon },
   { name: "Customers", href: "#", icon: OfficeBuildingIcon },
@@ -62,30 +157,32 @@ const company = [
   { name: "Careers", href: "#", icon: BriefcaseIcon },
   { name: "Privacy", href: "#", icon: ShieldCheckIcon },
 ];
+
 const resources = [
   { name: "Community", href: "#", icon: UserGroupIcon },
   { name: "Partners", href: "#", icon: GlobeAltIcon },
   { name: "Guides", href: "#", icon: BookmarkAltIcon },
   { name: "Webinars", href: "#", icon: DesktopComputerIcon },
 ];
+
 const blogPosts = [
   {
     id: 1,
-    name: "Boost your conversion rate",
+    name: "Làm thế nào thiết kế Website bán được hàng?",
     href: "#",
     preview:
-      "Eget ullamcorper ac ut vulputate fames nec mattis pellentesque elementum. Viverra tempor id mus.",
+      "Hầu hết các doanh nghiệp cho rằng Website chỉ để làm cảnh và ngốn rất nhiều chi phí. Nhưng bạn biết không, với một website được dựng hiệu quả thì khách hàng sẽ xuống tiền và đặt hàng nhanh hơn bất cứ nền tảng nào khác.",
     imageUrl:
-      "https://images.unsplash.com/photo-1558478551-1a378f63328e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2849&q=80",
+      "https://res.cloudinary.com/sang-le-tech/image/upload/v1632824815/Galatek.io%20Website/igor-miske-JVSgcV8_vb4-unsplash_bclloj.jpg",
   },
   {
     id: 2,
-    name: "How to use search engine optimization to drive traffic to your site",
+    name: "Có phải THƯƠNG HIỆU chỉ đơn giản là LOGO?",
     href: "#",
     preview:
-      "Eget ullamcorper ac ut vulputate fames nec mattis pellentesque elementum. Viverra tempor id mus.",
+      `Bạn có biết những thương hiệu "khổng lồ" trên thế giới như Apple, Google, Starbucks,... đã phải liên tục "lột xác" bằng cách thay đổi Logo để tồn tại?`,
     imageUrl:
-      "https://images.unsplash.com/1/apple-gear-looking-pretty.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80",
+      "https://res.cloudinary.com/sang-le-tech/image/upload/v1632825252/Galatek.io%20Website/alexander-shatov-niUkImZcSP8-unsplash_vmcoec.jpg",
   },
 ];
 
@@ -120,6 +217,21 @@ export default function WithFullWithFlyOuts() {
           </div>
           <div className="hidden md:flex-1 md:flex md:items-center md:justify-between">
             <Popover.Group as="nav" className="flex space-x-10">
+              <Link href="/trang-chu">
+                <a className="text-base font-medium text-gray-500 hover:text-gray-900">
+                  Trang Chủ
+                </a>
+              </Link>
+              <Link href="/sang-le-la-ai">
+                <a className="text-base font-medium text-gray-500 hover:text-gray-900">
+                  Sang Lê là ai?
+                </a>
+              </Link>
+              <Link href="/sach">
+                <a className="text-base font-medium text-gray-500 hover:text-gray-900">
+                  Sách
+                </a>
+              </Link>
               <Popover>
                 {({ open }) => (
                   <>
@@ -129,7 +241,7 @@ export default function WithFullWithFlyOuts() {
                         "group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                       )}
                     >
-                      <span>Solutions</span>
+                      <span>Phần Mềm</span>
                       <ChevronDownIcon
                         className={classNames(
                           open ? "text-gray-600" : "text-gray-400",
@@ -150,7 +262,7 @@ export default function WithFullWithFlyOuts() {
                     >
                       <Popover.Panel className="absolute inset-x-0 z-10 hidden transform bg-white shadow-lg md:block top-full">
                         <div className="grid px-4 py-6 mx-auto max-w-7xl gap-y-6 sm:grid-cols-2 sm:gap-8 sm:px-6 sm:py-8 lg:grid-cols-4 lg:px-8 lg:py-12 xl:py-16">
-                          {solutions.map((item) => (
+                          {courses.map((item) => (
                             <a
                               key={item.name}
                               href={item.href}
@@ -206,21 +318,97 @@ export default function WithFullWithFlyOuts() {
                   </>
                 )}
               </Popover>
-              <Link href="/about">
-                <a className="text-base font-medium text-gray-500 hover:text-gray-900">
-                  About
-                </a>
-              </Link>
-              <Link href="/sow-xo">
-                <a className="text-base font-medium text-gray-500 hover:text-gray-900">
-                  SOW
-                </a>
-              </Link>
+              <Popover>
+                {({ open }) => (
+                  <>
+                    <Popover.Button
+                      className={classNames(
+                        open ? "text-gray-900" : "text-gray-500",
+                        "group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                      )}
+                    >
+                      <span>Khóa Học</span>
+                      <ChevronDownIcon
+                        className={classNames(
+                          open ? "text-gray-600" : "text-gray-400",
+                          "ml-2 h-5 w-5 group-hover:text-gray-500"
+                        )}
+                        aria-hidden="true"
+                      />
+                    </Popover.Button>
+
+                    <Transition
+                      as={Fragment}
+                      enter="transition ease-out duration-200"
+                      enterFrom="opacity-0 -translate-y-1"
+                      enterTo="opacity-100 translate-y-0"
+                      leave="transition ease-in duration-150"
+                      leaveFrom="opacity-100 translate-y-0"
+                      leaveTo="opacity-0 -translate-y-1"
+                    >
+                      <Popover.Panel className="absolute inset-x-0 z-10 hidden transform bg-white shadow-lg md:block top-full">
+                        <div className="grid px-4 py-6 mx-auto max-w-7xl gap-y-6 sm:grid-cols-2 sm:gap-8 sm:px-6 sm:py-8 lg:grid-cols-4 lg:px-8 lg:py-12 xl:py-16">
+                          {apps.map((item) => (
+                            <a
+                              key={item.name}
+                              href={item.href}
+                              className="flex flex-col justify-between p-3 -m-3 rounded-lg hover:bg-gray-50"
+                            >
+                              <div className="flex md:h-full lg:flex-col">
+                                <div className="flex-shrink-0">
+                                  <span className="inline-flex items-center justify-center w-10 h-10 text-white bg-indigo-500 rounded-md sm:h-12 sm:w-12">
+                                    <item.icon
+                                      className="w-6 h-6"
+                                      aria-hidden="true"
+                                    />
+                                  </span>
+                                </div>
+                                <div className="ml-4 md:flex-1 md:flex md:flex-col md:justify-between lg:ml-0 lg:mt-4">
+                                  <div>
+                                    <p className="text-base font-medium text-gray-900">
+                                      {item.name}
+                                    </p>
+                                    <p className="mt-1 text-sm text-gray-500">
+                                      {item.description}
+                                    </p>
+                                  </div>
+                                  <p className="mt-2 text-sm font-medium text-indigo-600 lg:mt-4">
+                                    Learn more{" "}
+                                    <span aria-hidden="true">&rarr;</span>
+                                  </p>
+                                </div>
+                              </div>
+                            </a>
+                          ))}
+                        </div>
+                        <div className="bg-gray-50">
+                          <div className="px-4 py-5 mx-auto space-y-6 max-w-7xl sm:flex sm:space-y-0 sm:space-x-10 sm:px-6 lg:px-8">
+                            {callsToAction.map((item) => (
+                              <div key={item.name} className="flow-root">
+                                <a
+                                  href={item.href}
+                                  className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 rounded-md hover:bg-gray-100"
+                                >
+                                  <item.icon
+                                    className="flex-shrink-0 w-6 h-6 text-gray-400"
+                                    aria-hidden="true"
+                                  />
+                                  <span className="ml-3">{item.name}</span>
+                                </a>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </Popover.Panel>
+                    </Transition>
+                  </>
+                )}
+              </Popover>
               <a
-                href="#"
+                href="/tu-van"
                 className="text-base font-medium text-gray-500 hover:text-gray-900"
               >
-                Docs
+                Tư Vấn
               </a>
               <Popover>
                 {({ open }) => (
@@ -231,7 +419,7 @@ export default function WithFullWithFlyOuts() {
                         "group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                       )}
                     >
-                      <span>More</span>
+                      <span>Khác</span>
                       <ChevronDownIcon
                         className={classNames(
                           open ? "text-gray-600" : "text-gray-400",
@@ -350,7 +538,7 @@ export default function WithFullWithFlyOuts() {
                 )}
               </Popover>
             </Popover.Group>
-            <div className="flex items-center md:ml-12">
+            {/* <div className="flex items-center md:ml-12">
               <a
                 href="#"
                 className="text-base font-medium text-gray-500 hover:text-gray-900"
@@ -363,7 +551,7 @@ export default function WithFullWithFlyOuts() {
               >
                 Sign up
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -401,7 +589,7 @@ export default function WithFullWithFlyOuts() {
               <div className="mt-6 sm:mt-8">
                 <nav>
                   <div className="grid gap-7 sm:grid-cols-2 sm:gap-y-8 sm:gap-x-4">
-                    {solutions.map((item) => (
+                    {courses.map((item) => (
                       <a
                         key={item.name}
                         href={item.href}
@@ -493,3 +681,4 @@ export default function WithFullWithFlyOuts() {
     </Popover>
   );
 }
+

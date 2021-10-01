@@ -16,7 +16,7 @@ const hero = {
   <br></br>***⟐  Những ý tưởng và những chiến lược*** mà Sang rút ra từ những doanh nhân tiếng tăm nhất thế giới. Không có bài học nào trong cuốn sách này mà Sang chưa áp dụng vào thực tế đời sống cũng như công việc.`,
   imgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1632210115/Galatek.io%20Website/Sangletech.com/Untitled_design-4_sjr9wc.jpg",
-  videoSrc: "https://youtu.be/onEkyUmiWJ8",
+  videoSrc: "/posts/video-book-xo",
   videoCaption: `3 điều thú vị BẠN CHƯA BIẾT về Cuốn sách "BÍ MẬT LÀM GIÀU X.0" của Sang Le`,
   alt: "Sang Le - Video Book X.0",
 };
