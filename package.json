@@ -23,6 +23,7 @@
     "next-remote-watch": "1.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-lottie": "^1.2.3",
     "react-markdown": "^7.0.1",
     "react-youtube": "^7.13.1",
     "rehype-raw": "^6.1.0",
@@ -36,10 +37,10 @@
     "@types/react": "^17.0.2",
     "@types/react-dom": "^17.0.1",
     "autoprefixer": "latest",
+    "next-sitemap": "latest",
     "postcss": "latest",
     "remark-mdx": "latest",
     "tailwindcss": "latest",
-    "typescript": "latest",
-    "next-sitemap": "latest"
+    "typescript": "latest"
   }
 }
