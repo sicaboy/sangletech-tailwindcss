@@ -93,25 +93,25 @@ const apps = [
     name: "BOOK X.0",
     description:
       "Sách Điện tử Độc quyền từ Sang Le: BÍ MẬT LÀM GIÀU X.0.",
-    href: "#",
+    href: "book-xo",
     icon: BookOpenIcon,
   },
   {
     name: "YOU X.0",
     description: "Ứng dụng Thần Số Học đầu tiên tại Việt Nam.",
-    href: "#",
+    href: "you-xo",
     icon: CursorClickIcon,
   },
   {
     name: "FIN X.0",
     description: "Ứng dụng Hỗ trợ Quản lý Tài chính Cá nhân.",
-    href: "#",
+    href: "fin-xo",
     icon: ShieldCheckIcon,
   },
   {
     name: "PRO X.0",
     description: "Ứng dụng Học Trực tuyến 4.0 với các chương trình giảng dạy từ phát triển cá nhân đến kinh doanh online, giúp bạn bước đi tự tin trong thời đại 4.0.",
-    href: "#",
+    href: "pro-xo",
     icon: ViewGridIcon,
   },
 ];
@@ -168,21 +168,21 @@ const resources = [
 const blogPosts = [
   {
     id: 1,
-    name: "Boost your conversion rate",
+    name: "Làm thế nào thiết kế Website bán được hàng?",
     href: "#",
     preview:
-      "Eget ullamcorper ac ut vulputate fames nec mattis pellentesque elementum. Viverra tempor id mus.",
+      "Hầu hết các doanh nghiệp cho rằng Website chỉ để làm cảnh và ngốn rất nhiều chi phí. Nhưng bạn biết không, với một website được dựng hiệu quả thì khách hàng sẽ xuống tiền và đặt hàng nhanh hơn bất cứ nền tảng nào khác.",
     imageUrl:
-      "https://images.unsplash.com/photo-1558478551-1a378f63328e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2849&q=80",
+      "https://res.cloudinary.com/sang-le-tech/image/upload/v1632824815/Galatek.io%20Website/igor-miske-JVSgcV8_vb4-unsplash_bclloj.jpg",
   },
   {
     id: 2,
-    name: "How to use search engine optimization to drive traffic to your site",
+    name: "Có phải THƯƠNG HIỆU chỉ đơn giản là LOGO?",
     href: "#",
     preview:
-      "Eget ullamcorper ac ut vulputate fames nec mattis pellentesque elementum. Viverra tempor id mus.",
+      `Bạn có biết những thương hiệu "khổng lồ" trên thế giới như Apple, Google, Starbucks,... đã phải liên tục "lột xác" bằng cách thay đổi Logo để tồn tại?`,
     imageUrl:
-      "https://images.unsplash.com/1/apple-gear-looking-pretty.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80",
+      "https://res.cloudinary.com/sang-le-tech/image/upload/v1632825252/Galatek.io%20Website/alexander-shatov-niUkImZcSP8-unsplash_vmcoec.jpg",
   },
 ];
 

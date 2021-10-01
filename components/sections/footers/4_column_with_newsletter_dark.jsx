@@ -16,28 +16,28 @@
 */
 const navigation = {
   solutions: [
-    { name: "Marketing", href: "#" },
-    { name: "Analytics", href: "#" },
-    { name: "Commerce", href: "#" },
-    { name: "Insights", href: "#" },
+    { name: "Book X.0", href: "book-xo" },
+    { name: "You X.0", href: "you-xo" },
+    { name: "Fin X.0", href: "fin-xo" },
+    { name: "Pro X.0", href: "pro-xo" },
   ],
   support: [
-    { name: "Pricing", href: "#" },
-    { name: "Documentation", href: "#" },
-    { name: "Guides", href: "#" },
-    { name: "API Status", href: "#" },
+    { name: "Startup X.0", href: "#" },
+    { name: "Chiến Binh X.0", href: "#" },
+    { name: "Funnel X.0", href: "#" },
+    { name: "SPM Basic", href: "#" },
   ],
   company: [
-    { name: "About", href: "#" },
-    { name: "Blog", href: "#" },
-    { name: "Jobs", href: "#" },
-    { name: "Press", href: "#" },
-    { name: "Partners", href: "#" },
+    { name: "Sang Lê Là Ai?", href: "sang-le-la-ai" },
+    { name: "Blog", href: "blog" },
+    { name: "Sách Điện Tử", href: "book-xo" },
+    { name: "Tư Vấn", href: "#" },
+    { name: "Cơ Hội Công Việc", href: "#" },
   ],
   legal: [
-    { name: "Claim", href: "#" },
-    { name: "Privacy", href: "#" },
-    { name: "Terms", href: "#" },
+    { name: "Galatek", href: "#" },
+    { name: "CafeS", href: "#" },
+    { name: "SPMET", href: "#" },
   ],
   social: [
     {
