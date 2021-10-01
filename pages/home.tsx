@@ -49,7 +49,9 @@ const hero = {
   titleNormal: "Sang Le Tech",
   description: `Giúp Bạn Bước Đi Tự Tin Trên **Hành Trình 4.0**`,
   buttonNormal: "Sang Lê là ai?",
+  buttonNormalSrc: "/posts/video-khoanh-khac-cuoc-doi",
   buttonHighlight: "Xem Video",
+  buttonHighlightSrc: "/sang-le-la-ai",
   imgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626615071/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0006_mbnffl.jpg",
   alt: "Hinh anh Sang Le",
@@ -65,7 +67,7 @@ const jow = {
   imgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1628152810/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0001_c2ukh5.png",
   alt: "Hinh anh SL Hanh Trinh Lam Giau X.0",
-  videoSrc: "#",
+  videoSrc: "posts/video-hanh-trinh-lam-giau",
 };
 
 const sow = {
@@ -79,8 +81,7 @@ const sow = {
 
   **⟐**  Làm sao để **giải phóng tiềm năng của những người trẻ có đam mê**?
   
-  **⟐  Những ý tưởng và những chiến lược** mà Sang rút ra từ những doanh nhân tiếng tăm nhất trên thế giới?
-`,
+  **⟐  Những ý tưởng và những chiến lược** mà Sang rút ra từ những doanh nhân tiếng tăm nhất trên thế giới?`,
   leftButtonName: "Tìm hiểu thêm",
   leftButtonSrc: "",
   leftAppleSrc: "2",

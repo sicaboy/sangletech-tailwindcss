@@ -9,36 +9,34 @@ import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/
 import * as Icon from "@heroicons/react/outline";
 
 const hero = {
-    caption: "KHOÁ HỌC: RETARGETING",
-    titleNormal: " LÀ GÌ?",
-    titleHighlight: "QUẢNG CÁO RETARGETING",
-    description: `**Retargeting hoạt động như thế nào?** <br></br>***- Hướng dẫn đầy đủ về Chiến lược Nhắm Lại Khách Hàng Mục Tiêu (Retargeting Ads)***`,
+    caption: "Khoá Học: Phễu Bán Hàng (Cơ Bản)",
+    titleNormal: " Làm sao xây dựng",
+    titleHighlight: "Phễu Bán Hàng Online ĐẺ RA TIỀN?",
+    description: `**Con Đường Ngắn Nhất Xây Dựng Ước Mơ Khởi Nghiệp Của Bạn**`,
     imgSrc:
       "https://res.cloudinary.com/sang-le-tech/image/upload/v1632729923/Galatek.io%20Website/Sangletech.com/istockphoto-1218545883-170667a_amt1pc.jpg",
-    videoSrc: "/posts/video-retargeting-explainer",
-    videoCaption: `Retargeting/Remarketing Là Gì?`,
-    alt: "Sang Le - Video Retargeting explainer",
+    videoSrc: "/posts/video-sales-funnel",
+    videoCaption: `Làm sao xây dựng Phễu Bán Hàng Online ĐẺ RA TIỀN? | Hành trình 4.0`,
+    alt: "SL-course-sales-funnel",
   };
 
 const textOne = {
   leftCaption: "THỰC TẾ",
   leftTitle: "Bạn Có Biết?",
-  leftDescription: `**95% khách truy cập trang web của bạn không chuyển đổi (hoặc thực hiện bất kỳ hành động mua hàng nào) trong lần truy cập đầu tiên của họ!**
-  <br></br>- Khách hàng thường hỏi Sang: *"Retargeting là gì và nó hoạt động như thế nào?"*
-  <br></br>**Retargeting** (hay còn được gọi là **Remarketing**) là bất kỳ chiến dịch quảng cáo kỹ thuật số nào **nhắm đến 95% những khách hàng đã rời khỏi trang web của bạn**.
-  <br></br>**Retargeting** là cách hiệu quả nhất để đưa những người dùng đó trở lại (thông qua các chiến dịch quảng cáo retargeting trực tiếp của bạn), vào thời điểm chính xác mà họ sẵn sàng chuyển đổi thành khách mua hàng.`,
+  leftDescription: `Bạn có biết, Khảo sát của Ban Nghiên cứu Phát triển Kinh tế tư nhân cho thấy: 
+  <br></br>⟐   50% công ty khởi nghiệp bị phá sản sau năm đầu tiên. <br></br>⟐  2 năm tiếp theo có thêm 45% sẽ bị phá sản. 
+  <br></br>Và chỉ vỏn vẹn **5% khởi nghiệp tồn tại sau 5 năm**!`,
   leftImgSrc:
-    "https://res.cloudinary.com/sang-le-tech/image/upload/v1627541013/Galatek.io%20Website/Sangletech.com/pose_1_horvhy.png",
-  leftAlt: "Hinh anh minh hoa Ret 1",
+    "https://res.cloudinary.com/sang-le-tech/image/upload/v1625651836/Galatek.io%20Website/IMG_8057-1024x682_fa7z6z.jpg",
+  leftAlt: "Hinh anh minh hoa Startupxo 1",
 };
 
 const textTwo = {
   rightCaption: "VẤN ĐỀ",
-  rightTitle: "Điều Gì Xảy Ra Nếu Bạn Không Có Sự Trợ Giúp Của Retargeting?",
-  rightDescription: `**⟐ Đánh mất những khách hàng tiềm năng vĩnh viễn** (những người đã từng quan tâm đến sản phẩm/dịch vụ của bạn, nhưng vì nhiều lý do mà họ quên mất bạn và chưa đi đến quyết định mua hàng).
-<br></br>**⟐ Hao tốn "hàng đống" chi phí cho các hình thức quảng cáo khác, nhắm đến một lượng lớn những khách hàng còn chẳng quan tâm đến sản phẩm/dịch vụ bạn**. Trong khi đó, Retargeting chỉ đặt mục tiêu vào những đối tượng khách hàng có sự hứng thú với bạn.`,
+  rightTitle: "BẠN phải đối mặt với Covid-19 & Thời đại 4.0",
+  rightDescription: `Trong thời đại 4.0, mọi thứ thay đổi một cách chóng mặt. Ngay cả những công ty “đồ sộ” như **Nokia, Blackberry và Kodak cũng phải đến bờ vực phá sản**. Bởi vậy nếu bạn không biết cách phát triển hiệu quả trong thời đại 4.0 thì bạn sẽ **tốn rất nhiều chi phí và thời gian**, và tệ hơn nữa đó là **khởi nghiệp của bạn sẽ có số phận giống như những công ty đó**.`,
   rightImgSrc:
-    "https://res.cloudinary.com/sang-le-tech/image/upload/v1627541075/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0001_shd3co.png",
+    "https://res.cloudinary.com/sang-le-tech/image/upload/v1626085142/Galatek.io%20Website/3D-Freelancers-illustration0028_pqynfh.png",
   rightAlt: "Hinh anh minh hoa Ret 2",
 };
 
@@ -185,7 +183,7 @@ const textPayment = {
   imgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1627541339/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0001_qgzlmq.png",
   alt: "Hinh anh minh hoa Ret 5",
-  videoSrc: "/posts/video-retargeting-explainer",
+  videoSrc: "#",
 };
 
 const textBookxo = {
