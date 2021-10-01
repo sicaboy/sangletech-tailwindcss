@@ -6,21 +6,25 @@ import Author from "../../types/author";
 
 type Props = {
   title: string;
-  coverImage: string;
-  date: string;
+  coverImage?: string;
+  date?: string;
   author: Author;
+  type: string;
 };
 
-const PostHeader = ({ title, coverImage, date, author }: Props) => {
+const PostHeader = ({ title, coverImage, date, author, type }: Props) => {
   return (
     <>
       <PostTitle>{title}</PostTitle>
       <div className="hidden md:block md:mb-12">
         <Avatar name={author.name} picture={author.picture} />
       </div>
-      <div className="mb-8 md:mb-16 sm:mx-0">
-        <CoverImage title={title} src={coverImage} />
-      </div>
+      {type === "post" && (
+        <div className="mb-8 md:mb-16 sm:mx-0">
+          <CoverImage title={title} src={coverImage} />
+        </div>
+      )}
+
       <div className="max-w-2xl mx-auto">
         <div className="block mb-6 md:hidden">
           <Avatar name={author.name} picture={author.picture} />

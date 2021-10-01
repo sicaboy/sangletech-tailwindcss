@@ -52,12 +52,15 @@ const Post = ({ post, morePosts, preview }: Props) => {
                 <title>{post.title} | Sang Le Tech Blog</title>
                 <meta property="og:image" content={post.ogImage.url} />
               </Head>
+
               <PostHeader
                 title={post.title}
-                coverImage={post.coverImage}
                 date={post.date}
+                coverImage={post.coverImage}
                 author={post.author}
+                type={post.type}
               />
+
               <PostBody content={post.content} components={components} />
             </article>
           </>
@@ -84,6 +87,7 @@ export async function getStaticProps({ params }: Params) {
     "content",
     "ogImage",
     "coverImage",
+    "type",
   ]);
 
   const content = await serialize(post.content, {
