@@ -4,7 +4,7 @@ import UnderConstruction from "../components/under-construction";
 function BasicSPMCourse() {
   return (
     <div>
-      <UnderConstruction />
+      <UnderConstruction title="Basic SPM Course" />
     </div>
   );
 }

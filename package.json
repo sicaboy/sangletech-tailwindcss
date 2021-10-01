@@ -16,6 +16,7 @@
     "@tailwindcss/line-clamp": "^0.2.1",
     "@tailwindcss/typography": "^0.4.1",
     "@u-wave/react-vimeo": "^0.9.5",
+    "daisyui": "^1.14.2",
     "date-fns": "^2.24.0",
     "gray-matter": "^4.0.3",
     "next": "latest",
