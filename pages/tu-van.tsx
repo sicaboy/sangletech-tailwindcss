@@ -1,12 +1,12 @@
 import React from "react";
 import UnderConstruction from "../components/under-construction";
 
-function StartupX0Course() {
+function Consultant() {
   return (
     <div>
-      <UnderConstruction title="Lớp Startup X.0" />
+      <UnderConstruction title="Trang Tư Vấn" />
     </div>
   );
 }
 
-export default StartupX0Course;
+export default Consultant;
