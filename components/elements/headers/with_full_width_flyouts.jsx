@@ -61,7 +61,7 @@ Khác
 
 const courses = [
   {
-  //TODO: This shows on Apps part
+    //TODO: This shows on Apps part
     name: "Quảng Cáo Retargeting",
     description:
       "Làm thế nào để Bạn luôn nằm ở vị trí hàng đầu trong tâm trí khách hàng và đưa họ quay trở lại trang web của mình khi họ đã rời đi?",
@@ -70,19 +70,22 @@ const courses = [
   },
   {
     name: "Phễu Bán Hàng",
-    description: "Bật mí những bí mật từ các Chuyên gia Marketing nổi tiếng thế giới để áp dụng thành công cho việc kinh doanh online của Bạn!",
+    description:
+      "Bật mí những bí mật từ các Chuyên gia Marketing nổi tiếng thế giới để áp dụng thành công cho việc kinh doanh online của Bạn!",
     href: "#",
     icon: CursorClickIcon,
   },
   {
     name: "Startup X0",
-    description: "7 Tuần xây dựng khởi nghiệp của bạn từ A-Z & Marketing ra thị trường.",
+    description:
+      "7 Tuần xây dựng khởi nghiệp của bạn từ A-Z & Marketing ra thị trường.",
     href: "#",
     icon: ShieldCheckIcon,
   },
   {
     name: "Chiến Binh X.0",
-    description: "Trở thành một Chiến Binh X.0 để bước đi tự tin trên Hành trình Làm Giàu X.0",
+    description:
+      "Trở thành một Chiến Binh X.0 để bước đi tự tin trên Hành trình Làm Giàu X.0",
     href: "#",
     icon: ViewGridIcon,
   },
@@ -91,8 +94,7 @@ const courses = [
 const apps = [
   {
     name: "BOOK X.0",
-    description:
-      "Sách Điện tử Độc quyền từ Sang Le: BÍ MẬT LÀM GIÀU X.0.",
+    description: "Sách Điện tử Độc quyền từ Sang Le: BÍ MẬT LÀM GIÀU X.0.",
     href: "book-xo",
     icon: BookOpenIcon,
   },
@@ -110,7 +112,8 @@ const apps = [
   },
   {
     name: "PRO X.0",
-    description: "Ứng dụng Học Trực tuyến 4.0 với các chương trình giảng dạy từ phát triển cá nhân đến kinh doanh online, giúp bạn bước đi tự tin trong thời đại 4.0.",
+    description:
+      "Ứng dụng Học Trực tuyến 4.0 với các chương trình giảng dạy từ phát triển cá nhân đến kinh doanh online, giúp bạn bước đi tự tin trong thời đại 4.0.",
     href: "pro-xo",
     icon: ViewGridIcon,
   },
@@ -119,8 +122,7 @@ const apps = [
 const books = [
   {
     name: "BÍ MẬT LÀM GIÀU X.0",
-    description:
-      "Sách Điện Tử Độc Quyền Từ Sang Le",
+    description: "Sách Điện Tử Độc Quyền Từ Sang Le",
     href: "book-xo",
     icon: BookOpenIcon,
   },
@@ -150,6 +152,7 @@ const callsToAction = [
   { name: "Liên Hệ", href: "#", icon: PhoneIcon },
 ];
 
+//TODO: Add company info
 const company = [
   { name: "About", href: "#", icon: InformationCircleIcon },
   { name: "Customers", href: "#", icon: OfficeBuildingIcon },
@@ -157,6 +160,8 @@ const company = [
   { name: "Careers", href: "#", icon: BriefcaseIcon },
   { name: "Privacy", href: "#", icon: ShieldCheckIcon },
 ];
+
+//TODO: Add resources info
 
 const resources = [
   { name: "Community", href: "#", icon: UserGroupIcon },
@@ -179,8 +184,7 @@ const blogPosts = [
     id: 2,
     name: "Có phải THƯƠNG HIỆU chỉ đơn giản là LOGO?",
     href: "#",
-    preview:
-      `Bạn có biết những thương hiệu "khổng lồ" trên thế giới như Apple, Google, Starbucks,... đã phải liên tục "lột xác" bằng cách thay đổi Logo để tồn tại?`,
+    preview: `Bạn có biết những thương hiệu "khổng lồ" trên thế giới như Apple, Google, Starbucks,... đã phải liên tục "lột xác" bằng cách thay đổi Logo để tồn tại?`,
     imageUrl:
       "https://res.cloudinary.com/sang-le-tech/image/upload/v1632825252/Galatek.io%20Website/alexander-shatov-niUkImZcSP8-unsplash_vmcoec.jpg",
   },
@@ -217,7 +221,7 @@ export default function WithFullWithFlyOuts() {
           </div>
           <div className="hidden md:flex-1 md:flex md:items-center md:justify-between">
             <Popover.Group as="nav" className="flex space-x-10">
-              <Link href="/trang-chu">
+              <Link href="/">
                 <a className="text-base font-medium text-gray-500 hover:text-gray-900">
                   Trang Chủ
                 </a>
@@ -227,7 +231,7 @@ export default function WithFullWithFlyOuts() {
                   Sang Lê là ai?
                 </a>
               </Link>
-              <Link href="/sach">
+              <Link href="/book-xo">
                 <a className="text-base font-medium text-gray-500 hover:text-gray-900">
                   Sách
                 </a>
@@ -262,7 +266,7 @@ export default function WithFullWithFlyOuts() {
                     >
                       <Popover.Panel className="absolute inset-x-0 z-10 hidden transform bg-white shadow-lg md:block top-full">
                         <div className="grid px-4 py-6 mx-auto max-w-7xl gap-y-6 sm:grid-cols-2 sm:gap-8 sm:px-6 sm:py-8 lg:grid-cols-4 lg:px-8 lg:py-12 xl:py-16">
-                          {courses.map((item) => (
+                          {apps.map((item) => (
                             <a
                               key={item.name}
                               href={item.href}
@@ -287,7 +291,7 @@ export default function WithFullWithFlyOuts() {
                                     </p>
                                   </div>
                                   <p className="mt-2 text-sm font-medium text-indigo-600 lg:mt-4">
-                                    Learn more{" "}
+                                    Tìm Hiểu Ngay{" "}
                                     <span aria-hidden="true">&rarr;</span>
                                   </p>
                                 </div>
@@ -348,7 +352,7 @@ export default function WithFullWithFlyOuts() {
                     >
                       <Popover.Panel className="absolute inset-x-0 z-10 hidden transform bg-white shadow-lg md:block top-full">
                         <div className="grid px-4 py-6 mx-auto max-w-7xl gap-y-6 sm:grid-cols-2 sm:gap-8 sm:px-6 sm:py-8 lg:grid-cols-4 lg:px-8 lg:py-12 xl:py-16">
-                          {apps.map((item) => (
+                          {courses.map((item) => (
                             <a
                               key={item.name}
                               href={item.href}
@@ -373,7 +377,7 @@ export default function WithFullWithFlyOuts() {
                                     </p>
                                   </div>
                                   <p className="mt-2 text-sm font-medium text-indigo-600 lg:mt-4">
-                                    Learn more{" "}
+                                    Tìm Hiểu Ngay{" "}
                                     <span aria-hidden="true">&rarr;</span>
                                   </p>
                                 </div>
@@ -681,4 +685,3 @@ export default function WithFullWithFlyOuts() {
     </Popover>
   );
 }
-
