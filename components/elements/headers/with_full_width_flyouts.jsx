@@ -61,7 +61,7 @@ Khác
 
 const courses = [
   {
-  //TODO: This shows on Apps part
+    //TODO: This shows on Apps part
     name: "Quảng Cáo Retargeting",
     description:
       "Làm thế nào để Bạn luôn nằm ở vị trí hàng đầu trong tâm trí khách hàng và đưa họ quay trở lại trang web của mình khi họ đã rời đi?",
@@ -69,21 +69,24 @@ const courses = [
     icon: ChartBarIcon,
   },
   {
-    name: "Phễu Bán Hàng",
-    description: "Bật mí những bí mật từ các Chuyên gia Marketing nổi tiếng thế giới để áp dụng thành công cho việc kinh doanh online của Bạn!",
-    href: "#",
+    name: "Phễu Bán Hàng Basic",
+    description:
+      "Bật mí những bí mật từ các Chuyên gia Marketing nổi tiếng thế giới để áp dụng thành công cho việc kinh doanh online của Bạn!",
+    href: "/basic-sales-funnel",
     icon: CursorClickIcon,
   },
   {
     name: "Startup X0",
-    description: "7 Tuần xây dựng khởi nghiệp của bạn từ A-Z & Marketing ra thị trường.",
-    href: "#",
+    description:
+      "7 Tuần xây dựng khởi nghiệp của bạn từ A-Z & Marketing ra thị trường.",
+    href: "/startupxo-course",
     icon: ShieldCheckIcon,
   },
   {
-    name: "Chiến Binh X.0",
-    description: "Trở thành một Chiến Binh X.0 để bước đi tự tin trên Hành trình Làm Giàu X.0",
-    href: "#",
+    name: "SPM Basic",
+    description:
+      "Phương pháp Lập kế hoạch đơn giản với phần mềm Notion.",
+    href: "/basic-spm-course",
     icon: ViewGridIcon,
   },
 ];
@@ -91,8 +94,7 @@ const courses = [
 const apps = [
   {
     name: "BOOK X.0",
-    description:
-      "Sách Điện tử Độc quyền từ Sang Le: BÍ MẬT LÀM GIÀU X.0.",
+    description: "Sách Điện tử Độc quyền từ Sang Le: BÍ MẬT LÀM GIÀU X.0.",
     href: "book-xo",
     icon: BookOpenIcon,
   },
@@ -110,7 +112,8 @@ const apps = [
   },
   {
     name: "PRO X.0",
-    description: "Ứng dụng Học Trực tuyến 4.0 với các chương trình giảng dạy từ phát triển cá nhân đến kinh doanh online, giúp bạn bước đi tự tin trong thời đại 4.0.",
+    description:
+      "Ứng dụng Học Trực tuyến 4.0 với các chương trình giảng dạy từ phát triển cá nhân đến kinh doanh online, giúp bạn bước đi tự tin trong thời đại 4.0.",
     href: "pro-xo",
     icon: ViewGridIcon,
   },
@@ -119,8 +122,7 @@ const apps = [
 const books = [
   {
     name: "BÍ MẬT LÀM GIÀU X.0",
-    description:
-      "Sách Điện Tử Độc Quyền Từ Sang Le",
+    description: "Sách Điện Tử Độc Quyền Từ Sang Le",
     href: "book-xo",
     icon: BookOpenIcon,
   },
@@ -145,31 +147,33 @@ const books = [
 ];
 
 const callsToAction = [
-  { name: "Xem Demo", href: "#", icon: PlayIcon },
-  { name: "Xem Tất Cả Sản Phẩm", href: "#", icon: CheckCircleIcon },
-  { name: "Liên Hệ", href: "#", icon: PhoneIcon },
+  { name: "Xem thêm về Sách", href: "/posts/video-book-xo", icon: PlayIcon },
+  { name: "Tra cứu Thần Số Học", href: "/you-xo", icon: CheckCircleIcon },
+  { name: "Liên hệ Tư vấn", href: "/tu-van", icon: PhoneIcon },
 ];
 
+//TODO: Add company info
 const company = [
-  { name: "About", href: "#", icon: InformationCircleIcon },
-  { name: "Customers", href: "#", icon: OfficeBuildingIcon },
-  { name: "Press", href: "#", icon: NewspaperIcon },
-  { name: "Careers", href: "#", icon: BriefcaseIcon },
-  { name: "Privacy", href: "#", icon: ShieldCheckIcon },
+  { name: "Sang Lê", href: "/sang-le-la-ai", icon: InformationCircleIcon },
+  { name: "Sách", href: "/book-xo", icon: BookOpenIcon },
+  { name: "Blog", href: "/blog", icon: NewspaperIcon },
+  { name: "Phần Mềm", href: "/you-xo", icon: CursorClickIcon },
+  { name: "Khoá Học", href: "/pro-xo", icon: ShieldCheckIcon },
 ];
+
+//TODO: Add resources info
 
 const resources = [
-  { name: "Community", href: "#", icon: UserGroupIcon },
-  { name: "Partners", href: "#", icon: GlobeAltIcon },
-  { name: "Guides", href: "#", icon: BookmarkAltIcon },
-  { name: "Webinars", href: "#", icon: DesktopComputerIcon },
+  { name: "CafeS", href: "#", icon: UserGroupIcon },
+  { name: "Galatek", href: "#", icon: GlobeAltIcon },
+  { name: "SPMET", href: "#", icon: BookmarkAltIcon },
 ];
 
 const blogPosts = [
   {
     id: 1,
     name: "Làm thế nào thiết kế Website bán được hàng?",
-    href: "#",
+    href: "/posts/thiet-ke-website-ban-hang",
     preview:
       "Hầu hết các doanh nghiệp cho rằng Website chỉ để làm cảnh và ngốn rất nhiều chi phí. Nhưng bạn biết không, với một website được dựng hiệu quả thì khách hàng sẽ xuống tiền và đặt hàng nhanh hơn bất cứ nền tảng nào khác.",
     imageUrl:
@@ -178,9 +182,8 @@ const blogPosts = [
   {
     id: 2,
     name: "Có phải THƯƠNG HIỆU chỉ đơn giản là LOGO?",
-    href: "#",
-    preview:
-      `Bạn có biết những thương hiệu "khổng lồ" trên thế giới như Apple, Google, Starbucks,... đã phải liên tục "lột xác" bằng cách thay đổi Logo để tồn tại?`,
+    href: "/posts/logo-la-thuong-hieu",
+    preview: `Bạn có biết những thương hiệu "khổng lồ" trên thế giới như Apple, Google, Starbucks,... đã phải liên tục "lột xác" bằng cách thay đổi Logo để tồn tại?`,
     imageUrl:
       "https://res.cloudinary.com/sang-le-tech/image/upload/v1632825252/Galatek.io%20Website/alexander-shatov-niUkImZcSP8-unsplash_vmcoec.jpg",
   },
@@ -217,7 +220,7 @@ export default function WithFullWithFlyOuts() {
           </div>
           <div className="hidden md:flex-1 md:flex md:items-center md:justify-between">
             <Popover.Group as="nav" className="flex space-x-10">
-              <Link href="/trang-chu">
+              <Link href="/">
                 <a className="text-base font-medium text-gray-500 hover:text-gray-900">
                   Trang Chủ
                 </a>
@@ -227,7 +230,7 @@ export default function WithFullWithFlyOuts() {
                   Sang Lê là ai?
                 </a>
               </Link>
-              <Link href="/sach">
+              <Link href="/book-xo">
                 <a className="text-base font-medium text-gray-500 hover:text-gray-900">
                   Sách
                 </a>
@@ -262,7 +265,7 @@ export default function WithFullWithFlyOuts() {
                     >
                       <Popover.Panel className="absolute inset-x-0 z-10 hidden transform bg-white shadow-lg md:block top-full">
                         <div className="grid px-4 py-6 mx-auto max-w-7xl gap-y-6 sm:grid-cols-2 sm:gap-8 sm:px-6 sm:py-8 lg:grid-cols-4 lg:px-8 lg:py-12 xl:py-16">
-                          {courses.map((item) => (
+                          {apps.map((item) => (
                             <a
                               key={item.name}
                               href={item.href}
@@ -287,7 +290,7 @@ export default function WithFullWithFlyOuts() {
                                     </p>
                                   </div>
                                   <p className="mt-2 text-sm font-medium text-indigo-600 lg:mt-4">
-                                    Learn more{" "}
+                                    Tìm Hiểu Ngay{" "}
                                     <span aria-hidden="true">&rarr;</span>
                                   </p>
                                 </div>
@@ -348,7 +351,7 @@ export default function WithFullWithFlyOuts() {
                     >
                       <Popover.Panel className="absolute inset-x-0 z-10 hidden transform bg-white shadow-lg md:block top-full">
                         <div className="grid px-4 py-6 mx-auto max-w-7xl gap-y-6 sm:grid-cols-2 sm:gap-8 sm:px-6 sm:py-8 lg:grid-cols-4 lg:px-8 lg:py-12 xl:py-16">
-                          {apps.map((item) => (
+                          {courses.map((item) => (
                             <a
                               key={item.name}
                               href={item.href}
@@ -373,7 +376,7 @@ export default function WithFullWithFlyOuts() {
                                     </p>
                                   </div>
                                   <p className="mt-2 text-sm font-medium text-indigo-600 lg:mt-4">
-                                    Learn more{" "}
+                                    Tìm Hiểu Ngay{" "}
                                     <span aria-hidden="true">&rarr;</span>
                                   </p>
                                 </div>
@@ -405,7 +408,7 @@ export default function WithFullWithFlyOuts() {
                 )}
               </Popover>
               <a
-                href="/tu-van"
+                href="/tu-vanß"
                 className="text-base font-medium text-gray-500 hover:text-gray-900"
               >
                 Tư Vấn
@@ -605,12 +608,13 @@ export default function WithFullWithFlyOuts() {
                     ))}
                   </div>
                   <div className="mt-8 text-base">
+                    {/* TODO: Create products page */}
                     <a
-                      href="#"
+                      href="/pro-xo"
                       className="font-medium text-indigo-600 hover:text-indigo-500"
                     >
                       {" "}
-                      View all products <span aria-hidden="true">&rarr;</span>
+                      Xem Tất Cả <span aria-hidden="true">&rarr;</span>
                     </a>
                   </div>
                 </nav>
@@ -622,57 +626,57 @@ export default function WithFullWithFlyOuts() {
                   href="#"
                   className="text-base font-medium text-gray-900 rounded-md hover:text-gray-700"
                 >
-                  Pricing
+                  Book X.0
                 </a>
 
                 <a
-                  href="#"
+                  href="book-xo"
                   className="text-base font-medium text-gray-900 rounded-md hover:text-gray-700"
                 >
-                  Docs
+                  You X.0
                 </a>
 
                 <a
-                  href="#"
+                  href="you-xo"
                   className="text-base font-medium text-gray-900 rounded-md hover:text-gray-700"
                 >
-                  Company
+                  Fin X.0
                 </a>
 
                 <a
-                  href="#"
+                  href="fin-xo"
                   className="text-base font-medium text-gray-900 rounded-md hover:text-gray-700"
                 >
-                  Resources
+                  Pro X.0
                 </a>
 
                 <a
-                  href="#"
+                  href="pro-xo"
                   className="text-base font-medium text-gray-900 rounded-md hover:text-gray-700"
                 >
                   Blog
                 </a>
 
                 <a
-                  href="#"
+                  href="/blog"
                   className="text-base font-medium text-gray-900 rounded-md hover:text-gray-700"
                 >
-                  Contact Sales
+                  Sang Lê là ai?
                 </a>
               </div>
               <div className="mt-6">
                 <a
-                  href="#"
+                  href="/form"
                   className="flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700"
                 >
-                  Sign up
+                  Đăng Ký Nhận Ưu Đãi
                 </a>
-                <p className="mt-6 text-base font-medium text-center text-gray-500">
+                {/* <p className="mt-6 text-base font-medium text-center text-gray-500">
                   Existing customer?{" "}
                   <a href="#" className="text-indigo-600 hover:text-indigo-500">
                     Sign in
                   </a>
-                </p>
+                </p> */}
               </div>
             </div>
           </div>
@@ -681,4 +685,3 @@ export default function WithFullWithFlyOuts() {
     </Popover>
   );
 }
-

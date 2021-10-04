@@ -4,6 +4,8 @@ import Image from "next/image";
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import remarkGfm from "remark-gfm";
+import Button from "../../button";
+import ButtonAppsGroup from "../../button-apps-group";
 
 interface Props {
   leftIconName?: {};
@@ -94,53 +96,13 @@ export default function AlternatingWithOptionalTestimonial(props: Props) {
                   remarkPlugins={[remarkGfm]}
                   className="mt-4 text-lg text-gray-500"
                 />
-
-                <div className="mt-6 mb-3">
-                  <a
-                    href={props.leftButtonSrc || "#"}
-                    className="inline-flex px-4 py-2 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700"
-                  >
-                    {props.leftButtonName || "Get started"}
-                  </a>
-                </div>
-                <div className="flex mt-6 mb-3 space-x-4">
-                  {props.leftAppleSrc?.length > 0 && (
-                    <a
-                      href={props.leftAppleSrc || "/"}
-                      className="transition duration-300 hover:shadow-lg"
-                    >
-                      <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/1000px-Download_on_the_App_Store_Badge.svg.png"
-                        className="object-cover object-top w-32 mx-auto"
-                        alt={"sangletech"}
-                      />
-                    </a>
-                  )}
-                  {props.leftGoogleSrc?.length > 0 && (
-                    <a
-                      href={props.leftGoogleSrc || "/"}
-                      className="transition duration-300 hover:shadow-lg"
-                    >
-                      <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/1000px-Google_Play_Store_badge_EN.svg.png"
-                        className="object-cover object-top w-32 mx-auto"
-                        alt="sangletech"
-                      />
-                    </a>
-                  )}
-                  {props.leftWebSrc?.length > 0 && (
-                    <a
-                      href={props.leftWebSrc || "/"}
-                      className="transition duration-300 hover:shadow-lg"
-                    >
-                      <img
-                        src="https://blueislanddigital.com/wp-content/uploads/2019/10/Progressive-Web-App.png"
-                        className="object-cover object-top w-32 mx-auto"
-                        alt="sangletech"
-                      />
-                    </a>
-                  )}
-                </div>
+                <div className="h-16" />
+                <Button url={props.leftButtonSrc} name={props.leftButtonName} />
+                <ButtonAppsGroup
+                  AppleSrc={props.leftAppleSrc}
+                  GoogleSrc={props.leftGoogleSrc}
+                  WebSrc={props.leftWebSrc}
+                />
               </div>
             </div>
             <div className="pt-6 mt-8 border-t border-gray-200">
@@ -210,53 +172,16 @@ export default function AlternatingWithOptionalTestimonial(props: Props) {
                   remarkPlugins={[remarkGfm]}
                   className="mt-4 text-lg text-gray-500"
                 />
-
-                <div className="mt-6">
-                  <a
-                    href="#"
-                    className="inline-flex px-4 py-2 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 "
-                  >
-                    {props.rightButtonName || "Get started"}
-                  </a>
-                </div>
-                <div className="flex mt-6 mb-3 space-x-4 ">
-                  {props.rightAppleSrc?.length > 0 && (
-                    <a
-                      href={props.rightAppleSrc || "/"}
-                      className="transition duration-300 hover:shadow-lg"
-                    >
-                      <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/1000px-Download_on_the_App_Store_Badge.svg.png"
-                        className="object-cover object-top w-32 mx-auto"
-                        alt={"sangletech"}
-                      />
-                    </a>
-                  )}
-                  {props.rightGoogleSrc?.length > 0 && (
-                    <a
-                      href={props.rightGoogleSrc || "/"}
-                      className="transition duration-300 hover:shadow-lg"
-                    >
-                      <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/1000px-Google_Play_Store_badge_EN.svg.png"
-                        className="object-cover object-top w-32 mx-auto"
-                        alt="sangletech"
-                      />
-                    </a>
-                  )}
-                  {props.rightWebSrc?.length > 0 && (
-                    <a
-                      href={props.rightWebSrc || "/"}
-                      className="transition duration-300 hover:shadow-lg"
-                    >
-                      <img
-                        src="https://blueislanddigital.com/wp-content/uploads/2019/10/Progressive-Web-App.png"
-                        className="object-cover object-top w-32 mx-auto"
-                        alt="sangletech"
-                      />
-                    </a>
-                  )}
-                </div>
+                <div className="h-16" />
+                <Button
+                  url={props.rightButtonSrc}
+                  name={props.rightButtonName}
+                />
+                <ButtonAppsGroup
+                  AppleSrc={props.rightAppleSrc}
+                  GoogleSrc={props.rightGoogleSrc}
+                  WebSrc={props.rightWebSrc}
+                />
               </div>
             </div>
           </div>

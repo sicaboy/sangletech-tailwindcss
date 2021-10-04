@@ -22,6 +22,8 @@ interface Props {
   buttonHighlight?: string;
   imgSrc?: string;
   alt?: string;
+  buttonHighlightSrc?: string;
+  buttonNormalSrc?: string;
 }
 
 export default function HeroWithAngelImageOnRight(props: Props) {
@@ -71,7 +73,7 @@ ${props.description}
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
                   <a
-                    href="#"
+                    href={props.buttonHighlightSrc}
                     className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
                   >
                     {props.buttonHighlight || "Get started"}
@@ -79,7 +81,7 @@ ${props.description}
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
                   <a
-                    href="#"
+                    href={props.buttonNormalSrc}
                     className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-indigo-700 bg-indigo-100 border border-transparent rounded-md hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
                   >
                     {props.buttonNormal || "Live demo"}

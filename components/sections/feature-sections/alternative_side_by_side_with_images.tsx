@@ -10,6 +10,10 @@ import {
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
+import ButtonAppsGroup from "../../button-apps-group";
+import Button from "../../button";
+
+import Link from "next/link";
 
 // interface Props {
 //   mainTitle?: string;
@@ -273,6 +277,13 @@ ${props.mainDescription}
                 </div>
               ))}
             </dl>
+            <div className="h-16" />
+            <Button url={props.leftButtonSrc} name={props.leftButtonName} />
+            <ButtonAppsGroup
+              AppleSrc={props.leftAppleSrc}
+              GoogleSrc={props.leftGoogleSrc}
+              WebSrc={props.leftWebSrc}
+            />
           </div>
 
           <div className="relative mt-10 -mx-4 lg:mt-0" aria-hidden="true">
@@ -390,6 +401,13 @@ ${props.mainDescription}
                   </div>
                 ))}
               </dl>
+              <div className="h-16" />
+              <Button url={props.rightButtonSrc} name={props.rightButtonName} />
+              <ButtonAppsGroup
+                AppleSrc={props.rightAppleSrc}
+                GoogleSrc={props.rightGoogleSrc}
+                WebSrc={props.rightWebSrc}
+              />
             </div>
 
             <div className="relative mt-10 -mx-4 lg:mt-0 lg:col-start-1">

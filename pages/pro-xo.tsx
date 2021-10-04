@@ -8,11 +8,14 @@ import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/
 import * as Icon from "@heroicons/react/outline";
 
 const hero = {
+//TODO: Add 2 button src and with
   titleHighlight: "PRO X.0",
   titleNormal: "Ứng Dụng Học Trực Tuyến 4.0",
   description: `**Trực tiếp xây dựng và phát triển độc quyền bởi Sang Lê**`,
   buttonNormal: "Tìm Hiểu Thêm",
-  buttonHighlight: "Truy Cập Ngay",
+  buttonHighlight: "Xem Khoá Học",
+  buttonNormalSrc: "",
+  buttonHighlightSrc: "/form",
   imgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626085137/Galatek.io%20Website/3D-Freelancers-illustration0005_zjyclx.png",
   alt: "Hinh anh minh hoa Pro X.0 1",
@@ -163,7 +166,6 @@ const textBookxo = {
 function ProX0() {
   return (
     <Layout>
-      <div>Pro X.0 Page</div>
       <HeroWithAngelImageOnRight {...hero} />
       <AlternativeSideBySideWithVideoOrImg {...textOne} {...textTwo} />
       <ThreeColumnCards {...coursesOne} />
