@@ -5,6 +5,7 @@ import AlternativeSideBySideWithImages from "../components/sections/feature-sect
 import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/brand_panel_with_overlapping_image";
 import * as Icon from "@heroicons/react/outline";
 import BrandPanelWithAppScreenShot from "../components/sections/cta-sections/brand_panel_with_app_screenshot";
+import Testimonial from "../components/sections/testimonials/simple_centered";
 
 const hero = {
   caption: "BÍ MẬT LÀM GIÀU X.0",
@@ -112,6 +113,7 @@ function BookX0() {
       <Hero {...hero} />
       <AlternativeSideBySideWithImages {...textOne} {...textTwo} />
       <BrandPanelWithOverlappingImage {...textThree} />
+      <Testimonial />
       <BrandPanelWithAppScreenShot {...textFour} />
     </Layout>
   );

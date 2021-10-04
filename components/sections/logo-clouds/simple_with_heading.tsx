@@ -16,7 +16,7 @@ interface Props {
   logoThreeAlt: string;
 }
 
-export default function Example(props: Props) {
+export default function Example(props) {
   return (
     <div className="my-16 bg-indigo-200 bg-opacity-25">
       <div className="px-4 py-16 mx-auto max-w-7xl sm:py-24 sm:px-6 lg:px-8">

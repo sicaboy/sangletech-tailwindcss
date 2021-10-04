@@ -7,18 +7,17 @@ import ThreeColumnCards from "../components/sections/blog-sections/3_column_card
 import BrandPanelWithAppScreenShot from "../components/sections/cta-sections/brand_panel_with_app_screenshot";
 import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/brand_panel_with_overlapping_image";
 import * as Icon from "@heroicons/react/outline";
-import ThreeColumnsFeatureList from "../components/three-columns-feature-list";
 
 const hero = {
-  caption: "STARTUP X.0",
-  titleNormal: " STARTUP X.0",
-  titleHighlight: "CHƯƠNG TRÌNH",
+  caption: "Khoá Học: Phễu Bán Hàng (Cơ Bản)",
+  titleNormal: " Làm sao xây dựng",
+  titleHighlight: "Phễu Bán Hàng Online ĐẺ RA TIỀN?",
   description: `**Con Đường Ngắn Nhất Xây Dựng Ước Mơ Khởi Nghiệp Của Bạn**`,
   imgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1632729923/Galatek.io%20Website/Sangletech.com/istockphoto-1218545883-170667a_amt1pc.jpg",
-  videoSrc: "https://www.youtube.com/watch?v=l86OQXzhO8o",
-  videoCaption: `CafeS Intro`,
-  alt: "Startupxo-CafeS Intro",
+  videoSrc: "/posts/video-sales-funnel",
+  videoCaption: `Làm sao xây dựng Phễu Bán Hàng Online ĐẺ RA TIỀN? | Hành trình 4.0`,
+  alt: "SL-course-sales-funnel",
 };
 
 const textOne = {
@@ -26,7 +25,7 @@ const textOne = {
   leftTitle: "Bạn Có Biết?",
   leftDescription: `Bạn có biết, Khảo sát của Ban Nghiên cứu Phát triển Kinh tế tư nhân cho thấy: 
   <br></br>⟐   50% công ty khởi nghiệp bị phá sản sau năm đầu tiên. <br></br>⟐  2 năm tiếp theo có thêm 45% sẽ bị phá sản. 
-  <br></br>Và chỉ vỏn vẹn **5% khởi nghiệp tồn tại sau 5 năm**!`,
+  <br></br>Và chỉ vỏn vẹn **5% khởi nghiệp tồn tại sau 5 năm**!`,
   leftImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1625651836/Galatek.io%20Website/IMG_8057-1024x682_fa7z6z.jpg",
   leftAlt: "Hinh anh minh hoa Startupxo 1",
@@ -35,7 +34,7 @@ const textOne = {
 const textTwo = {
   rightCaption: "VẤN ĐỀ",
   rightTitle: "BẠN phải đối mặt với Covid-19 & Thời đại 4.0",
-  rightDescription: `Trong thời đại 4.0, mọi thứ thay đổi một cách chóng mặt. Ngay cả những công ty “đồ sộ” như **Nokia, Blackberry và Kodak cũng phải đến bờ vực phá sản**. Bởi vậy nếu bạn không biết cách phát triển hiệu quả trong thời đại 4.0 thì bạn sẽ **tốn rất nhiều chi phí và thời gian**, và tệ hơn nữa đó là **khởi nghiệp của bạn sẽ có số phận giống như những công ty đó**.`,
+  rightDescription: `Trong thời đại 4.0, mọi thứ thay đổi một cách chóng mặt. Ngay cả những công ty “đồ sộ” như **Nokia, Blackberry và Kodak cũng phải đến bờ vực phá sản**. Bởi vậy nếu bạn không biết cách phát triển hiệu quả trong thời đại 4.0 thì bạn sẽ **tốn rất nhiều chi phí và thời gian**, và tệ hơn nữa đó là **khởi nghiệp của bạn sẽ có số phận giống như những công ty đó**.`,
   rightImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626085142/Galatek.io%20Website/3D-Freelancers-illustration0028_pqynfh.png",
   rightAlt: "Hinh anh minh hoa Ret 2",
@@ -117,6 +116,8 @@ const courseValue = {
   caption: "GIÁ TRỊ",
   title: "Bạn Sẽ Học Được Gì Từ Khoá Học Này?",
   description: `**⟐  Sang sẽ hướng dẫn bạn cách thực hiện một Chiến dịch **Retargeting** hiệu quả** để bạn có cơ hội thay đổi phần lớn khách truy cập của mình, những người chỉ đơn giản là chưa sẵn sàng mua hàng trong lần truy cập đầu tiên của họ.<br></br>**⟐  Sang sẽ giải thích chính xác cách hoạt động của **Retargeting** từ góc độ công nghệ và Sang sẽ cho bạn thấy công nghệ đã trưởng thành và phát triển như thế nào trong những năm qua**. Nói một cách đơn giản, retargeting được thực hiện thông qua việc lưu lại dữ liệu qua cookie trên trình duyệt của khách truy cập, điều này cho phép nền tảng retargeting của bạn theo dõi người dùng đó trên internet.`,
+
+  //TODO: Add in 4 columns (from listThirteenTitle)
 
   listOneTitle: false,
   listOneDescription: `Thiết lập, quản lý và tối ưu hóa các chiến dịch Retargeting chuyên nghiệp và hiệu quả.`,
@@ -205,7 +206,7 @@ function RetargetingCourse() {
       <AlternativeSideBySideWithVideoOrImg {...textOne} {...textTwo} />
       <MyAchievement {...courseDescript} />
       <AlternativeSideBySideWithVideoOrImg {...textThree} {...textFour} />
-      <ThreeColumnsFeatureList {...courseValue} />
+      <MyAchievement {...courseValue} />
       <BrandPanelWithAppScreenShot {...textPayment} />
       <BrandPanelWithOverlappingImage {...textBookxo} />
     </Layout>

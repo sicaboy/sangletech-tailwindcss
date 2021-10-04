@@ -3,8 +3,12 @@ import AlternatingWithOptionalTestimonial from "../components/sections/feature-s
 import AlternativeSideBySideWithImages from "../components/sections/feature-sections/alternative_side_by_side_with_images";
 import BrandPanelWithAppScreenShot from "../components/sections/cta-sections/brand_panel_with_app_screenshot";
 import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/brand_panel_with_overlapping_image";
+import HeroWithSocialNStats from "../components/hero-with-social-n-stats";
 
 import ThreeColumnCards from "../components/sections/blog-sections/3_column_cards";
+import SimpleCenterBranded from "../components/sections/cta-sections/simple_center_branded";
+import SimpleWithHeading from "../components/sections/logo-clouds/simple_with_heading";
+import Youtube from "../components/youtube";
 
 import * as Icon from "@heroicons/react/outline";
 import { getAllPosts } from "../utils/api";
@@ -117,7 +121,6 @@ const projectYou = {
 };
 
 const fin = {
-  //TODO: Add a button "Tìm Hiểu Thêm"
   leftTitle: "FIN X.0",
   leftDescription: `Cho dù bạn đang tiết kiệm cho kỳ nghỉ mơ ước, lên kế hoạch cho tài chính trong tương lai của mình hay chỉ đơn giản là mong muốn quản lý tốt tài chính của bản thân - Fin X.0 là dành cho bạn.`,
 
@@ -144,7 +147,6 @@ const fin = {
 };
 
 const pro = {
-  //TODO: Add a button "Tìm Hiểu Thêm"
   rightIconOne: "",
   rightIconOneTitle: "Bạn Có Biết?",
   rightIconOneDescription: `Pro X.0 là chuương trình được trực tiếp xây dựng và phát triển độc quyền bởi Sang Lê và Galatek`,
@@ -279,31 +281,18 @@ function Home() {
   return (
     <>
       <HeroWithAngelImageOnRight {...hero} />
+      <HeroWithSocialNStats {...hero} />
       <BrandPanelWithAppScreenShot {...jow} />
       <AlternatingWithOptionalTestimonial {...sow} {...projectYou} />
       <AlternativeSideBySideWithImages {...fin} {...pro} />
       <BrandPanelWithOverlappingImage {...startup} />
       <ThreeColumnCards {...blog} />
+      <Youtube {...youtube} />
       {/* <Blog {...test} /> */}
+      <SimpleCenterBranded {...social} />
+      <SimpleWithHeading {...company} />
     </>
   );
 }
 
 export default Home;
-
-// export const getStaticProps = async () => {
-//   const allPosts = getAllPosts([
-//     "title",
-//     "date",
-//     "slug",
-//     "author",
-//     "coverImage",
-//     "excerpt",
-//   ]);
-
-//   console.log(`allPosts: ${JSON.stringify(allPosts)}`);
-
-//   return {
-//     props: { allPosts },
-//   };
-// };
