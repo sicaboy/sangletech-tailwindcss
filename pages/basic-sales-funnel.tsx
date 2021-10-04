@@ -4,7 +4,7 @@ import UnderConstruction from "../components/under-construction";
 function BasicSalesFunnelCourse() {
   return (
     <div>
-      <UnderConstruction title="Lớp Xây Phễu Bán Hàng Cơ Bản" />
+      <UnderConstruction title="Lớp Xây Dựng Phễu Bán Hàng Cơ Bản" />
     </div>
   );
 }

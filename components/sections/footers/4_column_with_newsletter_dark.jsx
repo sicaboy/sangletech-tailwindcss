@@ -22,17 +22,17 @@ const navigation = {
     { name: "Pro X.0", href: "pro-xo" },
   ],
   support: [
-    { name: "Startup X.0", href: "#" },
-    { name: "Chiến Binh X.0", href: "#" },
-    { name: "Funnel X.0", href: "#" },
-    { name: "SPM Basic", href: "#" },
+    { name: "Startup X.0", href: "/startupxo-course" },
+    { name: "Retargeting", href: "/retargeting-course" },
+    { name: "Sales Funnel", href: "basic-sales-funnel" },
+    { name: "SPM Basic", href: "basic-spm-course" },
   ],
   company: [
-    { name: "Sang Lê Là Ai?", href: "sang-le-la-ai" },
+    { name: "Sang Lê", href: "sang-le-la-ai" },
     { name: "Blog", href: "blog" },
-    { name: "Sách Điện Tử", href: "book-xo" },
-    { name: "Tư Vấn", href: "#" },
-    { name: "Cơ Hội Công Việc", href: "#" },
+    { name: "Sách", href: "book-xo" },
+    { name: "Tư Vấn", href: "tu-van" },
+    { name: "Công Việc", href: "#" },
   ],
   legal: [
     { name: "Galatek", href: "#" },
@@ -106,7 +106,7 @@ export default function FourColumnWithNewsLetterDark() {
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 className="text-sm font-semibold tracking-wider text-gray-400 uppercase">
-                  Solutions
+                  Phần Mềm
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.solutions.map((item) => (
@@ -123,7 +123,7 @@ export default function FourColumnWithNewsLetterDark() {
               </div>
               <div className="mt-12 md:mt-0">
                 <h3 className="text-sm font-semibold tracking-wider text-gray-400 uppercase">
-                  Support
+                  Khoá Học
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.support.map((item) => (
@@ -142,7 +142,7 @@ export default function FourColumnWithNewsLetterDark() {
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 className="text-sm font-semibold tracking-wider text-gray-400 uppercase">
-                  Company
+                  Nổi Bật
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.company.map((item) => (
@@ -159,7 +159,7 @@ export default function FourColumnWithNewsLetterDark() {
               </div>
               <div className="mt-12 md:mt-0">
                 <h3 className="text-sm font-semibold tracking-wider text-gray-400 uppercase">
-                  Legal
+                  Kinh Doanh
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.legal.map((item) => (

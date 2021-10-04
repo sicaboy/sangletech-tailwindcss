@@ -53,15 +53,16 @@ const hero = {
   titleNormal: "Sang Le Tech",
   description: `Giúp Bạn Bước Đi Tự Tin Trên **Hành Trình 4.0**`,
   buttonNormal: "Sang Lê là ai?",
-  buttonNormalSrc: "/posts/video-khoanh-khac-cuoc-doi",
+  buttonNormalSrc: "/sang-le-la-ai",
   buttonHighlight: "Xem Video",
-  buttonHighlightSrc: "/sang-le-la-ai",
+  buttonHighlightSrc: "/posts/video-khoanh-khac-cuoc-doi",
   imgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626615071/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0006_mbnffl.jpg",
   alt: "Hinh anh Sang Le",
 };
 
 const jow = {
+  //TODO: Add button source
   titleFirst: "HÀNH TRÌNH LÀM GIÀU X.0",
   titleSecond: "Cứ Đi Là Bạn Sẽ Đến!",
   description: `**Liệu có một Tấm Bản Đồ dẫn đến một Cuộc sống thịnh vượng cho Bạn hay không?**
@@ -72,6 +73,7 @@ const jow = {
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1628152810/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0001_c2ukh5.png",
   alt: "Hinh anh SL Hanh Trinh Lam Giau X.0",
   videoSrc: "posts/video-hanh-trinh-lam-giau",
+  buttonSrc: "/sow-xo",
 };
 
 const sow = {
@@ -87,7 +89,7 @@ const sow = {
   
   **⟐  Những ý tưởng và những chiến lược** mà Sang rút ra từ những doanh nhân tiếng tăm nhất trên thế giới?`,
   leftButtonName: "Tìm hiểu thêm",
-  leftButtonSrc: "#",
+  leftButtonSrc: "/book-xo",
   leftAppleSrc: "#",
   leftGoogleSrc: "#",
   leftWebSrc: "#",
@@ -111,7 +113,7 @@ const projectYou = {
   **⟐**  Nhìn nhận thế giới xung quanh Bạn từ một góc độ khác và cho phép Bạn tập trung phát triển những mặt tích cực ở bản thân.
   <br><br> _**Việc hiểu được con người thực sự của bạn là điều cơ bản nhất để bắt đầu bước đi trên Hành Trình Làm Giàu X.0. Bạn cần biết bạn là ai và bạn có thể làm gì tốt nhất cho cuộc sống của bản thân, gia đình và xã hội.**_ `,
   rightButtonName: "Tìm hiểu thêm",
-  rightButtonSrc: "",
+  rightButtonSrc: "/you-xo",
   rightAppleSrc: "ss",
   rightGoogleSrc: "ss",
   rightWebSrc: "ss",
@@ -137,7 +139,7 @@ const fin = {
   leftIconThreeDescription: `Tập trung vào việc tạo ra các mục tiêu và xây dựng sự giàu có thông qua sự đơn giản và minh bạch của công cụ này.`,
 
   leftButtonName: "Tìm Hiểu Thêm",
-  leftButtonSrc: "#",
+  leftButtonSrc: "/fin-xo",
   leftAppleSrc: "#",
   leftGoogleSrc: "#",
   leftWebSrc: "#",
@@ -162,22 +164,24 @@ const pro = {
   rightTitle: "PRO X.0",
   rightDescription: `KHÁM PHÁ NGAY ỨNG DỤNG HỌC TRỰC TUYẾN 4.0`,
   rightButtonName: "Tìm hiểu thêm",
-  rightButtonSrc: "#",
+  rightButtonSrc: "/pro-xo",
   rightAppleSrc: "#",
   rightGoogleSrc: "#",
   rightWebSrc: "#",
   rightImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626085141/Galatek.io%20Website/3D-Freelancers-illustration0023_srsafb.png",
-  rightAlt: "",
+  rightAlt: "Hinh anh minh Pro X.0",
 };
 
 const startup = {
+  //TODO: Add button src
   title: "Startup X.0",
   description: `Sau hơn 10 năm hoạt động kinh doanh ở nhiều lĩnh vực khác nhau, tổn thất hàng trăm ngàn đô la và nhiều đêm mất ngủ, Sang Lê đã học được vô số bài học đắt giá và đưa vào chương trình Startup X.0 để có thể giúp bạn **XÂY DỰNG ƯỚC MƠ KHỞI NGHIỆP**, và bước trên **CON ĐƯỜNG NGẮN NHẤT đến THÀNH CÔNG** trong thời đại 4.0 này.`,
   buttonName: "Tìm Hiểu Ngay",
   imgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1625651836/Galatek.io%20Website/IMG_8057-1024x682_fa7z6z.jpg",
   alt: "Hinh anh Sang va Royal Wedding",
+  buttonSrc: "/startupxo-course",
 };
 
 const youtube = {
@@ -204,14 +208,14 @@ const youtube = {
 
 const blog = {
   title: "Sang Le Blog",
-  description: `Đây là nơi Sang muốn chia sẻ những câu chuyện, kinh nghiệm mà Sang có được trên Hành trình làm giàu X.0`,
+  description: `Đây là nơi Sang muốn chia sẻ những câu chuyện và trải nghiệm đáng giá mà Sang có được trên **Hành Trình Làm Giàu X.0**!`,
   buttonIconName: (
     <Icon.InboxInIcon className="w-6 h-6 text-white" aria-hidden="true" />
   ),
   buttonName: "Đọc thêm",
 
-  blogOneThumbnail: "",
-  blogOneLink: "",
+  blogOneThumbnail: "/assets/website-design.jpeg",
+  blogOneLink: "/posts/thiet-ke-website-ban-hang",
   blogOneCategory: "Startup",
   blogOneTitle: "Làm thế nào thiết kế Website bán được hàng?",
   blogOneDescription: `"Hầu hết các doanh nghiệp cho rằng Website chỉ để làm cảnh và ngốn rất nhiều chi phí. Nhưng bạn biết không, với một website được xây dựng hiệu quả thì khách hàng sẽ xuống tiền và đặt hàng nhanh hơn bất cứ nền tảng nào khác."`,
@@ -220,8 +224,8 @@ const blog = {
   blogOneAuthorName: "Sang Le",
   blogOneReadingTime: "5 min",
 
-  blogTwoThumbnail: "",
-  blogTwoLink: "",
+  blogTwoThumbnail: "/assets/brand-identity.jpeg",
+  blogTwoLink: "/posts/logo-la-thuong-hieu",
   blogTwoCategory: "Marketing",
   blogTwoTitle: "Có phải THƯƠNG HIỆU chỉ đơn giản là LOGO?",
   blogTwoDescription: `"Bạn có biết những thương hiệu "khổng lồ" trên thế giới như Apple, Google, Starbucks,.. đã phải liên tục "lột xác" bằng cách thay đổi Logo để tồn tại?"`,
@@ -230,7 +234,7 @@ const blog = {
   blogTwoAuthorName: "Sang Le",
   blogTwoReadingTime: "2 min",
 
-  blogThreeThumbnail: "",
+  blogThreeThumbnail: "/assets/online-marketing.jpeg",
   blogThreeLink: "",
   blogThreeCategory: "Marketing",
   blogThreeTitle: "Quảng cáo Facebook & Google đã đủ chưa?",

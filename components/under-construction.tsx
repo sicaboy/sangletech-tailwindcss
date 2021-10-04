@@ -26,6 +26,7 @@ export default class UnderConstruction extends React.Component<Props> {
               <h1 className="mb-8 text-3xl font-bold text-black-800 sm:text-4xl md:text-5xl md:mb-12">
                 {this.props.title || "Revolutionary way to build the web"}
               </h1>
+              {/* TODO: Replace Smartie component */}
               <Lottie options={defaultOptions} height={200} width={200} />
               <p className="mb-4 font-semibold text-indigo-500 md:text-lg xl:text-xl md:mb-6">
                 Chào Bạn. Anh Sang và đội ngũ đang xây dựng trang này. Trong lúc
