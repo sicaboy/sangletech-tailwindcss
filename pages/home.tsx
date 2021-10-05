@@ -14,6 +14,8 @@ import * as Icon from "@heroicons/react/outline";
 import { getAllPosts } from "../utils/api";
 import Post from "../types/post";
 
+import Logos from "../components/sections/logo-clouds/simple_with_heading_on_brand";
+
 // import Blog from "../components/post/3_column_cards";
 
 /* 
@@ -60,7 +62,38 @@ const hero = {
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626615071/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0006_mbnffl.jpg",
   alt: "Hinh anh Sang Le",
 };
+const logos = {
+  title: "Các Kênh Truyền Thông Đã Tham Gia",
+  description: "",
 
+  logoOneSrc:
+    "https://res.cloudinary.com/sang-le-tech/image/upload/v1631872823/Galatek.io%20Website/Sangletech.com/20210322002340_Yantv_ehn2jn.png",
+  logoOneAlt: "Yantv Logo",
+
+  logoTwoSrc:
+    "https://res.cloudinary.com/sang-le-tech/image/upload/v1631872985/Galatek.io%20Website/Sangletech.com/HTV9__282016-nay_29_o1bdfl.webp",
+  logoTwoAlt: "Htv9 Logo",
+
+  logoThreeSrc:
+    "https://res.cloudinary.com/sang-le-tech/image/upload/v1631873061/Galatek.io%20Website/Sangletech.com/69dda2def8ca1b5e9d8d1bc98d9d1e0f_uv1ylj.png",
+  logoThreeAlt: "Kmedia Logo",
+
+  logoFourSrc:
+    "https://res.cloudinary.com/sang-le-tech/image/upload/v1631873525/Galatek.io%20Website/Sangletech.com/10547129_1466047213649700_265444754095979044_o-removebg-preview_ubc7v9.png",
+  logoFourAlt: "SaigonFm Logo",
+
+  logoFiveSrc:
+    "https://res.cloudinary.com/sang-le-tech/image/upload/v1631873674/Galatek.io%20Website/Sangletech.com/unnamed-removebg-preview_qzjw11.png",
+  logoFiveAlt: "Vivutv Logo",
+
+  logoSixSrc:
+    "https://res.cloudinary.com/sang-le-tech/image/upload/v1631873719/Galatek.io%20Website/Sangletech.com/BTV_tw6qlw.png",
+  logoSixAlt: "Btv Logo",
+
+  logoSevenSrc:
+    "https://res.cloudinary.com/sang-le-tech/image/upload/v1631873777/Galatek.io%20Website/Sangletech.com/HTV7Logomoi_pmzlar.png",
+  logoSevenAlt: "Htv7 Logo",
+};
 const jow = {
   //TODO: Add button source
   titleFirst: "HÀNH TRÌNH LÀM GIÀU X.0",
@@ -90,12 +123,12 @@ const sow = {
   **⟐  Những ý tưởng và những chiến lược** mà Sang rút ra từ những doanh nhân tiếng tăm nhất trên thế giới?`,
   leftButtonName: "Tìm hiểu thêm",
   leftButtonSrc: "/book-xo",
-  leftAppleSrc: "#",
-  leftGoogleSrc: "#",
-  leftWebSrc: "#",
-  leftTestimonial: ``,
-  leftAuthor: "",
-  leftAuthorImgSrc: "",
+  leftAppleSrc: "/form",
+  leftGoogleSrc: "/form",
+  leftWebSrc: "/form",
+  leftTestimonial: `*Người Eskimo có câu: “Bão là thời gian để đi đánh cá”. <br></br>*Ra khơi vào đúng lúc đại dương nổi bão, chúng ta sẽ là những người đánh được nhiều “cá” hơn bất cứ ai.* <br></br>*Vậy, câu hỏi đặt ra là: **Chúng ta phải làm gì để nắm bắt cơ hội làm giàu trong thời đại 4.0, trong và hậu Covid?***`,
+  leftAuthor: "Sang Lê - Tác giả sách Bí Mật Làm Giàu X.0",
+  leftAuthorImgSrc: "/assets/sangle-profilePic.jpg",
   leftImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1628236747/Galatek.io%20Website/galatekgame-37-38-39-0000_crdalj.png",
   leftAlt: "Hinh anh Sach SOW",
@@ -114,11 +147,10 @@ const projectYou = {
   <br><br> _**Việc hiểu được con người thực sự của bạn là điều cơ bản nhất để bắt đầu bước đi trên Hành Trình Làm Giàu X.0. Bạn cần biết bạn là ai và bạn có thể làm gì tốt nhất cho cuộc sống của bản thân, gia đình và xã hội.**_ `,
   rightButtonName: "Tìm hiểu thêm",
   rightButtonSrc: "/you-xo",
-  rightAppleSrc: "ss",
-  rightGoogleSrc: "ss",
-  rightWebSrc: "ss",
-  rightImgSrc:
-    "https://res.cloudinary.com/sang-le-tech/image/upload/v1629429447/Galatek.io%20Website/Beige_Minimal_Phone_Mockup_Download_Now_Instagram_Post-3_emlzak.png",
+  rightAppleSrc: "/form",
+  rightGoogleSrc: "/form",
+  rightWebSrc: "/form",
+  rightImgSrc: "/assets/youoxo-25-iphone-mockup-1.png",
   rightAlt: "",
 };
 
@@ -140,11 +172,10 @@ const fin = {
 
   leftButtonName: "Tìm Hiểu Thêm",
   leftButtonSrc: "/fin-xo",
-  leftAppleSrc: "#",
-  leftGoogleSrc: "#",
-  leftWebSrc: "#",
-  leftImgSrc:
-    "https://res.cloudinary.com/sang-le-tech/image/upload/v1629428694/Galatek.io%20Website/Sangletech.com/Beige_Minimal_Phone_Mockup_Download_Now_Instagram_Post_wfssti.png",
+  leftAppleSrc: "/form",
+  leftGoogleSrc: "/form",
+  leftWebSrc: "/form",
+  leftImgSrc: "/assets/finxo-25-iphone-mockup-1.png",
   leftAlt: "",
 };
 
@@ -185,10 +216,12 @@ const startup = {
 };
 
 const youtube = {
+  //TODO: buttonName now changed from "Get started" to "Theo Dõi Ngay"
+  //TODO: can not access to the buttonLink
   title: "Video Youtube Nổi Bật",
   description: `Nếu bạn muốn đi nhanh thì đi một mình, nếu bạn muốn đi xa thì hãy đi cùng nhau!`,
   buttonName: "Theo Dõi Ngay",
-  buttonLink: "",
+  buttonLink: "http://youtube.sangletech.com",
 
   videoOneThumbnail:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1631780175/Galatek.io%20Website/Sangletech.com/maxresdefault_cztyhf.jpg",
@@ -213,6 +246,7 @@ const blog = {
     <Icon.InboxInIcon className="w-6 h-6 text-white" aria-hidden="true" />
   ),
   buttonName: "Đọc thêm",
+  buttonSrc: "/blog",
 
   blogOneThumbnail: "/assets/website-design.jpeg",
   blogOneLink: "/posts/thiet-ke-website-ban-hang",
@@ -284,15 +318,16 @@ const company = {
 function Home() {
   return (
     <>
-      <HeroWithAngelImageOnRight {...hero} />
+      {/* <HeroWithAngelImageOnRight {...hero} /> */}
       <HeroWithSocialNStats {...hero} />
+      <Logos {...logos} />
       <BrandPanelWithAppScreenShot {...jow} />
       <AlternatingWithOptionalTestimonial {...sow} {...projectYou} />
       <AlternativeSideBySideWithImages {...fin} {...pro} />
       <BrandPanelWithOverlappingImage {...startup} />
       <ThreeColumnCards {...blog} />
       <Youtube {...youtube} />
-      {/* <Blog {...test} /> */}
+
       <SimpleCenterBranded {...social} />
       <SimpleWithHeading {...company} />
     </>

@@ -84,8 +84,7 @@ const courses = [
   },
   {
     name: "SPM Basic",
-    description:
-      "Phương pháp Lập kế hoạch đơn giản với phần mềm Notion.",
+    description: "Phương pháp Lập kế hoạch đơn giản với phần mềm Notion.",
     href: "/basic-spm-course",
     icon: ViewGridIcon,
   },
@@ -203,11 +202,11 @@ export default function WithFullWithFlyOuts() {
       <div className="relative z-20">
         <div className="flex items-center justify-between px-4 py-5 mx-auto max-w-7xl sm:px-6 sm:py-4 lg:px-8 md:justify-start md:space-x-10">
           <div>
-            <a href="#" className="flex">
-              <span className="sr-only">Workflow</span>
+            <a href="/" className="flex">
+              <span className="sr-only">Sang Le Tech</span>
               <img
-                className="w-auto h-8 sm:h-10"
-                src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                className="w-auto h-8 sm:h-12"
+                src="assets/sangletech-logo.png"
                 alt=""
               />
             </a>

@@ -7,6 +7,7 @@ import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/
 
 function SowXO() {
   const hero = {
+    //TODO: can not show the imgSrc
     caption: "Câu Chuyện",
     titleNormal: " Là Gì?",
     titleHighlight: "Hành Trình Làm Giàu X.0",
@@ -116,25 +117,28 @@ function SowXO() {
   };
 
   const textNine = {
+    //TODO: Add buttonSrc
     titleFirst: "Khám Phá Bản Thân",
     titleSecond: "Cùng You X.0",
     description: `**Bạn có muốn khám phá bản thân và sứ mệnh cuộc đời mình thông qua Ứng dụng THẦN SỐ HỌC ĐẦU TIÊN tại Việt Nam?**
     <br><br>⟐  Tìm hiểu về những bí ẩn của các con số trong Ngày tháng năm sinh và Họ tên của Bạn để biết bạn thật sự là ai và sứ mệnh của bạn là gì. 
     <br><br>⟐  Nhìn nhận thế giới xung quanh Bạn từ một góc độ khác và cho phép Bạn tập trung phát triển những mặt tích cực ở bản thân.`,
     buttonName: "Xem ngay thông tin Thần Số Học",
+    buttonSrc: "/you-xo",
     imgSrc:
       "https://res.cloudinary.com/sang-le-tech/image/upload/v1628236893/Galatek.io%20Website/logo-04_r3vutm.png",
     alt: "Logo You X.0",
   };
 
   const textTen = {
+    //TODO: Add buttonSrc
     title: "Tại sao cuốn sách của Sang được gọi là BÍ MẬT LÀM GIÀU X.0?",
     description: `**BẠN CÓ MUỐN ĐỌC THỬ SÁCH ĐIỆN TỬ ĐỘC QUYỀN TỪ SANG?**
     <br><br>⟐  Làm sao để đứng vững trong Kỷ nguyên 4.0 và Hậu Đại dịch?
     <br><br>⟐  Làm sao để giải phóng tiềm năng của những người trẻ có đam mê?
-    <br></br>⟐  Những ý tưởng và những chiến lược mà Sang rút ra từ những doanh nhân tiếng tăm nhất trên thế giới?
-`,
+    <br></br>⟐  Những ý tưởng và những chiến lược mà Sang rút ra từ những doanh nhân tiếng tăm nhất trên thế giới?`,
     buttonName: "Tìm hiểu thêm về Sách",
+    buttonSrc: "/book-xo",
     imgSrc:
       "https://super-static-assets.s3.amazonaws.com/8090ac7d-2195-4ec8-96be-1457b54a8900/images/c2a88c54-5779-493d-83ec-1d2d5429021f.jpg?w=240&f=webp",
     alt: "Hinh anh Book Cover",

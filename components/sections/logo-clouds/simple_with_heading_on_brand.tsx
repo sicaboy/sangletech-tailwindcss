@@ -53,9 +53,9 @@ export default function Example(props) {
   ];
 
   return (
-    <div className="sm:max-w-[1100px] mx-auto  sm:rounded-lg sm:ring sm:ring-3 ">
+    <div className="sm:max-w-[1100px] mx-auto  sm:rounded-lg ">
       <div className="px-3 py-16 mx-8 max-w-8xl sm:py-20 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-extrabold text-center text-indigo-600">
+        <h2 className="text-2xl font-extrabold text-center text-indigo-600 sm:text-2xl">
           {props.title || "The world's most innovative companies use Workflow"}
         </h2>
         <div className="flex flex-wrap justify-center w-full mx-0 mt-4 space-x-4 lg:-ml-4">

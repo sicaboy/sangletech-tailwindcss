@@ -181,19 +181,20 @@ const textPayment = {
   description: `Với mức giá thấp hơn nhiều so với một bữa tối cùng gia đình, bạn sẽ nhận được hơn 10 giờ video bài giảng, quyền truy cập vào diễn đàn thảo luận dành cho các Chiến binh X.0 của Sang và bạn có thể hỏi Sang bất kỳ câu hỏi nào trong xuyên suốt khóa học.
   <br></br>Hơn hết, bạn nhận được quyền truy cập trọn đời và 3 ngày đảm bảo hoàn tiền 100%!`,
   buttonName: "THAM GIA KHOÁ HỌC",
-  imgSrc:
-    "https://res.cloudinary.com/sang-le-tech/image/upload/v1627541339/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0001_qgzlmq.png",
+  imgSrc: "/assets/thumbnail-retargeting-explainer.jpg",
   alt: "Hinh anh minh hoa Ret 5",
   videoSrc: "/posts/video-retargeting-explainer",
 };
 
 const textBookxo = {
+  //TODO: Add buttonSrc
   title: "Tại sao cuốn sách của Sang được gọi là BÍ MẬT LÀM GIÀU X.0?",
   description: `**BẠN CÓ MUỐN ĐỌC THỬ SÁCH ĐIỆN TỬ ĐỘC QUYỀN TỪ SANG?**
     <br></br>⟐  Làm sao để **đứng vững trong Kỷ nguyên 4.0 và Hậu Đại dịch**?
     <br></br>⟐  Làm sao để **giải phóng tiềm năng của những người trẻ có đam mê**?
     <br></br>⟐  **Những ý tưởng và những chiến lược** mà Sang rút ra từ những doanh nhân tiếng tăm nhất trên thế giới?`,
   buttonName: "Tìm hiểu thêm về Sách",
+  buttonSrc: "/book-xo",
   imgSrc:
     "https://super-static-assets.s3.amazonaws.com/8090ac7d-2195-4ec8-96be-1457b54a8900/images/c2a88c54-5779-493d-83ec-1d2d5429021f.jpg?w=240&f=webp",
   alt: "Hinh anh Book Cover",

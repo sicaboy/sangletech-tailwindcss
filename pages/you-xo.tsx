@@ -6,11 +6,14 @@ import BrandPanelWithAppScreenShot from "../components/sections/cta-sections/bra
 import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/brand_panel_with_overlapping_image";
 
 const hero = {
+  //TODO: Add buttonNormalSrc to scroll down to the content below
   titleHighlight: "YOU X.0",
   titleNormal: "Ứng Dụng Thần Số Học Đầu Tiên Tại Việt Nam",
   description: `**Trực tiếp xây dựng và phát triển độc quyền bởi Sang Lê**`,
   buttonNormal: "Tìm Hiểu Thêm",
+  buttonNormalSrc: "",
   buttonHighlight: "Xem Thông tin Thần Số Học",
+  buttonHighlightSrc: "/form",
   imgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1629429447/Galatek.io%20Website/Beige_Minimal_Phone_Mockup_Download_Now_Instagram_Post-3_emlzak.png",
   alt: "Hinh anh You x.0 Download",
@@ -83,12 +86,13 @@ const textSeven = {
   description: `Ứng dụng **YOU X.0** của Sang sẽ từng bước, từng bước giúp bạn tìm hiểu thêm về chính mình thông qua **Thần Số Học** và đề xuất cho bạn những giải pháp **Phong thủy** thích hợp nhất để bạn có thể bắt đầu xây dựng cho mình một cuộc sống thịnh vượng và giàu có trong thời đại 4.0!`,
   buttonName: "Xem thông tin Thần Số Học của Tôi",
   imgSrc:
-    "https://res.cloudinary.com/sang-le-tech/image/upload/v1628152810/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0001_c2ukh5.png",
-  alt: "Video Demo You X.0",
-  videoSrc: "#",
+    "https://res.cloudinary.com/sang-le-tech/image/upload/v1633357982/Galatek.io%20Website/maxresdefault_aclyzs.jpg",
+  alt: "Video Sang Le & Galatek Success",
+  videoSrc: "https://youtu.be/E_4epjA6wyo",
 };
 
 const textEight = {
+  //TODO: Add buttonSrc
   title: "Tại sao cuốn sách của Sang được gọi là BÍ MẬT LÀM GIÀU X.0?",
   description: `**BẠN CÓ MUỐN ĐỌC THỬ SÁCH ĐIỆN TỬ ĐỘC QUYỀN TỪ SANG?**
     <br><br>⟐  Làm sao để đứng vững trong Kỷ nguyên 4.0 và Hậu Đại dịch?
@@ -96,6 +100,7 @@ const textEight = {
     <br></br>⟐  Những ý tưởng và những chiến lược mà Sang rút ra từ những doanh nhân tiếng tăm nhất trên thế giới?
 `,
   buttonName: "Tìm hiểu thêm về Sách",
+  buttonSrc: "/book-xo",
   imgSrc:
     "https://super-static-assets.s3.amazonaws.com/8090ac7d-2195-4ec8-96be-1457b54a8900/images/c2a88c54-5779-493d-83ec-1d2d5429021f.jpg?w=240&f=webp",
   alt: "Hinh anh Book Cover",

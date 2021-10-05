@@ -6,11 +6,14 @@ import BrandPanelWithAppScreenShot from "../components/sections/cta-sections/bra
 import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/brand_panel_with_overlapping_image";
 
 const hero = {
+  //TODO: Add buttonNormalSrc to scroll down to the content below
   titleHighlight: "FIN X.0",
   titleNormal: "Ứng Dụng Hỗ Trợ Quản Lý Tài Chính Cá Nhân",
   description: `**Trực tiếp xây dựng và phát triển độc quyền bởi Sang Lê**`,
   buttonNormal: "Tìm Hiểu Thêm",
+  buttonNormalSrc: "",
   buttonHighlight: "Truy Cập Ngay",
+  buttonHighlightSrc: "/form",
   imgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1629428694/Galatek.io%20Website/Sangletech.com/Beige_Minimal_Phone_Mockup_Download_Now_Instagram_Post_wfssti.png",
   alt: "Hinh anh Fin X.0 Download",
@@ -69,24 +72,28 @@ const textFour = {
 };
 
 const textFive = {
+  //TODO: Add button src
   titleFirst: "Đã Đến Lúc Bắt Tay Vào Hành Động",
   titleSecond: "Lên Kế Hoạch & Kiểm Soát Tài Chính",
   description: `Người Eskimo có câu: **"Bão là thời gian thích hợp để đi bắt cá"**. Trong tình trạng mọi hoạt động trên thế giới dường như đều đóng băng do COVID, đây là lúc bạn rèn luyện bản thân để bứt phá. Hãy tranh thủ thời gian này để học và phát triển các kỹ năng. Hãy cụ thể hóa những mục tiêu để bạn có thể dễ dàng đạt được chúng hơn. Khi mọi thứ bình thường trở lại, bạn sẽ thấy, bạn đã đi xa hơn một đoạn rất dài so với các đối thủ của mình.
   <br></br>**Để hỗ trợ bạn thiết lập mục tiêu, cụ thể hóa mục tiêu và review mỗi ngày, Sang đã phát triển một công cụ tài chính có tên là Financial Calculator. Công cụ này sẽ đồng hành cùng bạn trên chặng đường chinh phục mục tiêu. Sang đã hướng dẫn nhiều người thực hiện theo công thức và ai cũng gặt hái thành công.**`,
-  buttonName: "Xem thông tin Thần Số Học của Tôi",
+  buttonName: "Truy Cập Ngay",
+  buttonSrc: "/form",
   imgSrc:
-    "https://res.cloudinary.com/sang-le-tech/image/upload/v1628152810/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0001_c2ukh5.png",
-  alt: "Video Demo Fin X.0",
-  videoSrc: "#",
+    "https://res.cloudinary.com/sang-le-tech/image/upload/v1633357982/Galatek.io%20Website/maxresdefault_aclyzs.jpg",
+  alt: "Video Sang Le & Galatek Success",
+  videoSrc: "https://youtu.be/E_4epjA6wyo",
 };
 
 const textSix = {
+  //TODO: Add buttonSrc
   title: "Tại sao cuốn sách của Sang được gọi là BÍ MẬT LÀM GIÀU X.0?",
   description: `**BẠN CÓ MUỐN ĐỌC THỬ SÁCH ĐIỆN TỬ ĐỘC QUYỀN TỪ SANG?**
     <br><br>⟐  Làm sao để đứng vững trong Kỷ nguyên 4.0 và Hậu Đại dịch?
     <br><br>⟐  Làm sao để giải phóng tiềm năng của những người trẻ có đam mê?
     <br></br>⟐  Những ý tưởng và những chiến lược mà Sang rút ra từ những doanh nhân tiếng tăm nhất trên thế giới?`,
   buttonName: "Tìm hiểu thêm về Sách",
+  buttonSrc: "/book-xo",
   imgSrc:
     "https://super-static-assets.s3.amazonaws.com/8090ac7d-2195-4ec8-96be-1457b54a8900/images/c2a88c54-5779-493d-83ec-1d2d5429021f.jpg?w=240&f=webp",
   alt: "Hinh anh Book Cover",
@@ -95,7 +102,6 @@ const textSix = {
 function FinX0() {
   return (
     <Layout>
-      <div>Fin X.0 Page</div>
       <HeroWithAngelImageOnRight {...hero} />
       <AlternativeSideBySideWithVideoOrImg {...textOne} {...textTwo} />
       <AlternativeSideBySideWithVideoOrImg {...textThree} {...textFour} />

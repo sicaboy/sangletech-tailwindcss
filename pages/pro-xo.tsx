@@ -8,7 +8,7 @@ import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/
 import * as Icon from "@heroicons/react/outline";
 
 const hero = {
-//TODO: Add 2 button src and with
+  //TODO: Add 2 button src and with
   titleHighlight: "PRO X.0",
   titleNormal: "Ứng Dụng Học Trực Tuyến 4.0",
   description: `**Trực tiếp xây dựng và phát triển độc quyền bởi Sang Lê**`,
@@ -35,7 +35,7 @@ const textOne = {
 const textTwo = {
   rightCaption: "SANG LE PROGRAM",
   rightTitle: "PRO X.0 là gì?",
-  rightDescription: `PRO X.0** là 1 nền tảng học trực tuyến mới đầy thú vị được tạo ra bởi Sang Lê. Với các chương trình giảng dạy từ phát triển cá nhân đến kinh doanh online, giúp bạn **bước đi tự tin trong thời đại 4.0**. 
+  rightDescription: `**PRO X.0** là 1 nền tảng học trực tuyến mới đầy thú vị được tạo ra bởi Sang Lê. Với các chương trình giảng dạy từ phát triển cá nhân đến kinh doanh online, giúp bạn **bước đi tự tin trong thời đại 4.0**. 
   <br></br>Tất cả đều được cung cấp trên một nền tảng học tập trực tuyến mang tính giải trí, học cùng một cộng đồng và hành động nhỏ mỗi ngày để **tạo ra những kết quả mới cho bản thân và công việc kinh doanh của bạn** theo những cách mà chương trình học truyền thống không thể làm được.`,
   rightImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626085142/Galatek.io%20Website/3D-Freelancers-illustration0026_axgh6x.png",
@@ -43,6 +43,8 @@ const textTwo = {
 };
 
 const coursesOne = {
+  //TODO: change the blogReadingTime
+  //TODO: delete the buttons
   title: "KHOÁ HỌC PRO X.0",
   description: `Sau hơn 10 năm làm việc với các doanh nghiệp lớn nhỏ cũng như nhiều khởi nghiệp trong và ngoài nước, Sang luôn mong muốn chia sẻ lại cho bạn tất cả những kinh nghiệm mà Sang có được thông qua **PRO X.0** để giúp bạn **nắm vững những Kỹ năng cần thiết trong thời đại 4.0 và tự tin đứng vững trên chính đôi chân của mình!**`,
   buttonIconName: (
@@ -52,7 +54,7 @@ const coursesOne = {
 
   blogOneThumbnail:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1632471036/Galatek.io%20Website/Sangletech.com/1_m3tlvj.jpg",
-  blogOneLink: "",
+  blogOneLink: "/retargeting-course",
   blogOneCategory: "KHOÁ HỌC: QUẢNG CÁO RETARGETING",
   blogOneTitle:
     "Nhắm Lại Khách Hàng Mục Tiêu Của Bạn Bằng Quảng Cáo Retargeting",
@@ -67,7 +69,7 @@ const coursesOne = {
 
   blogTwoThumbnail:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1625651836/Galatek.io%20Website/IMG_8057-1024x682_fa7z6z.jpg",
-  blogTwoLink: "",
+  blogTwoLink: "/startup-xo",
   blogTwoCategory: "KHOÁ HỌC: STARTUP X.0",
   blogTwoTitle:
     "7 Tuần Xây Dựng Khởi Nghiệp Của Bạn Từ A-Z & Marketing Ra Thị Trường",
@@ -79,7 +81,7 @@ const coursesOne = {
 
   blogThreeThumbnail:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1629366557/Galatek.io%20Website/galatekgame-37-38-39-0000_tskv95.png",
-  blogThreeLink: "",
+  blogThreeLink: "/website-course",
   blogThreeCategory: "KHOÁ HỌC: XÂY DỰNG WEBSITE BẰNG WORDPRESS",
   blogThreeTitle:
     "Thiết Kế & Xây Dựng Website Bằng Wordpress Dành Cho Người Mới Bắt Đầu",
@@ -93,6 +95,7 @@ const coursesOne = {
 };
 
 const coursesTwo = {
+  //TODO: Delete title, description, buttonName
   title: "",
   description: ``,
   buttonIconName: (
@@ -102,7 +105,7 @@ const coursesTwo = {
 
   blogOneThumbnail:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1632479964/Galatek.io%20Website/CHIENBINHX0t.jpg_jk8wja.jpg",
-  blogOneLink: "",
+  blogOneLink: "/chienbinh-xo",
   blogOneCategory: "CHƯƠNG TRÌNH: CHIẾN BINH X.0",
   blogOneTitle:
     "Trở Thành Một Chiến Binh X.0 Bước Đi Tự Tin Trên Hành Trình 4.0",
@@ -115,7 +118,7 @@ const coursesTwo = {
 
   blogTwoThumbnail:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1632385535/Galatek.io%20Website/IMG_4434_qpajd4.jpg",
-  blogTwoLink: "",
+  blogTwoLink: "/basic-spm-course",
   blogTwoCategory: "KHOÁ HỌC: SPM - Simple Planning Method",
   blogTwoTitle: "SPM - Phương Pháp Lên Kế Hoạch Đơn Giản (Level: Cơ Bản)",
   blogTwoDescription: `Bạn học được gì từ khoá học này?
@@ -128,7 +131,7 @@ const coursesTwo = {
 
   blogThreeThumbnail:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1632388562/Galatek.io%20Website/IMG_6519_1_dd5iaq.jpg",
-  blogThreeLink: "",
+  blogThreeLink: "/basic-sales-funnel",
   blogThreeCategory: "KHOÁ HỌC: XÂY DỰNG PHỄU MARKETING",
   blogThreeTitle:
     "Thiết Kế & Xây Dựng Phễu Marketing Đẻ Ra Tiền (Level: Cơ Bản)",
@@ -144,11 +147,11 @@ const textFinxo = {
   titleSecond: "Lên Kế Hoạch & Kiểm Soát Tài Chính",
   description: `Người Eskimo có câu: **"Bão là thời gian thích hợp để đi bắt cá"**. Trong tình trạng mọi hoạt động trên thế giới dường như đều đóng băng do COVID, đây là lúc bạn rèn luyện bản thân để bứt phá. Hãy tranh thủ thời gian này để học và phát triển các kỹ năng. Hãy cụ thể hóa những mục tiêu để bạn có thể dễ dàng đạt được chúng hơn. Khi mọi thứ bình thường trở lại, bạn sẽ thấy, bạn đã đi xa hơn một đoạn rất dài so với các đối thủ của mình.
   <br></br>**Để hỗ trợ bạn thiết lập mục tiêu, cụ thể hóa mục tiêu và review mỗi ngày, Sang đã phát triển một công cụ tài chính có tên là Financial Calculator. Công cụ này sẽ đồng hành cùng bạn trên chặng đường chinh phục mục tiêu. Sang đã hướng dẫn nhiều người thực hiện theo công thức và ai cũng gặt hái thành công.**`,
-  buttonName: "Xem thông tin Thần Số Học của Tôi",
+  buttonName: "Truy Cập Ngay",
   imgSrc:
-    "https://res.cloudinary.com/sang-le-tech/image/upload/v1628152810/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0001_c2ukh5.png",
-  alt: "Video Demo Fin X.0",
-  videoSrc: "#",
+    "https://res.cloudinary.com/sang-le-tech/image/upload/v1633357982/Galatek.io%20Website/maxresdefault_aclyzs.jpg",
+  alt: "Video Sang Le & Galatek Success",
+  videoSrc: "https://youtu.be/E_4epjA6wyo",
 };
 
 const textBookxo = {
@@ -158,6 +161,7 @@ const textBookxo = {
     <br><br>⟐  Làm sao để giải phóng tiềm năng của những người trẻ có đam mê?
     <br></br>⟐  Những ý tưởng và những chiến lược mà Sang rút ra từ những doanh nhân tiếng tăm nhất trên thế giới?`,
   buttonName: "Tìm hiểu thêm về Sách",
+  buttonSrc: "/book-xo",
   imgSrc:
     "https://super-static-assets.s3.amazonaws.com/8090ac7d-2195-4ec8-96be-1457b54a8900/images/c2a88c54-5779-493d-83ec-1d2d5429021f.jpg?w=240&f=webp",
   alt: "Hinh anh Book Cover",

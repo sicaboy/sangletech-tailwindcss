@@ -320,7 +320,7 @@ ${props.mainDescription}
               />
             </svg>
             <img
-              className="relative mx-auto rounded-lg ring-1"
+              className="relative mx-auto shadow-xl rounded-xl ring-1 ring-black ring-opacity-5"
               width={490}
               src={
                 props.leftImgSrc ||

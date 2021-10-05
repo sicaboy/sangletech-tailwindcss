@@ -1,12 +1,12 @@
 import React from "react";
 import UnderConstruction from "../components/under-construction";
 
-function BasicSPMCourse() {
+function WarriorX0Course() {
   return (
     <div>
-      <UnderConstruction title="Khoá Học SPM Cơ Bản" />
+      <UnderConstruction title="Chương trình CHIẾN BINH X.0" />
     </div>
   );
 }
 
-export default BasicSPMCourse;
+export default WarriorX0Course;

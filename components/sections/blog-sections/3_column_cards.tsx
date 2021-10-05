@@ -9,6 +9,7 @@ interface Props {
   description?: string;
   buttonIconName: {};
   buttonName?: string;
+  buttonSrc?: string;
 
   blogOneThumbnail?: string;
   blogOneLink?: string;
@@ -231,7 +232,7 @@ export default function ThreeColumnCards(props: Props) {
 
         <div className="pt-32 text-center">
           <a
-            href=""
+            href={props.buttonSrc || "/"}
             className="inline-flex items-center px-5 py-3 bg-indigo-600 rounded-lg hover:bg-indigo-700 focus:outline-none"
           >
             <svg
