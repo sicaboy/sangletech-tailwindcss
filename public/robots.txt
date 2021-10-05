@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: process.env.SITE_URL
+
+# Sitemaps
+Sitemap: process.env.SITE_URL/sitemap.xml
