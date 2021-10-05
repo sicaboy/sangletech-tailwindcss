@@ -139,17 +139,15 @@ const coursesTwo = {
 };
 
 const textFinxo = {
-  //TODO: Add buttonSrc
   titleFirst: "Đã Đến Lúc Bắt Tay Vào Hành Động",
   titleSecond: "Lên Kế Hoạch & Kiểm Soát Tài Chính",
   description: `Người Eskimo có câu: **"Bão là thời gian thích hợp để đi bắt cá"**. Trong tình trạng mọi hoạt động trên thế giới dường như đều đóng băng do COVID, đây là lúc bạn rèn luyện bản thân để bứt phá. Hãy tranh thủ thời gian này để học và phát triển các kỹ năng. Hãy cụ thể hóa những mục tiêu để bạn có thể dễ dàng đạt được chúng hơn. Khi mọi thứ bình thường trở lại, bạn sẽ thấy, bạn đã đi xa hơn một đoạn rất dài so với các đối thủ của mình.
   <br></br>**Để hỗ trợ bạn thiết lập mục tiêu, cụ thể hóa mục tiêu và review mỗi ngày, Sang đã phát triển một công cụ tài chính có tên là Financial Calculator. Công cụ này sẽ đồng hành cùng bạn trên chặng đường chinh phục mục tiêu. Sang đã hướng dẫn nhiều người thực hiện theo công thức và ai cũng gặt hái thành công.**`,
-  buttonName: "Truy Cập Ngay",
-  buttonSrc: "/form",
-  imgSrc:
-    "https://res.cloudinary.com/sang-le-tech/image/upload/v1633357982/Galatek.io%20Website/maxresdefault_aclyzs.jpg",
+  buttonName: "Tìm Hiểu Thêm",
+  buttonSrc: "/fin-xo",
+  imgSrc: "/assets/thumbnail-glt-success.jpg",
   alt: "Video Sang Le & Galatek Success",
-  videoSrc: "https://youtu.be/E_4epjA6wyo",
+  videoSrc: "/posts/video-galatek-success",
 };
 
 const textBookxo = {

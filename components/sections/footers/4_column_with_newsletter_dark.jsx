@@ -32,16 +32,15 @@ const navigation = {
     { name: "SPM Basic", href: "basic-spm-course" },
   ],
   company: [
-    { name: "Bí Mật Làm Giàu", href: "/sow-xo" },
-    { name: "Sang Lê là ai?", href: "sang-le-la-ai" },
-    { name: "Blog", href: "blog" },
-    { name: "Sách", href: "book-xo" },
-    { name: "Tư Vấn", href: "tu-van" },
+    { name: "Hành Trình Làm Giàu X.0", href: "/sow-xo" },
+    { name: "Sang Lê là ai?", href: "/sang-le-la-ai" },
+    { name: "Blog", href: "/blog" },
+    { name: "Sách", href: "/book-xo" },
   ],
   legal: [
-    { name: "Galatek", href: "#" },
-    { name: "CafeS", href: "#" },
-    { name: "SPMET", href: "#" },
+    { name: "Galatek", href: "https://galatek.io" },
+    { name: "CafeS", href: "https://www.cafes.vn" },
+    { name: "SPMET", href: "https://sp.edu.vn" },
   ],
   social: [
     {

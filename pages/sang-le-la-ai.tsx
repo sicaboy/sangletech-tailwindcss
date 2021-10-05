@@ -34,7 +34,7 @@ const hero = {
 const galleryOne = {
   title: "Tham Dự Các Chương Trình",
   description: `Truyền hình & Sự kiện`,
-  caption: "Gallery",
+  caption: "Hình Ảnh",
   imgSmallOneSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626615104/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0002_rz9buk.jpg",
   imgSmallOneAlt: "Hinh anh Sang Le KKCD 1",
@@ -57,8 +57,8 @@ const galleryOne = {
 
 const galleryTwo = {
   title: "Sang Đi Học",
-  description: `**Từ Các Công Ty Startup Công Nghệ Top Thế Giới**`,
-  caption: "Gallery",
+  description: `Từ Các Công Ty Startup Công Nghệ Top Thế Giới`,
+  caption: "Hình Ảnh",
   imgOneSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1627800779/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0003_f6hiix.jpg",
   imgOneAlt: "Sang Le - Pinterest Company",
@@ -220,7 +220,7 @@ const company = {
 };
 
 const myAchivement = {
-  caption: "Thanh Tựu",
+  caption: "Thành Tựu",
   title: "Từ Sang Lê",
   description: ``,
 

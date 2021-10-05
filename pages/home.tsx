@@ -214,6 +214,7 @@ const startup = {
 };
 
 const youtube = {
+  //TODO: The button link redirects incorrectly
   title: "Video Youtube Nổi Bật",
   description: `Nếu bạn muốn đi nhanh thì đi một mình, nếu bạn muốn đi xa thì hãy đi cùng nhau!`,
   buttonName: "Theo Dõi Ngay",
@@ -244,7 +245,7 @@ const blog = {
   buttonName: "Đọc thêm",
   buttonSrc: "/blog",
 
-  blogOneThumbnail: "/assets/website-design.jpeg",
+  blogOneThumbnail: "/assets/thumbnail-web-design.jpg",
   blogOneLink: "/posts/thiet-ke-website-ban-hang",
   blogOneCategory: "Startup",
   blogOneTitle: "Làm thế nào thiết kế Website bán được hàng?",
@@ -252,9 +253,9 @@ const blog = {
   blogOneAuthorImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1625719158/Galatek.io%20Website/sangle-profilePic_k2xxkw.jpg",
   blogOneAuthorName: "Sang Le",
-  blogOneReadingTime: "5 min",
+  blogOneReadingTime: "5",
 
-  blogTwoThumbnail: "/assets/brand-identity.jpeg",
+  blogTwoThumbnail: "/assets/thumbnail-branding.jpg",
   blogTwoLink: "/posts/logo-la-thuong-hieu",
   blogTwoCategory: "Marketing",
   blogTwoTitle: "Có phải THƯƠNG HIỆU chỉ đơn giản là LOGO?",
@@ -262,9 +263,9 @@ const blog = {
   blogTwoAuthorImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1625719158/Galatek.io%20Website/sangle-profilePic_k2xxkw.jpg",
   blogTwoAuthorName: "Sang Le",
-  blogTwoReadingTime: "2 min",
+  blogTwoReadingTime: "2",
 
-  blogThreeThumbnail: "/assets/online-marketing.jpeg",
+  blogThreeThumbnail: "/assets/thumbnail-online-marketing.jpg",
   blogThreeLink: "",
   blogThreeCategory: "Marketing",
   blogThreeTitle: "Quảng cáo Facebook & Google đã đủ chưa?",
@@ -272,7 +273,7 @@ const blog = {
   blogThreeAuthorImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1625719158/Galatek.io%20Website/sangle-profilePic_k2xxkw.jpg",
   blogThreeAuthorName: "Sang Le",
-  blogThreeReadingTime: "4 min",
+  blogThreeReadingTime: "4",
 };
 
 const social = {
@@ -296,7 +297,7 @@ const company = {
   logoOneSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626171786/Galatek.io%20Website/updated-galatek-logo-300x101_ajkugi.png",
 
-  logoOneAlt: "",
+  logoOneAlt: "Galatek logo",
 
   logoTwoName: (
     <Icon.InboxInIcon className="w-6 h-6 text-white" aria-hidden="true" />

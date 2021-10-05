@@ -28,7 +28,7 @@ const textOne = {
   <br></br>**Retargeting** (hay còn được gọi là **Remarketing**) là bất kỳ chiến dịch quảng cáo kỹ thuật số nào **nhắm đến 95% những khách hàng đã rời khỏi trang web của bạn**.
   <br></br>**Retargeting** là cách hiệu quả nhất để đưa những người dùng đó trở lại (thông qua các chiến dịch quảng cáo retargeting trực tiếp của bạn), vào thời điểm chính xác mà họ sẵn sàng chuyển đổi thành khách mua hàng.`,
   leftImgSrc:
-    "https://res.cloudinary.com/sang-le-tech/image/upload/v1627541013/Galatek.io%20Website/Sangletech.com/pose_1_horvhy.png",
+    "https://res.cloudinary.com/sang-le-tech/image/upload/v1625716438/Galatek.io%20Website/LNCG_M67_06_y4xksb.png",
   leftAlt: "Hinh anh minh hoa Ret 1",
 };
 
@@ -38,7 +38,7 @@ const textTwo = {
   rightDescription: `**⟐ Đánh mất những khách hàng tiềm năng vĩnh viễn** (những người đã từng quan tâm đến sản phẩm/dịch vụ của bạn, nhưng vì nhiều lý do mà họ quên mất bạn và chưa đi đến quyết định mua hàng).
 <br></br>**⟐ Hao tốn "hàng đống" chi phí cho các hình thức quảng cáo khác, nhắm đến một lượng lớn những khách hàng còn chẳng quan tâm đến sản phẩm/dịch vụ bạn**. Trong khi đó, Retargeting chỉ đặt mục tiêu vào những đối tượng khách hàng có sự hứng thú với bạn.`,
   rightImgSrc:
-    "https://res.cloudinary.com/sang-le-tech/image/upload/v1627541075/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0001_shd3co.png",
+    "https://res.cloudinary.com/sang-le-tech/image/upload/v1625711687/Galatek.io%20Website/LNCG_M67_09_mpadc6.png",
   rightAlt: "Hinh anh minh hoa Ret 2",
 };
 
@@ -93,7 +93,7 @@ const textThree = {
     <br></br>**✓**   Bạn phải có tinh thần sẵn sàng học hỏi những điều mới trong khoá học này và thực hành chúng trong các chiến dịch quảng cáo Retargeting của chính bạn xuyên suốt quá trình tham gia khóa học.
     <br></br>**✓**   Bạn phải sẵn sàng đặt câu hỏi nếu bạn không hiểu điều gì đó (các chiến lược Retagreting có thể rất phức tạp!).`,
   leftImgSrc:
-    "https://res.cloudinary.com/sang-le-tech/image/upload/v1627541659/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0001_kvoymz.png",
+    "https://res.cloudinary.com/sang-le-tech/image/upload/v1625716265/Galatek.io%20Website/LNCG_M67_07_rfu9eq.png",
   leftAlt: "Hinh anh minh hoa Ret 3",
 };
 
@@ -110,7 +110,7 @@ const textFour = {
   <br></br> **THÌ ĐÂY LÀ KHOÁ HỌC DÀNH CHO BẠN!**
   <br></br>*‼️ Khóa học này KHÔNG dành cho bạn nếu bạn không nghiêm túc về lưu lượng khách hàng truy cập trang web của mình*.`,
   rightImgSrc:
-    "https://res.cloudinary.com/sang-le-tech/image/upload/v1627541145/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0002_pyykpi.png",
+    "https://res.cloudinary.com/sang-le-tech/image/upload/v1625711864/Galatek.io%20Website/LNCG_M67_03_cjihdk.png",
   rightAlt: "Hinh anh minh hoa Ret 2",
 };
 
@@ -180,6 +180,7 @@ const textPayment = {
   description: `Với mức giá thấp hơn nhiều so với một bữa tối cùng gia đình, bạn sẽ nhận được hơn 10 giờ video bài giảng, quyền truy cập vào diễn đàn thảo luận dành cho các Chiến binh X.0 của Sang và bạn có thể hỏi Sang bất kỳ câu hỏi nào trong xuyên suốt khóa học.
   <br></br>Hơn hết, bạn nhận được quyền truy cập trọn đời và 3 ngày đảm bảo hoàn tiền 100%!`,
   buttonName: "THAM GIA KHOÁ HỌC",
+  buttonSrc: "/form",
   imgSrc: "/assets/thumbnail-retargeting-explainer.jpg",
   alt: "Hinh anh minh hoa Ret 5",
   videoSrc: "/posts/video-retargeting-explainer",

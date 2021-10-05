@@ -13,7 +13,7 @@ export default function Form() {
         />
       </div>
 
-      {/* <SignUpForm /> */}
+      <SignUpForm />
     </Layout>
   );
 }

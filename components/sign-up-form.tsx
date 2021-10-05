@@ -16,10 +16,44 @@
 */
 import { useState } from "react";
 import { Switch } from "@headlessui/react";
+import Select, { StylesConfig } from "react-select";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
+
+const couseOptions = [
+  { value: "Warrior X.0", label: "Chiến Binh X.0" },
+  { value: "Startup X.0", label: "Startup X.0" },
+  { value: "Retargeting", label: "Retargeting" },
+  {
+    value: "SPM Basic",
+    label: " SPM Basic - Lập kế hoạch đơn giản bằng Notion",
+  },
+  { value: "Sales Funnel Basic", label: "Xây dựng Phễu Bán Hàng Basic" },
+];
+
+const appOptions = [
+  { value: "Book X.0", label: "Book X.0 (Sách Bí Mật Làm Giàu)" },
+  { value: "You X.0", label: "You X.0 (Ứng dụng Tra cứu Thần Số Học)" },
+  { value: "Fin X.0", label: "Fin X.0 (Ứng dụng Quản lý Tài chính)" },
+  {
+    value: "Pro X.0",
+    label: "Pro X.0 (Ứng dụng Học Online)",
+  },
+];
+
+const customStyles = {
+  option: (provided, state) => ({
+    ...provided,
+    color: state.isSelected ? "red" : "blue",
+    padding: 15,
+  }),
+  // contol: (provided, state) => ({
+  //   ...provided,
+  //   height: "50px",
+  // }),
+};
 
 export default function Example() {
   const [agreed, setAgreed] = useState(false);
@@ -27,17 +61,26 @@ export default function Example() {
   // Input states
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState(0);
-  const [app, setApp] = useState([]);
-  const [course, setCourse] = useState([]);
+  const [phone, setPhone] = useState("");
+  const [selectedApp, setSelectedApp] = useState(null);
+  const [selectedCourse, setSelectedCourse] = useState(null);
 
   // Form submit handler
   const submitForm = async (e) => {
     e.preventDefault();
     const res = await fetch("http://localhost:3000/api/submit-form", {
       method: "POST",
-      body: JSON.stringify({ name, email, phone, app, course }),
+      body: JSON.stringify({
+        name,
+        email,
+        phone,
+        app: selectedApp,
+        course: selectedCourse,
+      }),
     });
+
+    console.log(`res: ${res}`);
+
     // Success if status code is 201
     if (res.status === 201) {
       console.log("Thank you for contacting us!", { type: "success" });
@@ -148,6 +191,7 @@ export default function Example() {
                   autoComplete="name"
                   className="block w-full px-4 py-3 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
                   required
+                  onChange={(e) => setName(e.target.value)}
                 />
               </div>
             </div>
@@ -167,6 +211,7 @@ export default function Example() {
                   autoComplete="email"
                   className="block w-full px-4 py-3 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
                   required
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
             </div>
@@ -187,6 +232,7 @@ export default function Example() {
                   className="block w-full px-4 py-3 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
                   placeholder="0937511277"
                   required
+                  onChange={(e) => setPhone(e.target.value)}
                 />
               </div>
             </div>
@@ -200,21 +246,23 @@ export default function Example() {
                 App
               </label>
               <div className="mt-1 ">
-                <select className="w-full select select-bordered">
-                  <option disabled="disabled" selected="selected">
-                    Chọn Ứng Dụng
-                  </option>
-                  <option value="Book X.0">
-                    Book X.0 (Sách Bí Mật Làm Giàu)
-                  </option>
-                  <option value="You X.0">
-                    You X.0 (Ứng dụng Tra cứu Thần Số Học)
-                  </option>
-                  <option value="Fin X.0">
-                    Fin X.0 (Ứng dụng Quản lý Tài chính){" "}
-                  </option>
-                  <option value="Pro X.0">Pro X.0 (Ứng dụng Học Online)</option>
-                </select>
+                <Select
+                  defaultValue={selectedApp}
+                  onChange={setSelectedApp}
+                  options={appOptions}
+                  closeMenuOnSelect={false}
+                  isMulti
+                  placeholder="Chọn Ứng Dụng"
+                  styles={customStyles}
+                  theme={(theme) => ({
+                    ...theme,
+
+                    colors: {
+                      ...theme.colors,
+                      primary: "rgba(99, 102, 241,1)",
+                    },
+                  })}
+                />
               </div>
             </div>
             {/* Course Select */}
@@ -227,20 +275,23 @@ export default function Example() {
                 Khóa Học
               </label>
               <div className="mt-1 ">
-                <select className="w-full select select-bordered">
-                  <option disabled="disabled" selected="selected">
-                    Chọn Khóa Học
-                  </option>
-                  <option value="Warrior X.0">Chiến Binh X.0</option>
-                  <option value="Startup X.0">Startup X.0</option>
-                  <option value="Retargeting">Retargeting</option>
-                  <option value="SPM Basic">
-                    SPM Basic - Lập kế hoạch đơn giản bằng Notion
-                  </option>
-                  <option value="Sales Funnel Basic">
-                    Xây dựng Phễu Bán Hàng Basic
-                  </option>
-                </select>
+                <Select
+                  defaultValue={selectedCourse}
+                  onChange={setSelectedCourse}
+                  options={couseOptions}
+                  closeMenuOnSelect={false}
+                  isMulti
+                  placeholder="Chọn Khóa Học"
+                  styles={customStyles}
+                  theme={(theme) => ({
+                    ...theme,
+
+                    colors: {
+                      ...theme.colors,
+                      primary: "rgba(99, 102, 241,1)",
+                    },
+                  })}
+                />
               </div>
             </div>
             {/* <div className="sm:col-span-2">

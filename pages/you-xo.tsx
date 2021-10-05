@@ -83,10 +83,9 @@ const textSeven = {
   titleSecond: "Khám phá bản thân với Thần Số Học",
   description: `Ứng dụng **YOU X.0** của Sang sẽ từng bước, từng bước giúp bạn tìm hiểu thêm về chính mình thông qua **Thần Số Học** và đề xuất cho bạn những giải pháp **Phong thủy** thích hợp nhất để bạn có thể bắt đầu xây dựng cho mình một cuộc sống thịnh vượng và giàu có trong thời đại 4.0!`,
   buttonName: "Xem thông tin Thần Số Học của Tôi",
-  imgSrc:
-    "https://res.cloudinary.com/sang-le-tech/image/upload/v1633357982/Galatek.io%20Website/maxresdefault_aclyzs.jpg",
+  imgSrc: "/assets/thumbnail-glt-success.jpg",
   alt: "Video Sang Le & Galatek Success",
-  videoSrc: "https://youtu.be/E_4epjA6wyo",
+  videoSrc: "/posts/video-galatek-success",
 };
 
 const textEight = {
