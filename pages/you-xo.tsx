@@ -6,16 +6,14 @@ import BrandPanelWithAppScreenShot from "../components/sections/cta-sections/bra
 import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/brand_panel_with_overlapping_image";
 
 const hero = {
-  //TODO: Add buttonNormalSrc to scroll down to the content below
   titleHighlight: "YOU X.0",
   titleNormal: "Ứng Dụng Thần Số Học Đầu Tiên Tại Việt Nam",
   description: `**Trực tiếp xây dựng và phát triển độc quyền bởi Sang Lê**`,
   buttonNormal: "Tìm Hiểu Thêm",
-  buttonNormalSrc: "",
+  buttonNormalSrc: "#read-more",
   buttonHighlight: "Xem Thông tin Thần Số Học",
   buttonHighlightSrc: "/form",
-  imgSrc:
-    "https://res.cloudinary.com/sang-le-tech/image/upload/v1629429447/Galatek.io%20Website/Beige_Minimal_Phone_Mockup_Download_Now_Instagram_Post-3_emlzak.png",
+  imgSrc: "/assets/youoxo-25-iphone-mockup-1.png",
   alt: "Hinh anh You x.0 Download",
 };
 
@@ -92,7 +90,6 @@ const textSeven = {
 };
 
 const textEight = {
-  //TODO: Add buttonSrc
   title: "Tại sao cuốn sách của Sang được gọi là BÍ MẬT LÀM GIÀU X.0?",
   description: `**BẠN CÓ MUỐN ĐỌC THỬ SÁCH ĐIỆN TỬ ĐỘC QUYỀN TỪ SANG?**
     <br><br>⟐  Làm sao để đứng vững trong Kỷ nguyên 4.0 và Hậu Đại dịch?
@@ -110,6 +107,7 @@ function YouXO() {
   return (
     <Layout>
       <HeroWithAngelImageOnRight {...hero} />
+      <div id="read-more" />
       <AlternativeSideBySideWithVideoOrImg {...textOne} {...textTwo} />
       <AlternativeSideBySideWithVideoOrImg {...textThree} {...textFour} />
       <AlternativeSideBySideWithVideoOrImg {...textFive} {...textSix} />

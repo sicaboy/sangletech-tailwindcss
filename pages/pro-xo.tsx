@@ -8,13 +8,12 @@ import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/
 import * as Icon from "@heroicons/react/outline";
 
 const hero = {
-  //TODO: Add 2 button src and with
   titleHighlight: "PRO X.0",
   titleNormal: "Ứng Dụng Học Trực Tuyến 4.0",
   description: `**Trực tiếp xây dựng và phát triển độc quyền bởi Sang Lê**`,
   buttonNormal: "Tìm Hiểu Thêm",
   buttonHighlight: "Xem Khoá Học",
-  buttonNormalSrc: "",
+  buttonNormalSrc: "#learn-more",
   buttonHighlightSrc: "/form",
   imgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626085137/Galatek.io%20Website/3D-Freelancers-illustration0005_zjyclx.png",
@@ -43,14 +42,12 @@ const textTwo = {
 };
 
 const coursesOne = {
-  //TODO: change the blogReadingTime
-  //TODO: delete the buttons
   title: "KHOÁ HỌC PRO X.0",
   description: `Sau hơn 10 năm làm việc với các doanh nghiệp lớn nhỏ cũng như nhiều khởi nghiệp trong và ngoài nước, Sang luôn mong muốn chia sẻ lại cho bạn tất cả những kinh nghiệm mà Sang có được thông qua **PRO X.0** để giúp bạn **nắm vững những Kỹ năng cần thiết trong thời đại 4.0 và tự tin đứng vững trên chính đôi chân của mình!**`,
   buttonIconName: (
     <Icon.InboxInIcon className="w-6 h-6 text-white" aria-hidden="true" />
   ),
-  buttonName: "Đọc thêm",
+  buttonName: "",
 
   blogOneThumbnail:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1632471036/Galatek.io%20Website/Sangletech.com/1_m3tlvj.jpg",
@@ -65,7 +62,7 @@ const coursesOne = {
   blogOneAuthorImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1625719158/Galatek.io%20Website/sangle-profilePic_k2xxkw.jpg",
   blogOneAuthorName: "Sang Le",
-  blogOneReadingTime: "5 min",
+  blogOneReadingTime: "",
 
   blogTwoThumbnail:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1625651836/Galatek.io%20Website/IMG_8057-1024x682_fa7z6z.jpg",
@@ -77,7 +74,7 @@ const coursesOne = {
   blogTwoAuthorImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1625719158/Galatek.io%20Website/sangle-profilePic_k2xxkw.jpg",
   blogTwoAuthorName: "Sang Le",
-  blogTwoReadingTime: "2 min",
+  blogTwoReadingTime: "",
 
   blogThreeThumbnail:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1629366557/Galatek.io%20Website/galatekgame-37-38-39-0000_tskv95.png",
@@ -91,11 +88,10 @@ const coursesOne = {
   blogThreeAuthorImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1625719158/Galatek.io%20Website/sangle-profilePic_k2xxkw.jpg",
   blogThreeAuthorName: "Sang Le",
-  blogThreeReadingTime: "4 min",
+  blogThreeReadingTime: "",
 };
 
 const coursesTwo = {
-  //TODO: Delete title, description, buttonName
   title: "",
   description: ``,
   buttonIconName: (
@@ -105,7 +101,7 @@ const coursesTwo = {
 
   blogOneThumbnail:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1632479964/Galatek.io%20Website/CHIENBINHX0t.jpg_jk8wja.jpg",
-  blogOneLink: "/chienbinh-xo",
+  blogOneLink: "/chienbinhxo-course",
   blogOneCategory: "CHƯƠNG TRÌNH: CHIẾN BINH X.0",
   blogOneTitle:
     "Trở Thành Một Chiến Binh X.0 Bước Đi Tự Tin Trên Hành Trình 4.0",
@@ -114,7 +110,7 @@ const coursesTwo = {
   blogOneAuthorImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1625719158/Galatek.io%20Website/sangle-profilePic_k2xxkw.jpg",
   blogOneAuthorName: "Sang Le",
-  blogOneReadingTime: "5 min",
+  blogOneReadingTime: "",
 
   blogTwoThumbnail:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1632385535/Galatek.io%20Website/IMG_4434_qpajd4.jpg",
@@ -127,7 +123,7 @@ const coursesTwo = {
   blogTwoAuthorImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1625719158/Galatek.io%20Website/sangle-profilePic_k2xxkw.jpg",
   blogTwoAuthorName: "Sang Le",
-  blogTwoReadingTime: "2 min",
+  blogTwoReadingTime: "",
 
   blogThreeThumbnail:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1632388562/Galatek.io%20Website/IMG_6519_1_dd5iaq.jpg",
@@ -139,15 +135,17 @@ const coursesTwo = {
   blogThreeAuthorImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1625719158/Galatek.io%20Website/sangle-profilePic_k2xxkw.jpg",
   blogThreeAuthorName: "Sang Le",
-  blogThreeReadingTime: "4 min",
+  blogThreeReadingTime: "",
 };
 
 const textFinxo = {
+  //TODO: Add buttonSrc
   titleFirst: "Đã Đến Lúc Bắt Tay Vào Hành Động",
   titleSecond: "Lên Kế Hoạch & Kiểm Soát Tài Chính",
   description: `Người Eskimo có câu: **"Bão là thời gian thích hợp để đi bắt cá"**. Trong tình trạng mọi hoạt động trên thế giới dường như đều đóng băng do COVID, đây là lúc bạn rèn luyện bản thân để bứt phá. Hãy tranh thủ thời gian này để học và phát triển các kỹ năng. Hãy cụ thể hóa những mục tiêu để bạn có thể dễ dàng đạt được chúng hơn. Khi mọi thứ bình thường trở lại, bạn sẽ thấy, bạn đã đi xa hơn một đoạn rất dài so với các đối thủ của mình.
   <br></br>**Để hỗ trợ bạn thiết lập mục tiêu, cụ thể hóa mục tiêu và review mỗi ngày, Sang đã phát triển một công cụ tài chính có tên là Financial Calculator. Công cụ này sẽ đồng hành cùng bạn trên chặng đường chinh phục mục tiêu. Sang đã hướng dẫn nhiều người thực hiện theo công thức và ai cũng gặt hái thành công.**`,
   buttonName: "Truy Cập Ngay",
+  buttonSrc: "/form",
   imgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1633357982/Galatek.io%20Website/maxresdefault_aclyzs.jpg",
   alt: "Video Sang Le & Galatek Success",
@@ -171,6 +169,7 @@ function ProX0() {
   return (
     <Layout>
       <HeroWithAngelImageOnRight {...hero} />
+      <div id="learn-more" />
       <AlternativeSideBySideWithVideoOrImg {...textOne} {...textTwo} />
       <ThreeColumnCards {...coursesOne} />
       <ThreeColumnCards {...coursesTwo} />

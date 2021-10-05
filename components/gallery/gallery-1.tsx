@@ -50,14 +50,14 @@ ${props.description}
           </div>
           <div className="flex flex-wrap -m-1 md:-m-2">
             <div className="flex flex-wrap gap-3 sm:w-1/2">
-              <div className="p-1 sm:w-1/2 md:p-2">
+              <div className="p-1 md:p-2">
                 <img
                   alt={props.imgSmallOneAlt || "sang le tech"}
                   className="block w-full h-full rounded objec t-center ob-lgject-cover"
                   src={props.imgSmallOneSrc || "https://dummyimage.com/500x300"}
                 />
               </div>
-              <div className="p-1 sm:w-1/2 md:p-2">
+              <div className="p-1 md:p-2">
                 <img
                   alt={props.imgSmallTwoAlt || "sang le tech"}
                   className="block w-full h-full rounded objec t-center ob-lgject-cover"
@@ -80,7 +80,7 @@ ${props.description}
                   src={props.imgLargeTwoSrc || "https://dummyimage.com/601x361"}
                 />
               </div>
-              <div className="p-1 sm:w-1/2 md:p-2">
+              <div className="p-1 md:p-2">
                 <img
                   alt={props.imgSmallThreeAlt || "sang le tech"}
                   className="block object-cover object-center w-full h-full rounded-lg"
@@ -89,7 +89,7 @@ ${props.description}
                   }
                 />
               </div>
-              <div className="p-1 sm:w-1/2 md:p-2">
+              <div className="p-1 md:p-2">
                 <img
                   alt={props.imgSmallFourAlt || "sang le tech"}
                   className="block object-cover object-center w-full h-full rounded-lg"

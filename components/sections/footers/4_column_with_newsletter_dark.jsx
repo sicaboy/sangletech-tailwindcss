@@ -13,7 +13,11 @@
     ],
   }
   ```
+  
 */
+
+import Link from "next/link";
+
 const navigation = {
   solutions: [
     { name: "Book X.0", href: "book-xo" },
@@ -28,11 +32,11 @@ const navigation = {
     { name: "SPM Basic", href: "basic-spm-course" },
   ],
   company: [
-    { name: "Sang Lê", href: "sang-le-la-ai" },
+    { name: "Bí Mật Làm Giàu", href: "/sow-xo" },
+    { name: "Sang Lê là ai?", href: "sang-le-la-ai" },
     { name: "Blog", href: "blog" },
     { name: "Sách", href: "book-xo" },
     { name: "Tư Vấn", href: "tu-van" },
-    { name: "Công Việc", href: "#" },
   ],
   legal: [
     { name: "Galatek", href: "#" },
@@ -111,12 +115,11 @@ export default function FourColumnWithNewsLetterDark() {
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.solutions.map((item) => (
                     <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-base text-gray-300 hover:text-white"
-                      >
-                        {item.name}
-                      </a>
+                      <Link href={item.href}>
+                        <a className="text-base text-gray-300 hover:text-white">
+                          {item.name}
+                        </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -128,12 +131,11 @@ export default function FourColumnWithNewsLetterDark() {
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.support.map((item) => (
                     <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-base text-gray-300 hover:text-white"
-                      >
-                        {item.name}
-                      </a>
+                      <Link href={item.href}>
+                        <a className="text-base text-gray-300 hover:text-white">
+                          {item.name}
+                        </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -147,12 +149,11 @@ export default function FourColumnWithNewsLetterDark() {
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.company.map((item) => (
                     <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-base text-gray-300 hover:text-white"
-                      >
-                        {item.name}
-                      </a>
+                      <Link href={item.href}>
+                        <a className="text-base text-gray-300 hover:text-white">
+                          {item.name}
+                        </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -164,12 +165,11 @@ export default function FourColumnWithNewsLetterDark() {
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.legal.map((item) => (
                     <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-base text-gray-300 hover:text-white"
-                      >
-                        {item.name}
-                      </a>
+                      <Link href={item.href}>
+                        <a className="text-base text-gray-300 hover:text-white">
+                          {item.name}
+                        </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -211,14 +211,15 @@ export default function FourColumnWithNewsLetterDark() {
         <div className="pt-8 mt-8 border-t border-gray-700 md:flex md:items-center md:justify-between">
           <div className="flex space-x-6 md:order-2">
             {navigation.social.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="text-gray-400 hover:text-gray-300"
-              >
-                <span className="sr-only">{item.name}</span>
-                <item.icon className="w-6 h-6" aria-hidden="true" />
-              </a>
+              <Link href={item.href}>
+                <a
+                  key={item.name}
+                  className="text-gray-400 hover:text-gray-300"
+                >
+                  <span className="sr-only">{item.name}</span>
+                  <item.icon className="w-6 h-6" aria-hidden="true" />
+                </a>
+              </Link>
             ))}
           </div>
           <p className="mt-8 text-base text-gray-400 md:mt-0 md:order-1">

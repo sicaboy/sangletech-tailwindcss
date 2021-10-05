@@ -8,7 +8,6 @@ import BrandPanelWithAppScreenShot from "../components/sections/cta-sections/bra
 import Testimonial from "../components/sections/testimonials/simple_centered";
 
 const hero = {
-  //TODO: can not show the imgSrc
   caption: "BÍ MẬT LÀM GIÀU X.0",
   titleHighlight: "Sách Điện Tử Độc Quyền ",
   titleNormal: " từ Sang Lê",
@@ -24,7 +23,7 @@ const hero = {
 
 const textOne = {
   leftTitle: "CUỐN SÁCH NÀY LÀ…",
-  leftDescription: "",
+  leftDescription: "-",
 
   leftIconOne: Icon.GlobeAltIcon,
   leftIconOneTitle: "Xấp Giấy Nhớ Đáng Tin Cậy.",
@@ -40,9 +39,9 @@ const textOne = {
 
   leftButtonName: "Truy Cập Ngay",
   leftButtonSrc: "/form",
-  leftAppleSrc: "",
-  leftGoogleSrc: "",
-  leftWebSrc: "",
+  leftAppleSrc: "/form",
+  leftGoogleSrc: "/form",
+  leftWebSrc: "/form",
   leftImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1628221778/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0000_mtstfx.jpg",
   leftAlt: "Hinh anh Book Cover",
@@ -50,7 +49,7 @@ const textOne = {
 
 const textTwo = {
   rightTitle: "…CHỨ KHÔNG PHẢI LÀ…",
-  rightDescription: "",
+  rightDescription: "-",
 
   rightIconOne: "",
   rightIconOneTitle: "Điều Ước Của Bà Tiên.",
@@ -83,7 +82,6 @@ const textTwo = {
 };
 
 const textThree = {
-  //TODO: Add buttonSrc
   title: "SANG LÀ...",
   description: `**⟐ Vai “ác” trong đời bạn.** Có thể bạn sẽ không thích Sang đâu, vì Sang sẽ không ngọt ngào, không soái ca với bạn, cũng sẽ không dỗ dành, không an ủi bạn. Sang sẽ thách thức bạn, như cách mà các vị huấn luyện viên võ thuật “hành” học trò của mình cho đến khi chúng chịu được đau và phản đòn. Bạn sẽ KHÔNG thấy thoải mái và dễ dàng đâu.
   <br></br>**⟐ Người “báo tin” cho bạn.** Sang sẽ kể bạn nghe thực sự thì chuyện gì đang xảy ra ngoài kia và nói cho bạn biết bạn cần làm gì.
@@ -95,10 +93,16 @@ const textThree = {
   alt: "Hinh anh Sang tham gia KKCD",
 };
 
-//TODO: Add testimonial part after "textThree" later on
+//TODO: Yunnie Add testimonial Content
+const testimonial = {
+  logoSrc: "",
+  alt: "",
+  title: "",
+  name: "",
+  position: "",
+};
 
 const textFour = {
-  //TODO: Add buttonSrc
   titleFirst: "Khám Phá Bản Thân",
   titleSecond: "Cùng You X.0",
   description: `**Bạn có muốn khám phá bản thân và sứ mệnh cuộc đời mình thông qua Ứng dụng THẦN SỐ HỌC ĐẦU TIÊN tại Việt Nam?**
@@ -117,7 +121,7 @@ function BookX0() {
       <Hero {...hero} />
       <AlternativeSideBySideWithImages {...textOne} {...textTwo} />
       <BrandPanelWithOverlappingImage {...textThree} />
-      <Testimonial />
+      {/* <Testimonial {...testimonial} /> */}
       <BrandPanelWithAppScreenShot {...textFour} />
     </Layout>
   );

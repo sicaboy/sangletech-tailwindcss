@@ -95,7 +95,6 @@ const logos = {
   logoSevenAlt: "Htv7 Logo",
 };
 const jow = {
-  //TODO: Add button source
   titleFirst: "HÀNH TRÌNH LÀM GIÀU X.0",
   titleSecond: "Cứ Đi Là Bạn Sẽ Đến!",
   description: `**Liệu có một Tấm Bản Đồ dẫn đến một Cuộc sống thịnh vượng cho Bạn hay không?**
@@ -196,16 +195,15 @@ const pro = {
   rightDescription: `KHÁM PHÁ NGAY ỨNG DỤNG HỌC TRỰC TUYẾN 4.0`,
   rightButtonName: "Tìm hiểu thêm",
   rightButtonSrc: "/pro-xo",
-  rightAppleSrc: "#",
-  rightGoogleSrc: "#",
-  rightWebSrc: "#",
+  rightAppleSrc: "/form",
+  rightGoogleSrc: "/form",
+  rightWebSrc: "/form",
   rightImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626085141/Galatek.io%20Website/3D-Freelancers-illustration0023_srsafb.png",
   rightAlt: "Hinh anh minh Pro X.0",
 };
 
 const startup = {
-  //TODO: Add button src
   title: "Startup X.0",
   description: `Sau hơn 10 năm hoạt động kinh doanh ở nhiều lĩnh vực khác nhau, tổn thất hàng trăm ngàn đô la và nhiều đêm mất ngủ, Sang Lê đã học được vô số bài học đắt giá và đưa vào chương trình Startup X.0 để có thể giúp bạn **XÂY DỰNG ƯỚC MƠ KHỞI NGHIỆP**, và bước trên **CON ĐƯỜNG NGẮN NHẤT đến THÀNH CÔNG** trong thời đại 4.0 này.`,
   buttonName: "Tìm Hiểu Ngay",
@@ -216,8 +214,6 @@ const startup = {
 };
 
 const youtube = {
-  //TODO: buttonName now changed from "Get started" to "Theo Dõi Ngay"
-  //TODO: can not access to the buttonLink
   title: "Video Youtube Nổi Bật",
   description: `Nếu bạn muốn đi nhanh thì đi một mình, nếu bạn muốn đi xa thì hãy đi cùng nhau!`,
   buttonName: "Theo Dõi Ngay",

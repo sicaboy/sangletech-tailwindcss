@@ -187,7 +187,6 @@ const textPayment = {
 };
 
 const textBookxo = {
-  //TODO: Add buttonSrc
   title: "Tại sao cuốn sách của Sang được gọi là BÍ MẬT LÀM GIÀU X.0?",
   description: `**BẠN CÓ MUỐN ĐỌC THỬ SÁCH ĐIỆN TỬ ĐỘC QUYỀN TỪ SANG?**
     <br></br>⟐  Làm sao để **đứng vững trong Kỷ nguyên 4.0 và Hậu Đại dịch**?

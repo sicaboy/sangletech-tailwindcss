@@ -64,7 +64,7 @@ function GalleryTwo(props) {
               haven't heard of them man bun deep jianbing selfies heirloom.
             </p>
           </div>
-          <div className="flex flex-wrap -m-4">
+          <div className="flex flex-wrap -m-4 shadow-lg">
             {images.map((item) => (
               <div className="p-4 lg:w-1/3 sm:w-1/2">
                 <div className="relative flex " key={item.id}>

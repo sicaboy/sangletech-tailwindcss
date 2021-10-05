@@ -6,12 +6,11 @@ import BrandPanelWithAppScreenShot from "../components/sections/cta-sections/bra
 import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/brand_panel_with_overlapping_image";
 
 const hero = {
-  //TODO: Add buttonNormalSrc to scroll down to the content below
   titleHighlight: "FIN X.0",
   titleNormal: "Ứng Dụng Hỗ Trợ Quản Lý Tài Chính Cá Nhân",
   description: `**Trực tiếp xây dựng và phát triển độc quyền bởi Sang Lê**`,
   buttonNormal: "Tìm Hiểu Thêm",
-  buttonNormalSrc: "",
+  buttonNormalSrc: "#read-more",
   buttonHighlight: "Truy Cập Ngay",
   buttonHighlightSrc: "/form",
   imgSrc:
@@ -72,7 +71,6 @@ const textFour = {
 };
 
 const textFive = {
-  //TODO: Add button src
   titleFirst: "Đã Đến Lúc Bắt Tay Vào Hành Động",
   titleSecond: "Lên Kế Hoạch & Kiểm Soát Tài Chính",
   description: `Người Eskimo có câu: **"Bão là thời gian thích hợp để đi bắt cá"**. Trong tình trạng mọi hoạt động trên thế giới dường như đều đóng băng do COVID, đây là lúc bạn rèn luyện bản thân để bứt phá. Hãy tranh thủ thời gian này để học và phát triển các kỹ năng. Hãy cụ thể hóa những mục tiêu để bạn có thể dễ dàng đạt được chúng hơn. Khi mọi thứ bình thường trở lại, bạn sẽ thấy, bạn đã đi xa hơn một đoạn rất dài so với các đối thủ của mình.
@@ -86,7 +84,6 @@ const textFive = {
 };
 
 const textSix = {
-  //TODO: Add buttonSrc
   title: "Tại sao cuốn sách của Sang được gọi là BÍ MẬT LÀM GIÀU X.0?",
   description: `**BẠN CÓ MUỐN ĐỌC THỬ SÁCH ĐIỆN TỬ ĐỘC QUYỀN TỪ SANG?**
     <br><br>⟐  Làm sao để đứng vững trong Kỷ nguyên 4.0 và Hậu Đại dịch?
@@ -103,6 +100,7 @@ function FinX0() {
   return (
     <Layout>
       <HeroWithAngelImageOnRight {...hero} />
+      <div id="read-more" />
       <AlternativeSideBySideWithVideoOrImg {...textOne} {...textTwo} />
       <AlternativeSideBySideWithVideoOrImg {...textThree} {...textFour} />
       <BrandPanelWithAppScreenShot {...textFive} />

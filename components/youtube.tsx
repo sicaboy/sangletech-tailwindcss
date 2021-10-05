@@ -19,12 +19,14 @@ import { Fragment } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
+import Link from "next/link";
 
 interface Props {
   title?: string;
   description?: string;
   buttonName?: string;
   buttonLink?: string;
+  buttonSrc?: string;
 
   videoOneThumbnail?: string;
   videoOneLink?: string;
@@ -189,49 +191,50 @@ libero labore natus atque, ducimus sed.."
                   key={item.id}
                   className="flex flex-col overflow-hidden rounded-lg shadow-lg"
                 >
-                  <div className="relative w-full mx-auto rounded-lg shadow-lg lg:max-w-md">
-                    <button
-                      type="button"
-                      className="relative block w-full overflow-hidden bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                    >
-                      <span className="sr-only">Watch our video to</span>
-                      <img
-                        className="w-full"
-                        src={item.thumbnail}
-                        alt={item.alt}
-                      />
-                      <div
-                        className="absolute inset-0 flex items-center justify-center w-full h-full"
-                        aria-hidden="true"
+                  <Link href={item.link}>
+                    <div className="relative w-full mx-auto rounded-lg shadow-lg lg:max-w-md">
+                      <button
+                        type="button"
+                        className="relative block w-full overflow-hidden bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                       >
-                        <svg
-                          className="w-20 h-20 text-indigo-500"
-                          fill="currentColor"
-                          viewBox="0 0 84 84"
+                        <span className="sr-only">Watch our video to</span>
+                        <img
+                          className="w-full"
+                          src={item.thumbnail}
+                          alt={item.alt}
+                        />
+                        <div
+                          className="absolute inset-0 flex items-center justify-center w-full h-full"
+                          aria-hidden="true"
                         >
-                          <circle
-                            opacity="0.9"
-                            cx={42}
-                            cy={42}
-                            r={42}
-                            fill="white"
-                          />
-                          <path d="M55.5039 40.3359L37.1094 28.0729C35.7803 27.1869 34 28.1396 34 29.737V54.263C34 55.8604 35.7803 56.8131 37.1094 55.9271L55.5038 43.6641C56.6913 42.8725 56.6913 41.1275 55.5039 40.3359Z" />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
+                          <svg
+                            className="w-20 h-20 text-indigo-500"
+                            fill="currentColor"
+                            viewBox="0 0 84 84"
+                          >
+                            <circle
+                              opacity="0.9"
+                              cx={42}
+                              cy={42}
+                              r={42}
+                              fill="white"
+                            />
+                            <path d="M55.5039 40.3359L37.1094 28.0729C35.7803 27.1869 34 28.1396 34 29.737V54.263C34 55.8604 35.7803 56.8131 37.1094 55.9271L55.5038 43.6641C56.6913 42.8725 56.6913 41.1275 55.5039 40.3359Z" />
+                          </svg>
+                        </div>
+                      </button>
+                    </div>
+                  </Link>
                 </div>
               ))}
             </div>
           </div>
           <div className="pt-32 text-center">
-            <a
-              href="#"
-              className="inline-flex px-4 py-2 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700"
-            >
-              Get started
-            </a>
+            <Link href={props.buttonSrc || "#"}>
+              <a className="inline-flex px-4 py-2 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700">
+                {props.buttonName || "Get started"}
+              </a>
+            </Link>
           </div>
         </main>
       </div>

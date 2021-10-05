@@ -56,7 +56,7 @@ ${props.certificateTwoDescription}
               />
             </div>
             <div className="px-4 mb-10 sm:w-1/2">
-              <div className="h-64 overflow-hidden rounded-lg">
+              <div className="h-64 overflow-hidden rounded-lg ">
                 <img
                   alt={props.certificateTwoImgAlt || "sang le tech"}
                   className="object-contain object-center w-full h-full"

@@ -7,7 +7,6 @@ import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/
 
 function SowXO() {
   const hero = {
-    //TODO: can not show the imgSrc
     caption: "Câu Chuyện",
     titleNormal: " Là Gì?",
     titleHighlight: "Hành Trình Làm Giàu X.0",
@@ -117,7 +116,6 @@ function SowXO() {
   };
 
   const textNine = {
-    //TODO: Add buttonSrc
     titleFirst: "Khám Phá Bản Thân",
     titleSecond: "Cùng You X.0",
     description: `**Bạn có muốn khám phá bản thân và sứ mệnh cuộc đời mình thông qua Ứng dụng THẦN SỐ HỌC ĐẦU TIÊN tại Việt Nam?**
@@ -131,7 +129,6 @@ function SowXO() {
   };
 
   const textTen = {
-    //TODO: Add buttonSrc
     title: "Tại sao cuốn sách của Sang được gọi là BÍ MẬT LÀM GIÀU X.0?",
     description: `**BẠN CÓ MUỐN ĐỌC THỬ SÁCH ĐIỆN TỬ ĐỘC QUYỀN TỪ SANG?**
     <br><br>⟐  Làm sao để đứng vững trong Kỷ nguyên 4.0 và Hậu Đại dịch?

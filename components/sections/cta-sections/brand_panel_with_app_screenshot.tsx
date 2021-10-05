@@ -18,6 +18,7 @@
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
+import Link from "next/link";
 
 interface Props {
   titleFirst?: string;
@@ -26,7 +27,9 @@ interface Props {
   buttonName?: string;
   imgSrc?: string;
   videoSrc?: string;
+  videoCaption?: string;
   alt?: string;
+  buttonSrc?: string;
 }
 
 export default function BrandPanelWithAppScreenShot(props: Props) {
@@ -61,12 +64,14 @@ ${props.description}
                 remarkPlugins={[remarkGfm]}
                 className="mt-4 text-lg leading-6 text-indigo-200"
               />
-              <a
-                href="#"
-                className="inline-flex items-center px-5 py-3 mt-8 text-base font-medium text-indigo-600 bg-white border border-transparent rounded-md shadow hover:bg-indigo-50"
-              >
-                {props.buttonName || " Sign up for free"}
-              </a>
+              <Link href={props.buttonSrc || "#"}>
+                <a
+                  href={"#"}
+                  className="inline-flex items-center px-5 py-3 mt-8 text-base font-medium text-indigo-600 bg-white border border-transparent rounded-md shadow hover:bg-indigo-50"
+                >
+                  {props.buttonName || " Sign up for free"}
+                </a>
+              </Link>
             </div>
           </div>
           <div className="self-center aspect-w-16 aspect-h-3 md:aspect-w-2 md:aspect-h-1 ">
@@ -75,9 +80,11 @@ ${props.description}
                 type="button"
                 className="relative block w-full overflow-hidden bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
               >
-                <span className="">Giúp Bạn Bước Đi Tự Tin</span>
+                <span className="">
+                  {props.videoCaption || "Giúp Bạn Bước Đi Tự Tin"}
+                </span>
                 <img
-                  className="object-fill w-full sm:w-full r"
+                  className="object-fill w-full sm:w-full "
                   src={
                     props.imgSrc ||
                     "https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"

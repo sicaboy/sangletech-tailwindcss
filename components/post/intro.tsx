@@ -4,15 +4,8 @@ const Intro = () => {
       <h1 className="text-6xl font-bold leading-tight tracking-tighter md:text-8xl md:pr-8">
         Blog.
       </h1>
-      <h4 className="mt-5 text-lg text-center md:text-left md:pl-8">
-        A statically generated blog example using{" "}
-        <a
-          href="https://nextjs.org/"
-          className="underline transition-colors duration-200 hover:text-success"
-        >
-          Next.js
-        </a>{" "}
-        and .
+      <h4 className="mt-5 text-lg font-semibold text-center md:text-left md:pl-8">
+        Cùng Sang khám phá Bí Mật Làm Giàu X.0
       </h4>
     </section>
   );

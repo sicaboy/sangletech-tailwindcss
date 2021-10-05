@@ -29,9 +29,10 @@ const hero = {
   alt: "Sang Le - Video KKCD",
 };
 
+//TODO: Remove or write up description for the gallery one
 const galleryOne = {
   title: "Tham Dự Các Chương Trình",
-  description: ``,
+  description: `-`,
   imgSmallOneSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626615104/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0002_rz9buk.jpg",
   imgSmallOneAlt: "Hinh anh Sang Le KKCD 1",
@@ -52,6 +53,7 @@ const galleryOne = {
   imgLargeTwoAlt: "Hinh anh Sang Le - SGFM",
 };
 
+//TODO: Remove or write up description and title for the gallery two
 const galleryTwo = {
   title: "Sang Đi Học",
   description: `**Từ Các Công Ty Startup Công Nghệ Top Thế Giới**`,
@@ -380,6 +382,7 @@ const ourTeam = {
   personSixDescription: `Với nền tảng từ rất sớm trong vai trò MC truyền hình (HTV7, HTV9, TodayTV,...) và trên sân khấu, điều đó giúp Yunnie phát triển những kỹ năng tuyệt vời trong việc chăm sóc khách hàng của chúng tôi.`,
 };
 
+//: change the 3 imgs to our imgs in this section
 const companyAchivement = {
   title: "Thành Tựu",
   description: `Từ Đội ngũ`,

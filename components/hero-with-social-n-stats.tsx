@@ -2,6 +2,7 @@ import React from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
+import Smartie from "../components/smartie";
 
 const social = [
   {
@@ -75,10 +76,11 @@ ${props.description}
           <section className="flex flex-col flex-col-reverse items-center justify-between gap-8 mb-8 lg:flex-row sm:gap-10 md:gap-16 md:mb-16">
             {/* <!-- content - start --> */}
             <div className="text-center lg:text-left">
+              <Smartie />
               <h1 className="tracking-tight text-gray-500 ">
-                <span className="block text-3xl font-semibold sm:text-4xl xl:inline">
+                {/* <span className="block text-3xl font-semibold sm:text-4xl xl:inline">
                   {props.titleNormal || "Data to enrich your"}
-                </span>{" "}
+                </span>{" "} */}
                 <span className="block mt-6 text-3xl font-extrabold text-indigo-600 sm:text-4xl xl:inline">
                   {props.titleHighlight || "online business"}
                 </span>
