@@ -79,18 +79,27 @@ function CompanyAchivement(props) {
           <div className="grid grid-cols-2 gap-5">
             <img
               className="object-cover w-full h-56 col-span-2 rounded shadow-lg"
-              src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-              alt=""
+              src={
+                props.imgOneSrc ||
+                "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+              }
+              alt="sang le tech team"
             />
             <img
               className="object-cover w-full h-48 rounded shadow-lg"
-              src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-              alt=""
+              src={
+                props.imgTwoSrc ||
+                "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+              }
+              alt="sang le tech team"
             />
             <img
               className="object-cover w-full h-48 rounded shadow-lg"
-              src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-              alt=""
+              src={
+                props.imgThreeSrc ||
+                "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+              }
+              alt="sang le tech team"
             />
           </div>
         </div>

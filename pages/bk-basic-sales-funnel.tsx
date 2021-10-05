@@ -117,8 +117,6 @@ const courseValue = {
   title: "Bạn Sẽ Học Được Gì Từ Khoá Học Này?",
   description: `**⟐  Sang sẽ hướng dẫn bạn cách thực hiện một Chiến dịch **Retargeting** hiệu quả** để bạn có cơ hội thay đổi phần lớn khách truy cập của mình, những người chỉ đơn giản là chưa sẵn sàng mua hàng trong lần truy cập đầu tiên của họ.<br></br>**⟐  Sang sẽ giải thích chính xác cách hoạt động của **Retargeting** từ góc độ công nghệ và Sang sẽ cho bạn thấy công nghệ đã trưởng thành và phát triển như thế nào trong những năm qua**. Nói một cách đơn giản, retargeting được thực hiện thông qua việc lưu lại dữ liệu qua cookie trên trình duyệt của khách truy cập, điều này cho phép nền tảng retargeting của bạn theo dõi người dùng đó trên internet.`,
 
-  //TODO: Add in 4 columns (from listThirteenTitle)
-
   listOneTitle: false,
   listOneDescription: `Thiết lập, quản lý và tối ưu hóa các chiến dịch Retargeting chuyên nghiệp và hiệu quả.`,
 

@@ -61,7 +61,6 @@ Khác
 
 const courses = [
   {
-    //TODO: This shows on Apps part
     name: "Quảng Cáo Retargeting",
     description:
       "Làm thế nào để Bạn luôn nằm ở vị trí hàng đầu trong tâm trí khách hàng và đưa họ quay trở lại trang web của mình khi họ đã rời đi?",
@@ -76,7 +75,7 @@ const courses = [
     icon: CursorClickIcon,
   },
   {
-    name: "Startup X0",
+    name: "Startup X.0",
     description:
       "7 Tuần xây dựng khởi nghiệp của bạn từ A-Z & Marketing ra thị trường.",
     href: "/startupxo-course",
@@ -155,7 +154,6 @@ const callsToAction = [
   { name: "Liên hệ Tư vấn", href: "/tu-van", icon: PhoneIcon },
 ];
 
-//TODO: Add company info
 const shortcuts = [
   {
     name: "Hành Trình Làm Giàu X.0",
@@ -164,16 +162,14 @@ const shortcuts = [
   },
   { name: "Bí Mật Làm Giàu X.0", href: "/book-xo", icon: BookOpenIcon },
   { name: "Blog", href: "/blog", icon: NewspaperIcon },
-  { name: "Phần Mềm", href: "/you-xo", icon: CursorClickIcon },
-  { name: "Khoá Học", href: "pro-xo", icon: ShieldCheckIcon },
+  { name: "Ứng Dụng", href: "/you-xo", icon: CursorClickIcon },
+  { name: "Khoá Học", href: "/pro-xo", icon: ShieldCheckIcon },
 ];
 
-//TODO: Add resources info
-
 const company = [
-  { name: "CafeS", href: "#", icon: UserGroupIcon },
-  { name: "Galatek", href: "#", icon: GlobeAltIcon },
-  { name: "SPMET", href: "#", icon: BookmarkAltIcon },
+  { name: "CafeS", href: "https://www.cafes.vn", icon: UserGroupIcon },
+  { name: "Galatek", href: "https://galatek.io", icon: GlobeAltIcon },
+  { name: "SPMET", href: "https://sp.edu.vn", icon: BookmarkAltIcon },
 ];
 
 const blogPosts = [
@@ -210,14 +206,16 @@ export default function WithFullWithFlyOuts() {
       <div className="relative z-20">
         <div className="flex items-center justify-between px-4 py-5 mx-auto max-w-7xl sm:px-6 sm:py-4 lg:px-8 md:justify-start md:space-x-10">
           <div>
-            <a href="/" className="flex">
-              <span className="sr-only">Sang Le Tech</span>
-              <img
-                className="w-auto h-8 sm:h-12"
-                src="assets/sangletech-logo.png"
-                alt=""
-              />
-            </a>
+            <Link href="/">
+              <a className="flex">
+                <span className="sr-only">Sang Le Tech</span>
+                <img
+                  className="w-auto h-8 sm:h-12"
+                  src="assets/sangletech-logo.png"
+                  alt="sang le tech"
+                />
+              </a>
+            </Link>
           </div>
           <div className="-my-2 -mr-2 md:hidden">
             <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -251,7 +249,7 @@ export default function WithFullWithFlyOuts() {
                         "group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                       )}
                     >
-                      <span>Phần Mềm</span>
+                      <span>Ứng Dụng</span>
                       <ChevronDownIcon
                         className={classNames(
                           open ? "text-gray-600" : "text-gray-400",
@@ -582,11 +580,15 @@ export default function WithFullWithFlyOuts() {
             <div className="px-5 pt-5 pb-6 sm:pb-8">
               <div className="flex items-center justify-between">
                 <div>
-                  <img
-                    className="w-auto h-8"
-                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                    alt="Workflow"
-                  />
+                  <Link href="/">
+                    <a className="flex">
+                      <img
+                        className="w-auto h-8 sm:h-12"
+                        src="assets/sangletech-logo.png"
+                        alt="sang le tech"
+                      />
+                    </a>
+                  </Link>
                 </div>
                 <div className="-mr-2">
                   <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -629,33 +631,33 @@ export default function WithFullWithFlyOuts() {
             </div>
             <div className="px-5 py-6">
               <div className="grid grid-cols-2 gap-4">
-                <Link href="#">
+                <Link href="book-xo">
                   <a className="text-base font-medium text-gray-900 rounded-md hover:text-gray-700">
                     Book X.0
                   </a>
                 </Link>
-                <Link href="book-xo">
+                <Link href="you-xo">
                   <a className="text-base font-medium text-gray-900 rounded-md hover:text-gray-700">
                     You X.0
                   </a>
                 </Link>
-                <Link href="you-xo">
+                <Link href="fin-xo">
                   <a className="text-base font-medium text-gray-900 rounded-md hover:text-gray-700">
                     Fin X.0
                   </a>
                 </Link>
 
-                <Link href="fin-xo">
+                <Link href="pro-xo">
                   <a className="text-base font-medium text-gray-900 rounded-md hover:text-gray-700">
                     Pro X.0
                   </a>
                 </Link>
-                <Link href="pro-xo">
+                <Link href="blog">
                   <a className="text-base font-medium text-gray-900 rounded-md hover:text-gray-700">
                     Blog
                   </a>
                 </Link>
-                <Link href="/blog">
+                <Link href="/sang-le-la-ai">
                   <a className="text-base font-medium text-gray-900 rounded-md hover:text-gray-700">
                     Sang Lê là ai?
                   </a>

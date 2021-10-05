@@ -19,6 +19,7 @@ interface Props {
   imgLargeOneAlt?: string;
   imgLargeTwoSrc?: string;
   imgLargeTwoAlt?: string;
+  caption?: string;
 }
 
 function Example(props: Props) {
@@ -37,15 +38,21 @@ ${props.description}
     <div>
       <section className="text-gray-600 body-font">
         <div className="container flex flex-wrap px-5 py-24 mx-auto">
-          <div className="flex flex-wrap w-full mb-20">
-            <h1 className="mb-4 text-2xl font-medium text-gray-900 sm:text-3xl title-font lg:w-1/3 lg:mb-0">
-              {props.title || " Master Cleanse Reliac Heirloom"}
+          <div className="flex flex-col w-3/4 mx-auto mb-20 text-center">
+            {props.caption && (
+              <button className="self-center block px-3 py-1 mb-3 text-sm font-semibold tracking-wide text-white uppercase bg-indigo-600 rounded-full cursor-text sm:text-base lg:text-sm xl:text-base">
+                {props.caption || "Coming soon"}
+              </button>
+            )}
+
+            <h1 className="mb-4 text-2xl font-medium text-gray-900 sm:text-4xl title-font">
+              {props.title || "Master Cleanse Reliac Heirloom"}
             </h1>
             <ReactMarkdown
               children={description}
               rehypePlugins={[rehypeRaw]}
               remarkPlugins={[remarkGfm]}
-              className="mx-auto text-base leading-relaxed lg:pl-6 lg:w-2/3"
+              className="mt-3 text-lg text-gray-500"
             />
           </div>
           <div className="flex flex-wrap -m-1 md:-m-2">

@@ -73,9 +73,9 @@ const textTwo = {
 
   rightButtonName: "Đọc Thử",
   rightButtonSrc: "/form",
-  rightAppleSrc: "",
-  rightGoogleSrc: "",
-  rightWebSrc: "",
+  rightAppleSrc: "/form",
+  rightGoogleSrc: "/form",
+  rightWebSrc: "/form",
   rightImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1627531052/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0007_yukh3x.png",
   rightAlt: "",
@@ -93,7 +93,6 @@ const textThree = {
   alt: "Hinh anh Sang tham gia KKCD",
 };
 
-//TODO: Yunnie Add testimonial Content
 const testimonial = {
   logoSrc: "",
   alt: "",

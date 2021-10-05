@@ -65,10 +65,7 @@ ${props.description}
                 className="mt-4 text-lg leading-6 text-indigo-200"
               />
               <Link href={props.buttonSrc || "#"}>
-                <a
-                  href={"#"}
-                  className="inline-flex items-center px-5 py-3 mt-8 text-base font-medium text-indigo-600 bg-white border border-transparent rounded-md shadow hover:bg-indigo-50"
-                >
+                <a className="inline-flex items-center px-5 py-3 mt-8 text-base font-medium text-indigo-600 bg-white border border-transparent rounded-md shadow hover:bg-indigo-50">
                   {props.buttonName || " Sign up for free"}
                 </a>
               </Link>

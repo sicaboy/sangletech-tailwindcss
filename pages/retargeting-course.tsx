@@ -14,8 +14,7 @@ const hero = {
   titleNormal: " LÀ GÌ?",
   titleHighlight: "QUẢNG CÁO RETARGETING",
   description: `**Retargeting hoạt động như thế nào?** <br></br>***- Hướng dẫn đầy đủ về Chiến lược Nhắm Lại Khách Hàng Mục Tiêu (Retargeting Ads)***`,
-  imgSrc:
-    "https://res.cloudinary.com/sang-le-tech/image/upload/v1632729923/Galatek.io%20Website/Sangletech.com/istockphoto-1218545883-170667a_amt1pc.jpg",
+  imgSrc: "/assets/thumbnail-retargeting-explainer.jpg",
   videoSrc: "/posts/video-retargeting-explainer",
   videoCaption: `Retargeting/Remarketing Là Gì?`,
   alt: "Sang Le - Video Retargeting explainer",

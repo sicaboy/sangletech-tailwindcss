@@ -17,6 +17,8 @@ import MyCompanies from "../components/sections/logo-clouds/simple_with_heading"
 import * as Icon from "@heroicons/react/outline";
 import Layout from "../components/layout";
 
+import Image from "next/image";
+
 const hero = {
   caption: "Công Nghệ Bằng Cả Trái Tim",
   titleNormal: "Là Ai?",
@@ -29,10 +31,10 @@ const hero = {
   alt: "Sang Le - Video KKCD",
 };
 
-//TODO: Remove or write up description for the gallery one
 const galleryOne = {
   title: "Tham Dự Các Chương Trình",
-  description: `-`,
+  description: `Truyền hình & Sự kiện`,
+  caption: "Gallery",
   imgSmallOneSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626615104/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0002_rz9buk.jpg",
   imgSmallOneAlt: "Hinh anh Sang Le KKCD 1",
@@ -53,10 +55,10 @@ const galleryOne = {
   imgLargeTwoAlt: "Hinh anh Sang Le - SGFM",
 };
 
-//TODO: Remove or write up description and title for the gallery two
 const galleryTwo = {
   title: "Sang Đi Học",
   description: `**Từ Các Công Ty Startup Công Nghệ Top Thế Giới**`,
+  caption: "Gallery",
   imgOneSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1627800779/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0003_f6hiix.jpg",
   imgOneAlt: "Sang Le - Pinterest Company",
@@ -308,7 +310,7 @@ const certificates = {
 
 const coreValue = {
   title: "Giá Trị Cốt Lõi",
-  description: `*Từ Sang Lê & Đội ngũ*`,
+  description: `Từ Sang Lê & Đội ngũ Galatek`,
   buttonName: false,
 
   listOneText: "Cải tiến nhỏ một cách liên tục.",
@@ -382,13 +384,16 @@ const ourTeam = {
   personSixDescription: `Với nền tảng từ rất sớm trong vai trò MC truyền hình (HTV7, HTV9, TodayTV,...) và trên sân khấu, điều đó giúp Yunnie phát triển những kỹ năng tuyệt vời trong việc chăm sóc khách hàng của chúng tôi.`,
 };
 
-//: change the 3 imgs to our imgs in this section
 const companyAchivement = {
+  caption: "Dịch Vụ & Sản Phẩm ",
   title: "Thành Tựu",
   description: `Từ Đội ngũ`,
-  imgOneSrc: "",
-  imgTwoSrc: "",
-  imgThreeSrc: "",
+  imgOneSrc:
+    "https://res.cloudinary.com/sang-le-tech/image/upload/v1633424963/Galatek.io%20Website/Sangletech.com/Screen_Shot_2021-10-05_at_4.07.22_PM_huvam8.png",
+  imgTwoSrc:
+    "https://res.cloudinary.com/sang-le-tech/image/upload/v1633424964/Galatek.io%20Website/Sangletech.com/Screen_Shot_2021-10-05_at_4.07.47_PM_krwu1i.png",
+  imgThreeSrc:
+    "https://res.cloudinary.com/sang-le-tech/image/upload/v1633424963/Galatek.io%20Website/Sangletech.com/Screen_Shot_2021-10-05_at_4.08.06_PM_ksb9jw.png",
 
   listOneIconSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626079598/Galatek.io%20Website/3D_Illustration-Product_Development-Skin-01_f6gpbd.png",
