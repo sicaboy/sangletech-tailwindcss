@@ -138,7 +138,7 @@ const giaoduc = {
 };
 
 const hanhtrinh = {
-  //DONE: Sang Done
+  //DONE: Sang
   leftCaption: "Chương Trình Hành Trình X.0",
   leftTitle: "Áp Dụng Công Nghệ Vào Cuộc Sống",
   leftDescription: `Với nhiều năm kinh nghiệm làm việc trong ngành công nghệ, Sang mong muốn tạo ra khoá học: Industrial X.0 – Đây là không gian dành cho CEO – những người chủ doanh nghiệp, các bạn học sinh trung học và sinh viên đại học nhằm trang bị tốt các kỹ năng cho họ và sẵn sàng bước vào thời đại Công nghiệp 4.0.`,
@@ -379,10 +379,10 @@ const ourTeam = {
 
   personSixImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1625720703/Galatek.io%20Website/IMG_4430-1.jpg_qtzcgh.webp",
-  personSixImgAlt: "Sang Le Teams - Yunnie",
-  personSixName: "Yunnie Nguyen",
+  pexImgAlt: "Sang Le Teams - Yunnie",
+  pexName: "Yunnie Nguyen",
   personSixPosition: "CEO Assistant",
-  personSixDescription: `Với nền tảng từ rất sớm trong vai trò MC truyền hình (HTV7, HTV9, TodayTV,...) và trên sân khấu, điều đó giúp Yunnie phát triển những kỹ năng tuyệt vời trong việc chăm sóc khách hàng của chúng tôi.`,
+  pexDescription: `Với nền tảng từ rất sớm trong vai trò MC truyền hình (HTV7, HTV9, TodayTV,...) và trên sân khấu, điều đó giúp Yunnie phát triển những kỹ năng tuyệt vời trong việc chăm sóc khách hàng của chúng tôi.`,
 };
 
 const companyAchivement = {

@@ -1,11 +1,13 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { GTM_ID } from "../utils/gtm";
+import NextSeoCustom from "../components/next-seo";
 
 export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
         <Head />
+        <NextSeoCustom />
         <body>
           <Main />
           <NextScript />

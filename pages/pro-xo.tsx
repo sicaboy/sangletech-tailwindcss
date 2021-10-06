@@ -8,7 +8,6 @@ import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/
 import * as Icon from "@heroicons/react/outline";
 
 const hero = {
-  //DONE: Add buttonHighlightSrc to scroll down to the courses below
   titleHighlight: "PRO X.0",
   titleNormal: "Ứng Dụng Học Trực Tuyến 4.0",
   description: `**Trực tiếp xây dựng và phát triển độc quyền bởi Sang Lê**`,

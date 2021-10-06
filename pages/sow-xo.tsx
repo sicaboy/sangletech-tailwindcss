@@ -4,6 +4,7 @@ import AlternativeSideBySideWithVideoOrImg from "../components/alternative-side-
 import Layout from "../components/layout";
 import BrandPanelWithAppScreenShot from "../components/sections/cta-sections/brand_panel_with_app_screenshot";
 import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/brand_panel_with_overlapping_image";
+import { NextSeo } from "next-seo";
 
 function SowXO() {
   const hero = {
@@ -143,6 +144,32 @@ function SowXO() {
 
   return (
     <Layout>
+      {/* //YUNNIE: Paste the info from book x.o here */}
+      <NextSeo
+        openGraph={{
+          title: "Open Graph Book Title",
+          description: "Description of open graph book",
+          url: "https://www.example.com/books/book-title",
+          type: "book",
+          book: {
+            releaseDate: "2018-09-17T11:08:13Z",
+            isbn: "978-3-16-148410-0",
+            authors: [
+              "https://www.example.com/authors/@firstnameA-lastnameA",
+              "https://www.example.com/authors/@firstnameB-lastnameB",
+            ],
+            tags: ["Tag A", "Tag B", "Tag C"],
+          },
+          images: [
+            {
+              url: "https://www.test.ie/images/book.jpg",
+              width: 850,
+              height: 650,
+              alt: "Cover of the book",
+            },
+          ],
+        }}
+      />
       <Hero {...hero} />
       <AlternativeSideBySideWithVideoOrImg {...textOne} {...textTwo} />
       <AlternativeSideBySideWithVideoOrImg {...textThree} {...textFour} />

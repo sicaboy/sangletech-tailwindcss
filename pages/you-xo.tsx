@@ -5,6 +5,8 @@ import AlternativeSideBySideWithVideoOrImg from "../components/alternative-side-
 import BrandPanelWithAppScreenShot from "../components/sections/cta-sections/brand_panel_with_app_screenshot";
 import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/brand_panel_with_overlapping_image";
 
+import { SoftwareAppJsonLd } from "next-seo";
+
 const hero = {
   titleHighlight: "YOU X.0",
   titleNormal: "Ứng Dụng Thần Số Học Đầu Tiên Tại Việt Nam",
@@ -105,6 +107,15 @@ const textEight = {
 function YouXO() {
   return (
     <Layout>
+      //YUNNIE: Add App info and then the rest of the apps. Tks!
+      <SoftwareAppJsonLd
+        name="Angry Birds"
+        price="1.00"
+        priceCurrency="VND"
+        aggregateRating={{ ratingValue: "4.6", reviewCount: "8864" }}
+        operatingSystem="ANDROID, IOS, WEB"
+        applicationCategory="Application"
+      />
       <HeroWithAngelImageOnRight {...hero} />
       <div id="read-more" />
       <AlternativeSideBySideWithVideoOrImg {...textOne} {...textTwo} />

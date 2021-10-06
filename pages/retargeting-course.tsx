@@ -9,6 +9,8 @@ import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/
 import * as Icon from "@heroicons/react/outline";
 import ThreeColumnsFeatureList from "../components/three-columns-feature-list";
 
+import { CourseJsonLd } from "next-seo";
+
 const hero = {
   caption: "KHOÁ HỌC: RETARGETING",
   titleNormal: " LÀ GÌ?",
@@ -202,6 +204,14 @@ const textBookxo = {
 function RetargetingCourse() {
   return (
     <Layout>
+      {/* YUNNIE: Add the course info for this one and then the rest of the
+      courses. Tks! */}
+      <CourseJsonLd
+        courseName="Course Name"
+        providerName="Course Provider"
+        providerUrl="https//www.example.com/provider"
+        description="Course description goes right here"
+      />
       <Hero {...hero} />
       <AlternativeSideBySideWithVideoOrImg {...textOne} {...textTwo} />
       <MyAchievement {...courseDescript} />
