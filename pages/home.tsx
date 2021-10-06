@@ -266,7 +266,7 @@ const blog = {
   blogTwoReadingTime: "2",
 
   blogThreeThumbnail: "/assets/thumbnail-online-marketing.jpg",
-  blogThreeLink: "",
+  blogThreeLink: "/posts/quang-cao-fb-gg-da-du",
   blogThreeCategory: "Marketing",
   blogThreeTitle: "Quảng cáo Facebook & Google đã đủ chưa?",
   blogThreeDescription: `"Mặc dù online marketing bắt đầu phát triển từ những năm 1995, khi các công ty công nghệ bắt đầu bùng nổ trong đó có Ebay, Amazon, Google và nhiều công ty công nghệ khác nữa... Nhưng khi Sang làm việc với các chủ doanh nghiệp, thì họ hầu như chưa nắm rõ định nghĩa về Online Marketing là gì hoặc nói nôm na là Quảng cáo Online."`,
@@ -282,7 +282,7 @@ const social = {
   description: `☞ Click để đăng ký tham gia miễn phí cùng hàng ngàn người theo dõi khác ngay trên Facebook Messenger. 
   <br></br>☞ Bạn sẽ nhận các thông tin và bí quyết từ Sang mỗi tuần để giúp bạn bước đi tự tin trên hành trình 4.0!`,
 
-  buttonFacebookLink: "https://www.facebook.com/sangletech/",
+  buttonFacebookLink: "http://www.facebook.com/sangletech/",
   buttonYoutubeLink: "http://youtube.sangletech.com",
   buttonLinkedinLink: "http://linkedin.sangletech.com",
   buttonInstagramLink: "http://instagram.sangletech.com",

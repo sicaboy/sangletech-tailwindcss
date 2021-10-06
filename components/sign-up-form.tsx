@@ -17,12 +17,14 @@
 import { useState } from "react";
 import { Switch } from "@headlessui/react";
 import Select, { StylesConfig } from "react-select";
+import { useRouter } from "next/router";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
 const couseOptions = [
+  { value: "All", label: "Chọn Tất Cả" },
   { value: "Warrior X.0", label: "Chiến Binh X.0" },
   { value: "Startup X.0", label: "Startup X.0" },
   { value: "Retargeting", label: "Retargeting" },
@@ -34,6 +36,7 @@ const couseOptions = [
 ];
 
 const appOptions = [
+  { value: "All", label: "Chọn Tất Cả" },
   { value: "Book X.0", label: "Book X.0 (Sách Bí Mật Làm Giàu)" },
   { value: "You X.0", label: "You X.0 (Ứng dụng Tra cứu Thần Số Học)" },
   { value: "Fin X.0", label: "Fin X.0 (Ứng dụng Quản lý Tài chính)" },
@@ -55,6 +58,9 @@ const customStyles = {
   // }),
 };
 
+const apiUrl = process.env.SUBMIT_FORM_URL;
+console.log(`apiUrl: ${apiUrl}`);
+
 export default function Example() {
   const [agreed, setAgreed] = useState(false);
 
@@ -64,6 +70,8 @@ export default function Example() {
   const [phone, setPhone] = useState("");
   const [selectedApp, setSelectedApp] = useState(null);
   const [selectedCourse, setSelectedCourse] = useState(null);
+
+  const router = useRouter();
 
   // Form submit handler
   const submitForm = async (e) => {
@@ -84,6 +92,7 @@ export default function Example() {
     // Success if status code is 201
     if (res.status === 201) {
       console.log("Thank you for contacting us!", { type: "success" });
+      router.push("/form-success");
     } else {
       console.log("Please re-check your inputs.", { type: "error" });
     }
@@ -230,7 +239,6 @@ export default function Example() {
                   id="phone-number"
                   autoComplete="tel"
                   className="block w-full px-4 py-3 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
-                  placeholder="0937511277"
                   required
                   onChange={(e) => setPhone(e.target.value)}
                 />

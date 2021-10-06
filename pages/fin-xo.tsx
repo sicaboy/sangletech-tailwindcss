@@ -77,10 +77,9 @@ const textFive = {
   <br></br>**Để hỗ trợ bạn thiết lập mục tiêu, cụ thể hóa mục tiêu và review mỗi ngày, Sang đã phát triển một công cụ tài chính có tên là Financial Calculator. Công cụ này sẽ đồng hành cùng bạn trên chặng đường chinh phục mục tiêu. Sang đã hướng dẫn nhiều người thực hiện theo công thức và ai cũng gặt hái thành công.**`,
   buttonName: "Truy Cập Ngay",
   buttonSrc: "/form",
-  imgSrc:
-    "https://res.cloudinary.com/sang-le-tech/image/upload/v1633357982/Galatek.io%20Website/maxresdefault_aclyzs.jpg",
+  imgSrc: "/assets/thumbnail-glt-success.jpg",
   alt: "Video Sang Le & Galatek Success",
-  videoSrc: "https://youtu.be/E_4epjA6wyo",
+  videoSrc: "/posts/video-galatek-success",
 };
 
 const textSix = {

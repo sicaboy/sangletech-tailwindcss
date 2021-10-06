@@ -7,7 +7,7 @@ import Smartie from "../components/smartie";
 const social = [
   {
     name: "Facebook",
-    href: "https://facebook.sangletech.com",
+    href: "http://facebook.sangletech.com",
     icon: (props) => (
       <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
         <path
@@ -20,7 +20,7 @@ const social = [
   },
   {
     name: "Instagram",
-    href: "https://instagram.sangletech.com",
+    href: "http://instagram.sangletech.com",
     icon: (props) => (
       <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
         <path
@@ -33,7 +33,7 @@ const social = [
   },
   {
     name: "Youtube",
-    href: "https://youtube.sangletech.com",
+    href: "http://youtube.sangletech.com",
     icon: (props) => (
       <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
         <path
@@ -45,7 +45,7 @@ const social = [
   },
   {
     name: "Linkedin",
-    href: "https://linkedin.sangletech.com",
+    href: "http://linkedin.sangletech.com",
     icon: (props) => (
       <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
         <path

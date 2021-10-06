@@ -8,13 +8,14 @@ import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/
 import * as Icon from "@heroicons/react/outline";
 
 const hero = {
+  //TODO: Add buttonHighlightSrc to scroll down to the courses below
   titleHighlight: "PRO X.0",
   titleNormal: "Ứng Dụng Học Trực Tuyến 4.0",
   description: `**Trực tiếp xây dựng và phát triển độc quyền bởi Sang Lê**`,
   buttonNormal: "Tìm Hiểu Thêm",
   buttonHighlight: "Xem Khoá Học",
   buttonNormalSrc: "#learn-more",
-  buttonHighlightSrc: "/form",
+  buttonHighlightSrc: "",
   imgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626085137/Galatek.io%20Website/3D-Freelancers-illustration0005_zjyclx.png",
   alt: "Hinh anh minh hoa Pro X.0 1",
@@ -66,7 +67,7 @@ const coursesOne = {
 
   blogTwoThumbnail:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1625651836/Galatek.io%20Website/IMG_8057-1024x682_fa7z6z.jpg",
-  blogTwoLink: "/startup-xo",
+  blogTwoLink: "/startupxo-course",
   blogTwoCategory: "KHOÁ HỌC: STARTUP X.0",
   blogTwoTitle:
     "7 Tuần Xây Dựng Khởi Nghiệp Của Bạn Từ A-Z & Marketing Ra Thị Trường",

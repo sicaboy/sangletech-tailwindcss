@@ -5,7 +5,8 @@ const Intro = () => {
         Blog.
       </h1>
       <h4 className="mt-5 text-lg font-semibold text-center md:text-left md:pl-8">
-        Cùng Sang khám phá Bí Mật Làm Giàu X.0
+        Cùng Sang khám phá những câu chuyện và trải nghiệm trên Hành Trình Làm
+        Giàu X.0
       </h4>
     </section>
   );

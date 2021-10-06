@@ -138,22 +138,22 @@ const giaoduc = {
 };
 
 const hanhtrinh = {
+  //TODO: Can not open the videoSrc
   leftCaption: "Chương Trình Hành Trình X.0",
   leftTitle: "Áp Dụng Công Nghệ Vào Cuộc Sống",
   leftDescription: `Với nhiều năm kinh nghiệm làm việc trong ngành công nghệ, Sang mong muốn tạo ra khoá học: Industrial X.0 – Đây là không gian dành cho CEO – những người chủ doanh nghiệp, các bạn học sinh trung học và sinh viên đại học nhằm trang bị tốt các kỹ năng cho họ và sẵn sàng bước vào thời đại Công nghiệp 4.0.`,
-  leftImgSrc:
-    "https://res.cloudinary.com/sang-le-tech/image/upload/v1631869650/Galatek.io%20Website/Sangletech.com/Screen_Shot_2021-09-17_at_4.07.11_PM_bd9qvw.png",
-  leftVideoSrc: "/posts/video-thanh-cong-thoi-dai-40",
+  leftImgSrc: "/assets/thumbnail-thanh-cong-thoi-dai-40.png",
+  leftVideoSrc: "posts/video-thanh-cong-thoi-dai-40",
   leftVideoCaption: `Thành Công Thời Đại 4.0`,
   leftAlt: "Sang Le - Video Thanh Cong Thoi Dai 4.0",
 };
 
 const spmet = {
+  //TODO: Can not open the videoSrc
   rightCaption: "Công Nghệ & Giáo Dục Là Cuộc Sống Của Sang!",
   rightTitle: "Trường Cao Đẳng Kỹ Thuật Thiết Bị Y Tế Miền Nam",
   rightDescription: `Sang luôn tin vào giáo dục. **Trường Cao đẳng Kỹ thuật và Thiết bị y tế miền Nam (SPMET)** được Sang thành lập nhằm tạo ra những cơ hội mới trong ngành Y tế tại Việt Nam. Hàng ngàn sinh viên tại trường SPMET với 100% số lượng sinh viên đều có cơ hội nghề nghiệp phong phú và đạt được mức thu nhập cao sau khi các bạn ra trường.`,
-  rightImgSrc:
-    "https://res.cloudinary.com/sang-le-tech/image/upload/v1631871209/Galatek.io%20Website/Sangletech.com/Screen_Shot_2021-09-17_at_4.33.14_PM_huehhz.png",
+  rightImgSrc: "/assets/thumbnail-truong-spmet.png",
   rightVideoSrc: "posts/video-truong-spmet",
   rightVideoCaption: `Bạn có biết sự tồn tại của ngành học này với 99% sinh viên ra trường SẼ CÓ VIỆC LÀM?`,
   rightAlt: "Sang Le - Video SPMET",
@@ -169,24 +169,25 @@ const galatek = {
 };
 
 const cafes = {
+  //TODO: Can not open the videoSrc
   rightCaption: "CafeS – Ươm Mầm Ý Tưởng",
   rightTitle: "Vườn Ươm Khởi Nghiệp",
 
   rightDescription: `Năm 2019, Sang quyết định mở rộng kinh doanh sang Việt Nam. Với mong muốn mang đến một sân chơi cho các bạn trẻ vẫn đang ngồi trên ghế nhà trường, các doanh nhân đang khao khát sự thay đổi lớn và các cá nhân có ý chí vươn ra thế giới. CafeS được thành lập với sứ mệnh xây dựng một cộng đồng cùng chung tay vì một tương lai tốt đẹp hơn cho cộng đồng khởi nghiệp Việt Nam.`,
-  rightImgSrc:
-    "https://res.cloudinary.com/sang-le-tech/image/upload/v1633080065/Galatek.io%20Website/Sangletech.com/Screen_Shot_2021-09-17_at_4.46.19_PM_ha5jdc_ryw6rj.png",
-  rightVideoSrc: "posts/cafes-intro",
+  rightImgSrc: "/assets/thumbnail-cafes-intro.png",
+  rightVideoSrc: "posts/video-cafes-intro",
   rightVideoCaption: `CafeS Intro`,
   rightAlt: "Sang Le - Video CafeS",
 };
 
 const social = {
+  //TODO: Can not open all buttonLink
   titleMain: "Kết nối",
   titleSecondary: "Hãy kết nối ngay với Sang!",
   description: `☞ Click để đăng ký tham gia miễn phí cùng hàng ngàn người theo dõi khác ngay trên Facebook Messenger. 
   <br></br>☞ Bạn sẽ nhận các thông tin và bí quyết từ Sang mỗi tuần để giúp bạn bước đi tự tin trên hành trình 4.0!`,
 
-  buttonFacebookLink: "https://www.facebook.com/sangletech/",
+  buttonFacebookLink: "http://www.facebook.com/sangletech/",
   buttonYoutubeLink: "http://youtube.sangletech.com",
   buttonLinkedinLink: "http://linkedin.sangletech.com",
   buttonInstagramLink: "http://instagram.sangletech.com",
