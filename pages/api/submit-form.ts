@@ -1,4 +1,10 @@
 const { Client } = require("@notionhq/client");
+const { Webhook } = require("discord-webhook-node");
+
+//TODO: Sang - Figure out how to integrate process.env for Notion and Discord
+const hook = new Webhook(
+  "https://discord.com/api/webhooks/895213192714813460/3sPSVZTXeP-OmVvfWFfeqn97TUm9gRrIHVqEu0hpolesN3eGa0mbYV90vpzyIGWd9WRF"
+);
 
 // NOTION_API_KEY = secret_eXSRJe3C3J2CAgE4AjG25HzplCiXVIIxFwO2AsQVysM
 // NOTION_DATABASE_ID = 50b684e017fe44bc8ba769bd6143c6d7i
@@ -59,11 +65,18 @@ export default async function handler(req, res) {
         JSON.parse(req.body)
       )}`
     );
-    // res.status(201).json({ msg: "Success" });
-    res.writeHead(201, {
-      Location: "/form-success",
-    });
-    res.end();
+
+    hook.send(
+      `Someone signed up for a form. Details: ${JSON.stringify(
+        JSON.parse(req.body)
+      )}`
+    );
+
+    res.status(201).json({ msg: "Success" });
+    // res.writeHead(201, {
+    //   Location: "/form-success",
+    // });
+    // res.end();
   } catch (error) {
     res.status(500).json({ msg: "There was an error" });
     console.log(

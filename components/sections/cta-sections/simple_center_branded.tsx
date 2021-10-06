@@ -9,6 +9,7 @@ import {
   LinkedinFilled,
   YoutubeFilled,
 } from "@ant-design/icons";
+import Link from "next/link";
 
 interface Props {
   titleMain?: string;
@@ -53,34 +54,42 @@ export default function Example(props: Props) {
 
         {/* Buttons  */}
         <div className="flex-wrap justify-center flex-1 pt-16 space-x-4 space-y-4 ">
-          <button className="inline-flex items-center px-5 py-3 bg-gray-100 rounded-lg hover:bg-gray-200 focus:outline-none">
-            <FacebookFilled style={{ fontSize: 24 }} />
-            <span className="flex flex-col items-start ml-4 leading-none">
-              <span className="mb-1 text-xs text-gray-600">Kết nối</span>
-              <span className="font-medium title-font">Facebook</span>
-            </span>
-          </button>
-          <button className="inline-flex items-center px-5 py-3 bg-gray-100 rounded-lg hover:bg-gray-200 focus:outline-none">
-            <InstagramFilled style={{ fontSize: 24 }} />
-            <span className="flex flex-col items-start ml-4 leading-none">
-              <span className="mb-1 text-xs text-gray-600">Kết nối</span>
-              <span className="font-medium title-font">Instagram</span>
-            </span>
-          </button>
-          <button className="inline-flex items-center px-5 py-3 bg-gray-100 rounded-lg hover:bg-gray-200 focus:outline-none">
-            <LinkedinFilled style={{ fontSize: 24 }} />
-            <span className="flex flex-col items-start ml-4 leading-none">
-              <span className="mb-1 text-xs text-gray-600">Kết nối</span>
-              <span className="font-medium title-font">LinkedIn</span>
-            </span>
-          </button>
-          <button className="inline-flex items-center px-5 py-3 bg-gray-100 rounded-lg hover:bg-gray-200 focus:outline-none">
-            <YoutubeFilled style={{ fontSize: 24 }} />
-            <span className="flex flex-col items-start ml-4 leading-none">
-              <span className="mb-1 text-xs text-gray-600">Đăng Ký</span>
-              <span className="font-medium title-font">Youtube</span>
-            </span>
-          </button>
+          <Link href={props.buttonFacebookLink || "#"}>
+            <button className="inline-flex items-center px-5 py-3 bg-gray-100 rounded-lg hover:bg-gray-200 focus:outline-none">
+              <FacebookFilled style={{ fontSize: 24 }} />
+              <span className="flex flex-col items-start ml-4 leading-none">
+                <span className="mb-1 text-xs text-gray-600">Kết nối</span>
+                <span className="font-medium title-font">Facebook</span>
+              </span>
+            </button>
+          </Link>
+          <Link href={props.buttonInstagramLink || "#"}>
+            <button className="inline-flex items-center px-5 py-3 bg-gray-100 rounded-lg hover:bg-gray-200 focus:outline-none">
+              <InstagramFilled style={{ fontSize: 24 }} />
+              <span className="flex flex-col items-start ml-4 leading-none">
+                <span className="mb-1 text-xs text-gray-600">Kết nối</span>
+                <span className="font-medium title-font">Instagram</span>
+              </span>
+            </button>
+          </Link>
+          <Link href={props.buttonLinkedinLink || "#"}>
+            <button className="inline-flex items-center px-5 py-3 bg-gray-100 rounded-lg hover:bg-gray-200 focus:outline-none">
+              <LinkedinFilled style={{ fontSize: 24 }} />
+              <span className="flex flex-col items-start ml-4 leading-none">
+                <span className="mb-1 text-xs text-gray-600">Kết nối</span>
+                <span className="font-medium title-font">LinkedIn</span>
+              </span>
+            </button>
+          </Link>
+          <Link href={props.buttonYoutubeLink || "#"}>
+            <button className="inline-flex items-center px-5 py-3 bg-gray-100 rounded-lg hover:bg-gray-200 focus:outline-none">
+              <YoutubeFilled style={{ fontSize: 24 }} />
+              <span className="flex flex-col items-start ml-4 leading-none">
+                <span className="mb-1 text-xs text-gray-600">Đăng Ký</span>
+                <span className="font-medium title-font">Youtube</span>
+              </span>
+            </button>
+          </Link>
         </div>
       </div>
     </div>

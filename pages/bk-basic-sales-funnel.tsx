@@ -13,10 +13,9 @@ const hero = {
   titleNormal: " Làm sao xây dựng",
   titleHighlight: "Phễu Bán Hàng Online ĐẺ RA TIỀN?",
   description: `**Con Đường Ngắn Nhất Xây Dựng Ước Mơ Khởi Nghiệp Của Bạn**`,
-  imgSrc:
-    "https://res.cloudinary.com/sang-le-tech/image/upload/v1632729923/Galatek.io%20Website/Sangletech.com/istockphoto-1218545883-170667a_amt1pc.jpg",
-  videoSrc: "/posts/video-sales-funnel",
-  videoCaption: `Làm sao xây dựng Phễu Bán Hàng Online ĐẺ RA TIỀN? | Hành trình 4.0`,
+  imgSrc: "/assets/thumbnail-sales-funnel.jpg",
+  videoSrc: "posts/video-sales-funnel",
+  videoCaption: `Làm sao xây dựng Phễu Bán Hàng Online Đẻ Ra Tiền?`,
   alt: "SL-course-sales-funnel",
 };
 
@@ -199,7 +198,6 @@ const textBookxo = {
 function RetargetingCourse() {
   return (
     <Layout>
-      <div>Pro X.0 Page</div>
       <Hero {...hero} />
       <AlternativeSideBySideWithVideoOrImg {...textOne} {...textTwo} />
       <MyAchievement {...courseDescript} />

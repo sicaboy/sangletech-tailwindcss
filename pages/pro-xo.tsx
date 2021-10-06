@@ -8,14 +8,14 @@ import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/
 import * as Icon from "@heroicons/react/outline";
 
 const hero = {
-  //TODO: Add buttonHighlightSrc to scroll down to the courses below
+  //DONE: Add buttonHighlightSrc to scroll down to the courses below
   titleHighlight: "PRO X.0",
   titleNormal: "Ứng Dụng Học Trực Tuyến 4.0",
   description: `**Trực tiếp xây dựng và phát triển độc quyền bởi Sang Lê**`,
   buttonNormal: "Tìm Hiểu Thêm",
   buttonHighlight: "Xem Khoá Học",
   buttonNormalSrc: "#learn-more",
-  buttonHighlightSrc: "",
+  buttonHighlightSrc: "#courses",
   imgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626085137/Galatek.io%20Website/3D-Freelancers-illustration0005_zjyclx.png",
   alt: "Hinh anh minh hoa Pro X.0 1",
@@ -170,7 +170,7 @@ function ProX0() {
       <HeroWithAngelImageOnRight {...hero} />
       <div id="learn-more" />
       <AlternativeSideBySideWithVideoOrImg {...textOne} {...textTwo} />
-      <ThreeColumnCards {...coursesOne} />
+      <ThreeColumnCards {...coursesOne} id="courses" />
       <ThreeColumnCards {...coursesTwo} />
       <BrandPanelWithAppScreenShot {...textFinxo} />
       <BrandPanelWithOverlappingImage {...textBookxo} />

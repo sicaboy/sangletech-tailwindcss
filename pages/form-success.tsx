@@ -3,7 +3,6 @@ import Smartie from "../components/smartie";
 import SignUpForm from "../components/sign-up-form";
 import Link from "next/link";
 export default function FormSuccess() {
-  // TODO: Replace with Nextjs form + Notion + Notifications
   return (
     <Layout>
       <Smartie />

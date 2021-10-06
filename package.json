@@ -19,6 +19,7 @@
     "@u-wave/react-vimeo": "^0.9.5",
     "daisyui": "^1.14.2",
     "date-fns": "^2.24.0",
+    "discord-webhook-node": "^1.1.8",
     "gray-matter": "^4.0.3",
     "next": "latest",
     "next-mdx-remote": "^3.0.4",

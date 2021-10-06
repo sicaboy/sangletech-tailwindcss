@@ -138,7 +138,7 @@ const giaoduc = {
 };
 
 const hanhtrinh = {
-  //TODO: Can not open the videoSrc
+  //DONE: Sang Done
   leftCaption: "Chương Trình Hành Trình X.0",
   leftTitle: "Áp Dụng Công Nghệ Vào Cuộc Sống",
   leftDescription: `Với nhiều năm kinh nghiệm làm việc trong ngành công nghệ, Sang mong muốn tạo ra khoá học: Industrial X.0 – Đây là không gian dành cho CEO – những người chủ doanh nghiệp, các bạn học sinh trung học và sinh viên đại học nhằm trang bị tốt các kỹ năng cho họ và sẵn sàng bước vào thời đại Công nghiệp 4.0.`,
@@ -149,7 +149,7 @@ const hanhtrinh = {
 };
 
 const spmet = {
-  //TODO: Can not open the videoSrc
+  //DONE: Can not open the videoSrc
   rightCaption: "Công Nghệ & Giáo Dục Là Cuộc Sống Của Sang!",
   rightTitle: "Trường Cao Đẳng Kỹ Thuật Thiết Bị Y Tế Miền Nam",
   rightDescription: `Sang luôn tin vào giáo dục. **Trường Cao đẳng Kỹ thuật và Thiết bị y tế miền Nam (SPMET)** được Sang thành lập nhằm tạo ra những cơ hội mới trong ngành Y tế tại Việt Nam. Hàng ngàn sinh viên tại trường SPMET với 100% số lượng sinh viên đều có cơ hội nghề nghiệp phong phú và đạt được mức thu nhập cao sau khi các bạn ra trường.`,
@@ -169,7 +169,7 @@ const galatek = {
 };
 
 const cafes = {
-  //TODO: Can not open the videoSrc
+  //DONE: Can not open the videoSrc
   rightCaption: "CafeS – Ươm Mầm Ý Tưởng",
   rightTitle: "Vườn Ươm Khởi Nghiệp",
 
@@ -181,13 +181,13 @@ const cafes = {
 };
 
 const social = {
-  //TODO: Can not open all buttonLink
+  //DONE: Can not open all buttonLink
   titleMain: "Kết nối",
   titleSecondary: "Hãy kết nối ngay với Sang!",
   description: `☞ Click để đăng ký tham gia miễn phí cùng hàng ngàn người theo dõi khác ngay trên Facebook Messenger. 
   <br></br>☞ Bạn sẽ nhận các thông tin và bí quyết từ Sang mỗi tuần để giúp bạn bước đi tự tin trên hành trình 4.0!`,
 
-  buttonFacebookLink: "http://www.facebook.com/sangletech/",
+  buttonFacebookLink: "http://facebook.sangletech.com",
   buttonYoutubeLink: "http://youtube.sangletech.com",
   buttonLinkedinLink: "http://linkedin.sangletech.com",
   buttonInstagramLink: "http://instagram.sangletech.com",

@@ -214,11 +214,11 @@ const startup = {
 };
 
 const youtube = {
-  //TODO: The button link redirects incorrectly
+  //DONE: The button link redirects incorrectly
   title: "Video Youtube Nổi Bật",
   description: `Nếu bạn muốn đi nhanh thì đi một mình, nếu bạn muốn đi xa thì hãy đi cùng nhau!`,
   buttonName: "Theo Dõi Ngay",
-  buttonLink: "http://youtube.sangletech.com",
+  buttonSrc: "http://youtube.sangletech.com",
 
   videoOneThumbnail:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1631780175/Galatek.io%20Website/Sangletech.com/maxresdefault_cztyhf.jpg",
