@@ -183,7 +183,7 @@ export default function FourColumnWithNewsLetterDark() {
               Bạn sẽ nhận các thông tin, bí quyết từ Sang mỗi tuần để giúp bạn
               bước đi tự tin trên hành trình 4.0!
             </p>
-            <form className="mt-4 sm:flex sm:max-w-md">
+            {/* <form className="mt-4 sm:flex sm:max-w-md">
               <label htmlFor="email-address" className="sr-only">
                 Địa chỉ email
               </label>
@@ -204,7 +204,16 @@ export default function FourColumnWithNewsLetterDark() {
                   Đăng Ký
                 </button>
               </div>
-            </form>
+            
+            </form> */}
+
+            <div className="mt-8 rounded-md sm:flex-shrink-0">
+              <Link href="/form">
+                <button className="flex items-center justify-center px-4 py-2 text-base font-medium text-white bg-indigo-500 border border-transparent rounded-md hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-indigo-500">
+                  Đăng Ký Ngay!
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
         <div className="pt-8 mt-8 border-t border-gray-700 md:flex md:items-center md:justify-between">

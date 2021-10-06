@@ -74,7 +74,7 @@ const Post = ({ post, morePosts, preview }: Props) => {
         openGraph={{
           title: post.title,
           description: post.excerpt,
-          url: `https://sangletech.com/post/${post.slug}`,
+          url: `https://www.sangletech.com/post/${post.slug}`,
           type: "article",
           article: {
             publishedTime: post.date,
@@ -86,7 +86,7 @@ const Post = ({ post, morePosts, preview }: Props) => {
           },
           images: [
             {
-              url: post.ogImage,
+              url: `https://www.sangletech.com/${post.ogImage}`,
               width: 850,
               height: 650,
               alt: post.title,
@@ -95,13 +95,13 @@ const Post = ({ post, morePosts, preview }: Props) => {
         }}
       />
       <BlogJsonLd
-        url={`https://sangletech.com/post/${post.slug}`}
+        url={`https://www.sangletech.com/post/${post.slug}`}
         title={post.title}
         images={[
           // "https://example.com/photos/1x1/photo.jpg",
           // "https://example.com/photos/4x3/photo.jpg",
           // "https://example.com/photos/16x9/photo.jpg",
-          post.ogImage,
+          `https://www.sangletech.com/${post.ogImage}`,
         ]}
         datePublished={post.date}
         dateModified={post.date}

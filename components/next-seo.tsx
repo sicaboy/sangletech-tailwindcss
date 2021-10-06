@@ -2,7 +2,9 @@ import { NextSeo } from "next-seo";
 import { SocialProfileJsonLd } from "next-seo";
 import { ProfilePageJsonLd } from "next-seo";
 
-//TODO: Yunnie add info for the website. this is used when people send http://sangletech.com in a message on Facebook or other platforms
+//YUNNIE: Yunnie add info for the website. this is used when people send http://sangletech.com in a message on Facebook or other platforms
+//https://www.sangletech.com/assets/brand-identity.jpeg
+
 export default function NextSeoCustom() {
   return (
     <div>
