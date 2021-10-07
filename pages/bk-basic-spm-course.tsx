@@ -129,13 +129,13 @@ const courseValues = {
   },
   details: [
     {
-      name: "Thiết Lập Cuốn Tập SPM.",
+      name: "Quản Lý Cuộc Sống Bằng Thư Mục & Cuốn Tập SPM",
       description:
-        "Để Bạn biết cách phân loại và quản lý những công việc của mình trong những Cuốn tập như cách mà bạn đã làm khi còn nhỏ, từ đó áp dụng cách thức này trong việc quản lý kế hoạch thông qua công cụ Notion.",
+        "Để Bạn làm quen với một cách thức lên kế hoạch mới lạ của Sang thông qua những Cuốn tập và Thư mục, rất đơn giản như cách mà bạn đã từng làm khi còn ngồi trên ghế nhà trường.",
       icon: Icon.FilterIcon,
     },
     {
-      name: "Phân Định Rõ Nguồn Gốc Khách Hàng.",
+      name: "",
       description:
         "Để Bạn có thể phâncung cấp đúng thông tin và sản phẩm cho từng loại khách hàng, có nghĩa là khách hàng sẽ xem được sản phẩm họ cần mua từ đó Bạn sẽ bán được nhiều sản phẩm hơn.",
       icon: Icon.LightBulbIcon,
