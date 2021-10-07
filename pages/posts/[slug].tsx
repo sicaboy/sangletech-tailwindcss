@@ -105,7 +105,7 @@ const Post = ({ post, morePosts, preview }: Props) => {
         ]}
         datePublished={post.date}
         dateModified={post.date}
-        authorName={post.author}
+        authorName="Sang Le"
         description={post.excerpt}
       />
     </Layout>

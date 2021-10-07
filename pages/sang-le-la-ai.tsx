@@ -412,7 +412,54 @@ const companyAchivement = {
   listThreeDescription: `Kinh Nghiệm`,
 };
 
+//YUNNIE: Plz reput the features here from feature1 below
 const features = {
+  general: {
+    caption: "GIÁ TRỊ ",
+    title: "Bạn Sẽ Học Được Gì Từ Khoá Học Này?",
+    description: `*Trong khoá học này, Sang sẽ **"bật mí những bí mật"** mà Sang đã nghiên cứu, học hỏi và áp dụng thành công cho doanh nghiệp của mình từ **Chuyên gia xây dựng Phễu Bán Hàng nổi tiếng thế giới Russell Brunson** và bạn có thể áp dụng ngay vào việc kinh doanh online của mình!*<br></br>**⟐  Khoá học này như là một Cuốn Cẩm nang Trọn đời để bạn có thể tạo ra Phễu Bán Hàng giúp tăng doanh số kinh doanh Online theo cấp số nhân**. Sang chỉ tập trung hướng dẫn bạn **những chiến lược mà chính Sang đã áp dụng thành công cho doanh nghiệp của mình** — ngay cả khi công nghệ luôn liên tục thay đổi.`,
+  },
+  details: [
+    {
+      name: "No hidden fees",
+      description:
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+      icon: Icon.GlobeAltIcon,
+    },
+    {
+      name: "No hidden fees",
+      description:
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratiTwo.",
+      icon: Icon.ScaleIcon,
+    },
+    {
+      name: "Transfers are instant",
+      description:
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratiThree.",
+      icon: Icon.LightningBoltIcon,
+    },
+    {
+      name: "Mobile notifications",
+      description:
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratiFour.",
+      icon: Icon.AnnotationIcon,
+    },
+    {
+      name: "Mobile notifications",
+      description:
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratiFive.",
+      icon: Icon.AnnotationIcon,
+    },
+    {
+      name: "Mobile notifications",
+      description:
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratiSix.",
+      icon: Icon.FilterIcon,
+    },
+  ],
+};
+
+const features1 = {
   caption: "Dịch Vụ & Sản Phẩm ",
   title: "Bảo Đảm",
   description: `Chất lượng dịch vụ`,
@@ -458,7 +505,12 @@ function About() {
       <CoreValues {...coreValue} />
       <OurTeam {...ourTeam} />
       <CompanyAchivement {...companyAchivement} />
-      <Features {...features} />
+      <Features
+        caption={features.general.caption}
+        title={features.general.title}
+        description={features.general.description}
+        features={features.details}
+      />
       <SocialConnect {...social} />
       <MyCompanies {...company} />
     </Layout>

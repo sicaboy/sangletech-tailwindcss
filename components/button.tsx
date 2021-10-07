@@ -4,8 +4,8 @@ import Link from "next/link";
 function Button(props) {
   return (
     <div>
-      <Link href={props.url}>
-        <button className="btn btn-primary">
+      <Link href={props.url || "#"}>
+        <button className="rounded-full btn btn-primary">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="inline-block w-6 h-6 mr-2 stroke-current"
@@ -20,7 +20,7 @@ function Button(props) {
               d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
             />
           </svg>
-          {props.name}
+          {props.name || "Button"}
         </button>
       </Link>
     </div>

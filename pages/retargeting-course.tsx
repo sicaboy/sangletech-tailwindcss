@@ -8,8 +8,10 @@ import BrandPanelWithAppScreenShot from "../components/sections/cta-sections/bra
 import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/brand_panel_with_overlapping_image";
 import * as Icon from "@heroicons/react/outline";
 import ThreeColumnsFeatureList from "../components/three-columns-feature-list";
+import FAQ from "../components/sections/faq-sections/centered_accordion";
 
 import { CourseJsonLd } from "next-seo";
+import Bonus from "../components/course/bonus";
 
 const hero = {
   caption: "KHOÁ HỌC: RETARGETING",
@@ -201,6 +203,29 @@ const textBookxo = {
   alt: "Hinh anh Book Cover",
 };
 
+// YUNNIE: Here is the FAQ component. You can input the info here. If it's just an img, you can just leave video info blank
+const faqs = {
+  general: {
+    title: "Câu Hỏi Thường Gặp",
+    videoSrc: "",
+    videoCaption: "",
+    imgSrc: "",
+    alt: "",
+  },
+  details: [
+    {
+      question: "What's the best thing about Switzerland?",
+      answer:
+        "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    },
+    {
+      question: "What's the best thing about Switzerland?",
+      answer:
+        "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    },
+  ],
+};
+
 function RetargetingCourse() {
   return (
     <Layout>
@@ -220,6 +245,15 @@ function RetargetingCourse() {
       <ThreeColumnsFeatureList {...courseValue} />
       <BrandPanelWithAppScreenShot {...textPayment} />
       <BrandPanelWithOverlappingImage {...textBookxo} />
+      <Bonus />
+      <FAQ
+        faqs={faqs.details}
+        title={faqs.general.title}
+        videoSrc={faqs.general.videoSrc}
+        videoCaption={faqs.general.videoCaption}
+        imgSrc={faqs.general.imgSrc}
+        alt={faqs.general.alt}
+      />
     </Layout>
   );
 }

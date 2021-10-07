@@ -14,6 +14,8 @@ import * as Icon from "@heroicons/react/outline";
 import { getAllPosts } from "../utils/api";
 import Post from "../types/post";
 
+import Bonus from "../components/bonus";
+
 import Logos from "../components/sections/logo-clouds/simple_with_heading_on_brand";
 
 // import Blog from "../components/post/3_column_cards";
