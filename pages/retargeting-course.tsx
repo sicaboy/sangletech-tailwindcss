@@ -245,15 +245,7 @@ function RetargetingCourse() {
       <ThreeColumnsFeatureList {...courseValue} />
       <BrandPanelWithAppScreenShot {...textPayment} />
       <BrandPanelWithOverlappingImage {...textBookxo} />
-      <Bonus />
-      <FAQ
-        faqs={faqs.details}
-        title={faqs.general.title}
-        videoSrc={faqs.general.videoSrc}
-        videoCaption={faqs.general.videoCaption}
-        imgSrc={faqs.general.imgSrc}
-        alt={faqs.general.alt}
-      />
+      {/* <Bonus /> */}
     </Layout>
   );
 }

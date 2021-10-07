@@ -94,9 +94,10 @@ const courseDescript = {
 const textThree = {
   leftCaption: "YÊU CẦU",
   leftTitle: "Bạn Cần Chuẩn Bị Gì Để Tham Gia Khóa Học?",
-  leftDescription: `**✓**  Bạn phải có kết nối Internet với đường truyền tốt.
-    <br></br>**✓**   Bạn phải có nơi để ghi chú và thực hành bài tập.
-    <br></br>**✓**   Bạn phải có tinh thần sẵn sàng học hỏi những điều mới trong khoá học này và thực hành chúng trong các chiến lược Xây dựng Phễu Bán Hàng của chính bạn trong xuyên suốt quá trình tham gia khóa học.
+  leftDescription: `**✓**  Bạn phải có máy tính kết nối Internet.
+  **✓**  Bạn phải sẵn sàng sử dụng máy tính để lập kế hoạch hoặc quản lý các khía cạnh trong cuộc sống của mình.
+    <br></br>**✓**   Bạn phải đăng ký tài khoản Notion (Có các tuỳ chọn miễn phí & trả phí).
+    <br></br>**✓**   Bạn phải có tinh thần sẵn sàng học hỏi những điều mới trong khoá học này và thực hành Lên Kế Hoạch cho cuộc sống của chính bạn trong xuyên suốt quá trình tham gia khóa học.
     <br></br>**✓**   Bạn phải sẵn sàng đặt câu hỏi nếu bạn không hiểu điều gì đó khi tham gia khoá học.`,
   leftImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1627482536/Galatek.io%20Website/1_iudpkg.png",
@@ -106,15 +107,15 @@ const textThree = {
 const textFour = {
   rightCaption: "Bạn Có Phù Hợp?",
   rightTitle: "Khoá Học Này Dành Cho Những Ai?",
-  rightDescription: `**✓   Nếu Bạn là doanh nhân muốn kinh doanh sản phẩm Online** thông qua Phễu Bán Hàng.
-  <br></br>**✓   Nếu Bạn là một dân Marketing** muốn tự động hóa hoạt động kinh doanh Online của mình.
-  <br></br>**✓   Nếu Bạn là một người đang quan tâm đến Phễu Bán Hàng** và phân tích dữ liệu khách hàng.
-  <br></br>**✓   Nếu Bạn là một chủ doanh nghiệp nhỏ và là một người kinh doanh muốn sử dụng Phễu Bán Hàng** để tăng doanh số bán hàng online của mình theo cấp số nhân.
-  <br></br>**✓   Nếu Bạn là một người làm việc cho doanh nghiệp có sản phẩm kỹ thuật số**, cửa hàng thương mại điện tử, doanh nghiệp truyền thống, doanh nghiệp dựa trên dịch vụ… miễn là bạn có thứ gì đó để bán!
-  <br></br>**✓   Nếu Bạn mong muốn "bỏ túi" một kỹ năng mới để có thể trở thành một Freelancer chuyên nghiệp** (người làm việc tự do chuyên nghiệp) cho các doanh nghiệp đang có nhu cầu xây dựng và phát triển Phễu Bán Hàng bền vững và thành công cho họ.
-  <br></br>**✓   Nếu Bạn đã nghe nói về Phễu Bán Hàng** và bạn muốn tìm hiểu thêm về những Chiến lược Xây dựng Phễu B.
+  rightDescription: `**✓   Nếu Bạn là Chủ doanh nghiệp hoặc Chuyên gia trong một lĩnh vực nào đó đang cảm thấy quá tải với hàng đống dự án lớn nhỏ khác nhau và đang cố gắng tìm cách tổ chức và quản lý chúng một cách hiệu quả nhất. 
+  <br></br>**✓   Nếu bạn là người làm nghề tự do (Freelancer) hoặc người sáng lập một mình đang mong muốn tổ chức công việc kinh doanh của bạn.
+  <br></br>**✓   Nếu Bạn là một Học sinh đang muốn tìm ra một công cụ và phương pháp lên kế hoạch tốt để học tập hiệu quả.
+  <br></br>**✓   Nếu Bạn và Đội ngũ trong doanh nghiệp của mình đang tìm kiếm một công cụ để lên kế hoạch, làm việc và quản lý đội nhóm hiệu quả trong các dự án hợp tác. 
+  <br></br>**✓   Nếu Bạn đang quan tâm đến việc cải thiện thói quen làm việc để trở nên tập trung hơn, có tổ chức và năng suất hơn.
+  <br></br>**✓   Nếu Bạn đang quan tâm đến việc có một hệ thống lên kế hoạch được cá nhân hoá cho riêng mình.
+  <br></br>**✓   Nếu Bạn chỉ đơn giản là một người đang hứng thú và muốn khám phá SPM - Phương pháp Lên Kế Hoạch Đơn Giản của Sang.
   <br></br> **THÌ ĐÂY LÀ KHOÁ HỌC DÀNH CHO BẠN!**
-  <br></br>*‼️ Khóa học này KHÔNG dành cho bạn nếu bạn không nghiêm túc về việc cung cấp những giá trị lâu dài cho khách hàng của mình*.`,
+  <br></br>*‼️ Khóa học này KHÔNG dành cho Bạn nếu Bạn không nghiêm túc trong việc lên kế hoạch, xác định mục tiêu trong cuộc sống để hướng đến sự phát triển và thành công cho bản thân*.`,
   rightImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1627466906/Galatek.io%20Website/os0019_1_5_Converted_ubnsvc.png",
   rightAlt: "Hinh anh minh hoa Funnel 4",
@@ -124,19 +125,19 @@ const courseValues = {
   general: {
     caption: "GIÁ TRỊ ",
     title: "Bạn Sẽ Học Được Gì Từ Khoá Học Này?",
-    description: `*Trong khoá học này, Sang sẽ **"bật mí những bí mật"** mà Sang đã nghiên cứu, học hỏi và áp dụng thành công cho doanh nghiệp của mình từ **Chuyên gia xây dựng Phễu Bán Hàng nổi tiếng thế giới Russell Brunson** và bạn có thể áp dụng ngay vào việc kinh doanh online của mình!*<br></br>⟐  Khoá học này như là một **Cuốn Cẩm nang Trọn đời** để bạn có thể tạo ra Phễu Bán Hàng giúp tăng doanh số kinh doanh Online theo cấp số nhân. <br></br>⟐  Sang chỉ tập trung hướng dẫn bạn **những chiến lược mà chính Sang đã áp dụng thành công cho doanh nghiệp của mình** — ngay cả khi công nghệ luôn liên tục thay đổi.`,
+    description: `*Trong khoá học này, Sang sẽ hướng dẫn Bạn cách thức Lên kế hoạch mà Sang đã nghiên cứu và áp dụng thành công cho việc quản lý cuộc sống cá nhân và công việc của Sang.*<br></br>⟐  Phương pháp Lên Kế Hoạch Đơn Giản SPM này được Sang kết hợp giữa cách thức lên kế hoạch truyền thống và công nghệ hiện đại với sự "hỗ trợ đắc lực" của phần mềm Notion.<br></br>**SPM Basic** sẽ giúp bạn hoạch định kế hoạch một cách toàn diện nhất trong cả công việc và cuộc sống cá nhân! `,
   },
   details: [
     {
-      name: "Phễu Bán Hàng Là Gì?",
+      name: "Thiết Lập Cuốn Tập SPM.",
       description:
-        "Tìm hiểu rõ Phễu Bán Hàng là gì? Và 7 Giai đoạn quan trọng nhất trong Phễu Bán Hàng để  dẫn dắt khách hàng chưa biết đến những dịch vụ/sản phẩm của Bạn trở thành khách mua hàng thực sự.",
+        "Để Bạn biết cách phân loại và quản lý những công việc của mình trong những Cuốn tập như cách mà bạn đã làm khi còn nhỏ, từ đó áp dụng cách thức này trong việc quản lý kế hoạch thông qua công cụ Notion.",
       icon: Icon.FilterIcon,
     },
     {
       name: "Phân Định Rõ Nguồn Gốc Khách Hàng.",
       description:
-        "Để Bạn có thể cung cấp đúng thông tin và sản phẩm cho từng loại khách hàng, có nghĩa là khách hàng sẽ xem được sản phẩm họ cần mua từ đó Bạn sẽ bán được nhiều sản phẩm hơn.",
+        "Để Bạn có thể phâncung cấp đúng thông tin và sản phẩm cho từng loại khách hàng, có nghĩa là khách hàng sẽ xem được sản phẩm họ cần mua từ đó Bạn sẽ bán được nhiều sản phẩm hơn.",
       icon: Icon.LightBulbIcon,
     },
     {

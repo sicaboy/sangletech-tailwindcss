@@ -37,6 +37,28 @@ const solution = {
   description: "",
 };
 
+const faqs = {
+  general: {
+    title: "Câu Hỏi Thường Gặp",
+    videoSrc: "",
+    videoCaption: "",
+    imgSrc: "",
+    alt: "",
+  },
+  details: [
+    {
+      question: "What's the best thing about Switzerland?",
+      answer:
+        "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    },
+    {
+      question: "What's the best thing about Switzerland?",
+      answer:
+        "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    },
+  ],
+};
+
 function CoursePageTemplate() {
   return (
     <div>
@@ -60,7 +82,14 @@ function CoursePageTemplate() {
       <Pricing />
 
       <Stories />
-      <FAQ />
+      <FAQ
+        faqs={faqs.details}
+        title={faqs.general.title}
+        videoSrc={faqs.general.videoSrc}
+        videoCaption={faqs.general.videoCaption}
+        imgSrc={faqs.general.imgSrc}
+        alt={faqs.general.alt}
+      />
       <Pricing />
       <FreeLesson />
       <BuyerToastify />
