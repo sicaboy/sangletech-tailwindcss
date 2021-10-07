@@ -78,7 +78,7 @@ const courseDescript = {
   listElevenDescription: `Khách hàng tiềm năng được nuôi dưỡng sẽ thực hiện mua hàng nhiều hơn 47% so với khách hàng tiềm năng không được nuôi dưỡng.`,
 
   listTwelveTitle: false,
-  listTwelveDescription: `Mục tiêu cuối cùng không phải là bán hàng.Mà thay vào đó, mục tiêu của bạn là tạo ra lượng khách hàng luôn quay trở lại với bạn để họ có thể nhận được giá trị lâu dài.`,
+  listTwelveDescription: `Mục tiêu cuối cùng không phải là bán hàng. Mà mục tiêu của bạn là tạo ra lượng khách hàng luôn quay trở lại với bạn để họ có thể nhận được giá trị từ bạn một cách lâu dài.`,
 
   listThirteenTitle: false,
   listThirteenDescription: `Nếu trước đây, những cách thức phát triển doanh nghiệp online của bạn bắt đầu trở nên lỗi thời trong thời đại công nghệ luôn thay đổi với tốc độ chóng mặt này.`,
@@ -113,7 +113,7 @@ const textFour = {
   <br></br>**✓   Nếu Bạn mong muốn "bỏ túi" một kỹ năng mới để có thể trở thành một Freelancer chuyên nghiệp** (người làm việc tự do chuyên nghiệp) cho các doanh nghiệp đang có nhu cầu xây dựng và phát triển Phễu Bán Hàng bền vững và thành công cho họ.
   <br></br>**✓   Nếu Bạn đã nghe nói về Phễu Bán Hàng** và bạn muốn tìm hiểu thêm về những Chiến lược Xây dựng Phễu B.
   <br></br> **THÌ ĐÂY LÀ KHOÁ HỌC DÀNH CHO BẠN!**
-  <br></br>*‼️ Khóa học này KHÔNG dành cho bạn nếu bạn không nghiêm túc về việc cung cấp những giá trị lâu dài cho khách hàng của mình*.`,
+  <br></br>*‼️ Khóa học này KHÔNG dành cho bạn nếu bạnç không nghiêm túc về việc cung cấp những giá trị lâu dài cho khách hàng của mình*.`,
   rightImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1627466906/Galatek.io%20Website/os0019_1_5_Converted_ubnsvc.png",
   rightAlt: "Hinh anh minh hoa Funnel 4",
@@ -166,11 +166,13 @@ const courseValues = {
 };
 
 const textPayment = {
+  //TODO: Add buttonSrc
   titleFirst: "Tham Gia Khoá Học Xây Dựng Phễu Bán Hàng Cơ Bản",
   titleSecond: "Không Yêu Cầu Kinh Nghiệm",
   description: `Với mức giá thấp hơn nhiều so với một bữa tối cùng gia đình, bạn sẽ nhận được **hơn 2 giờ video bài hướng dẫn từ Yunnie Nguyen - Trợ lý của Sang, quyền truy cập vào diễn đàn thảo luận dành cho các Chiến binh X.0 của Sang và bạn có thể hỏi Sang bất kỳ câu hỏi nào trong xuyên suốt khóa học**.
   <br></br>Hơn hết, bạn nhận được quyền truy cập trọn đời và 3 ngày đảm bảo hoàn tiền 100%!`,
   buttonName: "THAM GIA KHOÁ HỌC",
+  buttonSrc: "/form",
   imgSrc: "/assets/thumbnail-sales-funnel.jpg",
   alt: "Hinh anh minh hoa Ret 5",
   videoSrc: "posts/video-sales-funnel",

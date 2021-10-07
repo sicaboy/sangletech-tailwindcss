@@ -8,13 +8,13 @@ import ThreeColumnCards from "../components/sections/blog-sections/3_column_card
 import BrandPanelWithAppScreenShot from "../components/sections/cta-sections/brand_panel_with_app_screenshot";
 import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/brand_panel_with_overlapping_image";
 import * as Icon from "@heroicons/react/outline";
+import ThreeColumnsFeatureList from "../components/three-columns-feature-list";
 
 const hero = {
-  //TODO: Change the position between titleNormal and titleHighlight
-  caption: "Khoá Học: Phễu Bán Hàng (Cơ Bản)",
-  titleNormal: " Làm sao xây dựng",
-  titleHighlight: "Phễu Bán Hàng Online ĐẺ RA TIỀN?",
-  description: `**Bạn có biết Vũ khí Chốt Đơn Hàng Online chính là Phễu Bán Hàng?**`,
+  caption: "Khoá Học: SPM - Simple Planning Method",
+  titleNormal: " với Notion",
+  titleHighlight: "Cách Lên Kế Hoạch Đơn Giản",
+  description: `**CẤP ĐỘ: CƠ BẢN**<br></br>Được tạo ra bởi Sang Lê sau hơn 10 năm nghiên cứu và phát triển.`,
   imgSrc: "/assets/thumbnail-sales-funnel.jpg",
   videoSrc: "posts/video-sales-funnel",
   videoCaption: `Làm sao xây dựng Phễu Bán Hàng Online Đẻ Ra Tiền?`,
@@ -24,7 +24,7 @@ const hero = {
 const textOne = {
   leftCaption: "THỰC TẾ",
   leftTitle: "Bạn Có Biết?",
-  leftDescription: `Bạn có biết: **Chỉ có 7% – 10% số lượng khách hàng đưa ra quyết định mua hàng ngay lần đầu tiên họ nhìn thấy sản phẩm của bạn qua quảng cáo.** Vậy hơn 90% số lượng khách còn lại thì như thế nào? <br></br> Làm cách nào để bạn có thể đứng ngoài số liệu thống kê này và tạo ra Phễu Marketing tốt nhất có thể cho doanh nghiệp của mình?`,
+  leftDescription: `Năm 1950, có một nhóm các nhà nghiên cứu đến một lớp học tại trường Đại học Stanford. Ở đó, họ hỏi những sinh viên rằng các bạn ấy đã có kế hoạch sau khi ra trường chưa. **Chỉ 5% sinh viên có kế hoạch rõ ràng sau khi ra trường, còn lại 95% sinh viên vẫn chưa có định hướng gì cả**.<br></br>Nhóm nghiên cứu ghi lại những cái tên, và 10 năm sau, họ tìm lại những con người trong lớp học đó. Và bạn biết điều gì không? **5% người là 10 năm trước đã nói rằng họ đã có dự định trong cuộc sống lúc bấy giờ có mức thu nhập hơn tổng 95% những người còn lại.** Không gì khác, kế hoạch chính là thứ khiến họ làm được điều đó.`,
   leftImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1627466088/Galatek.io%20Website/Financial_Access_3_mha0jp.png",
   leftAlt: "Hinh anh minh hoa Funnel 1",
@@ -32,8 +32,9 @@ const textOne = {
 
 const textTwo = {
   rightCaption: "VẤN ĐỀ",
-  rightTitle: "BẠN phải đối mặt với Covid-19 & Thời đại 4.0",
-  rightDescription: `⟐  Hiện tại lượng tiêu thụ hàng Online tăng đột b-iến, nhưng nhiều doanh nghiệp đã phải đóng cửa vì không có một kênh bán hàng Online phù hợp, hoặc kinh doanh Online mà không biết cách marketing hiệu quả.<br></br>**Hãy tưởng tượng nếu Covid-19 kéo dài thêm vài tháng nữa, thì liệu doanh nghiệp của bạn có thể trụ nổi không? Nếu không, thì bạn phải bắt tay vào hành động ngay từ bây giờ!**`,
+  rightTitle:
+    "Thất Bại trong việc Lên Kế Hoạch chính là Lên Kế Hoạch cho Sự Thất Bại",
+  rightDescription: `Khi bạn không có kế hoạch, bạn bị chi phối hoàn toàn bởi những yếu tố xung quanh. Bạn không tự quyết định cái gì cả, bởi vì không có kế hoạch thì làm gì có hành động. Cuộc sống của bạn sẽ mãi mãi bị chi phối bởi những con người bạn tình cờ gặp, công việc bạn tình cờ được giới thiệu, người bạn đời mà bạn tình cờ quen. <br></br>Sẽ không có bất kỳ sự bứt phá nào được diễn ra, bởi vì bạn không có cái đích nào cả. Bạn sẽ sống qua ngày, làm công việc mà ai cũng làm, gặp gỡ bạn bè, có những thú vui cơ bản, chôn vùi ước mơ và hoài bão của mình. Bạn sống ở thể bị động nếu không có một kế hoạch.<br></br>Nhưng khi bạn có kế hoạch thì sao? Bộ não của bạn ngay lập tức được kích hoạt để giúp bạn làm được điều đó bằng mọi giá. **Khi bạn đã có một cái đích, bạn sẽ chủ động làm những điều mà bình thường bạn không bao giờ làm.**`,
   rightImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1627466323/Galatek.io%20Website/os0019_1_13_Converted_viuwxc.png",
   rightAlt: "Hinh anh minh hoa Funnel 2",
@@ -42,10 +43,10 @@ const textTwo = {
 const courseDescript = {
   caption: "Mô Tả",
   title: "Khoá Học Xây Dựng Phễu Bán Hàng (Level: Cơ Bản)",
-  description: `*Chào mừng Bạn đến với Khoá học Xây dựng Phễu Bán Hàng (Cấp độ: Cơ Bản), nơi bạn sẽ tìm hiểu công cụ, kỹ thuật để giúp bạn "bỏ túi" thêm một kỹ năng mới trong cách tạo ra Phễu Bán Hàng thành công cho doanh nghiệp của chính mình.*<br></br>Lợi ích từ Khoá học này là giúp cho doanh nghiệp của bạn thu hút cả ngàn lượt khách ghé thăm website mỗi ngày, **tăng số đơn hàng** lên gấp nhiều lần và đây là công cụ giúp bạn chuyển hoá khách hàng tiềm năng thành khách mua hàng. Đặc biệt, bạn sẽ có **toàn quyền nắm giữ thông tin và sở thích khách hàng** để **khai thác tối đa lợi nhuận của mình**.`,
+  description: `Chào mừng Bạn đến với Khoá học SPM Basic - Cách Lên Kế Hoạch Đơn Giản với Notion (Cấp độ: Cơ Bản), nơi mà Sang sẽ hướng dẫn Bạn cách lên kế hoạch cho công việc và cuộc sống cá nhân hằng ngày của Bạn một cách đơn giản và dễ dàng nhất thông qua công cụ Notion.<br></br>SPM là phương pháp lên kế hoạch được Sang tạo ra sau gần 10 năm nghiên cứu, học hỏi và sử dụng hàng trăm cách lên kế hoạch hay nhất trên thế giới. Lợi ích từ Khoá học này là giúp cho Bạn áp dụng công nghệ vào cách lên kế hoạch và quản lý công việc cũng như cuộc sống hằng ngày một cách hiệu quả nhất.`,
 
   listOneTitle: false,
-  listOneDescription: `Sự khác biệt giữa một doanh nghiệp thành công và một doanh nghiệp không thành công là những chiến lược mà các doanh nghiệp đó thực hiện để đưa một khách hàng tiềm năng bước vào kênh bán hàng của họ.`,
+  listOneDescription: `Sự khác biệt giữa một doanh nghiệp thành công và không thành công là những chiến lược mà các doanh nghiệp đó thực hiện để đưa một khách hàng tiềm năng bước vào kênh bán hàng của họ.`,
 
   listTwoTitle: false,
   listTwoDescription: `Bạn không biết làm sao để cải thiện lưu lượng khách truy cập vào website của mình?`,
@@ -78,10 +79,16 @@ const courseDescript = {
   listElevenDescription: `Khách hàng tiềm năng được nuôi dưỡng sẽ thực hiện mua hàng nhiều hơn 47% so với khách hàng tiềm năng không được nuôi dưỡng.`,
 
   listTwelveTitle: false,
-  listTwelveDescription: `Mục tiêu cuối cùng không phải là bán hàng.`,
+  listTwelveDescription: `Mục tiêu cuối cùng không phải là bán hàng. Mà mục tiêu của bạn là tạo ra lượng khách hàng luôn quay trở lại với bạn để họ có thể nhận được giá trị từ bạn một cách lâu dài.`,
 
   listThirteenTitle: false,
-  listThirteenDescription: `Mà thay vào đó, mục tiêu của bạn là tạo ra lượng khách hàng luôn quay trở lại với bạn để họ có thể nhận được giá trị lâu dài.`,
+  listThirteenDescription: `Nếu trước đây, những cách thức phát triển doanh nghiệp online của bạn bắt đầu trở nên lỗi thời trong thời đại công nghệ luôn thay đổi với tốc độ chóng mặt này.`,
+
+  listFourteenTitle: false,
+  listFourteenDescription: `Khi Google hoặc Facebook bất ngờ thay đổi một thuật toán mới, nhiều chiến thuật bán hàng mà trước đây bạn đã sử dụng sẽ đột nhiên trở nên lỗi thời và mất tác dụng.`,
+
+  listFifteenTitle: false,
+  listFifteenDescription: `Tất cả những gì bạn học được trong Khoá học này sẽ được sử dụng mãi mãi trong lĩnh vực kinh doanh online.`,
 };
 
 const textThree = {
@@ -113,35 +120,50 @@ const textFour = {
   rightAlt: "Hinh anh minh hoa Funnel 4",
 };
 
-const courseValue = {
-  //TODO: the description is not displaying properly
-  caption: "GIÁ TRỊ ",
-  title: "Bạn Sẽ Học Được Gì Từ Khoá Học Này?",
-  description: `**⟐  Trong khoá học này, Sang sẽ **"bật mí những bí mật"** mà Sang đã nghiên cứu, học hỏi và áp dụng thành công cho doanh nghiệp của mình từ Chuyên gia xây dựng Phễu Bán Hàng nổi tiếng thế giới Russell Brunson** và bạn có thể áp dụng ngay vào việc kinh doanh online của mình!<br></br>**⟐  Tất cả những gì bạn học được trong Khoá học này là mãi mãi.** Nếu trước đây bạn đã cố gắng tìm hiểu cách phát triển doanh nghiệp trực tuyến của mình, bạn có thể đã mua sách hoặc những khóa học khác có hệ thống Phễu Bán Hàng hoạt động hiệu quả, nhưng đã bắt đầu trở nên lỗi thời trong thời đại Online luôn thay đổi với tốc độ chóng mặt này. **Khi Google hoặc Facebook bất ngờ thay đổi một thuật toán mới**, nhiều chiến thuật bán hàng mà trước đây bạn đã sử dụng đột nhiên trở nên lỗi thời.<br></br>**⟐  Khoá học này như là một Cuốn Cẩm nang Trọn đời để bạn có thể tạo ra Phễu Bán Hàng giúp tăng doanh số kinh doanh Online theo cấp số nhân**. Những kiến thức này sẽ hữu ích cho bạn trong ít nhất 10 năm kể từ bây giờ. Sang chỉ tập trung hướng dẫn bạn **những chiến lược mà chính Sang đã áp dụng thành công cho doanh nghiệp của mình** — ngay cả khi công nghệ luôn liên tục thay đổi”.`,
-
-  listOneIconSrc: "",
-  listOneTitle: "Phễu Bán Hàng Là Gì?",
-  listOneDescription: `Tìm hiểu rõ Phễu Bán Hàng là gì? Và 7 Giai đoạn quan trọng nhất trong Phễu Bán Hàng để  dẫn dắt khách hàng chưa biết đến những dịch vụ/sản phẩm của Bạn trở thành khách mua hàng thực sự.`,
-
-  listTwoIconSrc: "",
-  listTwoTitle: `Phân Định Rõ Nguồn Gốc Khách Hàng.`,
-  listTwoDescription: `Để Bạn có thể cung cấp đúng thông tin và sản phẩm cho từng loại khách hàng, có nghĩa là khách hàng sẽ xem được sản phẩm họ cần mua từ đó Bạn sẽ bán được nhiều sản phẩm hơn.`,
-
-  listThreeIconSrc: "",
-  listThreeTitle: "Nghiên Cứu Đối Thủ Cạnh Tranh Trực Tiếp & Gián Tiếp.",
-  listThreeDescription: `Để Bạn biết vì sao đối thủ cạnh tranh đã đạt được thành công, nghĩa là Bạn sẽ nắm rõ khách hàng của họ là ai, ở đâu, nhu cầu của họ là gì, từ đó thu hút khách hàng đến với Bạn cũng như giúp Bạn giảm thiểu rủi ro thất bại đến mức thấp nhất.`,
-
-  listFourIconSrc: "",
-  listFourTitle: "Định Nghĩa Khách Hàng Mơ Ước.",
-  listFourDescription: `Để biết được khách hàng của Bạn là ai và họ muốn gì, vì điều này sẽ giúp cho Bạn tiết kiệm hàng chục đến hàng trăm triệu đồng tiền chi phí khi quảng cáo lâu dài.`,
-
-  listFiveIconSrc: "",
-  listFiveTitle: "Xây Dựng Nấc Thang Giá Trị.",
-  listFiveDescription: `Để khách hàng dễ dàng trải nghiệm sản phẩm của Bạn, từ đó Bạn sẽ bán được nhiều sản phẩm hơn và tăng lợi nhuận cho doanh nghiệp của mình.`,
-
-  listSixIconSrc: "",
-  listSixTitle: "Danh Sách Mơ Ước 100.",
-  listSixDescription: `Để tìm hiểu và biết được Khách Hàng Mơ Ước của bạn đang tụ tập ở đâu, từ đó sẽ dễ dàng đưa thông điệp, nội dung của Bạn trước mắt họ và dẫn dắt họ vào Phễu Bán Hàng của Bạn.`,
+const courseValues = {
+  general: {
+    caption: "GIÁ TRỊ ",
+    title: "Bạn Sẽ Học Được Gì Từ Khoá Học Này?",
+    description: `*Trong khoá học này, Sang sẽ **"bật mí những bí mật"** mà Sang đã nghiên cứu, học hỏi và áp dụng thành công cho doanh nghiệp của mình từ **Chuyên gia xây dựng Phễu Bán Hàng nổi tiếng thế giới Russell Brunson** và bạn có thể áp dụng ngay vào việc kinh doanh online của mình!*<br></br>⟐  Khoá học này như là một **Cuốn Cẩm nang Trọn đời** để bạn có thể tạo ra Phễu Bán Hàng giúp tăng doanh số kinh doanh Online theo cấp số nhân. <br></br>⟐  Sang chỉ tập trung hướng dẫn bạn **những chiến lược mà chính Sang đã áp dụng thành công cho doanh nghiệp của mình** — ngay cả khi công nghệ luôn liên tục thay đổi.`,
+  },
+  details: [
+    {
+      name: "Phễu Bán Hàng Là Gì?",
+      description:
+        "Tìm hiểu rõ Phễu Bán Hàng là gì? Và 7 Giai đoạn quan trọng nhất trong Phễu Bán Hàng để  dẫn dắt khách hàng chưa biết đến những dịch vụ/sản phẩm của Bạn trở thành khách mua hàng thực sự.",
+      icon: Icon.FilterIcon,
+    },
+    {
+      name: "Phân Định Rõ Nguồn Gốc Khách Hàng.",
+      description:
+        "Để Bạn có thể cung cấp đúng thông tin và sản phẩm cho từng loại khách hàng, có nghĩa là khách hàng sẽ xem được sản phẩm họ cần mua từ đó Bạn sẽ bán được nhiều sản phẩm hơn.",
+      icon: Icon.LightBulbIcon,
+    },
+    {
+      name: "Nghiên Cứu Đối Thủ Cạnh Tranh Trực Tiếp & Gián Tiếp.",
+      description:
+        "Để Bạn biết vì sao đối thủ cạnh tranh đã đạt được thành công, nghĩa là Bạn sẽ nắm rõ khách hàng của họ là ai, ở đâu, nhu cầu của họ là gì, từ đó thu hút khách hàng đến với Bạn cũng như giúp Bạn giảm thiểu rủi ro thất bại đến mức thấp nhất.",
+      icon: Icon.EyeIcon,
+    },
+    {
+      name: "Định Nghĩa Khách Hàng Mơ Ước.",
+      description:
+        "Để biết được khách hàng của Bạn là ai và họ muốn gì, vì điều này sẽ giúp cho Bạn tiết kiệm hàng chục đến hàng trăm triệu đồng tiền chi phí khi quảng cáo lâu dài.",
+      icon: Icon.EmojiHappyIcon,
+    },
+    {
+      name: "Xây Dựng Nấc Thang Giá Trị.",
+      description:
+        "Để khách hàng dễ dàng trải nghiệm sản phẩm của Bạn, từ đó Bạn sẽ bán được nhiều sản phẩm hơn và tăng lợi nhuận cho doanh nghiệp của mình.",
+      icon: Icon.PresentationChartBarIcon,
+    },
+    {
+      name: "Danh Sách Mơ Ước 100.",
+      description:
+        "Để tìm hiểu và biết được Khách Hàng Mơ Ước của bạn đang tụ tập ở đâu, từ đó sẽ dễ dàng đưa thông điệp, nội dung của Bạn trước mắt họ và dẫn dắt họ vào Phễu Bán Hàng của Bạn.",
+      icon: Icon.SparklesIcon,
+    },
+  ],
 };
 
 const textPayment = {
@@ -172,9 +194,14 @@ function RetargetingCourse() {
     <Layout>
       <Hero {...hero} />
       <AlternativeSideBySideWithVideoOrImg {...textOne} {...textTwo} />
-      <MyAchievement {...courseDescript} />
+      <ThreeColumnsFeatureList {...courseDescript} />
       <AlternativeSideBySideWithVideoOrImg {...textThree} {...textFour} />
-      <Features {...courseValue} />
+      <Features
+        caption={courseValues.general.caption}
+        title={courseValues.general.title}
+        description={courseValues.general.description}
+        features={courseValues.details}
+      />
       <BrandPanelWithAppScreenShot {...textPayment} />
       <BrandPanelWithOverlappingImage {...textBookxo} />
     </Layout>
