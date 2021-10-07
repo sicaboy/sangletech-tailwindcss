@@ -43,52 +43,52 @@ const textTwo = {
 const courseDescript = {
   caption: "Mô Tả",
   title: "Khoá Học Xây Dựng Phễu Bán Hàng (Level: Cơ Bản)",
-  description: `Chào mừng Bạn đến với Khoá học SPM Basic - Cách Lên Kế Hoạch Đơn Giản với Notion (Cấp độ: Cơ Bản), nơi mà Sang sẽ hướng dẫn Bạn cách lên kế hoạch cho công việc và cuộc sống cá nhân hằng ngày của Bạn một cách đơn giản và dễ dàng nhất thông qua công cụ Notion.<br></br>SPM là phương pháp lên kế hoạch được Sang tạo ra sau gần 10 năm nghiên cứu, học hỏi và sử dụng hàng trăm cách lên kế hoạch hay nhất trên thế giới. Lợi ích từ Khoá học này là giúp cho Bạn áp dụng công nghệ vào cách lên kế hoạch và quản lý công việc cũng như cuộc sống hằng ngày một cách hiệu quả nhất.`,
+  description: `*Chào mừng Bạn đến với Khoá học SPM Basic - Cách Lên Kế Hoạch Đơn Giản với Notion (Cấp độ: Cơ Bản), nơi mà Sang sẽ hướng dẫn Bạn cách lên kế hoạch cho công việc và cuộc sống cá nhân hằng ngày của Bạn một cách đơn giản và dễ dàng nhất thông qua công cụ Notion.*<br></br>**SPM là phương pháp lên kế hoạch được Sang tạo ra sau gần 10 năm nghiên cứu, học hỏi và sử dụng hàng trăm cách lên kế hoạch hay nhất trên thế giới.**<br></br>Lợi ích từ Khoá học này là giúp cho Bạn áp dụng công nghệ vào cách lên kế hoạch và quản lý công việc cũng như cuộc sống hằng ngày một cách hiệu quả nhất.`,
 
   listOneTitle: false,
-  listOneDescription: `Sự khác biệt giữa một doanh nghiệp thành công và không thành công là những chiến lược mà các doanh nghiệp đó thực hiện để đưa một khách hàng tiềm năng bước vào kênh bán hàng của họ.`,
+  listOneDescription: `Bạn đang tìm kiếm một công cụ năng suất có thể thay thế hàng chục công cụ khác, giúp bạn quản lý cuộc sống cá nhân và công việc của mình và hơn thế nữa trong một phần mềm dễ sử dụng?`,
 
   listTwoTitle: false,
-  listTwoDescription: `Bạn không biết làm sao để cải thiện lưu lượng khách truy cập vào website của mình?`,
+  listTwoDescription: `Notion là một không gian làm việc đa năng để quản lí cuộc sống hàng ngày của bạn.`,
 
   listThreeTitle: false,
-  listThreeDescription: `Làm thế nào để chuyển đổi khách "qua đường" thành "fan cuồng" của Bạn?`,
+  listThreeDescription: `Đây là ứng dụng năng suất phong phú và linh hoạt nhất hiện có.`,
 
   listFourTitle: false,
-  listFourDescription: `Liệu có cách nào để khắc phục tình trạng này hay không?`,
+  listFourDescription: `Bạn có thể sử dụng nó để quản lý công việc, học tập, dự án, ghi chú, sở thích và mục tiêu cuộc sống...`,
 
   listFiveTitle: false,
-  listFiveDescription: `Nếu bạn nghĩ rằng việc thu hút và thuyết phục khách hàng tiềm năng quyết định mua hàng xảy ra ngay lập tức, thì bạn đã LẦM TO!`,
+  listFiveDescription: `Khám phá cách lên kế hoạch để bạn có thể làm việc hiệu quả hơn, có tổ chức và tập trung hơn với Notion.`,
 
   listSixTitle: false,
   listSixDescription: `Điều mà hầu hết các doanh nghiệp thực sự gặp phải đó là vấn đề về "Phễu Bán Hàng".`,
 
   listSevenTitle: false,
-  listSevenDescription: `Phễu Bán Hàng của bạn là quá trình trực tuyến mà bạn sẽ đưa khách hàng tiềm năng của mình đi qua để biến họ thành khách hàng trung thành thực thụ.`,
+  listSevenDescription: `Tìm hiểu lý do tại sao hơn một triệu người đã chuyển từ các ứng dụng như Evernote, Todoist, Trello, One Note và Google Keep và hiện đang sử dụng Notion.`,
 
   listEightTitle: false,
-  listEightDescription: `Mọi người đều có một Phễu Bán Hàng (ngay cả khi họ không nhận ra điều đó) và Phễu Bán Hàng của bạn hoặc là mang lại nhiều khách hàng hơn cho bạn hoặc là đẩy khách hàng ra khỏi tầm tay của bạn.`,
+  listEightDescription: `Khóa học này được thiết kế dành cho những ai đã chán nản với thói quen trì hoãn, trễ deadline công việc, về những sự kiện ngoài ý muốn làm hỏng kế hoạch của bạn.`,
 
   listNineTitle: false,
-  listNineDescription: `87% người tiêu dùng chọn mua hàng ở những nơi liên tục cung cấp nội dung có giá trị cho họ ở tất cả các giai đoạn của quá trình mua hàng.`,
+  listNineDescription: `Đã đến lúc trở nên sống có tổ chức và cải thiện việc lập kế hoạch của bạn bằng công cụ tốt nhất hiện có - Notion.`,
 
   listTenTitle: false,
-  listTenDescription: `63% người tiêu dùng cần nghe các đề xuất giá trị của nơi bán hàng ít nhất từ 3-5 lần trước khi họ tin tưởng những lời mời gọi mua hàng này.`,
+  listTenDescription: `Khi ai đó hỏi Sang, vì sao Sang có được ngày hôm nay, câu trả lời luôn là 3 thứ: biết mình muốn gì, sống có kế hoạch và tinh thần chiến binh.`,
 
   listElevenTitle: false,
-  listElevenDescription: `Khách hàng tiềm năng được nuôi dưỡng sẽ thực hiện mua hàng nhiều hơn 47% so với khách hàng tiềm năng không được nuôi dưỡng.`,
+  listElevenDescription: `Nghĩa là, đầu tiên bạn phải xác định được mục tiêu của đời mình, sau đó lập kế hoạch để đạt được mục tiêu ấy, và cuối cùng là trau dồi một tinh thần thép để không bỏ cuộc giữa chừng dù chuyện gì xảy ra.`,
 
   listTwelveTitle: false,
-  listTwelveDescription: `Mục tiêu cuối cùng không phải là bán hàng. Mà mục tiêu của bạn là tạo ra lượng khách hàng luôn quay trở lại với bạn để họ có thể nhận được giá trị từ bạn một cách lâu dài.`,
+  listTwelveDescription: `Tất cả những gì Sang đang có hôm nay đều là từ kế hoạch mà ra.`,
 
   listThirteenTitle: false,
-  listThirteenDescription: `Nếu trước đây, những cách thức phát triển doanh nghiệp online của bạn bắt đầu trở nên lỗi thời trong thời đại công nghệ luôn thay đổi với tốc độ chóng mặt này.`,
+  listThirteenDescription: `Sang không tình cờ thành lập một công ty công nghệ, không tình cờ gặp người bạn đời lý tưởng, cũng không tình cờ cho ra mắt khóa học.`,
 
   listFourteenTitle: false,
-  listFourteenDescription: `Khi Google hoặc Facebook bất ngờ thay đổi một thuật toán mới, nhiều chiến thuật bán hàng mà trước đây bạn đã sử dụng sẽ đột nhiên trở nên lỗi thời và mất tác dụng.`,
+  listFourteenDescription: `Tất cả đều là kế hoạch và nỗ lực không ngừng nghỉ của Sang để hiện thực hóa kế hoạch đó.`,
 
   listFifteenTitle: false,
-  listFifteenDescription: `Tất cả những gì bạn học được trong Khoá học này sẽ được sử dụng mãi mãi trong lĩnh vực kinh doanh online.`,
+  listFifteenDescription: `Kế hoạch có thể không đúng với thực tế, nhưng đó không phải là lý do để bạn lao vào một cuộc hành trình mà không biết tiếp theo mình nên làm gì.`,
 };
 
 const textThree = {
