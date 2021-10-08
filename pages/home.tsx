@@ -58,9 +58,8 @@ const hero = {
   buttonNormalSrc: "/sang-le-la-ai",
   buttonHighlight: "Xem Video",
   buttonHighlightSrc: "/posts/video-khoanh-khac-cuoc-doi",
-  imgSrc:
-    "https://res.cloudinary.com/sang-le-tech/image/upload/v1626615071/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0006_mbnffl.jpg",
-  alt: "Hinh anh Sang Le",
+  imgSrc: "/assets/seo-kkcd-intro.jpg",
+  alt: "Hinh anh Sang Le Tech - Khoanh Khac Cuoc Doi - Gioi Thieu",
 };
 const logos = {
   title: "Các Kênh Truyền Thông Đã Tham Gia",

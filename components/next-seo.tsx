@@ -14,30 +14,31 @@ export default function NextSeoCustom() {
         canonical="https://www.sangletech.com/"
         openGraph={{
           url: "https://www.sangletech.com/",
-          title: "Open Graph Title",
-          description: "Open Graph Description",
+          title: "VƯƠN TẦM BẢN THÂN",
+          description:
+            "Liệu có một Tấm Bản Đồ dẫn đến một Cuộc sống thịnh vượng cho Bạn hay không?",
           images: [
             {
-              url: "/assets/thumbnail-hanh-trinh-lam-giau-xo.png",
-              width: 800,
+              url: "https://super-static-assets.s3.amazonaws.com/8090ac7d-2195-4ec8-96be-1457b54a8900/images/d508c9e1-75af-4c14-bcd4-eb63b26317f5.png?w=1500&f=webp",
+              width: 1200,
               height: 600,
-              alt: "Og Image Alt",
+              alt: "Sang Le Tech - Hanh trinh lam giau X.0",
             },
             {
-              url: "/assets/sangle-profilePic.jpg",
+              url: "https://res.cloudinary.com/sang-le-tech/image/upload/v1626615071/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0006_mbnffl.jpg",
               width: 900,
               height: 800,
-              alt: "Og Image Alt Second",
+              alt: "Sang Le Tech - Khoanh Khac Cuoc Doi",
             },
-            { url: "https://www.example.ie/og-image-03.jpg" },
-            { url: "https://www.example.ie/og-image-04.jpg" },
+            { url: "/assets/thumbnail-book-xo.jpg" },
+            { url: "/assets/thumbnail-glt-success.jpg" },
           ],
         }}
       />
 
       <SocialProfileJsonLd
         type="Person"
-        name="your name"
+        name="Sang Le"
         url="http://www.your-site.com"
         sameAs={[
           "http://facebook.sangletech.com",
@@ -52,13 +53,18 @@ export default function NextSeoCustom() {
         breadcrumb={[
           {
             position: 1,
-            name: "Books",
-            item: "https://example.com/books",
+            name: "Sách Bí Mật Làm Giàu X.0",
+            item: "https://sangletech.com/book-xo",
           },
           {
             position: 2,
-            name: "Authors",
-            item: "https://example.com/books/authors",
+            name: "Ứng dụng Thần Số Học",
+            item: "https://sangletech.com/you-xo",
+          },
+          {
+            position: 3,
+            name: "Sang Lê Là Ai?",
+            item: "https://sangletech.com/sang-le-la-ai",
           },
         ]}
       />

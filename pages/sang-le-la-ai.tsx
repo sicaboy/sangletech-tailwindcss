@@ -35,8 +35,7 @@ const galleryOne = {
   title: "Tham Dự Các Chương Trình",
   description: `Truyền hình & Sự kiện`,
   caption: "Hình Ảnh",
-  imgSmallOneSrc:
-    "https://res.cloudinary.com/sang-le-tech/image/upload/v1626615104/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0002_rz9buk.jpg",
+  imgSmallOneSrc: "/assets/seo-kkcd-talk.jpg",
   imgSmallOneAlt: "Hinh anh Sang Le KKCD 1",
   imgSmallTwoSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626615062/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0004_pcscsm.jpg",
@@ -47,11 +46,9 @@ const galleryOne = {
   imgSmallFourSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1627895653/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0001_zxqtld.jpg",
   imgSmallFourAlt: "Hinh anh Sang Le Livestream 2",
-  imgLargeOneSrc:
-    "https://res.cloudinary.com/sang-le-tech/image/upload/v1626615063/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0005_m0oymm.jpg",
+  imgLargeOneSrc: "/assets/seo-kkcd-badge.jpg",
   imgLargeOneAlt: "Hinh anh Sang Le - KKCD 1",
-  imgLargeTwoSrc:
-    "https://res.cloudinary.com/sang-le-tech/image/upload/v1627895653/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0000_ralwqh.jpg",
+  imgLargeTwoSrc: "/assets/seo-saigonfm.jpg",
   imgLargeTwoAlt: "Hinh anh Sang Le - SGFM",
 };
 
