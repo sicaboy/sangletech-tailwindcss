@@ -21,7 +21,7 @@ const hero = {
   imgSrc: "/assets/thumbnail-retargeting-explainer.jpg",
   videoSrc: "/posts/video-retargeting-explainer",
   videoCaption: `Retargeting/Remarketing Là Gì?`,
-  alt: "Sang Le - Video Retargeting explainer",
+  alt: "Sang Le Tech - Video Retargeting La Gi",
 };
 
 const textOne = {
@@ -33,7 +33,7 @@ const textOne = {
   <br></br>**Retargeting** là cách hiệu quả nhất để đưa những người dùng đó trở lại (thông qua các chiến dịch quảng cáo retargeting trực tiếp của bạn), vào thời điểm chính xác mà họ sẵn sàng chuyển đổi thành khách mua hàng.`,
   leftImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1625716438/Galatek.io%20Website/LNCG_M67_06_y4xksb.png",
-  leftAlt: "Hinh anh minh hoa Ret 1",
+  leftAlt: "Hinh anh minh hoa Khoa hoc Retargeting 1 - Sang Le Tech",
 };
 
 const textTwo = {
@@ -43,7 +43,7 @@ const textTwo = {
 <br></br>**⟐ Hao tốn "hàng đống" chi phí cho các hình thức quảng cáo khác, nhắm đến một lượng lớn những khách hàng còn chẳng quan tâm đến sản phẩm/dịch vụ bạn**. Trong khi đó, Retargeting chỉ đặt mục tiêu vào những đối tượng khách hàng có sự hứng thú với bạn.`,
   rightImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1625711687/Galatek.io%20Website/LNCG_M67_09_mpadc6.png",
-  rightAlt: "Hinh anh minh hoa Ret 2",
+  rightAlt: "Hinh anh minh hoa Khoa hoc Retargeting 2 - Sang Le Tech",
 };
 
 const courseDescript = {
@@ -98,7 +98,7 @@ const textThree = {
     <br></br>**✓**   Bạn phải sẵn sàng đặt câu hỏi nếu bạn không hiểu điều gì đó (các chiến lược Retagreting có thể rất phức tạp!).`,
   leftImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1625716265/Galatek.io%20Website/LNCG_M67_07_rfu9eq.png",
-  leftAlt: "Hinh anh minh hoa Ret 3",
+  leftAlt: "Hinh anh minh hoa Khoa hoc Retargeting 3 - Sang Le Tech",
 };
 
 const textFour = {
@@ -115,7 +115,7 @@ const textFour = {
   <br></br>*‼️ Khóa học này KHÔNG dành cho bạn nếu bạn không nghiêm túc về lưu lượng khách hàng truy cập trang web của mình*.`,
   rightImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1625711864/Galatek.io%20Website/LNCG_M67_03_cjihdk.png",
-  rightAlt: "Hinh anh minh hoa Ret 2",
+  rightAlt: "Hinh anh minh hoa Khoa hoc Retargeting 2 - Sang Le Tech",
 };
 
 const courseValue = {
@@ -186,7 +186,7 @@ const textPayment = {
   buttonName: "THAM GIA KHOÁ HỌC",
   buttonSrc: "/form",
   imgSrc: "/assets/thumbnail-retargeting-explainer.jpg",
-  alt: "Hinh anh minh hoa Ret 5",
+  alt: "Hinh anh minh hoa Khoa hoc Retargeting 5 - Sang Le Tech",
   videoSrc: "/posts/video-retargeting-explainer",
 };
 
@@ -200,7 +200,7 @@ const textBookxo = {
   buttonSrc: "/book-xo",
   imgSrc:
     "https://super-static-assets.s3.amazonaws.com/8090ac7d-2195-4ec8-96be-1457b54a8900/images/c2a88c54-5779-493d-83ec-1d2d5429021f.jpg?w=240&f=webp",
-  alt: "Hinh anh Book Cover",
+  alt: "Sang Le Tech - Anh bia sach Bi Mat Lam Giau X.0",
 };
 
 // YUNNIE: Here is the FAQ component. You can input the info here. If it's just an img, you can just leave video info blank
@@ -229,13 +229,13 @@ const faqs = {
 function RetargetingCourse() {
   return (
     <Layout>
-      {/* YUNNIE: Add the course info for this one and then the rest of the
+      {/* YUNNIE: DONE - Add the course info for this one and then the rest of the
       courses. Tks! */}
       <CourseJsonLd
-        courseName="Course Name"
-        providerName="Course Provider"
-        providerUrl="https//www.example.com/provider"
-        description="Course description goes right here"
+        courseName="Quảng cáo Retargeting"
+        providerName="Pro X.0"
+        providerUrl="https//www.sangletech.com/retargeting-course"
+        description="Làm thế nào để Bạn luôn nằm ở vị trí hàng đầu trong tâm trí khách hàng và đưa họ quay trở lại trang web của Bạn khi họ đã rời đi?"
       />
       <Hero {...hero} />
       <AlternativeSideBySideWithVideoOrImg {...textOne} {...textTwo} />

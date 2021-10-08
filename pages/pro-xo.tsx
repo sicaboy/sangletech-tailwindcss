@@ -6,6 +6,7 @@ import ThreeColumnCards from "../components/sections/blog-sections/3_column_card
 import BrandPanelWithAppScreenShot from "../components/sections/cta-sections/brand_panel_with_app_screenshot";
 import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/brand_panel_with_overlapping_image";
 import * as Icon from "@heroicons/react/outline";
+import { SoftwareAppJsonLd } from "next-seo";
 
 const hero = {
   titleHighlight: "PRO X.0",
@@ -17,7 +18,7 @@ const hero = {
   buttonHighlightSrc: "#courses",
   imgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626085137/Galatek.io%20Website/3D-Freelancers-illustration0005_zjyclx.png",
-  alt: "Hinh anh minh hoa Pro X.0 1",
+  alt: "Hinh anh minh hoa Pro X.0 1 - Sang Le Tech",
 };
 
 const textOne = {
@@ -28,7 +29,7 @@ const textOne = {
   <br></br>Không ai sinh ra đã biết lập trình hay viết lách. Đã gọi là “kỹ năng” thì bạn hoàn toàn có thể học được. **Khi những kỹ năng này cho phép bạn tự do tài chính, bạn có thể tự do theo đuổi đam mê!**`,
   leftImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626085142/Galatek.io%20Website/3D-Freelancers-illustration0027_gwtfhq.png",
-  leftAlt: "Hinh anh minh hoa Proxo 2",
+  leftAlt: "Hinh anh minh hoa Pro X.0 2 - Sang Le Tech",
 };
 
 const textTwo = {
@@ -38,7 +39,7 @@ const textTwo = {
   <br></br>Tất cả đều được cung cấp trên một nền tảng học tập trực tuyến mang tính giải trí, học cùng một cộng đồng và hành động nhỏ mỗi ngày để **tạo ra những kết quả mới cho bản thân và công việc kinh doanh của bạn** theo những cách mà chương trình học truyền thống không thể làm được.`,
   rightImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626085142/Galatek.io%20Website/3D-Freelancers-illustration0026_axgh6x.png",
-  rightAlt: "Hinh anh minh hoa Proxo 3",
+  rightAlt: "Hinh anh minh hoa Pro X.0 3 - Sang Le Tech",
 };
 
 const coursesOne = {
@@ -146,7 +147,7 @@ const textFinxo = {
   buttonName: "Tìm Hiểu Thêm",
   buttonSrc: "/fin-xo",
   imgSrc: "/assets/thumbnail-glt-success.jpg",
-  alt: "Video Sang Le & Galatek Success",
+  alt: "Video Bi mat thanh cong cua Sang Le Tech & Galatek 2020",
   videoSrc: "/posts/video-galatek-success",
 };
 
@@ -160,12 +161,20 @@ const textBookxo = {
   buttonSrc: "/book-xo",
   imgSrc:
     "https://super-static-assets.s3.amazonaws.com/8090ac7d-2195-4ec8-96be-1457b54a8900/images/c2a88c54-5779-493d-83ec-1d2d5429021f.jpg?w=240&f=webp",
-  alt: "Hinh anh Book Cover",
+  alt: "Sang Le Tech - Bia sach Bi Mat Lam Giau X.0",
 };
 
 function ProX0() {
   return (
     <Layout>
+      <SoftwareAppJsonLd
+        name="Pro X.0"
+        price="399.000"
+        priceCurrency="VND"
+        aggregateRating={{ ratingValue: "5.0", reviewCount: "1000" }}
+        operatingSystem="ANDROID, IOS, WEB"
+        applicationCategory="Application"
+      />
       <HeroWithAngelImageOnRight {...hero} />
       <div id="learn-more" />
       <AlternativeSideBySideWithVideoOrImg {...textOne} {...textTwo} />

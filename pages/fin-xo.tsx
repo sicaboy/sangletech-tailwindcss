@@ -4,6 +4,7 @@ import Layout from "../components/layout";
 import AlternativeSideBySideWithVideoOrImg from "../components/alternative-side-by-side-with-video-img";
 import BrandPanelWithAppScreenShot from "../components/sections/cta-sections/brand_panel_with_app_screenshot";
 import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/brand_panel_with_overlapping_image";
+import { SoftwareAppJsonLd } from "next-seo";
 
 const hero = {
   titleHighlight: "FIN X.0",
@@ -15,7 +16,7 @@ const hero = {
   buttonHighlightSrc: "/form",
   imgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1629428694/Galatek.io%20Website/Sangletech.com/Beige_Minimal_Phone_Mockup_Download_Now_Instagram_Post_wfssti.png",
-  alt: "Hinh anh Fin X.0 Download",
+  alt: "Hinh anh Fin X.0 Download - Sang Le Tech",
 };
 
 const textOne = {
@@ -28,7 +29,7 @@ const textOne = {
   <br></br>Bạn phải luôn nhớ rằng **Hành Động = Lý Do** - những điều mà bạn muốn đạt được sẽ quyết định hành động của bạn. Khi bạn có đủ lý do, hành động sẽ tự đến với bạn. Bạn sẽ tự động nỗ lực nhiều hơn và ngọn lửa động lực đó sẽ tiếp tục được duy trì.`,
   leftImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1632388562/Galatek.io%20Website/IMG_6519_1_dd5iaq.jpg",
-  leftAlt: "Hinh anh minh hoa Finxo 1",
+  leftAlt: "Hinh anh minh hoa Fin X.0 1 - Sang Le Tech",
 };
 
 const textTwo = {
@@ -40,7 +41,7 @@ const textTwo = {
   <br></br>Bạn sẽ không bao giờ nản lòng khi bạn biết rằng mình nỗ lực đến đâu là đủ, khi bạn kiểm soát rất chặt chẽ số giờ làm việc, khi bạn có thể quy từng giây làm việc của mình ra tiền. Chúng ta vốn dĩ không sợ hãi việc cố gắng, chúng ta chỉ sợ rằng mình không biết phải cố gắng bao nhiêu cho đủ. **Vì thế, để gia tăng động lực trong bạn, để bạn không bao giờ bỏ cuộc nữa, bạn buộc phải cụ thể hóa mục tiêu của mình và nếu được, hãy biểu diễn nó thành con số.**`,
   rightImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1627802600/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0000_ikmqaj.jpg",
-  rightAlt: "Hinh anh minh hoa Finxo 2",
+  rightAlt: "Hinh anh minh hoa Fin X.0 2 - Sang Le Tech",
 };
 
 const textThree = {
@@ -55,7 +56,7 @@ const textThree = {
   <br></br>**Vậy là bạn đã biết mình cần kiếm được 145.000 VNĐ/giờ làm việc để đạt được mục tiêu**. Một con số quá cụ thể. Nhìn vào con số này, bạn biết ngay mình cần phải làm gì. Đây là lúc bạn đi tìm những công việc, ngành nghề có thể giúp bạn kiếm được 145.00 VNĐ/giờ. Bên cạnh đó, bạn cũng có thể học thêm các kỹ năng mới, các kỹ năng cần thiết trong thời đại 4.0 mà bất kỳ công ty nào cũng cần như kỹ năng Marketing, xây dựng Phễu Marketing,...`,
   leftImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1632385535/Galatek.io%20Website/IMG_4434_qpajd4.jpg",
-  leftAlt: "Hinh anh minh hoa Finxo 3",
+  leftAlt: "Hinh anh minh hoa Fin X.0 3 - Sang Le Tech",
 };
 
 const textFour = {
@@ -67,7 +68,7 @@ const textFour = {
   <br></br>**Khi bạn có một con số, bạn có thể review nó mỗi ngày, mỗi tuần, mỗi tháng. Bạn có tín hiệu để biết rằng mình đang đến gần với mục tiêu**. Sau khi tổ chức xong đám hỏi, người bạn CEO của Sang rất tự tin nói với Sang rằng lễ cưới trong mơ đó sẽ trở thành hiện thực. Vì đã có con số để kiểm soát, người bạn của Sang không còn gì phải lo lắng nữa, do đó, anh có nhiều thời gian hơn dành cho gia đình và bản thân.`,
   rightImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1625651836/Galatek.io%20Website/IMG_8057-1024x682_fa7z6z.jpg",
-  rightAlt: "Hinh anh minh hoa Finxo 4",
+  rightAlt: "Hinh anh minh hoa Fin X.0 4 - Sang Le Tech",
 };
 
 const textFive = {
@@ -78,7 +79,7 @@ const textFive = {
   buttonName: "Truy Cập Ngay",
   buttonSrc: "/form",
   imgSrc: "/assets/thumbnail-glt-success.jpg",
-  alt: "Video Sang Le & Galatek Success",
+  alt: "Video Bi mat thanh cong Sang Le Tech & Galatek nam 2020",
   videoSrc: "/posts/video-galatek-success",
 };
 
@@ -92,12 +93,20 @@ const textSix = {
   buttonSrc: "/book-xo",
   imgSrc:
     "https://super-static-assets.s3.amazonaws.com/8090ac7d-2195-4ec8-96be-1457b54a8900/images/c2a88c54-5779-493d-83ec-1d2d5429021f.jpg?w=240&f=webp",
-  alt: "Hinh anh Book Cover",
+  alt: "Sang Le Tech - Bia sach Bi Mat Lam Giau X.0",
 };
 
 function FinX0() {
   return (
     <Layout>
+      <SoftwareAppJsonLd
+        name="Fin X.0"
+        price="19.900"
+        priceCurrency="VND"
+        aggregateRating={{ ratingValue: "5.0", reviewCount: "1000" }}
+        operatingSystem="ANDROID, IOS, WEB"
+        applicationCategory="Application"
+      />
       <HeroWithAngelImageOnRight {...hero} />
       <div id="read-more" />
       <AlternativeSideBySideWithVideoOrImg {...textOne} {...textTwo} />

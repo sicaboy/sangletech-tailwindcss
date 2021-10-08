@@ -6,8 +6,8 @@ import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/
 import * as Icon from "@heroicons/react/outline";
 import BrandPanelWithAppScreenShot from "../components/sections/cta-sections/brand_panel_with_app_screenshot";
 import Testimonial from "../components/sections/testimonials/simple_centered";
-
 import { NextSeo } from "next-seo";
+import { SoftwareAppJsonLd } from "next-seo";
 
 const hero = {
   caption: "BÍ MẬT LÀM GIÀU X.0",
@@ -20,7 +20,7 @@ const hero = {
   imgSrc: "/assets/thumbnail-book-xo.jpg",
   videoSrc: "/posts/video-book-xo",
   videoCaption: `3 điều thú vị BẠN CHƯA BIẾT về Cuốn sách "BÍ MẬT LÀM GIÀU X.0" của Sang Le`,
-  alt: "Sang Le - Video Book X.0",
+  alt: "Sang Le Tech - Video Book X.0",
 };
 
 const textOne = {
@@ -46,7 +46,7 @@ const textOne = {
   leftWebSrc: "/form",
   leftImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1628221778/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0000_mtstfx.jpg",
-  leftAlt: "Hinh anh Book Cover",
+  leftAlt: "Hinh anh Sang Le Tech - Bia sach Bi Mat Lam Giau X.0",
 };
 
 const textTwo = {
@@ -80,7 +80,7 @@ const textTwo = {
   rightWebSrc: "/form",
   rightImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1627531052/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0007_yukh3x.png",
-  rightAlt: "",
+  rightAlt: "Sang Le Tech - Hinh anh minh hoa Book X.0",
 };
 
 const textThree = {
@@ -92,7 +92,7 @@ const textThree = {
   buttonSrc: "/form",
   imgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626615098/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0001_omi5pu.jpg",
-  alt: "Hinh anh Sang tham gia KKCD",
+  alt: "Hinh anh Sang Le Tech tham gia Khoanh Khac Cuoc Doi",
 };
 
 const testimonial = {
@@ -113,34 +113,38 @@ const textFour = {
   buttonSrc: "/you-xo",
   imgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1628236893/Galatek.io%20Website/logo-04_r3vutm.png",
-  alt: "Logo You X.0",
+  alt: "Logo You X.0 - Sang Le Tech",
 };
 
 function BookX0() {
   return (
     <Layout>
-      {/* YUNNIE: Add info for the book and then paste to sow-xo */}
+      <SoftwareAppJsonLd
+        name="Book X.0"
+        price="199.000"
+        priceCurrency="VND"
+        aggregateRating={{ ratingValue: "5.0", reviewCount: "1000" }}
+        operatingSystem="ANDROID, IOS, WEB"
+        applicationCategory="Application"
+      />
       <NextSeo
         openGraph={{
-          title: "Open Graph Book Title",
-          description: "Description of open graph book",
-          url: "https://www.example.com/books/book-title",
+          title: "BÍ MẬT LÀM GIÀU X.0",
+          description: "Sách Điện Tử Độc Quyền từ Sang Lê",
+          url: "https://sangletech.com/book-xo",
           type: "book",
           book: {
-            releaseDate: "2018-09-17T11:08:13Z",
-            isbn: "978-3-16-148410-0",
-            authors: [
-              "https://www.example.com/authors/@firstnameA-lastnameA",
-              "https://www.example.com/authors/@firstnameB-lastnameB",
-            ],
-            tags: ["Tag A", "Tag B", "Tag C"],
+            releaseDate: "2021-09-06T11:08:13Z",
+            isbn: "",
+            authors: ["https://sangletech.com/sang-le-la-ai"],
+            tags: ["Book X.0", "Sang Le Tech", "Hanh Trinh Lam Giau X.0"],
           },
           images: [
             {
-              url: "https://www.test.ie/images/book.jpg",
+              url: "https://sangletech.com/assets/thumbnail-book-xo.jpg",
               width: 850,
               height: 650,
-              alt: "Cover of the book",
+              alt: "sang le tech - hanh trinh lam giau xo - sach bi mat lam giau xo",
             },
           ],
         }}

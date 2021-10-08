@@ -2,7 +2,6 @@ import { NextSeo } from "next-seo";
 import { SocialProfileJsonLd } from "next-seo";
 import { ProfilePageJsonLd } from "next-seo";
 
-//YUNNIE: Yunnie add info for the website. this is used when people send http://sangletech.com in a message on Facebook or other platforms
 //https://www.sangletech.com/assets/brand-identity.jpeg
 
 export default function NextSeoCustom() {
@@ -16,22 +15,22 @@ export default function NextSeoCustom() {
           url: "https://www.sangletech.com/",
           title: "VƯƠN TẦM BẢN THÂN",
           description:
-            "Liệu có một Tấm Bản Đồ dẫn đến một Cuộc sống thịnh vượng cho Bạn hay không?",
+            "Tấm Bản Đồ dẫn đến một Cuộc sống thịnh vượng hậu covid 19 ",
           images: [
             {
-              url: "https://super-static-assets.s3.amazonaws.com/8090ac7d-2195-4ec8-96be-1457b54a8900/images/d508c9e1-75af-4c14-bcd4-eb63b26317f5.png?w=1500&f=webp",
+              url: "https://sangletech.com/assets/seo-jow.jpg",
               width: 1200,
               height: 600,
               alt: "Sang Le Tech - Hanh trinh lam giau X.0",
             },
             {
-              url: "https://res.cloudinary.com/sang-le-tech/image/upload/v1626615071/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0006_mbnffl.jpg",
+              url: "https://sangletech.com/assets/seo-kkcd-badge.jpg",
               width: 900,
               height: 800,
               alt: "Sang Le Tech - Khoanh Khac Cuoc Doi",
             },
-            { url: "/assets/thumbnail-book-xo.jpg" },
-            { url: "/assets/thumbnail-glt-success.jpg" },
+            { url: "https://sangletech.com/assets/seo-saigonfm.jpg" },
+            { url: "https://sangletech.com/assets/seo-kkcd-talk.jpg" },
           ],
         }}
       />
@@ -39,7 +38,7 @@ export default function NextSeoCustom() {
       <SocialProfileJsonLd
         type="Person"
         name="Sang Le"
-        url="http://www.your-site.com"
+        url="https://www.sangletech.com"
         sameAs={[
           "http://facebook.sangletech.com",
           "http://youtube.sangletech.com",
@@ -53,7 +52,7 @@ export default function NextSeoCustom() {
         breadcrumb={[
           {
             position: 1,
-            name: "Sách Bí Mật Làm Giàu X.0",
+            name: "Sách điện tử Bí Mật Làm Giàu X.0",
             item: "https://sangletech.com/book-xo",
           },
           {
@@ -65,6 +64,56 @@ export default function NextSeoCustom() {
             position: 3,
             name: "Sang Lê Là Ai?",
             item: "https://sangletech.com/sang-le-la-ai",
+          },
+          {
+            position: 4,
+            name: "Ứng dụng học trực tuyến Pro X.0",
+            item: "https://sangletech.com/pro-xo",
+          },
+          {
+            position: 5,
+            name: "Ứng dụng học Hỗ trợ Quản lý Tài chính Cá nhân",
+            item: "https://sangletech.com/fin-xo",
+          },
+          {
+            position: 6,
+            name: "Khoá học Quảng cáo Retargeting",
+            item: "https://sangletech.com/retargeting-course",
+          },
+          {
+            position: 7,
+            name: "Khoá học Phễu Bán Hàng cơ bản",
+            item: "https://sangletech.com/basic-sales-funnel",
+          },
+          {
+            position: 8,
+            name: "Khoá học SPM Basic - Lên Kế Hoạch Đơn Giản",
+            item: "https://sangletech.com/basic-spm-course",
+          },
+          {
+            position: 9,
+            name: "Khoá học Chiến Binh X.0",
+            item: "https://sangletech.com/chienbinhxo-course",
+          },
+          {
+            position: 10,
+            name: "Khoá học Startup X.0",
+            item: "https://sangletech.com/startupxo-course",
+          },
+          {
+            position: 11,
+            name: "Khoá học Xây dựng Website Wordpress",
+            item: "https://sangletech.com/website-course",
+          },
+          {
+            position: 12,
+            name: "Hành Trình Làm Giàu X.0",
+            item: "https://sangletech.com/sow-xo",
+          },
+          {
+            position: 13,
+            name: "Sang Le Blog",
+            item: "https://sangletech.com/blog",
           },
         ]}
       />

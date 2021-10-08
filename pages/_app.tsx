@@ -7,7 +7,7 @@ import { useEffect } from "react";
 import Script from "next/script";
 import { useRouter } from "next/router";
 import { GTM_ID, pageview } from "../utils/gtm";
-
+import NextSeoCustom from "../components/next-seo";
 export default function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
   useEffect(() => {
@@ -32,6 +32,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
           `,
         }}
       />
+      <NextSeoCustom />
       <DefaultSeo {...SEO} />
       <Component {...pageProps} />
     </>

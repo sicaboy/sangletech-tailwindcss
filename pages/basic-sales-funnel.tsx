@@ -9,6 +9,7 @@ import BrandPanelWithAppScreenShot from "../components/sections/cta-sections/bra
 import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/brand_panel_with_overlapping_image";
 import * as Icon from "@heroicons/react/outline";
 import ThreeColumnsFeatureList from "../components/three-columns-feature-list";
+import { CourseJsonLd } from "next-seo";
 
 const hero = {
   caption: "Khoá Học: Phễu Bán Hàng (Cơ Bản)",
@@ -18,7 +19,7 @@ const hero = {
   imgSrc: "/assets/thumbnail-sales-funnel.jpg",
   videoSrc: "posts/video-sales-funnel",
   videoCaption: `Làm sao xây dựng Phễu Bán Hàng Online Đẻ Ra Tiền?`,
-  alt: "SL-course-sales-funnel",
+  alt: "Video Pheu Ban Hang - Sang Le Tech",
 };
 
 const textOne = {
@@ -27,7 +28,7 @@ const textOne = {
   leftDescription: `Bạn có biết: **Chỉ có 7% – 10% số lượng khách hàng đưa ra quyết định mua hàng ngay lần đầu tiên họ nhìn thấy sản phẩm của bạn qua quảng cáo.** Vậy hơn 90% số lượng khách còn lại thì như thế nào? <br></br> Làm cách nào để bạn có thể đứng ngoài số liệu thống kê này và tạo ra Phễu Marketing tốt nhất có thể cho doanh nghiệp của mình?`,
   leftImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1627466088/Galatek.io%20Website/Financial_Access_3_mha0jp.png",
-  leftAlt: "Hinh anh minh hoa Funnel 1",
+  leftAlt: "Hinh anh minh hoa Khoa hoc Pheu Ban Hang 1 - Sang Le Tech",
 };
 
 const textTwo = {
@@ -36,7 +37,7 @@ const textTwo = {
   rightDescription: `⟐  Hiện tại lượng tiêu thụ hàng Online tăng đột b-iến, nhưng nhiều doanh nghiệp đã phải đóng cửa vì không có một kênh bán hàng Online phù hợp, hoặc kinh doanh Online mà không biết cách marketing hiệu quả.<br></br>**Hãy tưởng tượng nếu Covid-19 kéo dài thêm vài tháng nữa, thì liệu doanh nghiệp của bạn có thể trụ nổi không? Nếu không, thì bạn phải bắt tay vào hành động ngay từ bây giờ!**`,
   rightImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1627466323/Galatek.io%20Website/os0019_1_13_Converted_viuwxc.png",
-  rightAlt: "Hinh anh minh hoa Funnel 2",
+  rightAlt: "Hinh anh minh hoa Khoa hoc Pheu Ban Hang 2 - Sang Le Tech",
 };
 
 const courseDescription = {
@@ -99,7 +100,7 @@ const textThree = {
     <br></br>**✓**   Bạn phải sẵn sàng đặt câu hỏi nếu bạn không hiểu điều gì đó khi tham gia khoá học.`,
   leftImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1627482536/Galatek.io%20Website/1_iudpkg.png",
-  leftAlt: "Hinh anh minh hoa Funnel 3",
+  leftAlt: "Hinh anh minh hoa Khoa hoc Pheu Ban Hang 3 - Sang Le Tech",
 };
 
 const textFour = {
@@ -116,7 +117,7 @@ const textFour = {
   <br></br>*‼️ Khóa học này KHÔNG dành cho bạn nếu bạn không nghiêm túc về việc cung cấp những giá trị lâu dài cho khách hàng của mình*.`,
   rightImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1627466906/Galatek.io%20Website/os0019_1_5_Converted_ubnsvc.png",
-  rightAlt: "Hinh anh minh hoa Funnel 4",
+  rightAlt: "Hinh anh minh hoa Khoa hoc Pheu Ban Hang 4 - Sang Le Tech",
 };
 
 const courseValues = {
@@ -172,7 +173,7 @@ const textPayment = {
   <br></br>Hơn hết, bạn nhận được quyền truy cập trọn đời và 3 ngày đảm bảo hoàn tiền 100%!`,
   buttonName: "THAM GIA KHOÁ HỌC",
   imgSrc: "/assets/thumbnail-sales-funnel.jpg",
-  alt: "Hinh anh minh hoa Ret 5",
+  alt: "Hinh anh minh hoa Khoa hoc Pheu Ban Hang 5 - Sang Le Tech",
   videoSrc: "posts/video-sales-funnel",
 };
 
@@ -187,12 +188,18 @@ const textBookxo = {
   buttonSrc: "/form",
   imgSrc:
     "https://super-static-assets.s3.amazonaws.com/8090ac7d-2195-4ec8-96be-1457b54a8900/images/c2a88c54-5779-493d-83ec-1d2d5429021f.jpg?w=240&f=webp",
-  alt: "Hinh anh Book Cover",
+  alt: "Sang Le Tech - Anh bia sach Bi Mat Lam Giau X.0",
 };
 
 function SalesFunnelCourse() {
   return (
     <Layout>
+      <CourseJsonLd
+        courseName="Xây dựng Phễu Bán Hàng cơ bản"
+        providerName="Pro X.0"
+        providerUrl="https//www.sangletech.com/basic-sales-funnel"
+        description="Bật mí những bí mật từ Chuyên gia xây dựng Phễu Bán Hàng nổi tiếng thế giới để áp dụng thành công cho việc kinh doanh Online của Bạn!"
+      />
       <Hero {...hero} />
       <AlternativeSideBySideWithVideoOrImg {...textOne} {...textTwo} />
       <ThreeColumnsFeatureList {...courseDescription} />

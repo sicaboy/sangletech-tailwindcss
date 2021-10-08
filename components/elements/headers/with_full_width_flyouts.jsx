@@ -63,14 +63,14 @@ const courses = [
   {
     name: "Quảng Cáo Retargeting",
     description:
-      "Làm thế nào để Bạn luôn nằm ở vị trí hàng đầu trong tâm trí khách hàng và đưa họ quay trở lại trang web của mình khi họ đã rời đi?",
+      "Làm thế nào để Bạn luôn nằm ở vị trí hàng đầu trong tâm trí khách hàng và đưa họ quay trở lại trang web của Bạn khi họ đã rời đi?",
     href: "/retargeting-course",
     icon: ChartBarIcon,
   },
   {
     name: "Phễu Bán Hàng Basic",
     description:
-      "Bật mí những bí mật từ các Chuyên gia Marketing nổi tiếng thế giới để áp dụng thành công cho việc kinh doanh online của Bạn!",
+      "Bật mí những bí mật từ Chuyên gia xây dựng Phễu Bán Hàng nổi tiếng thế giới để áp dụng thành công cho việc kinh doanh Online của Bạn!",
     href: "/basic-sales-funnel",
     icon: CursorClickIcon,
   },

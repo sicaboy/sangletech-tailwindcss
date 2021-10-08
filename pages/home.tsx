@@ -102,7 +102,7 @@ const jow = {
   buttonName: "Tìm hiểu thêm",
   imgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1628152810/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0001_c2ukh5.png",
-  alt: "Hinh anh SL Hanh Trinh Lam Giau X.0",
+  alt: "Hinh anh Sang Le Tech - Hanh Trinh Lam Giau X.0",
   videoSrc: "posts/video-hanh-trinh-lam-giau",
   buttonSrc: "/sow-xo",
 };
@@ -129,7 +129,7 @@ const sow = {
   leftAuthorImgSrc: "/assets/sangle-profilePic.jpg",
   leftImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1628236747/Galatek.io%20Website/galatekgame-37-38-39-0000_crdalj.png",
-  leftAlt: "Hinh anh Sach SOW",
+  leftAlt: "Hinh anh Sach Bi Mat Lam Giau X.0 - Sang Le Tech;",
 };
 
 const projectYou = {
@@ -149,7 +149,7 @@ const projectYou = {
   rightGoogleSrc: "/form",
   rightWebSrc: "/form",
   rightImgSrc: "/assets/youoxo-25-iphone-mockup-1.png",
-  rightAlt: "",
+  rightAlt: "Hinh anh You X.0 download - Sang Le Tech",
 };
 
 const fin = {
@@ -174,7 +174,7 @@ const fin = {
   leftGoogleSrc: "/form",
   leftWebSrc: "/form",
   leftImgSrc: "/assets/finxo-25-iphone-mockup-1.png",
-  leftAlt: "",
+  leftAlt: "Hinh anh Fin X.0 download - Sang Le Tech",
 };
 
 const pro = {
@@ -199,7 +199,7 @@ const pro = {
   rightWebSrc: "/form",
   rightImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626085141/Galatek.io%20Website/3D-Freelancers-illustration0023_srsafb.png",
-  rightAlt: "Hinh anh minh Pro X.0",
+  rightAlt: "Hinh anh minh hoa Pro X.0 - Sang Le Tech",
 };
 
 const startup = {
@@ -208,12 +208,11 @@ const startup = {
   buttonName: "Tìm Hiểu Ngay",
   imgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1625651836/Galatek.io%20Website/IMG_8057-1024x682_fa7z6z.jpg",
-  alt: "Hinh anh Sang va Royal Wedding",
+  alt: "Hinh anh Sang Le va Royal Wedding",
   buttonSrc: "/startupxo-course",
 };
 
 const youtube = {
-  //DONE: The button link redirects incorrectly
   title: "Video Youtube Nổi Bật",
   description: `Nếu bạn muốn đi nhanh thì đi một mình, nếu bạn muốn đi xa thì hãy đi cùng nhau!`,
   buttonName: "Theo Dõi Ngay",

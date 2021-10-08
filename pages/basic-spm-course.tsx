@@ -7,24 +7,25 @@ import BrandPanelWithAppScreenShot from "../components/sections/cta-sections/bra
 import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/brand_panel_with_overlapping_image";
 import * as Icon from "@heroicons/react/outline";
 import ThreeColumnsFeatureList from "../components/three-columns-feature-list";
+import { CourseJsonLd } from "next-seo";
 
 const hero = {
   caption: "Khoá Học: SPM - Simple Planning Method",
   titleNormal: " với Notion",
   titleHighlight: "Cách Lên Kế Hoạch Đơn Giản",
-  description: `**CẤP ĐỘ: CƠ BẢN**<br></br>Được tạo ra bởi Sang Lê sau hơn 10 năm nghiên cứu và phát triển.`,
-  imgSrc: "/assets/thumbnail-why-planning.png",
+  description: `**CẤP ĐỘ: CƠ BẢN**<br></br>Phương pháp SPM (Simple Planning Method) - Cách Lên Kế Hoạch Đơn Giản được tạo ra bởi Sang Lê sau gần 10 năm nghiên cứu và phát triển.`,
+  imgSrc: "/assets/thumbnail-why-planning.jpg",
   videoSrc: "posts/video-why-planning",
   videoCaption: `Tại Sao Bạn Cần Lập Kế Hoạch?`,
-  alt: "SL-course-basic-spm-course",
+  alt: "Hinh anh Sang Le Tech - Video Tai sao ban can lap ke hoach SPM",
 };
 
 const textOne = {
   leftCaption: "THỰC TẾ",
   leftTitle: "Bạn Có Biết?",
   leftDescription: `Năm 1950, có một nhóm các nhà nghiên cứu đến một lớp học tại trường Đại học Stanford. Ở đó, họ hỏi những sinh viên rằng các bạn ấy đã có kế hoạch sau khi ra trường chưa. **Chỉ 5% sinh viên có kế hoạch rõ ràng sau khi ra trường, còn lại 95% sinh viên vẫn chưa có định hướng gì cả**.<br></br>Nhóm nghiên cứu ghi lại những cái tên, và 10 năm sau, họ tìm lại những con người trong lớp học đó. Và bạn biết điều gì không? **5% người là 10 năm trước đã nói rằng họ đã có dự định trong cuộc sống lúc bấy giờ có mức thu nhập hơn tổng 95% những người còn lại.** Không gì khác, kế hoạch chính là thứ khiến họ làm được điều đó.`,
-  leftImgSrc: "/assets/planning-img01.png",
-  leftAlt: "Hinh anh minh hoa SPM 1",
+  leftImgSrc: "/assets/planning-img01.jpg",
+  leftAlt: "Hinh anh minh hoa Khoa hoc SPM Basic 1 - Sang Le Tech",
 };
 
 const textTwo = {
@@ -32,9 +33,8 @@ const textTwo = {
   rightTitle:
     "Thất Bại trong việc Lên Kế Hoạch chính là Lên Kế Hoạch cho Sự Thất Bại",
   rightDescription: `Khi bạn không có kế hoạch, bạn bị chi phối hoàn toàn bởi những yếu tố xung quanh. Bạn không tự quyết định cái gì cả, bởi vì không có kế hoạch thì làm gì có hành động. Cuộc sống của bạn sẽ mãi mãi bị chi phối bởi những con người bạn tình cờ gặp, công việc bạn tình cờ được giới thiệu, người bạn đời mà bạn tình cờ quen. <br></br>Sẽ không có bất kỳ sự bứt phá nào được diễn ra, bởi vì bạn không có cái đích nào cả. Bạn sẽ sống qua ngày, làm công việc mà ai cũng làm, gặp gỡ bạn bè, có những thú vui cơ bản, chôn vùi ước mơ và hoài bão của mình. Bạn sống ở thể bị động nếu không có một kế hoạch.<br></br>Nhưng khi bạn có kế hoạch thì sao? Bộ não của bạn ngay lập tức được kích hoạt để giúp bạn làm được điều đó bằng mọi giá. **Khi bạn đã có một cái đích, bạn sẽ chủ động làm những điều mà bình thường bạn không bao giờ làm.**`,
-  rightImgSrc:
-    "https://res.cloudinary.com/sang-le-tech/image/upload/v1627466323/Galatek.io%20Website/os0019_1_13_Converted_viuwxc.png",
-  rightAlt: "Hinh anh minh hoa Funnel 2",
+  rightImgSrc: "/assets/planning-img02.jpg",
+  rightAlt: "Hinh anh minh hoa Khoa hoc SPM Basic 2 - Sang Le Tech",
 };
 
 const courseDescript = {
@@ -96,9 +96,8 @@ const textThree = {
     <br></br>**✓**   Bạn phải đăng ký tài khoản Notion (Có các tuỳ chọn miễn phí & trả phí).
     <br></br>**✓**   Bạn phải có tinh thần sẵn sàng học hỏi những điều mới trong khoá học này và thực hành Lên Kế Hoạch cho cuộc sống của chính bạn trong xuyên suốt quá trình tham gia khóa học.
     <br></br>**✓**   Bạn phải sẵn sàng đặt câu hỏi nếu bạn không hiểu điều gì đó khi tham gia khoá học.`,
-  leftImgSrc:
-    "https://res.cloudinary.com/sang-le-tech/image/upload/v1627482536/Galatek.io%20Website/1_iudpkg.png",
-  leftAlt: "Hinh anh minh hoa Funnel 3",
+  leftImgSrc: "/assets/planning-img04.jpg",
+  leftAlt: "Hinh anh minh hoa Khoa hoc SPM Basic 3 - Sang Le Tech",
 };
 
 const textFour = {
@@ -113,9 +112,8 @@ const textFour = {
   <br></br>**✓   Nếu Bạn chỉ đơn giản là một người đang hứng thú và muốn khám phá SPM** - Phương pháp Lên Kế Hoạch Đơn Giản của Sang.
   <br></br> **THÌ ĐÂY LÀ KHOÁ HỌC DÀNH CHO BẠN!**
   <br></br>*‼️ Khóa học này KHÔNG dành cho Bạn nếu Bạn không nghiêm túc trong việc lên kế hoạch, xác định mục tiêu trong cuộc sống để hướng đến sự phát triển và thành công cho bản thân mình*.`,
-  rightImgSrc:
-    "https://res.cloudinary.com/sang-le-tech/image/upload/v1627466906/Galatek.io%20Website/os0019_1_5_Converted_ubnsvc.png",
-  rightAlt: "Hinh anh minh hoa Funnel 4",
+  rightImgSrc: "/assets/planning-img03.jpg",
+  rightAlt: "Hinh anh minh hoa Khoa hoc SPM Basic 4 - Sang Le Tech",
 };
 
 const courseValues = {
@@ -159,8 +157,8 @@ const textPayment = {
   <br></br>Hơn hết, bạn nhận được quyền truy cập trọn đời và 3 ngày đảm bảo hoàn tiền 100%!`,
   buttonName: "THAM GIA KHOÁ HỌC",
   buttonSrc: "/form",
-  imgSrc: "/assets/thumbnail-why-planning.png",
-  alt: "Hinh anh minh hoa Ret 5",
+  imgSrc: "/assets/thumbnail-why-planning.jpg",
+  alt: "Sang Le Tech - Hinh anh video Tai sao can len ke hoach SPM",
   videoSrc: "posts/video-why-planning",
 };
 
@@ -175,12 +173,18 @@ const textBookxo = {
   buttonSrc: "/form",
   imgSrc:
     "https://super-static-assets.s3.amazonaws.com/8090ac7d-2195-4ec8-96be-1457b54a8900/images/c2a88c54-5779-493d-83ec-1d2d5429021f.jpg?w=240&f=webp",
-  alt: "Hinh anh Book Cover",
+  alt: "Sang Le Tech - Anh bia sach Bi Mat Lam Giau X.0",
 };
 
 function SPMBasicCourse() {
   return (
     <Layout>
+      <CourseJsonLd
+        courseName="SPM Basic - Cách Lên Kế Hoạch Đơn Giản với Notion"
+        providerName="Pro X.0"
+        providerUrl="https//www.sangletech.com/basic-spm-course"
+        description="Phương pháp Lập kế hoạch đơn giản với phần mềm Notion được tạo ra bởi Sang Lê."
+      />
       <Hero {...hero} />
       <AlternativeSideBySideWithVideoOrImg {...textOne} {...textTwo} />
       <ThreeColumnsFeatureList {...courseDescript} />

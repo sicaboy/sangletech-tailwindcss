@@ -28,7 +28,7 @@ const hero = {
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1631863511/Galatek.io%20Website/Sangletech.com/maxresdefault_qiw40s.jpg",
   videoSrc: "/posts/video-khoanh-khac-cuoc-doi",
   videoCaption: `Câu chuyện về Khoảnh Khắc "Lộc Xác" đời Sang Lê`,
-  alt: "Sang Le - Video KKCD",
+  alt: "Sang Le Tech - Video Khoanh Khac Cuoc Doi",
 };
 
 const galleryOne = {
@@ -36,20 +36,20 @@ const galleryOne = {
   description: `Truyền hình & Sự kiện`,
   caption: "Hình Ảnh",
   imgSmallOneSrc: "/assets/seo-kkcd-talk.jpg",
-  imgSmallOneAlt: "Hinh anh Sang Le KKCD 1",
+  imgSmallOneAlt: "Hinh anh Sang Le Tech - Khoanh Khac Cuoc Doi 1",
   imgSmallTwoSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626615062/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0004_pcscsm.jpg",
-  imgSmallTwoAlt: "Hinh anh Sang Le KKCD 2",
+  imgSmallTwoAlt: "Hinh anh Sang Le Tech - Khoanh Khac Cuoc Doi 2",
   imgSmallThreeSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1627895653/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0002_lzc8ui.jpg",
-  imgSmallThreeAlt: "Hinh anh Sang Le Livestream 1",
+  imgSmallThreeAlt: "Hinh anh Sang Le Tech - Livestream 1",
   imgSmallFourSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1627895653/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0001_zxqtld.jpg",
-  imgSmallFourAlt: "Hinh anh Sang Le Livestream 2",
+  imgSmallFourAlt: "Hinh anh Sang Le Tech - Livestream 2",
   imgLargeOneSrc: "/assets/seo-kkcd-badge.jpg",
-  imgLargeOneAlt: "Hinh anh Sang Le - KKCD 1",
+  imgLargeOneAlt: "Hinh anh Sang Le Tech - Khoanh Khac Cuoc Doi 1",
   imgLargeTwoSrc: "/assets/seo-saigonfm.jpg",
-  imgLargeTwoAlt: "Hinh anh Sang Le - SGFM",
+  imgLargeTwoAlt: "Hinh anh Sang Le Tech - SaigonFM",
 };
 
 const galleryTwo = {
@@ -58,39 +58,39 @@ const galleryTwo = {
   caption: "Hình Ảnh",
   imgOneSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1627800779/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0003_f6hiix.jpg",
-  imgOneAlt: "Sang Le - Pinterest Company",
+  imgOneAlt: "Sang Le Tech - Pinterest Company",
 
   imgTwoSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1627800779/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0000_nqixhm.jpg",
-  imgTwoAlt: "Sang Le - Salesforce Company",
+  imgTwoAlt: "Sang Le Tech - Salesforce Company",
 
   imgThreeSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1627800779/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0002_qovql2.jpg",
-  imgThreeAlt: "Sang Le - Google Company",
+  imgThreeAlt: "Sang Le Tech - Google Company",
 
   imgFourSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1627800779/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0001_f9cckm.jpg",
-  imgFourAlt: "Sang Le - Apple Company",
+  imgFourAlt: "Sang Le Tech - Apple Company",
 
   imgFiveSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1627800779/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0005_wseuue.jpg",
-  imgFiveAlt: "Sang Le - Slack Company",
+  imgFiveAlt: "Sang Le Tech - Slack Company",
 
   imgSixSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1627800780/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0006_csfqzp.jpg",
-  imgSixAlt: "Sang Le - Zappos Company",
+  imgSixAlt: "Sang Le Tech - Zappos Company",
 
   imgSevenSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1627800780/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0004_sjazaq.jpg",
-  imgSevenAlt: "Sang Le - Facebook Company",
+  imgSevenAlt: "Sang Le Tech - Facebook Company",
 
   imgEightSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1627802863/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0000_xvpmd7.jpg",
-  imgEightAlt: "Sang Le - We Work Company",
+  imgEightAlt: "Sang Le Tech - We Work Company",
 
   imgNineSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1627802600/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0002_chihny.jpg",
-  imgNineAlt: "Sang Le - Uber Company",
+  imgNineAlt: "Sang Le Tech - Uber Company",
 };
 
 const galleryThree = {
@@ -121,7 +121,7 @@ const giaiDoanDauDoi = {
 `,
   leftImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1627896818/Galatek.io%20Website/1936102_139724759226_7973379_n_ahhfrx.jpg",
-  leftAlt: "Hinh anh Sang Le - Giai Doan Dau Doi",
+  leftAlt: "Hinh anh Sang Le Tech - Giai Doan Dau Doi",
 };
 
 const giaoduc = {
@@ -131,7 +131,7 @@ const giaoduc = {
   Sau sự kiện cận kề cái chết, Sang như được tái sinh một lần nữa. Sang bắt đầu hành trình du học của mình một cách nghiêm túc tại **3 quốc gia: Singapore, Hong Kong và Hoa Kỳ**. Và vì thế ngoài tiếng mẹ đẻ của mình, Sang có thể giao tiếp tốt bằng 2 thứ tiếng khác đó là: **tiếng Anh & tiếng Hoa**.<br></br> Nhưng trong lúc đang học tại nước ngoài, Sang bất ngờ nhận một cuộc gọi từ ba. Ba nói răng do khủng hoảng kinh tế toàn cầu năm 2008, nên tình hình kinh tế gia đình cũng gặp khó khăn và rất có thể Sang phải dừng lại việc học của mình bất cứ lúc nào! Sau cú điện thoại đó, Sang quyết định là Sang phải nỗ lực gấp trăm lần để gấp rút hoàn thành việc học của mình và lấy được **bằng cấp 3 Canada tại Hong Kong** (lớp 11 & 12) trong **9 tháng (thay vì 2 năm)** và nhận **bằng Đại học tại Mỹ** chỉ sau **2 năm 9 tháng (thay vì 4-5 năm)**.`,
   rightImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1625719158/Galatek.io%20Website/sangle-profilePic_k2xxkw.jpg",
-  rightAlt: "Hinh anh Sang Le - Giao Duc",
+  rightAlt: "Hinh anh Sang Le Tech - Giao Duc",
 };
 
 const hanhtrinh = {
@@ -142,7 +142,7 @@ const hanhtrinh = {
   leftImgSrc: "/assets/thumbnail-thanh-cong-thoi-dai-40.png",
   leftVideoSrc: "posts/video-thanh-cong-thoi-dai-40",
   leftVideoCaption: `Thành Công Thời Đại 4.0`,
-  leftAlt: "Sang Le - Video Thanh Cong Thoi Dai 4.0",
+  leftAlt: "Sang Le Tech - Video Thanh Cong Thoi Dai 4.0",
 };
 
 const spmet = {
@@ -153,7 +153,7 @@ const spmet = {
   rightImgSrc: "/assets/thumbnail-truong-spmet.png",
   rightVideoSrc: "posts/video-truong-spmet",
   rightVideoCaption: `Bạn có biết sự tồn tại của ngành học này với 99% sinh viên ra trường SẼ CÓ VIỆC LÀM?`,
-  rightAlt: "Sang Le - Video SPMET",
+  rightAlt: "Sang Le Tech - Video SPMET",
 };
 
 const galatek = {
@@ -162,7 +162,7 @@ const galatek = {
   leftDescription: `Công nghệ luôn là niềm đam mê của Sang. Sang đã đến Hồng Kông và thành lập Galatek vào năm 2015 nhằm mang đến những giải pháp thực tế về marketing và công nghệ cho rất nhiều công ty khởi nghiệp, những doanh nghiệp vừa và nhỏ.`,
   leftImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1627802599/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0001_vzdxhu.jpg",
-  leftAlt: "Hinh anh Sang Le - Galatek",
+  leftAlt: "Hinh anh Sang Le Tech - Galatek",
 };
 
 const cafes = {
@@ -174,7 +174,7 @@ const cafes = {
   rightImgSrc: "/assets/thumbnail-cafes-intro.png",
   rightVideoSrc: "posts/video-cafes-intro",
   rightVideoCaption: `CafeS Intro`,
-  rightAlt: "Sang Le - Video CafeS",
+  rightAlt: "Sang Le Tech - Video CafeS",
 };
 
 const social = {
@@ -199,7 +199,7 @@ const company = {
   logoOneSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626171786/Galatek.io%20Website/updated-galatek-logo-300x101_ajkugi.png",
 
-  logoOneAlt: "",
+  logoOneAlt: "Galatek Logo",
 
   logoTwoName: (
     <Icon.InboxInIcon className="w-6 h-6 text-white" aria-hidden="true" />
@@ -207,14 +207,14 @@ const company = {
   logoTwoSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626171832/Galatek.io%20Website/whitebg-cafes-logo011x-600x228-1.png_ubdsbd.webp",
 
-  logoTwoAlt: "",
+  logoTwoAlt: "CafeS Logo",
 
   logoThreeName: (
     <Icon.InboxInIcon className="w-6 h-6 text-white" aria-hidden="true" />
   ),
   logoThreeSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626171957/Galatek.io%20Website/print-spmet-logo.png_ex1cvm.webp",
-  logoThreeAlt: "",
+  logoThreeAlt: "SPMET Logo",
 };
 
 const myAchivement = {
@@ -301,7 +301,7 @@ const certificates = {
 
   certificateTwoImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1627969582/Galatek.io%20Website/sangle-graduation-certificate0001.jpg_mm9rpt.webp",
-  certificateTwoImgAlt: "Sang Le - Bang Dai Hoc",
+  certificateTwoImgAlt: "Sang Le Tech - Bang Dai Hoc",
   certificateTwoTitle: "Bằng Đại học của Mỹ",
   certificateTwoDescription: `**Bằng Đại học tại Mỹ** chỉ sau **2 năm 9 tháng** (thay vì 4-5 năm)`,
 };
@@ -329,7 +329,7 @@ const ourTeam = {
 
   personOneImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1625719157/Galatek.io%20Website/galatek-qunhuang_w2sffp.jpg",
-  personOneImgAlt: "Sang Le Teams - Qun",
+  personOneImgAlt: "Sang Le Tech Teams - Qun",
   personOneName: "Huang Qun",
   personOnePosition: "Co-founder & CTO",
   personOneDescription: `Tốt nghiệp khoa học vi tính tại Đại Học Trung Sơn, Quảng Châu, Trung Quốc.
@@ -339,7 +339,7 @@ const ourTeam = {
 
   personTwoImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1625719155/Galatek.io%20Website/galatek-semi_s3pznx.jpg",
-  personTwoImgAlt: "Sang Le Teams - Semi",
+  personTwoImgAlt: "Sang Le Tech Teams - Semi",
   personTwoName: "Xu JieZhou",
   personTwoPosition: "Giám Đốc Phát Triển",
   personTwoDescription: `Tốt nghiệp khoa học vi tính tại Đại Học Trung Sơn, Quảng Châu, Trung Quốc. 
@@ -348,7 +348,7 @@ const ourTeam = {
 
   personThreeImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1625719156/Galatek.io%20Website/galatek-kk_u2j8wo.jpg",
-  personThreeImgAlt: "Sang Le Teams - KK",
+  personThreeImgAlt: "Sang Le Tech Teams - KK",
   personThreeName: "Wang JingGang",
   personThreePosition: "Giám Đốc Phát Triển",
   personThreeDescription: `Tốt nghiệp Thạc Sĩ Toán học Đại Học Trung Sơn, Quảng Châu, Trung Quốc.
@@ -358,7 +358,7 @@ const ourTeam = {
 
   personFourImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1625719155/Galatek.io%20Website/galatek-team0005_dknmvz.jpg",
-  personFourImgAlt: "Sang Le Teams - Yoanne",
+  personFourImgAlt: "Sang Le Tech Teams - Yoanne",
   personFourName: "Yoanne Lau",
   personFourPosition: "Co-Founder & COO",
   personFourDescription: `Tốt nghiệp đại học North Texas – ngành Xã Hội Học.
@@ -368,7 +368,7 @@ const ourTeam = {
 
   personFiveImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1625720704/Galatek.io%20Website/MicrosoftTeams-image-e1584716928497-1024x925-1.jpg_qls2eo.webp",
-  personFiveImgAlt: "Sang Le Teams - Carmen",
+  personFiveImgAlt: "Sang Le Tech Teams - Carmen",
   personFiveName: "Carmen Wong",
   personFivePosition: "PR & Social Marketing",
   personFiveDescription: `Tốt nghiệp Trường Quản trị Khách sạn Quốc tế Les Roches.
@@ -376,7 +376,7 @@ const ourTeam = {
 
   personSixImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1625720703/Galatek.io%20Website/IMG_4430-1.jpg_qtzcgh.webp",
-  personSixImgAlt: "Sang Le Teams - Yunnie",
+  personSixImgAlt: "Sang Le Tech Teams - Yunnie",
   personSixName: "Yunnie Nguyen",
   personSixPosition: "CEO Assistant",
   personSixDescription: `Với nền tảng từ rất sớm trong vai trò MC truyền hình (HTV7, HTV9, TodayTV,...) và trên sân khấu, điều đó giúp Yunnie phát triển những kỹ năng tuyệt vời trong việc chăm sóc khách hàng của chúng tôi.`,
