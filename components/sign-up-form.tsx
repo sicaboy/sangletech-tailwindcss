@@ -76,7 +76,7 @@ export default function Example() {
   // Form submit handler
   const submitForm = async (e) => {
     e.preventDefault();
-    const res = await fetch("http://localhost:3000/api/submit-form", {
+    const res = await fetch(apiUrl, {
       method: "POST",
       body: JSON.stringify({
         name,

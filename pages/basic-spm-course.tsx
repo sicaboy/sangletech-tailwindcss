@@ -23,9 +23,8 @@ const textOne = {
   leftCaption: "THỰC TẾ",
   leftTitle: "Bạn Có Biết?",
   leftDescription: `Năm 1950, có một nhóm các nhà nghiên cứu đến một lớp học tại trường Đại học Stanford. Ở đó, họ hỏi những sinh viên rằng các bạn ấy đã có kế hoạch sau khi ra trường chưa. **Chỉ 5% sinh viên có kế hoạch rõ ràng sau khi ra trường, còn lại 95% sinh viên vẫn chưa có định hướng gì cả**.<br></br>Nhóm nghiên cứu ghi lại những cái tên, và 10 năm sau, họ tìm lại những con người trong lớp học đó. Và bạn biết điều gì không? **5% người là 10 năm trước đã nói rằng họ đã có dự định trong cuộc sống lúc bấy giờ có mức thu nhập hơn tổng 95% những người còn lại.** Không gì khác, kế hoạch chính là thứ khiến họ làm được điều đó.`,
-  leftImgSrc:
-    "https://res.cloudinary.com/sang-le-tech/image/upload/v1627466088/Galatek.io%20Website/Financial_Access_3_mha0jp.png",
-  leftAlt: "Hinh anh minh hoa Funnel 1",
+  leftImgSrc: "/assets/planning-img01.png",
+  leftAlt: "Hinh anh minh hoa SPM 1",
 };
 
 const textTwo = {

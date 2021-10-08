@@ -379,10 +379,10 @@ const ourTeam = {
 
   personSixImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1625720703/Galatek.io%20Website/IMG_4430-1.jpg_qtzcgh.webp",
-  pexImgAlt: "Sang Le Teams - Yunnie",
-  pexName: "Yunnie Nguyen",
+  personSixImgAlt: "Sang Le Teams - Yunnie",
+  personSixName: "Yunnie Nguyen",
   personSixPosition: "CEO Assistant",
-  pexDescription: `Với nền tảng từ rất sớm trong vai trò MC truyền hình (HTV7, HTV9, TodayTV,...) và trên sân khấu, điều đó giúp Yunnie phát triển những kỹ năng tuyệt vời trong việc chăm sóc khách hàng của chúng tôi.`,
+  personSixDescription: `Với nền tảng từ rất sớm trong vai trò MC truyền hình (HTV7, HTV9, TodayTV,...) và trên sân khấu, điều đó giúp Yunnie phát triển những kỹ năng tuyệt vời trong việc chăm sóc khách hàng của chúng tôi.`,
 };
 
 const companyAchivement = {
@@ -412,81 +412,50 @@ const companyAchivement = {
   listThreeDescription: `Kinh Nghiệm`,
 };
 
-//YUNNIE: Plz reput the features here from feature1 below
 const features = {
   general: {
-    caption: "GIÁ TRỊ ",
-    title: "Bạn Sẽ Học Được Gì Từ Khoá Học Này?",
-    description: `*Trong khoá học này, Sang sẽ **"bật mí những bí mật"** mà Sang đã nghiên cứu, học hỏi và áp dụng thành công cho doanh nghiệp của mình từ **Chuyên gia xây dựng Phễu Bán Hàng nổi tiếng thế giới Russell Brunson** và bạn có thể áp dụng ngay vào việc kinh doanh online của mình!*<br></br>**⟐  Khoá học này như là một Cuốn Cẩm nang Trọn đời để bạn có thể tạo ra Phễu Bán Hàng giúp tăng doanh số kinh doanh Online theo cấp số nhân**. Sang chỉ tập trung hướng dẫn bạn **những chiến lược mà chính Sang đã áp dụng thành công cho doanh nghiệp của mình** — ngay cả khi công nghệ luôn liên tục thay đổi.`,
+    caption: "Dịch Vụ & Sản Phẩm",
+    title: "Bảo Đảm",
+    description: `Chất lượng dịch vụ`,
   },
   details: [
     {
-      name: "No hidden fees",
+      name: "Dịch Vụ Khách Hàng.",
       description:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+        "Giá trị cốt lõi của Sang và đội ngũ là mang lại cho bạn sự hài lòng tuyệt đối. Bạn sẽ cảm thấy hoàn toàn yên tâm trong suốt quá trình làm việc.",
       icon: Icon.GlobeAltIcon,
     },
     {
-      name: "No hidden fees",
+      name: "Chi Phí Hỗ Trợ Đến 50% Mùa Covid-19.",
       description:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratiTwo.",
+        "Hầu hết các thành viên trong đội ngũ của Sang đều đang ở Châu Á. Vì vậy bạn có thể tận hưởng một chi phí hợp lý với chất lượng dịch vụ.",
       icon: Icon.ScaleIcon,
     },
     {
-      name: "Transfers are instant",
+      name: "Đội Ngũ Chuyên Nghiệp.",
       description:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratiThree.",
+        "Đội ngũ chuyên nghiệp trên nhiều lĩnh vực từ khắp nơi trên thế giới để đảm bảo doanh nghiệp của bạn được chăm sóc tốt và giao đúng hạn.",
       icon: Icon.LightningBoltIcon,
     },
     {
-      name: "Mobile notifications",
+      name: "Bảo Mật Thông Tin.",
       description:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratiFour.",
-      icon: Icon.AnnotationIcon,
+        "Ý tưởng và thông tin kinh doanh của bạn sẽ được bảo mật an toàn.",
+      icon: Icon.ShieldCheckIcon,
     },
     {
-      name: "Mobile notifications",
+      name: "Thanh Toán Linh Hoạt.",
       description:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratiFive.",
-      icon: Icon.AnnotationIcon,
+        "Bạn trả tiền cho kết quả, không phải cho quá trình. Sang và đội ngũ sử dụng kinh nghiệm thực tiễn để cung cấp dịch vụ tốt nhất cho bạn.",
+      icon: Icon.CurrencyDollarIcon,
     },
     {
-      name: "Mobile notifications",
+      name: "Kinh Nghiệm.",
       description:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratiSix.",
-      icon: Icon.FilterIcon,
+        "Kinh nghiệm làm việc phong phú với hàng trăm doanh nghiệp vừa & nhỏ cả trong lẫn ngoài nước. Sang và đội ngũ sẽ mang đến cho bạn những trải nghiệm dịch vụ chuyên nghiệp nhất.",
+      icon: Icon.StarIcon,
     },
   ],
-};
-
-const features1 = {
-  caption: "Dịch Vụ & Sản Phẩm ",
-  title: "Bảo Đảm",
-  description: `Chất lượng dịch vụ`,
-
-  listOneIconSrc: "",
-  listOneTitle: "Dịch Vụ Khách Hàng.",
-  listOneDescription: `Giá trị cốt lõi của Sang và đội ngũ là mang lại cho bạn sự hài lòng tuyệt đối. Bạn sẽ cảm thấy hoàn toàn yên tâm trong suốt quá trình làm việc.`,
-
-  listTwoIconSrc: "",
-  listTwoTitle: `Chi Phí "Hỗ Trợ Đến 50% Mùa Covid-19".`,
-  listTwoDescription: `Hầu hết các thành viên trong đội ngũ của Sang đều đang ở Châu Á. Vì vậy bạn có thể tận hưởng một chi phí hợp lý với chất lượng dịch vụ.`,
-
-  listThreeIconSrc: "",
-  listThreeTitle: "Đội Ngũ Chuyên Nghiệp.",
-  listThreeDescription: `Đội ngũ chuyên nghiệp trên nhiều lĩnh vực từ khắp nơi trên thế giới để đảm bảo doanh nghiệp của bạn được chăm sóc tốt và giao đúng hạn.`,
-
-  listFourIconSrc: "",
-  listFourTitle: "Bảo Mật Thông Tin.",
-  listFourDescription: `Ý tưởng và thông tin kinh doanh của bạn sẽ được bảo mật an toàn.`,
-
-  listFiveIconSrc: "",
-  listFiveTitle: "Thanh Toán Linh Hoạt.",
-  listFiveDescription: `Bạn trả tiền cho kết quả, không phải cho quá trình. Sang và đội ngũ sử dụng kinh nghiệm thực tiễn để cung cấp dịch vụ tốt nhất cho bạn.`,
-
-  listSixIconSrc: "",
-  listSixTitle: "Kinh Nghiệm.",
-  listSixDescription: `Kinh nghiệm làm việc phong phú với hàng trăm doanh nghiệp vừa & nhỏ cả trong lẫn ngoài nước. Sang và đội ngũ sẽ mang đến cho bạn những trải nghiệm dịch vụ chuyên nghiệp nhất.`,
 };
 
 function About() {

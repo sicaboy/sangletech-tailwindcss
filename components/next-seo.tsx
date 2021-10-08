@@ -24,7 +24,7 @@ export default function NextSeoCustom() {
               alt: "Og Image Alt",
             },
             {
-              url: "https://www.example.ie/og-image-02.jpg",
+              url: "/assets/sangle-profilePic.jpg",
               width: 900,
               height: 800,
               alt: "Og Image Alt Second",
