@@ -9,8 +9,6 @@ export default class MyDocument extends Document {
         <Head />
         <NextSeoCustom />
         <body>
-          <Main />
-          <NextScript />
           <noscript>
             <iframe
               src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
@@ -19,6 +17,8 @@ export default class MyDocument extends Document {
               style={{ display: "none", visibility: "hidden" }}
             />
           </noscript>
+          <Main />
+          <NextScript />
         </body>
       </Html>
     );

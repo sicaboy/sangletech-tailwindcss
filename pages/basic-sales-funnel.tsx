@@ -39,7 +39,7 @@ const textTwo = {
   rightAlt: "Hinh anh minh hoa Funnel 2",
 };
 
-const courseDescript = {
+const courseDescription = {
   caption: "Mô Tả",
   title: "Khoá Học Xây Dựng Phễu Bán Hàng (Level: Cơ Bản)",
   description: `*Chào mừng Bạn đến với Khoá học Xây dựng Phễu Bán Hàng (Cấp độ: Cơ Bản), nơi bạn sẽ tìm hiểu công cụ, kỹ thuật để giúp bạn "bỏ túi" thêm một kỹ năng mới trong cách tạo ra Phễu Bán Hàng thành công cho doanh nghiệp của chính mình.*<br></br>Lợi ích từ Khoá học này là giúp cho doanh nghiệp của bạn thu hút cả ngàn lượt khách ghé thăm website mỗi ngày, **tăng số đơn hàng** lên gấp nhiều lần và đây là công cụ giúp bạn chuyển hoá khách hàng tiềm năng thành khách mua hàng. Đặc biệt, bạn sẽ có **toàn quyền nắm giữ thông tin và sở thích khách hàng** để **khai thác tối đa lợi nhuận của mình**.`,
@@ -177,23 +177,25 @@ const textPayment = {
 };
 
 const textBookxo = {
+  //TODO: Add buttonSrc
   title: "Tại sao cuốn sách của Sang được gọi là BÍ MẬT LÀM GIÀU X.0?",
   description: `**BẠN CÓ MUỐN ĐỌC THỬ SÁCH ĐIỆN TỬ ĐỘC QUYỀN TỪ SANG?**
     <br><br>⟐  Làm sao để đứng vững trong Kỷ nguyên 4.0 và Hậu Đại dịch?
     <br><br>⟐  Làm sao để giải phóng tiềm năng của những người trẻ có đam mê?
     <br></br>⟐  Những ý tưởng và những chiến lược mà Sang rút ra từ những doanh nhân tiếng tăm nhất trên thế giới?`,
   buttonName: "Tìm hiểu thêm về Sách",
+  buttonSrc: "/form",
   imgSrc:
     "https://super-static-assets.s3.amazonaws.com/8090ac7d-2195-4ec8-96be-1457b54a8900/images/c2a88c54-5779-493d-83ec-1d2d5429021f.jpg?w=240&f=webp",
   alt: "Hinh anh Book Cover",
 };
 
-function RetargetingCourse() {
+function SalesFunnelCourse() {
   return (
     <Layout>
       <Hero {...hero} />
       <AlternativeSideBySideWithVideoOrImg {...textOne} {...textTwo} />
-      <ThreeColumnsFeatureList {...courseDescript} />
+      <ThreeColumnsFeatureList {...courseDescription} />
       <AlternativeSideBySideWithVideoOrImg {...textThree} {...textFour} />
       <Features
         caption={courseValues.general.caption}
@@ -207,4 +209,4 @@ function RetargetingCourse() {
   );
 }
 
-export default RetargetingCourse;
+export default SalesFunnelCourse;
