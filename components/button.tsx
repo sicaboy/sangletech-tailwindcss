@@ -5,7 +5,7 @@ function Button(props) {
   return (
     <div>
       <Link href={props.url || "#"}>
-        <button className="rounded-full btn btn-primary">
+        <button className="rounded-lg btn btn-primary">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="inline-block w-6 h-6 mr-2 stroke-current"

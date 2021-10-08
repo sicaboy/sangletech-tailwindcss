@@ -107,7 +107,7 @@ const textEight = {
 function YouXO() {
   return (
     <Layout>
-      //YUNNIE: Add App info and then the rest of the apps. Tks!
+      {/* YUNNIE: Add App info and then the rest of the apps. Tks! */}
       <SoftwareAppJsonLd
         name="Angry Birds"
         price="1.00"

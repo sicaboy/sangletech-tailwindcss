@@ -15,10 +15,10 @@ const hero = {
   titleNormal: " với Notion",
   titleHighlight: "Cách Lên Kế Hoạch Đơn Giản",
   description: `**CẤP ĐỘ: CƠ BẢN**<br></br>Được tạo ra bởi Sang Lê sau hơn 10 năm nghiên cứu và phát triển.`,
-  imgSrc: "/assets/thumbnail-sales-funnel.jpg",
-  videoSrc: "posts/video-sales-funnel",
-  videoCaption: `Làm sao xây dựng Phễu Bán Hàng Online Đẻ Ra Tiền?`,
-  alt: "SL-course-sales-funnel",
+  imgSrc: "/assets/thumbnail-why-planning.png",
+  videoSrc: "posts/video-why-planning",
+  videoCaption: `Tại Sao Bạn Cần Lập Kế Hoạch?`,
+  alt: "SL-course-basic-spm-course",
 };
 
 const textOne = {
@@ -135,47 +135,36 @@ const courseValues = {
       icon: Icon.FilterIcon,
     },
     {
-      name: "",
+      name: "Cá Nhân Hoá Hệ Thống Lên Kế Hoạch",
       description:
-        "Để Bạn có thể phâncung cấp đúng thông tin và sản phẩm cho từng loại khách hàng, có nghĩa là khách hàng sẽ xem được sản phẩm họ cần mua từ đó Bạn sẽ bán được nhiều sản phẩm hơn.",
+        "Để Bạn nắm rõ cách xây dựng những nhiệm vụ, thói quen, dự án và mục tiêu cuộc sống được cá nhân hóa bằng cách sử dụng Notion, từ đó có thể biến đổi năng suất và giúp ích cho các lĩnh vực khác trong cuộc sống của bạn.",
       icon: Icon.LightBulbIcon,
     },
     {
-      name: "Nghiên Cứu Đối Thủ Cạnh Tranh Trực Tiếp & Gián Tiếp.",
+      name: "Lập Kế Hoạch Ngày & Tuần SPM",
       description:
-        "Để Bạn biết vì sao đối thủ cạnh tranh đã đạt được thành công, nghĩa là Bạn sẽ nắm rõ khách hàng của họ là ai, ở đâu, nhu cầu của họ là gì, từ đó thu hút khách hàng đến với Bạn cũng như giúp Bạn giảm thiểu rủi ro thất bại đến mức thấp nhất.",
+        "Để Bạn học cách lên kế hoạch từ ví dụ thực tế được áp dụng trong cuộc sống cá nhân cũng như công việc hằng ngày, hằng tuần của Sang, từ đó giúp Bạn chủ động thực hiện các kế hoạch mà mình đã đề ra, duy trì động lực và không còn trì hoãn giữa chừng.",
       icon: Icon.EyeIcon,
     },
     {
-      name: "Định Nghĩa Khách Hàng Mơ Ước.",
+      name: "Tổ Chức Dự Án SPM.",
       description:
-        "Để biết được khách hàng của Bạn là ai và họ muốn gì, vì điều này sẽ giúp cho Bạn tiết kiệm hàng chục đến hàng trăm triệu đồng tiền chi phí khi quảng cáo lâu dài.",
+        "Để Bạn không còn cảm thấy quá tải với hàng trăm công việc lớn nhỏ từ nhiều dự án khác nhau trong công việc cho đến cuộc sống cá nhân, từ đó Bạn có thể làm chủ thời gian và biết cách cân bằng cuộc sống.",
       icon: Icon.EmojiHappyIcon,
-    },
-    {
-      name: "Xây Dựng Nấc Thang Giá Trị.",
-      description:
-        "Để khách hàng dễ dàng trải nghiệm sản phẩm của Bạn, từ đó Bạn sẽ bán được nhiều sản phẩm hơn và tăng lợi nhuận cho doanh nghiệp của mình.",
-      icon: Icon.PresentationChartBarIcon,
-    },
-    {
-      name: "Danh Sách Mơ Ước 100.",
-      description:
-        "Để tìm hiểu và biết được Khách Hàng Mơ Ước của bạn đang tụ tập ở đâu, từ đó sẽ dễ dàng đưa thông điệp, nội dung của Bạn trước mắt họ và dẫn dắt họ vào Phễu Bán Hàng của Bạn.",
-      icon: Icon.SparklesIcon,
     },
   ],
 };
 
 const textPayment = {
-  titleFirst: "Tham Gia Khoá Học Xây Dựng Phễu Bán Hàng Cơ Bản",
+  titleFirst: "Tham Gia Khoá Học SPM Basic - Lên Kế Hoạch Đơn Giản",
   titleSecond: "Không Yêu Cầu Kinh Nghiệm",
-  description: `Với mức giá thấp hơn nhiều so với một bữa tối cùng gia đình, bạn sẽ nhận được **hơn 2 giờ video bài hướng dẫn từ Yunnie Nguyen - Trợ lý của Sang, quyền truy cập vào diễn đàn thảo luận dành cho các Chiến binh X.0 của Sang và bạn có thể hỏi Sang bất kỳ câu hỏi nào trong xuyên suốt khóa học**.
+  description: `Với mức giá thấp hơn nhiều so với một bữa tối cùng gia đình, bạn sẽ nhận được **hơn 3 giờ video bài giảng, quyền truy cập vào diễn đàn thảo luận dành cho các Chiến binh X.0 của Sang và bạn có thể hỏi Sang bất kỳ câu hỏi nào trong xuyên suốt khóa học**.
   <br></br>Hơn hết, bạn nhận được quyền truy cập trọn đời và 3 ngày đảm bảo hoàn tiền 100%!`,
   buttonName: "THAM GIA KHOÁ HỌC",
-  imgSrc: "/assets/thumbnail-sales-funnel.jpg",
+  buttonSrc: "/form",
+  imgSrc: "/assets/thumbnail-why-planning.png",
   alt: "Hinh anh minh hoa Ret 5",
-  videoSrc: "posts/video-sales-funnel",
+  videoSrc: "posts/video-why-planning",
 };
 
 const textBookxo = {
