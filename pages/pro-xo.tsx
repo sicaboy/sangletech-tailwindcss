@@ -7,6 +7,7 @@ import BrandPanelWithAppScreenShot from "../components/sections/cta-sections/bra
 import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/brand_panel_with_overlapping_image";
 import * as Icon from "@heroicons/react/outline";
 import { SoftwareAppJsonLd } from "next-seo";
+import { NextSeo } from "next-seo";
 
 const hero = {
   titleHighlight: "PRO X.0",
@@ -167,6 +168,7 @@ const textBookxo = {
 function ProX0() {
   return (
     <Layout>
+      {/* For Google Search */}
       <SoftwareAppJsonLd
         name="Pro X.0"
         price="399.000"
@@ -175,6 +177,24 @@ function ProX0() {
         operatingSystem="ANDROID, IOS, WEB"
         applicationCategory="Application"
       />
+      {/* YUNNIE: We need input this SEO again for all the courses and apps */}
+      {/* For Social Preview imgs like Facebook, Instagram,... */}
+      {/* <NextSeo
+        openGraph={{
+          type: "website",
+          url: "https://www.example.com/page",
+          title: "Open Graph Title",
+          description: "Open Graph Description",
+          images: [
+            {
+              url: "https://www.example.ie/og-image.jpg",
+              width: 800,
+              height: 600,
+              alt: "Og Image Alt",
+            },
+          ],
+        }}
+      /> */}
       <HeroWithAngelImageOnRight {...hero} />
       <div id="learn-more" />
       <AlternativeSideBySideWithVideoOrImg {...textOne} {...textTwo} />

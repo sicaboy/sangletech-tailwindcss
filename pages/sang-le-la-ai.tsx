@@ -16,6 +16,7 @@ import SocialConnect from "../components/sections/cta-sections/simple_center_bra
 import MyCompanies from "../components/sections/logo-clouds/simple_with_heading";
 import * as Icon from "@heroicons/react/outline";
 import Layout from "../components/layout";
+import NextSeoCustom from "../components/next-seo";
 
 import Image from "next/image";
 
@@ -458,6 +459,7 @@ const features = {
 function About() {
   return (
     <Layout>
+      <NextSeoCustom />
       <Hero {...hero} />
       <AlternativeSideBySideWithVideoOrImg {...giaiDoanDauDoi} {...giaoduc} />
       <GalleryOne {...galleryOne} />
