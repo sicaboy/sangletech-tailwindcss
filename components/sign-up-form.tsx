@@ -15,13 +15,8 @@
   ```
 */
 import { useState } from "react";
-import { Switch } from "@headlessui/react";
 import Select, { StylesConfig } from "react-select";
 import { useRouter } from "next/router";
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
 
 const couseOptions = [
   { value: "All", label: "Chọn Tất Cả" },
@@ -58,10 +53,7 @@ const customStyles = {
   // }),
 };
 
-const apiUrl = process.env.SUBMIT_FORM_URL;
-console.log(`apiUrl: ${apiUrl}`);
-
-export default function Example() {
+export default function Example(props) {
   const [agreed, setAgreed] = useState(false);
 
   // Input states
@@ -76,7 +68,7 @@ export default function Example() {
   // Form submit handler
   const submitForm = async (e) => {
     e.preventDefault();
-    const res = await fetch(apiUrl, {
+    const res = await fetch("/api/submit-form", {
       method: "POST",
       body: JSON.stringify({
         name,
@@ -87,7 +79,8 @@ export default function Example() {
       }),
     });
 
-    console.log(`res: ${res}`);
+    const result = await res.json();
+    console.log(`res: ${result}`);
 
     // Success if status code is 201
     if (res.status === 201) {
