@@ -8,7 +8,7 @@ import HeroWithSocialNStats from "../components/hero-with-social-n-stats";
 import ThreeColumnCards from "../components/sections/blog-sections/3_column_cards";
 import SimpleCenterBranded from "../components/sections/cta-sections/simple_center_branded";
 import SimpleWithHeading from "../components/sections/logo-clouds/simple_with_heading";
-import Youtube from "../components/youtube";
+import Youtube from "../components/youtube-three-columns";
 
 import * as Icon from "@heroicons/react/outline";
 import { getAllPosts } from "../utils/api";

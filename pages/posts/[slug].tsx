@@ -24,8 +24,7 @@ const components = {
   // It also works with dynamically-imported components, which is especially
   // useful for conditionally loading components for certain routes.
   // See the notes in README.md for more details.
-  Youtube: dynamic(() => import("react-youtube")),
-  Vimeo: dynamic(() => import("@u-wave/react-vimeo")),
+  VideoPlayer: dynamic(() => import("../../components/video-player")),
   Head,
 };
 
