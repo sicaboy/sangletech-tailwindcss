@@ -6,6 +6,7 @@ import BrandPanelWithAppScreenShot from "../components/sections/cta-sections/bra
 import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/brand_panel_with_overlapping_image";
 
 import { SoftwareAppJsonLd } from "next-seo";
+import { NextSeo } from "next-seo";
 
 const hero = {
   titleHighlight: "YOU X.0",
@@ -115,6 +116,22 @@ function YouXO() {
         operatingSystem="ANDROID, IOS, WEB"
         applicationCategory="Application"
       />
+      <NextSeo
+        openGraph={{
+          type: "website",
+          url: "https://www.sangletech.com/you-xo",
+          title: "Ứng dụng Tra cứu Thần Số Học đầu tiên tại Việt Nam",
+          description: "Ứng dụng YOU X.0 của Sang sẽ từng bước, từng bước giúp bạn tìm hiểu thêm về chính mình thông qua Thần Số Học và đề xuất cho bạn những giải pháp Phong thủy thích hợp nhất để bạn có thể bắt đầu xây dựng cho mình một cuộc sống thịnh vượng và giàu có trong thời đại 4.0!",
+          images: [
+            {
+              url: "https://sangletech.com/assets/seo-kkcd-intro.jpg",
+              width: 800,
+              height: 600,
+              alt: "Og Image Alt",
+            },
+          ],
+        }}
+      /> 
       <HeroWithAngelImageOnRight {...hero} />
       <div id="read-more" />
       <AlternativeSideBySideWithVideoOrImg {...textOne} {...textTwo} />
