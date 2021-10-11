@@ -10,6 +10,7 @@ import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/
 import * as Icon from "@heroicons/react/outline";
 import ThreeColumnsFeatureList from "../components/three-columns-feature-list";
 import { CourseJsonLd } from "next-seo";
+import { NextSeo } from "next-seo";
 
 const hero = {
   caption: "Khoá Học: Phễu Bán Hàng (Cơ Bản)",
@@ -195,11 +196,27 @@ function SalesFunnelCourse() {
   return (
     <Layout>
       <CourseJsonLd
-        courseName="Xây dựng Phễu Bán Hàng cơ bản"
+        courseName="Khoá học: Xây dựng Phễu Bán Hàng cơ bản"
         providerName="Pro X.0"
         providerUrl="https//www.sangletech.com/basic-sales-funnel"
-        description="Bật mí những bí mật từ Chuyên gia xây dựng Phễu Bán Hàng nổi tiếng thế giới để áp dụng thành công cho việc kinh doanh Online của Bạn!"
+        description="Bật mí những Bí mật từ Chuyên gia xây dựng Phễu Bán Hàng nổi tiếng thế giới để áp dụng thành công cho việc kinh doanh Online của Bạn!"
       />
+      <NextSeo
+        openGraph={{
+          type: "website",
+          url: "https://www.sangletech.com/basic-sales-funnel",
+          title: "Làm Sao Xây Dựng Phễu Bán Hàng Online Đẻ Ra Tiền?",
+          description: "Bật mí những Bí mật từ Chuyên gia xây dựng Phễu Bán Hàng nổi tiếng thế giới để áp dụng thành công cho việc kinh doanh Online của Bạn!",
+          images: [
+            {
+              url: "https://sangletech.com/assets/seo-saigonfm.jpg",
+              width: 800,
+              height: 600,
+              alt: "Og Image Alt",
+            },
+          ],
+        }}
+      /> 
       <Hero {...hero} />
       <AlternativeSideBySideWithVideoOrImg {...textOne} {...textTwo} />
       <ThreeColumnsFeatureList {...courseDescription} />

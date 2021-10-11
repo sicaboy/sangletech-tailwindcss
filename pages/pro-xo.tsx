@@ -179,22 +179,22 @@ function ProX0() {
       />
       {/* YUNNIE: We need input this SEO again for all the courses and apps */}
       {/* For Social Preview imgs like Facebook, Instagram,... */}
-      {/* <NextSeo
+      <NextSeo
         openGraph={{
-          type: "website",
-          url: "https://www.example.com/page",
-          title: "Open Graph Title",
-          description: "Open Graph Description",
+          type: "Application",
+          url: "https://www.sangletech.com/pro-xo",
+          title: "Ứng dụng Học trực tuyến Pro X.0",
+          description: "PRO X.0 là 1 nền tảng học trực tuyến mới đầy thú vị được tạo ra bởi Sang Lê. Với các chương trình giảng dạy từ phát triển cá nhân đến kinh doanh online, giúp bạn bước đi tự tin trong thời đại 4.0",
           images: [
             {
-              url: "https://www.example.ie/og-image.jpg",
+              url: "https://sangletech.com/assets/seo-kkcd-intro.jpg",
               width: 800,
               height: 600,
               alt: "Og Image Alt",
             },
           ],
         }}
-      /> */}
+      /> 
       <HeroWithAngelImageOnRight {...hero} />
       <div id="learn-more" />
       <AlternativeSideBySideWithVideoOrImg {...textOne} {...textTwo} />
