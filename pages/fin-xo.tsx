@@ -5,6 +5,7 @@ import AlternativeSideBySideWithVideoOrImg from "../components/alternative-side-
 import BrandPanelWithAppScreenShot from "../components/sections/cta-sections/brand_panel_with_app_screenshot";
 import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/brand_panel_with_overlapping_image";
 import { SoftwareAppJsonLd } from "next-seo";
+import { NextSeo } from "next-seo";
 
 const hero = {
   titleHighlight: "FIN X.0",
@@ -107,6 +108,22 @@ function FinX0() {
         operatingSystem="ANDROID, IOS, WEB"
         applicationCategory="Application"
       />
+      <NextSeo
+        openGraph={{
+          type: "website",
+          url: "https://www.sangletech.com/fin-xo",
+          title: "Ứng Dụng Hỗ Trợ Quản Lý Tài Chính Cá Nhân Fin X.0",
+          description: "Fin X.0 là công cụ tài chính để hỗ trợ bạn thiết lập mục tiêu, cụ thể hóa mục tiêu và review mỗi ngày. Công cụ này sẽ đồng hành cùng bạn trên chặng đường chinh phục mục tiêu. Sang đã hướng dẫn nhiều người thực hiện theo công thức và ai cũng gặt hái thành công.",
+          images: [
+            {
+              url: "https://sangletech.com/assets/seo-kkcd-intro.jpg",
+              width: 800,
+              height: 600,
+              alt: "Og Image Alt",
+            },
+          ],
+        }}
+      /> 
       <HeroWithAngelImageOnRight {...hero} />
       <div id="read-more" />
       <AlternativeSideBySideWithVideoOrImg {...textOne} {...textTwo} />

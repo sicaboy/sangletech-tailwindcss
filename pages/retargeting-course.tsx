@@ -11,6 +11,7 @@ import ThreeColumnsFeatureList from "../components/three-columns-feature-list";
 import FAQ from "../components/sections/faq-sections/centered_accordion";
 
 import { CourseJsonLd } from "next-seo";
+import { NextSeo } from "next-seo";
 import Bonus from "../components/course/bonus";
 
 const hero = {
@@ -229,14 +230,28 @@ const faqs = {
 function RetargetingCourse() {
   return (
     <Layout>
-      {/* YUNNIE: DONE - Add the course info for this one and then the rest of the
-      courses. Tks! */}
       <CourseJsonLd
-        courseName="Quảng cáo Retargeting"
+        courseName="Khoá học: Quảng cáo Retargeting từ A-Z"
         providerName="Pro X.0"
         providerUrl="https//www.sangletech.com/retargeting-course"
         description="Làm thế nào để Bạn luôn nằm ở vị trí hàng đầu trong tâm trí khách hàng và đưa họ quay trở lại trang web của Bạn khi họ đã rời đi?"
       />
+      <NextSeo
+        openGraph={{
+          type: "website",
+          url: "https://www.sangletech.com/retargeting-course",
+          title: "Khoá học: Quảng cáo Retargeting từ A-Z",
+          description: "Làm thế nào để Bạn luôn nằm ở vị trí hàng đầu trong tâm trí khách hàng và đưa họ quay trở lại trang web của Bạn khi họ đã rời đi?",
+          images: [
+            {
+              url: "https://sangletech.com/assets/thumbnail-retargeting-explainer.jpg",
+              width: 800,
+              height: 600,
+              alt: "Og Image Alt",
+            },
+          ],
+        }}
+      /> 
       <Hero {...hero} />
       <AlternativeSideBySideWithVideoOrImg {...textOne} {...textTwo} />
       <MyAchievement {...courseDescript} />

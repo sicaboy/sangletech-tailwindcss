@@ -8,6 +8,7 @@ import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/
 import * as Icon from "@heroicons/react/outline";
 import ThreeColumnsFeatureList from "../components/three-columns-feature-list";
 import { CourseJsonLd } from "next-seo";
+import { NextSeo } from "next-seo";
 
 const hero = {
   caption: "Khoá Học: SPM - Simple Planning Method",
@@ -183,8 +184,24 @@ function SPMBasicCourse() {
         courseName="SPM Basic - Cách Lên Kế Hoạch Đơn Giản với Notion"
         providerName="Pro X.0"
         providerUrl="https//www.sangletech.com/basic-spm-course"
-        description="Phương pháp Lập kế hoạch đơn giản với phần mềm Notion được tạo ra bởi Sang Lê."
+        description="Phương pháp SPM (Simple Planning Method) - Cách Lên Kế Hoạch Đơn Giản được tạo ra bởi Sang Lê sau gần 10 năm nghiên cứu và phát triển. Phương pháp SPM được Sang kết hợp giữa cách thức lên kế hoạch truyền thống và công nghệ hiện đại với sự hỗ trợ đắc lực của phần mềm Notion."
       />
+      <NextSeo
+        openGraph={{
+          type: "website",
+          url: "https://www.sangletech.com/basic-spm-course",
+          title: "SPM Basic - Cách Lên Kế Hoạch Đơn Giản với Notion",
+          description: "Phương pháp SPM (Simple Planning Method) - Cách Lên Kế Hoạch Đơn Giản được tạo ra bởi Sang Lê sau gần 10 năm nghiên cứu và phát triển. Phương pháp SPM được Sang kết hợp giữa cách thức lên kế hoạch truyền thống và công nghệ hiện đại với sự hỗ trợ đắc lực của phần mềm Notion.",
+          images: [
+            {
+              url: "https://sangletech.com/assets/thumbnail-why-planning",
+              width: 800,
+              height: 600,
+              alt: "Og Image Alt",
+            },
+          ],
+        }}
+      /> 
       <Hero {...hero} />
       <AlternativeSideBySideWithVideoOrImg {...textOne} {...textTwo} />
       <ThreeColumnsFeatureList {...courseDescript} />
