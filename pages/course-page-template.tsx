@@ -1,4 +1,6 @@
 import React from "react";
+import * as Icon from "@heroicons/react/outline";
+
 import Hero from "../components/course/hero";
 import CallToAction from "../components/course/call-to-action-bar";
 
@@ -21,11 +23,19 @@ import Countdown from "../components/course/countdown";
 import BuyerToastify from "../components/course/buyer-toastify";
 
 import PurchaseNow from "../components/button";
+import Layout from "../components/layout";
 
 const hero = {
   headline: "",
   shockingStatement: "",
 };
+
+const callToAction = {
+  courseLength: "",
+  dateStart: "",
+};
+
+const countDownMins = 10; // mins
 
 const problem = {
   defineTheProblem: "",
@@ -33,8 +43,43 @@ const problem = {
 };
 
 const solution = {
-  headline: "",
-  description: "",
+  general: {
+    caption: "Cách Giải Quyết",
+    title: "",
+    description: ``,
+  },
+  details: [
+    {
+      name: "Title 1",
+      description: "Description 1",
+      icon: Icon.FilterIcon,
+    },
+    {
+      name: "Title 2",
+      description: "Description 2",
+      icon: Icon.LightBulbIcon,
+    },
+    {
+      name: "Title 3",
+      description: "Description 3",
+      icon: Icon.EyeIcon,
+    },
+    {
+      name: "Title 4",
+      description: "Description 4",
+      icon: Icon.EmojiHappyIcon,
+    },
+    {
+      name: "Title 5",
+      description: "Description 5",
+      icon: Icon.PresentationChartBarIcon,
+    },
+    {
+      name: "Title 6",
+      description: "Title 6",
+      icon: Icon.SparklesIcon,
+    },
+  ],
 };
 
 const faqs = {
@@ -59,14 +104,35 @@ const faqs = {
   ],
 };
 
+const fact = {
+  leftCaption: "THỰC TẾ",
+  leftTitle: "Bạn Có Biết?",
+  leftDescription: ``,
+  leftImgSrc: "",
+  leftAlt: "",
+};
+
+const problems = {
+  rightCaption: "VẤN ĐỀ",
+  rightTitle: "",
+  rightDescription: ``,
+  rightImgSrc: "",
+  rightAlt: "",
+};
+
 function CoursePageTemplate() {
   return (
-    <div>
+    <Layout>
       <Hero />
       <CallToAction />
-      <Countdown />
-      <Problem />
-      <Solution />
+      <Countdown expiryTimestamp={countDownMins} />
+      <Problem {...fact} {...problems} />
+      <Solution
+        caption={solution.general.caption}
+        title={solution.general.title}
+        description={solution.general.description}
+        features={solution.details}
+      />
       <MeetYourCoach />
       <PurchaseNow />
       <Requirement />
@@ -93,7 +159,7 @@ function CoursePageTemplate() {
       <Pricing />
       <FreeLesson />
       <BuyerToastify />
-    </div>
+    </Layout>
   );
 }
 
