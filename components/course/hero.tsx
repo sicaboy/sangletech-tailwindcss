@@ -34,7 +34,7 @@ interface Props {
 }
 
 export default function Hero(props: Props) {
-  const description = props.description
+  const shockingStatement = props.description
     ? `<div class="note">
 
 ${props.description}
@@ -105,16 +105,13 @@ ${props.description}
 
                 <span className="mt-1 text-4xl font-extrabold tracking-tight sm:text-5xl xl:text-6xl">
                   <span className="text-indigo-600">
-                    {props.titleHighlight || "online business"}
-                  </span>
-                  <span className="text-gray-900 ">
-                    {props.titleNormal || "Data to enrich your"}
+                    {props.headline || "online business"}
                   </span>
                 </span>
               </h1>
 
               <ReactMarkdown
-                children={description}
+                children={shockingStatement}
                 rehypePlugins={[rehypeRaw]}
                 remarkPlugins={[remarkGfm]}
                 className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl"

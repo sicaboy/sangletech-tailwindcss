@@ -26,20 +26,38 @@ import PurchaseNow from "../components/button";
 import Layout from "../components/layout";
 
 const hero = {
-  headline: "",
-  shockingStatement: "",
+  caption: "Khoá Học: SPM - Simple Planning Method",
+  headline: "Cách Lên Kế Hoạch Đơn Giản",
+  shockingStatment: `**CẤP ĐỘ: CƠ BẢN**<br></br>Phương pháp SPM (Simple Planning Method) - Cách Lên Kế Hoạch Đơn Giản được tạo ra bởi Sang Lê sau gần 10 năm nghiên cứu và phát triển.`,
+  imgSrc: "/assets/thumbnail-why-planning.jpg",
+  videoSrc: "posts/video-why-planning",
+  videoCaption: `Tại Sao Bạn Cần Lập Kế Hoạch?`,
+  alt: "Hinh anh Sang Le Tech - Video Tai sao ban can lap ke hoach SPM",
 };
 
 const callToAction = {
   courseLength: "",
   dateStart: "",
+  buttonName: "",
 };
 
 const countDownMins = 10; // mins
 
 const problem = {
-  defineTheProblem: "",
-  agitate: "",
+  defineTheProblem: {
+    leftCaption: "THỰC TẾ",
+    leftTitle: "Bạn Có Biết?",
+    leftDescription: ``,
+    leftImgSrc: "",
+    leftAlt: "",
+  },
+  agitate: {
+    rightCaption: "VẤN ĐỀ",
+    rightTitle: "",
+    rightDescription: ``,
+    rightImgSrc: "",
+    rightAlt: "",
+  },
 };
 
 const solution = {
@@ -104,35 +122,20 @@ const faqs = {
   ],
 };
 
-const fact = {
-  leftCaption: "THỰC TẾ",
-  leftTitle: "Bạn Có Biết?",
-  leftDescription: ``,
-  leftImgSrc: "",
-  leftAlt: "",
-};
-
-const problems = {
-  rightCaption: "VẤN ĐỀ",
-  rightTitle: "",
-  rightDescription: ``,
-  rightImgSrc: "",
-  rightAlt: "",
-};
-
 function CoursePageTemplate() {
   return (
     <Layout>
       <Hero />
-      <CallToAction />
+      <CallToAction {...callToAction} />
       <Countdown expiryTimestamp={countDownMins} />
-      <Problem {...fact} {...problems} />
+      <Problem {...problem.defineTheProblem} {...problem.agitate} />
       <Solution
         caption={solution.general.caption}
         title={solution.general.title}
         description={solution.general.description}
         features={solution.details}
       />
+      {/* I am here */}
       <MeetYourCoach />
       <PurchaseNow />
       <Requirement />
