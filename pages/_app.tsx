@@ -1,5 +1,7 @@
 import { AppProps } from "next/app";
 import "../styles/index.css";
+import "swiper/css/bundle";
+
 import SEO from "../next-seo.config";
 import { DefaultSeo } from "next-seo";
 

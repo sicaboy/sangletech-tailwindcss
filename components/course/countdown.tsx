@@ -17,7 +17,7 @@ export default function Countdown({ expiryTimestamp }) {
     } else {
       // Render a countdown
       return (
-        <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
+        <div className="grid grid-flow-col gap-5 auto-cols-max">
           {/* <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
                 <span className="font-mono text-5xl countdown">
                   <span></span>
@@ -48,7 +48,7 @@ export default function Countdown({ expiryTimestamp }) {
   };
 
   return (
-    <div className="mx-auto">
+    <div className="mx-auto text-center">
       <Timer
         autoStart={true}
         date={Date.now() + convertMinsToMiliSeconds}

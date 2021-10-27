@@ -13,3 +13,10 @@
 /* Stop purging. */
 
 /* Your own custom utilities */
+.swiper {
+  @apply w-[320px] h-[240px] sm:w-[640px] sm:h-[480px];
+}
+
+.swiper-slide {
+  @apply flex items-center justify-center text-2xl font-bold text-white rounded-3xl;
+}

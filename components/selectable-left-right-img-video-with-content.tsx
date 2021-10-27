@@ -1,51 +1,14 @@
-import React from "react";
-import Component from "../selectable-left-right-img-video-with-content";
-import { CheckCircleIcon } from "@heroicons/react/solid";
 import ReactMarkdown from "react-markdown";
 
 import rehypeRaw from "rehype-raw";
 import remarkGfm from "remark-gfm";
 import Link from "next/link";
 
-function ProXOFeatures({ main, features }) {
-  return (
-    <div>
-      <Main main={main} features={features} />
-    </div>
-  );
-}
-
-function FeatureList({ features }) {
-  return (
-    <div>
-      <ul
-        role="list"
-        className="mt-8 space-y-5 md:grid-cols-2 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:gap-y-5 "
-      >
-        {features.map((feature) => (
-          <li
-            key={feature}
-            className="flex items-start p-4 bg-gray-100 rounded-lg shadow-md lg:col-span-1"
-          >
-            <div className="flex-shrink-0">
-              <CheckCircleIcon
-                className="w-5 h-5 text-green-400"
-                aria-hidden="true"
-              />
-            </div>
-            <p className="ml-3 text-sm text-gray-700">{feature}</p>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-}
-
-function Main({ main, features }) {
-  const description = main.description
+function Example(props) {
+  const description = props.description
     ? `<div class="note">
 
-${main.description}
+${props.description}
 
 </div>`
     : `<div class="note">
@@ -57,7 +20,7 @@ ${main.description}
   return (
     <div className="py-16 overflow-hidden bg-gray-50 lg:py-24">
       <div className="relative max-w-xl px-4 mx-auto sm:px-6 lg:px-8 lg:max-w-7xl">
-        {main.direction === "left" && (
+        {props.direction === "left" && (
           <div>
             <svg
               className="absolute hidden transform -translate-x-1/2 lg:block left-full -translate-y-1/4"
@@ -95,10 +58,10 @@ ${main.description}
             <div className="relative mt-12 lg:mt-8 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
               <div className="relative">
                 <button className="block px-3 py-1 mb-3 text-sm font-semibold tracking-wide text-white uppercase bg-indigo-600 rounded-full cursor-text sm:text-base lg:text-sm xl:text-base">
-                  {main.caption || "Coming soon"}
+                  {props.caption || "Coming soon"}
                 </button>
                 <h2 className="text-3xl font-extrabold tracking-tight text-black sm:text-3xl">
-                  {main.title || "Transfer funds world-wide"}
+                  {props.title || "Transfer funds world-wide"}
                 </h2>
                 <ReactMarkdown
                   children={description}
@@ -141,21 +104,21 @@ ${main.description}
                   />
                 </svg>
                 <div className="relative w-full mx-auto rounded-lg shadow-lg lg:max-w-md ring ring-offset-4 ring-indigo-400">
-                  <Link href={main.videoSrc || "#"}>
+                  <Link href={props.videoSrc || "#"}>
                     <button
                       type="button"
                       className="relative block w-full overflow-hidden bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                     >
-                      <span className="">{main.videoCaption}</span>
+                      <span className="">{props.videoCaption}</span>
                       <img
                         className="w-full"
                         src={
-                          main.leftImgSrc ||
+                          props.imgSrc ||
                           "https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
                         }
-                        alt={main.alt || "sang le tech"}
+                        alt={props.alt || "sang le tech"}
                       />
-                      {main.videoSrc && (
+                      {props.videoSrc && (
                         <div
                           className="absolute inset-0 flex items-center justify-center w-full h-full"
                           aria-hidden="true"
@@ -183,7 +146,7 @@ ${main.description}
             </div>
           </div>
         )}
-        {main.direction === "right" && (
+        {props.direction === "right" && (
           <div>
             {" "}
             <svg
@@ -223,10 +186,10 @@ ${main.description}
               <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
                 <div className="lg:col-start-2">
                   <button className="block px-3 py-1 mb-3 text-sm font-semibold tracking-wide text-white uppercase bg-indigo-600 rounded-full cursor-text sm:text-base lg:text-sm xl:text-base">
-                    {main.caption || "Coming soon"}
+                    {props.caption || "Coming soon"}
                   </button>
                   <h2 className="text-3xl font-extrabold tracking-tight text-black sm:text-3xl">
-                    {main.title || "Always in the loop"}
+                    {props.title || "Always in the loop"}
                   </h2>
 
                   <ReactMarkdown
@@ -272,21 +235,21 @@ ${main.description}
                     />
                   </svg>
                   <div className="relative w-full mx-auto rounded-lg shadow-lg lg:max-w-md ring ring-offset-4 ring-indigo-400">
-                    <Link href={main.videoSrc || "#"}>
+                    <Link href={props.videoSrc || "#"}>
                       <button
                         type="button"
                         className="relative block w-full bg-white rounded-lg overflow-hiddn focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                       >
-                        <span className="">{main.videoCaption}</span>
+                        <span className="">{props.videoCaption}</span>
                         <img
                           className="w-full"
                           src={
-                            main.rightImgSrc ||
+                            props.imgSrc ||
                             "https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
                           }
-                          alt={main.alt || "sang le tech"}
+                          alt={props.alt || "sang le tech"}
                         />
-                        {main.videoSrc && (
+                        {props.videoSrc && (
                           <div
                             className="absolute inset-0 flex items-center justify-center w-full h-full"
                             aria-hidden="true"
@@ -315,10 +278,9 @@ ${main.description}
             </div>
           </div>
         )}
-        <FeatureList features={features} />
       </div>
     </div>
   );
 }
 
-export default ProXOFeatures;
+export default Example;

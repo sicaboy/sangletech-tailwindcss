@@ -4,9 +4,12 @@ import Footer from "./footer";
 
 function Layout({ children }) {
   return (
-    <div className="mx-3 overflow-hidden bg-white">
+    <div>
       <Header />
-      {children}
+      <div className="mx-auto overflow-hidden bg-white lg:max-w-6xl">
+        {children}
+      </div>
+
       <Footer />
     </div>
   );

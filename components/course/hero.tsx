@@ -20,20 +20,20 @@ import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
 import Link from "next/link";
 
-interface Props {
-  caption?: string;
-  titleNormal?: string;
-  titleHighlight?: string;
-  description?: string;
-  buttonNormal?: string;
-  buttonHighlight?: string;
-  imgSrc?: string;
-  videoSrc?: string;
-  videoCaption?: string;
-  alt?: string;
-}
+// interface Props {
+//   caption?: string;
+//   titleNormal?: string;
+//   titleHighlight?: string;
+//   description?: string;
+//   buttonNormal?: string;
+//   buttonHighlight?: string;
+//   imgSrc?: string;
+//   videoSrc?: string;
+//   videoCaption?: string;
+//   alt?: string;
+// }
 
-export default function Hero(props: Props) {
+export default function Hero(props) {
   const shockingStatement = props.description
     ? `<div class="note">
 
@@ -174,25 +174,27 @@ ${props.description}
                       }
                       alt={props.alt || "sangletech"}
                     />
-                    <div
-                      className="absolute inset-0 flex items-center justify-center w-full h-full"
-                      aria-hidden="true"
-                    >
-                      <svg
-                        className="w-20 h-20 text-indigo-500"
-                        fill="currentColor"
-                        viewBox="0 0 84 84"
+                    {props.videoSrc && (
+                      <div
+                        className="absolute inset-0 flex items-center justify-center w-full h-full"
+                        aria-hidden="true"
                       >
-                        <circle
-                          opacity="0.9"
-                          cx={42}
-                          cy={42}
-                          r={42}
-                          fill="white"
-                        />
-                        <path d="M55.5039 40.3359L37.1094 28.0729C35.7803 27.1869 34 28.1396 34 29.737V54.263C34 55.8604 35.7803 56.8131 37.1094 55.9271L55.5038 43.6641C56.6913 42.8725 56.6913 41.1275 55.5039 40.3359Z" />
-                      </svg>
-                    </div>
+                        <svg
+                          className="w-20 h-20 text-indigo-500"
+                          fill="currentColor"
+                          viewBox="0 0 84 84"
+                        >
+                          <circle
+                            opacity="0.9"
+                            cx={42}
+                            cy={42}
+                            r={42}
+                            fill="white"
+                          />
+                          <path d="M55.5039 40.3359L37.1094 28.0729C35.7803 27.1869 34 28.1396 34 29.737V54.263C34 55.8604 35.7803 56.8131 37.1094 55.9271L55.5038 43.6641C56.6913 42.8725 56.6913 41.1275 55.5039 40.3359Z" />
+                        </svg>
+                      </div>
+                    )}
                   </button>
                 </Link>
               </div>
