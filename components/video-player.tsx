@@ -13,9 +13,9 @@ export default function VideoPlayer(props: Props) {
         // src={`https://player.vimeo.com/video/${vimeoId}`}
         width="640"
         height="360"
-        frameborder="0"
+        // frameborder="0"
         allow="autoplay; fullscreen; picture-in-picture"
-        allowfullscreen
+        // allowfullscreen
       ></iframe>
       <iframe
         className="inset-0 block py-1 mx-auto my-6 sm:hidden"
@@ -23,9 +23,9 @@ export default function VideoPlayer(props: Props) {
         // src={`https://player.vimeo.com/video/${vimeoId}`}
         width="320"
         height="180"
-        frameborder="0"
+        // frameborder="0"
         allow="autoplay; fullscreen; picture-in-picture"
-        allowfullscreen
+        // allowfullscreen
       ></iframe>
     </div>
   );
