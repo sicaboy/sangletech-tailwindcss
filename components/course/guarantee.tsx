@@ -93,7 +93,7 @@ function Guarantee({ guarantee }) {
               <div className="absolute bottom-0 right-0 w-1 h-full duration-300 origin-top transform scale-y-0 bg-indigo-800 group-hover:scale-y-100" />
               <div className="relative p-5 bg-white rounded-s ">
                 <div className="flex flex-col mb-2 lg:items-center lg:flex-row">
-                  <div className="flex items-center justify-center w-10 h-10 mb-4 mr-2 rounded-full bg-indigo-50 lg:mb-0">
+                  <div className="flex items-center justify-center w-10 h-10 mb-4 mr-2 text-indigo-600 rounded-full bg-indigo-50 lg:mb-0">
                     <svg
                       className="w-8 h-8 text-deep-purple-accent-400"
                       stroke="currentColor"
@@ -108,7 +108,7 @@ function Guarantee({ guarantee }) {
                       />
                     </svg>
                   </div>
-                  <h6 className="text-xl font-semibold leading-5 capitalize">
+                  <h6 className="text-xl font-semibold leading-5 text-black capitalize">
                     {item.title || "The quick, brown fox"}
                   </h6>
                 </div>

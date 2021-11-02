@@ -471,23 +471,22 @@ const freeLession = {
   buttonSrc: "",
 };
 
-const toasts = ["Sang Le", "Carmen Wong", "Yunnie"];
+const toasts = ["Sang Le", "Carmen Wong", "Yunnie Nguyen"];
 
 function CoursePageTemplate() {
   React.useEffect(() => {
-    //Fire recent purchased toasts
     showAlternativeToast(toasts);
   }, []);
+
+  const Divider = () => <div className="my-16" />;
 
   return (
     <Layout>
       <Hero {...hero} />
       <Countdown expiryTimestamp={countDownMins} />
       <CallToAction {...callToAction} />
-      <Problem
-        defineTheProblem={problem.defineTheProblem}
-        agitate={problem.agitate}
-      />
+
+      <Problem {...problem.defineTheProblem} {...problem.agitate} />
       <Solution
         caption={solution.general.caption}
         title={solution.general.title}
@@ -511,7 +510,9 @@ function CoursePageTemplate() {
       <Requirement {...requirement} />
 
       <Curriculum general={curriculum.general} details={curriculum.details} />
+      <Divider />
       <Bonus bonuses={bonuses} />
+      <Divider />
       <ButtonPurchaseNow />
 
       {/* <Testimonial /> */}

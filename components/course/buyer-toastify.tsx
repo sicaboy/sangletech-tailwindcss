@@ -24,13 +24,13 @@ function BuyerToastify() {
 
 //Config the UI of the Toast here
 export const showAlternativeToast = (toasts) => {
-  setInterval(() => {
-    toasts.map((i) =>
+  toasts.map((i) =>
+    setInterval(() => {
       toast.success(`${i} thanh toán thành công`, {
         className: "w-1/2 text-xs mt-3 rounded-lg sm:w-full sm:text-sm",
-      })
-    );
-  }, 30000);
+      });
+    }, 15000)
+  );
 };
 
 export default BuyerToastify;

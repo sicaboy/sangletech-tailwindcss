@@ -18,7 +18,7 @@ ${props.description}
 </div>`;
 
   return (
-    <div className="py-6 overflow-hidden">
+    <div className="overflow-hidden bg-gray-50">
       <div className="relative max-w-xl px-4 mx-auto sm:px-6 lg:px-8 lg:max-w-7xl">
         {props.direction === "left" && (
           <div>

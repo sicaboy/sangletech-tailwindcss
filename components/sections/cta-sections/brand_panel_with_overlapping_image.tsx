@@ -43,7 +43,7 @@ ${props.description}
 </div>`;
 
   return (
-    <div className="relative py-16 bg-white">
+    <div className="relative py-16 m-3 bg-white ">
       <div
         className="absolute inset-x-0 top-0 hidden h-1/2 bg-gray-50 lg:block"
         aria-hidden="true"
