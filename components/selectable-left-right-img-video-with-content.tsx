@@ -70,7 +70,10 @@ ${props.description}
                   className="mt-3 text-lg text-gray-500"
                 />
               </div>
-              <div className="relative mt-10 -mx-4 lg:mt-0" aria-hidden="true">
+              <div
+                className="relative mt-12 sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center"
+                aria-hidden="true"
+              >
                 <svg
                   className="absolute transform -translate-x-1/2 translate-y-16 left-1/2 lg:hidden"
                   width={784}
@@ -200,7 +203,7 @@ ${props.description}
                   />
                 </div>
 
-                <div className="relative mt-10 -mx-4 lg:mt-0 lg:col-start-1">
+                <div className="relative mt-12 sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
                   <svg
                     className="absolute transform -translate-x-1/2 translate-y-16 left-1/2 lg:hidden"
                     width={784}

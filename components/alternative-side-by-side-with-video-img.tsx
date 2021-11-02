@@ -100,7 +100,7 @@ ${props.leftDescription}
             />
           </div>
 
-          <div className="relative mt-10 -mx-4 lg:mt-0" aria-hidden="true">
+          <div className="relative mt-12 sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
             <svg
               className="absolute transform -translate-x-1/2 translate-y-16 left-1/2 lg:hidden"
               width={784}
@@ -227,7 +227,7 @@ ${props.leftDescription}
               />
             </div>
 
-            <div className="relative mt-10 -mx-4 lg:mt-0 lg:col-start-1">
+            <div className="relative mt-12 sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
               <svg
                 className="absolute transform -translate-x-1/2 translate-y-16 left-1/2 lg:hidden"
                 width={784}
@@ -265,7 +265,7 @@ ${props.leftDescription}
                 <Link href={props.rightVideoSrc || "#"}>
                   <button
                     type="button"
-                    className="relative block w-full bg-white rounded-lg overflow-hiddn focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                    className="relative block w-full overflow-hidden bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                   >
                     <span className="">{props.rightVideoCaption}</span>
                     <img

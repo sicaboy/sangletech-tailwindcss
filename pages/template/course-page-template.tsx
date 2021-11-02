@@ -20,10 +20,19 @@ import Pricing from "../../components/course/pricing";
 import FAQ from "../../components/course/faq";
 import FreeLesson from "../../components/course/free-lesson";
 import Countdown from "../../components/course/countdown";
-import BuyerToastify from "../../components/course/buyer-toastify";
+import BuyerToastify, {
+  showAlternativeToast,
+} from "../../components/course/buyer-toastify";
 import ButtonPurchaseNow from "../../components/button";
 import Layout from "../../components/layout";
 import IsThisCourseForYou from "../../components/course/is-this-course-for-you";
+
+import { ToastContainer, toast } from "react-toastify";
+
+import "react-toastify/dist/ReactToastify.css";
+import { setInterval } from "timers";
+// minified version is also included
+// import 'react-toastify/dist/ReactToastify.min.css';
 
 const hero = {
   caption: "",
@@ -463,7 +472,14 @@ const freeLession = {
   buttonSrc: "",
 };
 
+const toasts = ["Sang Le", "Carmen Wong", "Yunnie"];
+
 function CoursePageTemplate() {
+  React.useEffect(() => {
+    //Fire recent purchased toasts
+    showAlternativeToast(toasts);
+  }, []);
+
   return (
     <Layout>
       <Hero {...hero} />
@@ -517,6 +533,16 @@ function CoursePageTemplate() {
       {/* <Pricing /> */}
       <FreeLesson {...freeLession} />
       <BuyerToastify />
+
+      {/* <ToastContainer
+        limit={1}
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={true}
+        closeOnClick={true}
+        pauseOnHover={true}
+        draggable={true}
+      /> */}
     </Layout>
   );
 }

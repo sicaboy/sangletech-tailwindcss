@@ -6,14 +6,14 @@ import Link from "next/link";
 
 function Bonus({ bonuses }) {
   return (
-    <div className="my-32">
+    <div className="m-6 sm:my-32">
       <h2 className="mb-16 text-3xl font-extrabold text-center text-gray-900 sm:text-4xl">
         {bonuses.title || "Bonus Included When You Join Today"}
       </h2>
       <div className="flex flex-col">
         {bonuses.list.map((bonus) => (
           <div
-            className="container p-16 mx-auto my-3 border border-gray-200 rounded-lg shadow-lg"
+            className="container p-6 mx-auto my-3 border border-gray-200 rounded-lg shadow-lg sm:p-16"
             id={bonus.title}
           >
             <div className="relative lg:grid lg:grid-cols-3 lg:gap-8 lg:items-center">
@@ -32,7 +32,7 @@ function Bonus({ bonuses }) {
                 />
               </div>
               <div
-                className="relative col-span-1 mt-10 -mx-4 lg:mt-0"
+                className="relative mt-12 sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center"
                 aria-hidden="true"
               >
                 <div className="relative w-full mx-auto rounded-lg shadow-lg lg:max-w-md ring ring-offset-4 ring-indigo-400">

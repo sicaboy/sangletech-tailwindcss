@@ -32,7 +32,7 @@ function Guarantee({ guarantee }) {
   //   };
 
   return (
-    <div className="my-16">
+    <div className="my-16 ">
       {/* Start Avatar Section   */}
       <div className="pt-8 m-3 bg-white sm:pt-16 ">
         <div className="pb-16 bg-indigo-600 rounded-lg lg:pb-0 lg:z-10 lg:relative">
@@ -86,7 +86,7 @@ function Guarantee({ guarantee }) {
       <div className="px-3 py-3 mx-auto sm:py-16 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
         <div className="grid gap-8 row-gap-5 lg:grid-cols-3">
           {guarantee.listItems.map((item) => (
-            <div className="relative p-px overflow-hidden transition duration-300 transform border border-indigo-500 rounded shadow-sm hover:scale-105 group hover:shadow-xl">
+            <div className="relative p-px overflow-hidden transition duration-300 transform border border-indigo-500 rounded-lg shadow-sm hover:scale-105 group hover:shadow-xl">
               <div className="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-indigo-800 group-hover:scale-x-100" />
               <div className="absolute bottom-0 left-0 w-1 h-full duration-300 origin-bottom transform scale-y-0 bg-indigo-800 group-hover:scale-y-100" />
               <div className="absolute top-0 left-0 w-full h-1 duration-300 origin-right transform scale-x-0 bg-indigo-800 group-hover:scale-x-100" />
