@@ -30,7 +30,7 @@ export const showAlternativeToast = (toasts) => {
         className: "w-1/2 text-xs mt-3 rounded-lg sm:w-full sm:text-sm",
       })
     );
-  }, 10000);
+  }, 30000);
 };
 
 export default BuyerToastify;

@@ -8,6 +8,7 @@ import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/
 import * as Icon from "@heroicons/react/outline";
 import { SoftwareAppJsonLd } from "next-seo";
 import { NextSeo } from "next-seo";
+import Component from "../components/selectable-left-right-img-video-with-content";
 
 const hero = {
   titleHighlight: "PRO X.0",
@@ -196,6 +197,7 @@ function ProX0() {
         }}
       /> */}
       <HeroWithAngelImageOnRight {...hero} />
+      <Component />
       <div id="learn-more" />
       <AlternativeSideBySideWithVideoOrImg {...textOne} {...textTwo} />
       <ThreeColumnCards {...coursesOne} id="courses" />

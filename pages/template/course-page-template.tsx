@@ -27,13 +27,6 @@ import ButtonPurchaseNow from "../../components/button";
 import Layout from "../../components/layout";
 import IsThisCourseForYou from "../../components/course/is-this-course-for-you";
 
-import { ToastContainer, toast } from "react-toastify";
-
-import "react-toastify/dist/ReactToastify.css";
-import { setInterval } from "timers";
-// minified version is also included
-// import 'react-toastify/dist/ReactToastify.min.css';
-
 const hero = {
   caption: "",
   headline: "",
@@ -54,18 +47,24 @@ const countDownMins = 10; // mins
 
 const problem = {
   defineTheProblem: {
-    leftCaption: "THỰC TẾ",
-    leftTitle: "Bạn Có Biết?",
-    leftDescription: ``,
-    leftImgSrc: "",
-    leftAlt: "",
+    direction: "left", // left or right
+    caption: "THỰC TẾ",
+    title: "Bạn Có Biết?",
+    description: ``,
+    imgSrc: "",
+    videoSrc: "",
+    videoCaption: "",
+    alt: "",
   },
   agitate: {
-    rightCaption: "VẤN ĐỀ",
-    rightTitle: "",
-    rightDescription: ``,
-    rightImgSrc: "",
-    rightAlt: "",
+    direction: "right", // left or right
+    caption: "VẤN ĐỀ",
+    title: "Bạn Có Biết?",
+    description: ``,
+    imgSrc: "",
+    videoSrc: "",
+    videoCaption: "",
+    alt: "",
   },
 };
 
@@ -483,9 +482,12 @@ function CoursePageTemplate() {
   return (
     <Layout>
       <Hero {...hero} />
-      <CallToAction {...callToAction} />
       <Countdown expiryTimestamp={countDownMins} />
-      <Problem {...problem.defineTheProblem} {...problem.agitate} />
+      <CallToAction {...callToAction} />
+      <Problem
+        defineTheProblem={problem.defineTheProblem}
+        agitate={problem.agitate}
+      />
       <Solution
         caption={solution.general.caption}
         title={solution.general.title}

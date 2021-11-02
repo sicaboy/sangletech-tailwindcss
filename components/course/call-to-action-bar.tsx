@@ -4,7 +4,7 @@ import React from "react";
 function CallToAction(props) {
   return (
     <div className="py-6 bg-white sm:py-8 lg:py-12">
-      <div className="px-4 mx-auto max-w-screen-2xl md:px-8">
+      <div className="px-4 mx-auto sm:px-0 max-w-screen-2xl ">
         <div className="flex flex-col items-center justify-between gap-4 p-4 bg-gray-100 rounded-lg sm:flex-row md:p-8">
           <div>
             <h2 className="text-xl font-bold text-indigo-500 md:text-2xl">

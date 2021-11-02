@@ -18,7 +18,7 @@ ${props.description}
 </div>`;
 
   return (
-    <div className="py-16 overflow-hidden bg-gray-50 lg:py-24">
+    <div className="py-6 overflow-hidden">
       <div className="relative max-w-xl px-4 mx-auto sm:px-6 lg:px-8 lg:max-w-7xl">
         {props.direction === "left" && (
           <div>
@@ -70,10 +70,7 @@ ${props.description}
                   className="mt-3 text-lg text-gray-500"
                 />
               </div>
-              <div
-                className="relative mt-12 sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center"
-                aria-hidden="true"
-              >
+              <div className="relative mt-10 -mx-4 lg:mt-0" aria-hidden="true">
                 <svg
                   className="absolute transform -translate-x-1/2 translate-y-16 left-1/2 lg:hidden"
                   width={784}
@@ -203,7 +200,7 @@ ${props.description}
                   />
                 </div>
 
-                <div className="relative mt-12 sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
+                <div className="relative mt-10 -mx-4 lg:mt-0 lg:col-start-1">
                   <svg
                     className="absolute transform -translate-x-1/2 translate-y-16 left-1/2 lg:hidden"
                     width={784}
