@@ -19,7 +19,7 @@ export default function WhatWillYouLearn(props) {
 
   return (
     <div className="bg-white">
-      <div className="px-5 py-24 mx-auto ">
+      <div className="py-24 mx-auto sm:px-5 ">
         <div>
           <div className="flex flex-col flex-wrap items-center w-full mb-20 text-center">
             <h2 className="block px-3 py-1 mb-3 text-sm font-semibold tracking-wide text-white uppercase bg-indigo-600 rounded-full cursor-text sm:text-base lg:text-sm xl:text-base">

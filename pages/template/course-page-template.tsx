@@ -20,7 +20,9 @@ import Pricing from "../../components/course/pricing";
 import FAQ from "../../components/course/faq";
 import FreeLesson from "../../components/course/free-lesson";
 import Countdown from "../../components/course/countdown";
-import BuyerToastify from "../../components/course/buyer-toastify";
+import BuyerToastify, {
+  showAlternativeToast,
+} from "../../components/course/buyer-toastify";
 import ButtonPurchaseNow from "../../components/button";
 import Layout from "../../components/layout";
 import IsThisCourseForYou from "../../components/course/is-this-course-for-you";
@@ -463,12 +465,21 @@ const freeLession = {
   buttonSrc: "",
 };
 
+const toasts = ["Sang Le", "Carmen Wong", "Yunnie Nguyen"];
+
 function CoursePageTemplate() {
+  React.useEffect(() => {
+    showAlternativeToast(toasts);
+  }, []);
+
+  const Divider = () => <div className="my-16" />;
+
   return (
     <Layout>
       <Hero {...hero} />
-      <CallToAction {...callToAction} />
       <Countdown expiryTimestamp={countDownMins} />
+      <CallToAction {...callToAction} />
+
       <Problem {...problem.defineTheProblem} {...problem.agitate} />
       <Solution
         caption={solution.general.caption}
@@ -493,7 +504,9 @@ function CoursePageTemplate() {
       <Requirement {...requirement} />
 
       <Curriculum general={curriculum.general} details={curriculum.details} />
+      <Divider />
       <Bonus bonuses={bonuses} />
+      <Divider />
       <ButtonPurchaseNow />
 
       {/* <Testimonial /> */}

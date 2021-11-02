@@ -17,26 +17,26 @@ export default function Countdown({ expiryTimestamp }) {
     } else {
       // Render a countdown
       return (
-        <div className="grid grid-flow-col gap-5 auto-cols-max">
+        <div className="grid self-center justify-center grid-flow-col gap-5 mx-auto my-6 auto-cols-max align-center">
           {/* <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
                 <span className="font-mono text-5xl countdown">
                   <span></span>
                 </span>
                 days
               </div> */}
-          <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+          <div className="flex flex-col p-2 bg-pink-500 rounded-box text-neutral-content ">
             <span className="font-mono text-5xl countdown">
               {zeroPad(hours)}
             </span>
             hours
           </div>
-          <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+          <div className="flex flex-col p-2 bg-pink-500 rounded-box text-neutral-content">
             <span className="font-mono text-5xl countdown">
               {zeroPad(minutes)}
             </span>
             min
           </div>
-          <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+          <div className="flex flex-col p-2 bg-pink-500 rounded-box text-neutral-content">
             <span className="font-mono text-5xl countdown">
               {zeroPad(seconds)}
             </span>

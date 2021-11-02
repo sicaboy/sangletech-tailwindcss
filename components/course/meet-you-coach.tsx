@@ -56,7 +56,7 @@ Với cơ hội làm việc với những người thành đạt tại Việt Na
 
 const myAchivement = {
   general: {
-    caption: "Cách Giải Quyết",
+    caption: "Thành Tựu",
     title: "",
     description: `Descrition here`,
   },

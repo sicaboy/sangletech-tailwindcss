@@ -21,7 +21,7 @@ function Stories({ stories }) {
         <h2 className="block px-3 py-1 mb-3 text-sm font-semibold tracking-wide text-white uppercase bg-indigo-600 rounded-full cursor-text sm:text-base lg:text-sm xl:text-base">
           {stories.general.caption || "Everything you need"}
         </h2>
-        <p className="mt-2 text-3xl font-extrabold text-gray-900">
+        <p className="mx-3 mt-2 text-3xl font-extrabold text-gray-900">
           {stories.general.title || " All-in-one platform"}
         </p>
         {stories.general.description && (
