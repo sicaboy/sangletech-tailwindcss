@@ -3,41 +3,7 @@ import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import remarkGfm from "remark-gfm";
 
-const stories = {
-  general: {
-    caption: "Stories",
-    title: "Câu Chuyện Khách Hàng",
-    description: ``,
-  },
-  details: [
-    {
-      name: "Student 1",
-      title: "CEO",
-      quote:
-        "To get social media testimonials like these, keep your customers engaged with your social media accounts by posting regularly yourself",
-      img: "/assets/sangle-profilePic.jpg",
-      alt: "sang le tech",
-    },
-    {
-      name: "Student 1",
-      title: "CEO",
-      quote:
-        "To get social media testimonials like these, keep your customers engaged with your social media accounts by posting regularly yourself",
-      img: "/assets/sangle-profilePic.jpg",
-      alt: "sang le tech",
-    },
-    {
-      name: "Student 1",
-      title: "CEO",
-      quote:
-        "To get social media testimonials like these, keep your customers engaged with your social media accounts by posting regularly yourself",
-      img: "/assets/sangle-profilePic.jpg",
-      alt: "sang le tech",
-    },
-  ],
-};
-
-function Stories() {
+function Stories({ stories }) {
   const description = stories.general.description
     ? `<div className="note">
 

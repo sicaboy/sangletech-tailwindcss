@@ -242,16 +242,29 @@ function Gallery({ pricing }) {
 
 //SANG: Improve the payment info here
 function Payment({ pricing }) {
+  const logos = [
+    "https://play-lh.googleusercontent.com/F8cUV5oOLjCTMSvSRymK1154MwKalnvkepN4xGrfWBC_tcXvNTq_sEStiwCYV61lRdI",
+    "https://upload.wikimedia.org/wikipedia/vi/archive/f/fe/20201011055543%21MoMo_Logo.png",
+    "https://pay.vnpay.vn/images/logo.png",
+    "https://brandlogos.net/wp-content/uploads/2013/06/visa-card-vector-logo-400x400.png",
+    "https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png",
+  ];
+
   return (
-    <div className="w-full p-6 mx-auto">
-      <p>Payment Logos: visa, master, momo, zalopay, vietelpay</p>
-      <div className="flex justify-center w-1/2 align-center">
-        <div className="w-1/5">
-          <ShieldCheckIcon className="w-12 h-12 text-indigo-600 " />
-        </div>
-        <p className="w-4/5">
-          For your security, all orders are processed on a secured server.
-        </p>
+    <div className="w-full p-6 mx-auto sm:w-1/2">
+      <div className="flex justify-center flex-shrink">
+        {logos.map((item) => (
+          <img src={item} className="h-10 mx-1 sm:h-12" />
+        ))}
+      </div>
+      <div className="flex w-full mx-auto mt-3 sm:w-2/3 ">
+        <span className="self-center">
+          <ShieldCheckIcon className="h-10 mx-auto text-indigo-600 " />
+        </span>
+        <span className="self-center ml-2 text-sm">
+          Để an toàn cho bạn, tất cả các đơn đặt hàng đều được xử lý trên một
+          máy chủ bảo mật.
+        </span>
       </div>
     </div>
   );

@@ -21,7 +21,6 @@ import FAQ from "../../components/course/faq";
 import FreeLesson from "../../components/course/free-lesson";
 import Countdown from "../../components/course/countdown";
 import BuyerToastify from "../../components/course/buyer-toastify";
-
 import ButtonPurchaseNow from "../../components/button";
 import Layout from "../../components/layout";
 import IsThisCourseForYou from "../../components/course/is-this-course-for-you";
@@ -169,6 +168,39 @@ const requirement = {
   alt: "",
 };
 
+const bonuses = {
+  title: "",
+  list: [
+    {
+      caption: "Bonus #1",
+      title: "Semper curabitur ullamcorper ",
+      description:
+        "Semper curabitur ullamcorper posuere nunc sed. Ornare iaculisbibendum malesuada faucibus lacinia porttitor. Pulvinar laoreet sagittis viverra duis. In venenatis sem arcu pretium pharetra at. Lectus viverra dui tellus ornare pharetra.",
+
+      imgSrc: "",
+      alt: "",
+    },
+    {
+      caption: "Bonus #2",
+      title: "Semper curabitur ullamcorper ",
+      description:
+        "Semper curabitur ullamcorper posuere nunc sed. Ornare iaculisbibendum malesuada faucibus lacinia porttitor. Pulvinar laoreet sagittis viverra duis. In venenatis sem arcu pretium pharetra at. Lectus viverra dui tellus ornare pharetra.",
+
+      imgSrc: "",
+      alt: "",
+    },
+    {
+      caption: "Bonus #3",
+      title: "Semper curabitur ullamcorper ",
+      description:
+        "Semper curabitur ullamcorper posuere nunc sed. Ornare iaculisbibendum malesuada faucibus lacinia porttitor. Pulvinar laoreet sagittis viverra duis. In venenatis sem arcu pretium pharetra at. Lectus viverra dui tellus ornare pharetra.",
+
+      imgSrc: "",
+      alt: "",
+    },
+  ],
+};
+
 const curriculum = {
   general: {
     direction: "left", // left or right
@@ -303,6 +335,40 @@ const courseSummary = {
   ],
 };
 
+const stories = {
+  general: {
+    caption: "Stories",
+    title: "Câu Chuyện Khách Hàng",
+    description: ``,
+  },
+  details: [
+    {
+      name: "Student 1",
+      title: "CEO",
+      quote:
+        "To get social media testimonials like these, keep your customers engaged with your social media accounts by posting regularly yourself",
+      img: "/assets/sangle-profilePic.jpg",
+      alt: "sang le tech",
+    },
+    {
+      name: "Student 1",
+      title: "CEO",
+      quote:
+        "To get social media testimonials like these, keep your customers engaged with your social media accounts by posting regularly yourself",
+      img: "/assets/sangle-profilePic.jpg",
+      alt: "sang le tech",
+    },
+    {
+      name: "Student 1",
+      title: "CEO",
+      quote:
+        "To get social media testimonials like these, keep your customers engaged with your social media accounts by posting regularly yourself",
+      img: "/assets/sangle-profilePic.jpg",
+      alt: "sang le tech",
+    },
+  ],
+};
+
 const pricing = {
   header: {
     caption: "",
@@ -388,6 +454,15 @@ const faqs = {
   ],
 };
 
+const freeLession = {
+  title: "",
+  description: ``,
+  buttonName: "",
+  imgSrc: "",
+  alt: "",
+  buttonSrc: "",
+};
+
 function CoursePageTemplate() {
   return (
     <Layout>
@@ -406,7 +481,7 @@ function CoursePageTemplate() {
         features={proxoFeatures.features}
       />
       <MeetYourCoach />
-      <Stories />
+      <Stories stories={stories} />
       <ButtonPurchaseNow />
       <WhatWillYouLearn
         caption={whatWillYouLearn.general.caption}
@@ -418,7 +493,7 @@ function CoursePageTemplate() {
       <Requirement {...requirement} />
 
       <Curriculum general={curriculum.general} details={curriculum.details} />
-      <Bonus />
+      <Bonus bonuses={bonuses} />
       <ButtonPurchaseNow />
 
       {/* <Testimonial /> */}
@@ -430,7 +505,7 @@ function CoursePageTemplate() {
         heading={courseSummary.heading}
       />
       <Pricing pricing={pricing} />
-      <Stories />
+      <Stories stories={stories} />
       <FAQ
         faqs={faqs.details}
         title={faqs.general.title}
@@ -440,7 +515,7 @@ function CoursePageTemplate() {
         alt={faqs.general.alt}
       />
       {/* <Pricing /> */}
-      <FreeLesson />
+      <FreeLesson {...freeLession} />
       <BuyerToastify />
     </Layout>
   );
