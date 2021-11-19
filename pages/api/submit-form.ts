@@ -7,7 +7,7 @@ const hook = new Webhook(
 );
 
 // NOTION_API_KEY = secret_eXSRJe3C3J2CAgE4AjG25HzplCiXVIIxFwO2AsQVysM
-// NOTION_DATABASE_ID = 50b684e017fe44bc8ba769bd6143c6d7i
+// NOTION_DATABASE_ID = 50b684e017fe44bc8ba769bd6143c6d7
 const notion = new Client({
   auth: "secret_eXSRJe3C3J2CAgE4AjG25HzplCiXVIIxFwO2AsQVysM",
 });

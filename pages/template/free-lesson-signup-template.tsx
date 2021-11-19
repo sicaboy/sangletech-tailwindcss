@@ -13,6 +13,7 @@ import Link from "next/link";
 
 import { ChevronRightIcon } from "@heroicons/react/solid";
 function HeroWithSignUp(props) {
+
   const description = props.description
     ? `<div class="note">
 
@@ -24,7 +25,6 @@ ${props.description}
 "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure quilorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua."
 
 </div>`;
-
   return (
     <div>
       <div className="relative overflow-hidden bg-gray-800">
@@ -33,13 +33,12 @@ ${props.description}
           aria-hidden="true"
         >
           <svg
-            className="absolute bottom-0 right-0 mb-48 text-gray-700 transform translate-x-1/2 lg:top-0 lg:mt-28 lg:mb-0 xl:transform-none xl:translate-x-0"
+            className="absolute   bottom-0 right-0 mb-48 text-gray-700 transform translate-x-1/2 lg:top-0 lg:mt-28 lg:mb-0 xl:transform-none xl:translate-x-0"
             width={364}
             height={384}
             viewBox="0 0 364 384"
             fill="none"
-          >
-            <defs>
+          > <defs>
               <pattern
                 id="eab71dd9-9d7a-47bd-8044-256344ee00d0"
                 x={0}
@@ -58,7 +57,7 @@ ${props.description}
             />
           </svg>
         </div>
-        <div className="my-16 sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
+        <div className="my-16  sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
           <h1>
             <button className="block px-3 py-1 mx-auto my-8 mb-3 text-sm font-semibold tracking-wide text-white uppercase bg-indigo-600 rounded-full cursor-text sm:text-base lg:text-sm xl:text-base">
               {props.caption || "Coming soon"}
@@ -129,7 +128,7 @@ ${props.description}
                               href="#"
                               className="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50"
                             >
-                              <span className="sr-only">
+                              <span className="sr-only ">
                                 Sign in with Twitter
                               </span>
                               <svg
