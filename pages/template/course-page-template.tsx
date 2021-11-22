@@ -486,7 +486,7 @@ function CoursePageTemplate() {
       <Countdown expiryTimestamp={countDownMins} />
       <CallToAction {...callToAction} />
 
-      <Problem {...problem.defineTheProblem} {...problem.agitate} />
+      <Problem defineTheProblem={problem.defineTheProblem} agitate={problem.agitate} />
       <Solution
         caption={solution.general.caption}
         title={solution.general.title}
