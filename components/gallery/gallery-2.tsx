@@ -1,4 +1,7 @@
 import React from "react";
+import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
+import remarkGfm from "remark-gfm";
 
 function GalleryTwo(props) {
   const images = [
@@ -50,21 +53,40 @@ function GalleryTwo(props) {
     },
   ];
 
+  const description = props.description
+    ? `<div class="note">
+
+${props.description}
+
+</div>`
+    : `<div class="note">
+
+"Semper curabitur ullamcorper posuere nunc sed. Ornare iaculisbibendum malesuada faucibus lacinia porttitor. Pulvinar laoreet sagittis viverra duis. In venenatis sem arcu pretium pharetra at. Lectus viverra dui tellus ornare pharetra."
+
+</div>`;
+
   return (
     <div>
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-col w-full mb-20 text-center">
-            <h1 className="mb-4 text-2xl font-medium text-gray-900 sm:text-3xl title-font">
-              Master Cleanse Reliac Heirloom
+          <div className="flex flex-col w-3/4 mx-auto mb-20 text-center">
+            {props.caption && (
+              <button className="self-center block px-3 py-1 mb-3 text-sm font-semibold tracking-wide text-white uppercase bg-indigo-600 rounded-full cursor-text sm:text-base lg:text-sm xl:text-base">
+                {props.caption || "Coming soon"}
+              </button>
+            )}
+
+            <h1 className="mb-4 text-2xl font-medium text-gray-900 sm:text-4xl title-font">
+              {props.title || "Master Cleanse Reliac Heirloom"}
             </h1>
-            <p className="mx-auto text-base leading-relaxed lg:w-2/3">
-              Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-              gentrify, subway tile poke farm-to-table. Franzen you probably
-              haven't heard of them man bun deep jianbing selfies heirloom.
-            </p>
+            <ReactMarkdown
+              children={description}
+              rehypePlugins={[rehypeRaw]}
+              remarkPlugins={[remarkGfm]}
+              className="mt-3 text-lg text-gray-500"
+            />
           </div>
-          <div className="flex flex-wrap -m-4">
+          <div className="flex flex-wrap -m-4 shadow-lg">
             {images.map((item) => (
               <div className="p-4 lg:w-1/3 sm:w-1/2">
                 <div className="relative flex " key={item.id}>

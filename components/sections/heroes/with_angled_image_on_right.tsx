@@ -6,6 +6,8 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
+import Link from "next/link";
+import Smartie from "../../smartie";
 
 const navigation = [
   { name: "Product", href: "#" },
@@ -41,6 +43,24 @@ ${props.description}
 
   return (
     <div className="relative overflow-hidden bg-white ">
+      {/* <!-- notice - start --> */}
+      {/* <div className="flex items-center gap-2 p-2 text-gray-500 border rounded bg-gray-50 z-100">
+        <span className="bg-indigo-100 text-indigo-800 text-xs font-semibold leading-none rounded-full px-2 py-1 mt-0.5">
+          New
+        </span>
+
+        <span className="text-sm">
+          This is a section of some simple filler text.
+        </span>
+
+        <a
+          href="#"
+          className="text-sm font-bold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700"
+        >
+          More
+        </a>
+      </div> */}
+      {/* <!-- notice - end --> */}
       <div className="mx-auto max-w-7xl">
         <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
           <svg
@@ -54,6 +74,7 @@ ${props.description}
           </svg>
 
           <main className="px-4 mx-auto mt-10 max-w-7xl sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 ">
+            <Smartie />
             <div className="sm:text-center lg:text-left">
               <h1 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-5xl">
                 <span className="block xl:inline">
@@ -72,12 +93,11 @@ ${props.description}
 
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
-                  <a
-                    href={props.buttonHighlightSrc}
-                    className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
-                  >
-                    {props.buttonHighlight || "Get started"}
-                  </a>
+                  <Link href={props.buttonHighlightSrc}>
+                    <a className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
+                      {props.buttonHighlight || "Get started"}
+                    </a>
+                  </Link>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
                   <a
@@ -94,7 +114,7 @@ ${props.description}
       </div>
       <div className=" lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
         <img
-          className="object-cover w-full h-62 rounded-xl sm:h-72 md:h-96 lg:w-full lg:h-full"
+          className="object-cover w-full bg-no-repeat h-62 rounded-xl sm:h-72 md:h-96 lg:w-full lg:h-full"
           src={
             props.imgSrc ||
             "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"

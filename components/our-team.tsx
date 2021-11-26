@@ -91,9 +91,9 @@ ${props.description}
         remarkPlugins={[remarkGfm]}
         className="mb-32 text-xl font-normal text-center text-gray-500"
       />
-      <div className="flex flex-col flex-wrap items-center space-y-24 align-top md:space-y-0 md:flex-row justify-evenly ">
+      <div className="flex flex-wrap justify-center ">
         {members.map((item) => (
-          <div className="relative p-4 ">
+          <div className="relative p-4 my-12 sm:w-1/3 ">
             <div className="absolute mb-4 text-center transform translate-x-1/2 -top-16 right-1/2">
               <a href="#" className="relative block">
                 <img
@@ -106,7 +106,7 @@ ${props.description}
                 />
               </a>
             </div>
-            <div className="px-8 py-4 pt-24 bg-white rounded-lg shadow dark:bg-gray-800">
+            <div className="h-full px-8 py-4 pt-24 bg-white rounded-lg shadow dark:bg-gray-800">
               <div className="text-center">
                 <p className="text-2xl text-gray-800 dark:text-white">
                   {item.name || "Patrick Sebastien"}
@@ -122,7 +122,7 @@ ${props.description}
                   className="py-4 mx-auto font-light text-gray-500 text-md w-60 dark:text-gray-500"
                 />
               </div>
-              <div className="flex items-center justify-center w-40 pt-8 mx-auto text-gray-500 border-t border-gray-200">
+              <div className="flex items-center justify-center w-40 pt-8 mx-auto text-gray-500 border-t border-gray-200 ">
                 <a href="#">
                   <svg
                     width="30"

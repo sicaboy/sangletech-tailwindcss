@@ -2,22 +2,27 @@ import React from "react";
 import Hero from "../components/sections/heroes/with_sign_up_and_media_content";
 import Layout from "../components/layout";
 import AlternativeSideBySideWithVideoOrImg from "../components/alternative-side-by-side-with-video-img";
-import MyAchievement from "../components/sections/feature-sections/with_feature_list";
+import MyAchievement from "../components/sections/fe bookature-sections/with_feature_list";
 import ThreeColumnCards from "../components/sections/blog-sections/3_column_cards";
 import BrandPanelWithAppScreenShot from "../components/sections/cta-sections/brand_panel_with_app_screenshot";
 import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/brand_panel_with_overlapping_image";
 import * as Icon from "@heroicons/react/outline";
+import ThreeColumnsFeatureList from "../components/three-columns-feature-list";
+import FAQ from "../components/sections/faq-sections/centered_accordion";
+
+import { CourseJsonLd } from "next-seo";
+import { NextSeo } from "next-seo";
+import Bonus from "../components/course/bonus";
 
 const hero = {
   caption: "KHOÁ HỌC: RETARGETING",
   titleNormal: " LÀ GÌ?",
   titleHighlight: "QUẢNG CÁO RETARGETING",
   description: `**Retargeting hoạt động như thế nào?** <br></br>***- Hướng dẫn đầy đủ về Chiến lược Nhắm Lại Khách Hàng Mục Tiêu (Retargeting Ads)***`,
-  imgSrc:
-    "https://res.cloudinary.com/sang-le-tech/image/upload/v1632729923/Galatek.io%20Website/Sangletech.com/istockphoto-1218545883-170667a_amt1pc.jpg",
+  imgSrc: "/assets/thumbnail-retargeting-explainer.jpg",
   videoSrc: "/posts/video-retargeting-explainer",
   videoCaption: `Retargeting/Remarketing Là Gì?`,
-  alt: "Sang Le - Video Retargeting explainer",
+  alt: "Sang Le Tech - Video Retargeting La Gi",
 };
 
 const textOne = {
@@ -28,8 +33,8 @@ const textOne = {
   <br></br>**Retargeting** (hay còn được gọi là **Remarketing**) là bất kỳ chiến dịch quảng cáo kỹ thuật số nào **nhắm đến 95% những khách hàng đã rời khỏi trang web của bạn**.
   <br></br>**Retargeting** là cách hiệu quả nhất để đưa những người dùng đó trở lại (thông qua các chiến dịch quảng cáo retargeting trực tiếp của bạn), vào thời điểm chính xác mà họ sẵn sàng chuyển đổi thành khách mua hàng.`,
   leftImgSrc:
-    "https://res.cloudinary.com/sang-le-tech/image/upload/v1627541013/Galatek.io%20Website/Sangletech.com/pose_1_horvhy.png",
-  leftAlt: "Hinh anh minh hoa Ret 1",
+    "https://res.cloudinary.com/sang-le-tech/image/upload/v1625716438/Galatek.io%20Website/LNCG_M67_06_y4xksb.png",
+  leftAlt: "Hinh anh minh hoa Khoa hoc Retargeting 1 - Sang Le Tech",
 };
 
 const textTwo = {
@@ -38,8 +43,8 @@ const textTwo = {
   rightDescription: `**⟐ Đánh mất những khách hàng tiềm năng vĩnh viễn** (những người đã từng quan tâm đến sản phẩm/dịch vụ của bạn, nhưng vì nhiều lý do mà họ quên mất bạn và chưa đi đến quyết định mua hàng).
 <br></br>**⟐ Hao tốn "hàng đống" chi phí cho các hình thức quảng cáo khác, nhắm đến một lượng lớn những khách hàng còn chẳng quan tâm đến sản phẩm/dịch vụ bạn**. Trong khi đó, Retargeting chỉ đặt mục tiêu vào những đối tượng khách hàng có sự hứng thú với bạn.`,
   rightImgSrc:
-    "https://res.cloudinary.com/sang-le-tech/image/upload/v1627541075/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0001_shd3co.png",
-  rightAlt: "Hinh anh minh hoa Ret 2",
+    "https://res.cloudinary.com/sang-le-tech/image/upload/v1625711687/Galatek.io%20Website/LNCG_M67_09_mpadc6.png",
+  rightAlt: "Hinh anh minh hoa Khoa hoc Retargeting 2 - Sang Le Tech",
 };
 
 const courseDescript = {
@@ -93,8 +98,8 @@ const textThree = {
     <br></br>**✓**   Bạn phải có tinh thần sẵn sàng học hỏi những điều mới trong khoá học này và thực hành chúng trong các chiến dịch quảng cáo Retargeting của chính bạn xuyên suốt quá trình tham gia khóa học.
     <br></br>**✓**   Bạn phải sẵn sàng đặt câu hỏi nếu bạn không hiểu điều gì đó (các chiến lược Retagreting có thể rất phức tạp!).`,
   leftImgSrc:
-    "https://res.cloudinary.com/sang-le-tech/image/upload/v1627541659/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0001_kvoymz.png",
-  leftAlt: "Hinh anh minh hoa Ret 3",
+    "https://res.cloudinary.com/sang-le-tech/image/upload/v1625716265/Galatek.io%20Website/LNCG_M67_07_rfu9eq.png",
+  leftAlt: "Hinh anh minh hoa Khoa hoc Retargeting 3 - Sang Le Tech",
 };
 
 const textFour = {
@@ -110,16 +115,14 @@ const textFour = {
   <br></br> **THÌ ĐÂY LÀ KHOÁ HỌC DÀNH CHO BẠN!**
   <br></br>*‼️ Khóa học này KHÔNG dành cho bạn nếu bạn không nghiêm túc về lưu lượng khách hàng truy cập trang web của mình*.`,
   rightImgSrc:
-    "https://res.cloudinary.com/sang-le-tech/image/upload/v1627541145/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0002_pyykpi.png",
-  rightAlt: "Hinh anh minh hoa Ret 2",
+    "https://res.cloudinary.com/sang-le-tech/image/upload/v1625711864/Galatek.io%20Website/LNCG_M67_03_cjihdk.png",
+  rightAlt: "Hinh anh minh hoa Khoa hoc Retargeting 2 - Sang Le Tech",
 };
 
 const courseValue = {
   caption: "GIÁ TRỊ",
   title: "Bạn Sẽ Học Được Gì Từ Khoá Học Này?",
   description: `**⟐  Sang sẽ hướng dẫn bạn cách thực hiện một Chiến dịch **Retargeting** hiệu quả** để bạn có cơ hội thay đổi phần lớn khách truy cập của mình, những người chỉ đơn giản là chưa sẵn sàng mua hàng trong lần truy cập đầu tiên của họ.<br></br>**⟐  Sang sẽ giải thích chính xác cách hoạt động của **Retargeting** từ góc độ công nghệ và Sang sẽ cho bạn thấy công nghệ đã trưởng thành và phát triển như thế nào trong những năm qua**. Nói một cách đơn giản, retargeting được thực hiện thông qua việc lưu lại dữ liệu qua cookie trên trình duyệt của khách truy cập, điều này cho phép nền tảng retargeting của bạn theo dõi người dùng đó trên internet.`,
-
-  //TODO: Add in 4 columns (from listThirteenTitle)
 
   listOneTitle: false,
   listOneDescription: `Thiết lập, quản lý và tối ưu hóa các chiến dịch Retargeting chuyên nghiệp và hiệu quả.`,
@@ -182,9 +185,9 @@ const textPayment = {
   description: `Với mức giá thấp hơn nhiều so với một bữa tối cùng gia đình, bạn sẽ nhận được hơn 10 giờ video bài giảng, quyền truy cập vào diễn đàn thảo luận dành cho các Chiến binh X.0 của Sang và bạn có thể hỏi Sang bất kỳ câu hỏi nào trong xuyên suốt khóa học.
   <br></br>Hơn hết, bạn nhận được quyền truy cập trọn đời và 3 ngày đảm bảo hoàn tiền 100%!`,
   buttonName: "THAM GIA KHOÁ HỌC",
-  imgSrc:
-    "https://res.cloudinary.com/sang-le-tech/image/upload/v1627541339/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0001_qgzlmq.png",
-  alt: "Hinh anh minh hoa Ret 5",
+  buttonSrc: "/form",
+  imgSrc: "/assets/thumbnail-retargeting-explainer.jpg",
+  alt: "Hinh anh minh hoa Khoa hoc Retargeting 5 - Sang Le Tech",
   videoSrc: "/posts/video-retargeting-explainer",
 };
 
@@ -195,22 +198,69 @@ const textBookxo = {
     <br></br>⟐  Làm sao để **giải phóng tiềm năng của những người trẻ có đam mê**?
     <br></br>⟐  **Những ý tưởng và những chiến lược** mà Sang rút ra từ những doanh nhân tiếng tăm nhất trên thế giới?`,
   buttonName: "Tìm hiểu thêm về Sách",
+  buttonSrc: "/book-xo",
   imgSrc:
     "https://super-static-assets.s3.amazonaws.com/8090ac7d-2195-4ec8-96be-1457b54a8900/images/c2a88c54-5779-493d-83ec-1d2d5429021f.jpg?w=240&f=webp",
-  alt: "Hinh anh Book Cover",
+  alt: "Sang Le Tech - Anh bia sach Bi Mat Lam Giau X.0",
+};
+
+// YUNNIE: Here is the FAQ component. You can input the info here. If it's just an img, you can just leave video info blank
+const faqs = {
+  general: {
+    title: "Câu Hỏi Thường Gặp",
+    videoSrc: "",
+    videoCaption: "",
+    imgSrc: "",
+    alt: "",
+  },
+  details: [
+    {
+      question: "What's the best thing about Switzerland?",
+      answer:
+        "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    },
+    {
+      question: "What's the best thing about Switzerland?",
+      answer:
+        "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    },
+  ],
 };
 
 function RetargetingCourse() {
   return (
     <Layout>
-      <div>Pro X.0 Page</div>
+      <CourseJsonLd
+        courseName="Khoá học: Quảng cáo Retargeting từ A-Z"
+        providerName="Pro X.0"
+        providerUrl="https//www.sangletech.com/retargeting-course"
+        description="Làm thế nào để Bạn luôn nằm ở vị trí hàng đầu trong tâm trí khách hàng và đưa họ quay trở lại trang web của Bạn khi họ đã rời đi?"
+      />
+      <NextSeo
+        openGraph={{
+          type: "website",
+          url: "https://www.sangletech.com/retargeting-course",
+          title: "Khoá học: Quảng cáo Retargeting từ A-Z",
+          description: "Làm thế nào để Bạn luôn nằm ở vị trí hàng đầu trong tâm trí khách hàng và đưa họ quay trở lại trang web của Bạn khi họ đã rời đi?",
+          images: [
+            {
+              url: "https://sangletech.com/assets/thumbnail-retargeting-explainer.jpg",
+              width: 800,
+              height: 600,
+              alt: "Og Image Alt",
+            },
+          ],
+        }}
+      /> 
       <Hero {...hero} />
       <AlternativeSideBySideWithVideoOrImg {...textOne} {...textTwo} />
       <MyAchievement {...courseDescript} />
       <AlternativeSideBySideWithVideoOrImg {...textThree} {...textFour} />
-      <MyAchievement {...courseValue} />
+      {/* Mew three column list */}
+      <ThreeColumnsFeatureList {...courseValue} />
       <BrandPanelWithAppScreenShot {...textPayment} />
       <BrandPanelWithOverlappingImage {...textBookxo} />
+      {/* <Bonus /> */}
     </Layout>
   );
 }

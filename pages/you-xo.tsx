@@ -5,15 +5,19 @@ import AlternativeSideBySideWithVideoOrImg from "../components/alternative-side-
 import BrandPanelWithAppScreenShot from "../components/sections/cta-sections/brand_panel_with_app_screenshot";
 import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/brand_panel_with_overlapping_image";
 
+import { SoftwareAppJsonLd } from "next-seo";
+import { NextSeo } from "next-seo";
+
 const hero = {
   titleHighlight: "YOU X.0",
   titleNormal: "Ứng Dụng Thần Số Học Đầu Tiên Tại Việt Nam",
   description: `**Trực tiếp xây dựng và phát triển độc quyền bởi Sang Lê**`,
   buttonNormal: "Tìm Hiểu Thêm",
+  buttonNormalSrc: "#read-more",
   buttonHighlight: "Xem Thông tin Thần Số Học",
-  imgSrc:
-    "https://res.cloudinary.com/sang-le-tech/image/upload/v1629429447/Galatek.io%20Website/Beige_Minimal_Phone_Mockup_Download_Now_Instagram_Post-3_emlzak.png",
-  alt: "Hinh anh You x.0 Download",
+  buttonHighlightSrc: "/form",
+  imgSrc: "/assets/youoxo-25-iphone-mockup-1.png",
+  alt: "Hinh anh You X.0 Download - Sang Le Tech",
 };
 
 const textOne = {
@@ -24,7 +28,7 @@ const textOne = {
   <br></br>Cho đến cách đây khoảng vài năm, Sang thử lật cuốn sổ ra đọc. Sang đọc chơi thôi chứ không có ý định tìm hiểu cuộc đời mình qua cuốn sổ này. Kết quả không như Sang nghĩ. Cuốn sổ, về cơ bản, đã nói đúng khá nhiều về cuộc đời Sang. Đến hôm nay Sang vẫn không hiểu chuyện gì đã xảy ra...`,
   leftImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1628498043/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0004_gp79yv.jpg",
-  leftAlt: "Hinh anh minh hoa Youxo 1",
+  leftAlt: "Hinh anh minh hoa You X.0 1 - Sang Le Tech",
 };
 
 const textTwo = {
@@ -34,7 +38,7 @@ const textTwo = {
   <br></br>Đôi khi, có những điều mà khoa học cũng không thể lý giải, vì thế, chúng ta cũng chưa đủ tầm để lý giải. Khi bạn thấu suốt sự minh bạch của khoa học, đồng thời chấp nhận rằng vẫn có những vùng đất ta không biết, không nhìn thấy, bạn sẽ học được nhiều bài học hơn.`,
   rightImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1628498045/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0006_jrclze.jpg",
-  rightAlt: "Hinh anh minh hoa Youxo 2",
+  rightAlt: "Hinh anh minh hoa You X.0 2 - Sang Le Tech",
 };
 
 const textThree = {
@@ -44,7 +48,7 @@ const textThree = {
   <br></br>Rất nhiều những nhà lãnh đạo trên thế giới đã tìm đến bậc thầy phong thủy là **Marie Diamond**. Họ đã trải nghiệm và cảm nhận rằng phong thủy có sức tác động đáng kể lên đời sống của họ. Có ý kiến cho rằng phong thủy là tâm linh, nhưng cũng có ý kiến cho rằng phong thủy liên quan đến vật lý lượng tử. Sang chưa nghiên cứu đủ sâu để có thể cho ra kết luận, nhưng Sang đã trải nghiệm và thật sự bất ngờ vì những gì phong thủy mang lại.`,
   leftImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1627802599/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0001_vzdxhu.jpg",
-  leftAlt: "Hinh anh minh hoa Youxo 3",
+  leftAlt: "Hinh anh minh hoa Youxo 3 - Sang Le Tech",
 };
 
 const textFour = {
@@ -53,7 +57,7 @@ const textFour = {
   rightDescription: `Thần số học cũng là công cụ đến với Sang khá tình cờ, và Sang thấy rằng đây là một công cụ xứng đáng để chúng ta thử. Sang tin rằng trước khi một phương pháp được chứng minh là đúng, nó cũng từng tồn tại dưới dạng phương pháp thử nghiệm. Nếu vì chưa được chứng minh mà không ai thử nghiệm, rốt cuộc, nhân loại cũng không thể biết phương pháp đó có đúng hay không. Trên tinh thần đó, Sang cũng đã thử Thần số học. **Sang không chắc chắn Thần số học có đúng với bạn không, nhưng Sang đã thử, và nó rất đúng với Sang. Về cơ bản, Thần số học hàm chứa những điều mà Sang tin, nhưng dưới dạng một ngôn ngữ khác.**`,
   rightImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1628498043/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0008_mcjuxq.jpg",
-  rightAlt: "Hinh anh minh hoa Youxo 4",
+  rightAlt: "Hinh anh minh hoa You X.0 4 - Sang Le Tech",
 };
 
 const textFive = {
@@ -64,7 +68,7 @@ const textFive = {
   <br></br>⟐  Theo ngôn ngữ của Sang, không gì trên đời là không tự học được. **Theo ngôn ngữ của Thần số học, bạn thiếu con số nào, hãy cố gắng bổ sung con số đó để cân bằng biểu đồ ngày sinh.**`,
   leftImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1628498044/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0009_lcb99l.jpg",
-  leftAlt: "Hinh anh minh hoa Youxo 5",
+  leftAlt: "Hinh anh minh hoa You X.0 5 - Sang Le Tech",
 };
 
 const textSix = {
@@ -74,7 +78,7 @@ const textSix = {
   <br></br>Khác với công nghệ, Sang sẽ không nói nhiều về chủ đề này vì Sang chưa hiểu hết về nó. Nhưng đôi khi bạn cần phải thử để biết nó có đúng với bạn hay không. Đương nhiên, Sang không tin rằng có một bàn tay nào đó ngoài kia đang thao túng cuộc sống của tất cả chúng ta. **Rốt cuộc thì, ta không biết những gì ta không biết. Người ta thường sợ những thứ mà mình chưa hiểu hết. Sang thì không. Đúng là Sang chưa hiểu hết thật đó, nhưng Sang không ngại thử.**`,
   rightImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1628498043/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0003_judg3s.jpg",
-  rightAlt: "Hinh anh minh hoa Youxo 6",
+  rightAlt: "Hinh anh minh hoa You X.0 6 - Sang Le Tech",
 };
 
 const textSeven = {
@@ -82,10 +86,9 @@ const textSeven = {
   titleSecond: "Khám phá bản thân với Thần Số Học",
   description: `Ứng dụng **YOU X.0** của Sang sẽ từng bước, từng bước giúp bạn tìm hiểu thêm về chính mình thông qua **Thần Số Học** và đề xuất cho bạn những giải pháp **Phong thủy** thích hợp nhất để bạn có thể bắt đầu xây dựng cho mình một cuộc sống thịnh vượng và giàu có trong thời đại 4.0!`,
   buttonName: "Xem thông tin Thần Số Học của Tôi",
-  imgSrc:
-    "https://res.cloudinary.com/sang-le-tech/image/upload/v1628152810/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0001_c2ukh5.png",
-  alt: "Video Demo You X.0",
-  videoSrc: "#",
+  imgSrc: "/assets/thumbnail-glt-success.jpg",
+  alt: "Video Bi Mat Thanh Cong Sang Le Tech & Galatek 2020 ",
+  videoSrc: "/posts/video-galatek-success",
 };
 
 const textEight = {
@@ -96,15 +99,41 @@ const textEight = {
     <br></br>⟐  Những ý tưởng và những chiến lược mà Sang rút ra từ những doanh nhân tiếng tăm nhất trên thế giới?
 `,
   buttonName: "Tìm hiểu thêm về Sách",
+  buttonSrc: "/book-xo",
   imgSrc:
     "https://super-static-assets.s3.amazonaws.com/8090ac7d-2195-4ec8-96be-1457b54a8900/images/c2a88c54-5779-493d-83ec-1d2d5429021f.jpg?w=240&f=webp",
-  alt: "Hinh anh Book Cover",
+  alt: "Sang Le Tech - Hinh anh Sach Bi Mat Lam Giau X.0",
 };
 
 function YouXO() {
   return (
     <Layout>
+      <SoftwareAppJsonLd
+        name="You X.0"
+        price="10.000"
+        priceCurrency="VND"
+        aggregateRating={{ ratingValue: "5.0", reviewCount: "1000" }}
+        operatingSystem="ANDROID, IOS, WEB"
+        applicationCategory="Application"
+      />
+      <NextSeo
+        openGraph={{
+          type: "website",
+          url: "https://www.sangletech.com/you-xo",
+          title: "Ứng dụng Tra cứu Thần Số Học đầu tiên tại Việt Nam",
+          description: "Ứng dụng YOU X.0 của Sang sẽ từng bước, từng bước giúp bạn tìm hiểu thêm về chính mình thông qua Thần Số Học và đề xuất cho bạn những giải pháp Phong thủy thích hợp nhất để bạn có thể bắt đầu xây dựng cho mình một cuộc sống thịnh vượng và giàu có trong thời đại 4.0!",
+          images: [
+            {
+              url: "https://sangletech.com/assets/seo-kkcd-intro.jpg",
+              width: 800,
+              height: 600,
+              alt: "Og Image Alt",
+            },
+          ],
+        }}
+      /> 
       <HeroWithAngelImageOnRight {...hero} />
+      <div id="read-more" />
       <AlternativeSideBySideWithVideoOrImg {...textOne} {...textTwo} />
       <AlternativeSideBySideWithVideoOrImg {...textThree} {...textFour} />
       <AlternativeSideBySideWithVideoOrImg {...textFive} {...textSix} />

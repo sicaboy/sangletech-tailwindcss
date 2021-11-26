@@ -13,6 +13,9 @@ import PostTitle from "../../components/post/post-title";
 import { getPostBySlug, getAllPosts } from "../../utils/api";
 import PostType from "../../types/post";
 
+import { NextSeo } from "next-seo";
+import { BlogJsonLd } from "next-seo";
+
 // Custom components/renderers to pass to MDX.
 // Since the MDX files aren't loaded by webpack, they have no knowledge of how
 // to handle import statements. Instead, you must include components in scope
@@ -21,8 +24,7 @@ const components = {
   // It also works with dynamically-imported components, which is especially
   // useful for conditionally loading components for certain routes.
   // See the notes in README.md for more details.
-  Youtube: dynamic(() => import("react-youtube")),
-  Vimeo: dynamic(() => import("@u-wave/react-vimeo")),
+  VideoPlayer: dynamic(() => import("../../components/video-player")),
   Head,
 };
 
@@ -66,6 +68,46 @@ const Post = ({ post, morePosts, preview }: Props) => {
           </>
         )}
       </Container>
+      {/* SANG: Double Check the img urls info*/}
+      <NextSeo
+        openGraph={{
+          title: post.title,
+          description: post.excerpt,
+          url: post.slug,
+          type: "article",
+          article: {
+            publishedTime: post.date,
+            modifiedTime: post.date,
+            expirationTime: post.date,
+            section: post.category,
+            authors: [`${post.author}`],
+            tags: [post.tag],
+          },
+          images: [
+            {
+              url: post.ogImage.url,
+              width: 850,
+              height: 650,
+              alt: post.title,
+            },
+          ],
+        }}
+      />
+      <BlogJsonLd
+        url={post.slug}
+        title={post.title}
+        images={[
+          // "https://example.com/photos/1x1/photo.jpg",
+          // "https://example.com/photos/4x3/photo.jpg",
+          // "https://example.com/photos/16x9/photo.jpg",
+          post.ogImage.url,
+          post.coverImage,
+        ]}
+        datePublished={post.date}
+        dateModified={post.date}
+        authorName="Sang Le"
+        description={post.excerpt}
+      />
     </Layout>
   );
 };
@@ -88,6 +130,7 @@ export async function getStaticProps({ params }: Params) {
     "ogImage",
     "coverImage",
     "type",
+    "tag",
   ]);
 
   const content = await serialize(post.content, {

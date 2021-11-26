@@ -4,53 +4,26 @@ import {
   GlobeAltIcon,
   LightningBoltIcon,
   ScaleIcon,
+  FilterIcon,
+  PresentationChartBarIcon,
 } from "@heroicons/react/outline";
+import ReactMarkdown from "react-markdown";
+
+import rehypeRaw from "rehype-raw";
+import remarkGfm from "remark-gfm";
 
 export default function Example(props) {
-  const features = [
-    {
-      name: props.listOneTitle || "Competitive exchange rates",
-      description:
-        props.listOneDescription ||
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
-      icon: props.listOneIconSrc || GlobeAltIcon,
-    },
-    {
-      name: props.listTwoTitle || "No hidden fees",
-      description:
-        props.listTwoDescription ||
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratiTwo.",
-      icon: props.listOneIconSrc || ScaleIcon,
-    },
-    {
-      name: props.listThreeTitle || "Transfers are instant",
-      description:
-        props.listThreeDescription ||
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratiThree.",
-      icon: props.listThreeIconSrc || LightningBoltIcon,
-    },
-    {
-      name: props.listFourTitle || "Mobile notifications",
-      description:
-        props.listFourDescription ||
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratiFour.",
-      icon: props.listFourIconSrc || AnnotationIcon,
-    },
-    {
-      name: props.listFiveTitle || "Mobile notifications",
-      description:
-        props.listFiveDescription ||
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratiFive.",
-      icon: props.listFiveIconSrc || AnnotationIcon,
-    },
-    {
-      name: props.listSixTitle || "Mobile notifications",
-      description:
-        props.listSixDescription ||
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratiSix.",
-      icon: props.listSixIconSrc || AnnotationIcon,
-    },
-  ];
+  const description = props.description
+    ? `<div class="note">
+
+${props.description}
+
+</div>`
+    : `<div class="note">
+
+"Semper curabitur ullamcorper posuere nunc sed. Ornare iaculisbibendum malesuada faucibus lacinia porttitor. Pulvinar laoreet sagittis viverra duis. In venenatis sem arcu pretium pharetra at. Lectus viverra dui tellus ornare pharetra."
+
+</div>`;
 
   return (
     <div className="py-12 my-24 bg-white">
@@ -62,15 +35,18 @@ export default function Example(props) {
           <p className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl">
             {props.title || "A better way to send money"}
           </p>
-          <p className="max-w-2xl mt-4 text-xl text-gray-500 lg:mx-auto">
-            {props.description ||
-              "Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam."}
-          </p>
+
+          <ReactMarkdown
+            children={description}
+            rehypePlugins={[rehypeRaw]}
+            remarkPlugins={[remarkGfm]}
+            className="max-w-2xl mt-4 text-xl text-gray-500 lg:mx-auto"
+          />
         </div>
 
         <div className="mt-10">
-          <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
-            {features.map((feature) => (
+          <dl className="p-12 space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+            {props.features.map((feature) => (
               <div key={feature.name} className="relative">
                 <dt>
                   <div className="absolute flex items-center justify-center w-12 h-12 text-white bg-indigo-500 rounded-md">

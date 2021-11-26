@@ -3,12 +3,18 @@ import AlternatingWithOptionalTestimonial from "../components/sections/feature-s
 import AlternativeSideBySideWithImages from "../components/sections/feature-sections/alternative_side_by_side_with_images";
 import BrandPanelWithAppScreenShot from "../components/sections/cta-sections/brand_panel_with_app_screenshot";
 import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/brand_panel_with_overlapping_image";
+import HeroWithSocialNStats from "../components/hero-with-social-n-stats";
 
 import ThreeColumnCards from "../components/sections/blog-sections/3_column_cards";
+import SimpleCenterBranded from "../components/sections/cta-sections/simple_center_branded";
+import SimpleWithHeading from "../components/sections/logo-clouds/simple_with_heading";
+import Youtube from "../components/youtube-three-columns";
 
 import * as Icon from "@heroicons/react/outline";
 import { getAllPosts } from "../utils/api";
 import Post from "../types/post";
+
+import Logos from "../components/sections/logo-clouds/simple_with_heading_on_brand";
 
 // import Blog from "../components/post/3_column_cards";
 
@@ -45,6 +51,7 @@ type Props = {
 };
 
 const hero = {
+  //TODO: Can not see the titleNormal
   titleHighlight: "VƯƠN TẦM BẢN THÂN",
   titleNormal: "Sang Le Tech",
   description: `Giúp Bạn Bước Đi Tự Tin Trên **Hành Trình 4.0**`,
@@ -52,13 +59,42 @@ const hero = {
   buttonNormalSrc: "/sang-le-la-ai",
   buttonHighlight: "Xem Video",
   buttonHighlightSrc: "/posts/video-khoanh-khac-cuoc-doi",
-  imgSrc:
-    "https://res.cloudinary.com/sang-le-tech/image/upload/v1626615071/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0006_mbnffl.jpg",
-  alt: "Hinh anh Sang Le",
+  imgSrc: "/assets/seo-kkcd-intro.jpg",
+  alt: "Hinh anh Sang Le Tech - Khoanh Khac Cuoc Doi - Gioi Thieu",
 };
+const logos = {
+  title: "Các Kênh Truyền Thông Đã Tham Gia",
+  description: "",
 
+  logoOneSrc:
+    "https://res.cloudinary.com/sang-le-tech/image/upload/v1631872823/Galatek.io%20Website/Sangletech.com/20210322002340_Yantv_ehn2jn.png",
+  logoOneAlt: "Yantv Logo",
+
+  logoTwoSrc:
+    "https://res.cloudinary.com/sang-le-tech/image/upload/v1631872985/Galatek.io%20Website/Sangletech.com/HTV9__282016-nay_29_o1bdfl.webp",
+  logoTwoAlt: "Htv9 Logo",
+
+  logoThreeSrc:
+    "https://res.cloudinary.com/sang-le-tech/image/upload/v1631873061/Galatek.io%20Website/Sangletech.com/69dda2def8ca1b5e9d8d1bc98d9d1e0f_uv1ylj.png",
+  logoThreeAlt: "Kmedia Logo",
+
+  logoFourSrc:
+    "https://res.cloudinary.com/sang-le-tech/image/upload/v1631873525/Galatek.io%20Website/Sangletech.com/10547129_1466047213649700_265444754095979044_o-removebg-preview_ubc7v9.png",
+  logoFourAlt: "SaigonFm Logo",
+
+  logoFiveSrc:
+    "https://res.cloudinary.com/sang-le-tech/image/upload/v1631873674/Galatek.io%20Website/Sangletech.com/unnamed-removebg-preview_qzjw11.png",
+  logoFiveAlt: "Vivutv Logo",
+
+  logoSixSrc:
+    "https://res.cloudinary.com/sang-le-tech/image/upload/v1631873719/Galatek.io%20Website/Sangletech.com/BTV_tw6qlw.png",
+  logoSixAlt: "Btv Logo",
+
+  logoSevenSrc:
+    "https://res.cloudinary.com/sang-le-tech/image/upload/v1631873777/Galatek.io%20Website/Sangletech.com/HTV7Logomoi_pmzlar.png",
+  logoSevenAlt: "Htv7 Logo",
+};
 const jow = {
-  //TODO: Add button source
   titleFirst: "HÀNH TRÌNH LÀM GIÀU X.0",
   titleSecond: "Cứ Đi Là Bạn Sẽ Đến!",
   description: `**Liệu có một Tấm Bản Đồ dẫn đến một Cuộc sống thịnh vượng cho Bạn hay không?**
@@ -67,7 +103,7 @@ const jow = {
   buttonName: "Tìm hiểu thêm",
   imgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1628152810/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0001_c2ukh5.png",
-  alt: "Hinh anh SL Hanh Trinh Lam Giau X.0",
+  alt: "Hinh anh Sang Le Tech - Hanh Trinh Lam Giau X.0",
   videoSrc: "posts/video-hanh-trinh-lam-giau",
   buttonSrc: "/sow-xo",
 };
@@ -86,15 +122,15 @@ const sow = {
   **⟐  Những ý tưởng và những chiến lược** mà Sang rút ra từ những doanh nhân tiếng tăm nhất trên thế giới?`,
   leftButtonName: "Tìm hiểu thêm",
   leftButtonSrc: "/book-xo",
-  leftAppleSrc: "#",
-  leftGoogleSrc: "#",
-  leftWebSrc: "#",
-  leftTestimonial: ``,
-  leftAuthor: "",
-  leftAuthorImgSrc: "",
+  leftAppleSrc: "/form",
+  leftGoogleSrc: "/form",
+  leftWebSrc: "/form",
+  leftTestimonial: `*Người Eskimo có câu: “Bão là thời gian để đi đánh cá”. <br></br>*Ra khơi vào đúng lúc đại dương nổi bão, chúng ta sẽ là những người đánh được nhiều “cá” hơn bất cứ ai.* <br></br>*Vậy, câu hỏi đặt ra là: **Chúng ta phải làm gì để nắm bắt cơ hội làm giàu trong thời đại 4.0, trong và hậu Covid?***`,
+  leftAuthor: "Sang Lê - Tác giả sách Bí Mật Làm Giàu X.0",
+  leftAuthorImgSrc: "/assets/sangle-profilePic.jpg",
   leftImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1628236747/Galatek.io%20Website/galatekgame-37-38-39-0000_crdalj.png",
-  leftAlt: "Hinh anh Sach SOW",
+  leftAlt: "Hinh anh Sach Bi Mat Lam Giau X.0 - Sang Le Tech;",
 };
 
 const projectYou = {
@@ -110,16 +146,14 @@ const projectYou = {
   <br><br> _**Việc hiểu được con người thực sự của bạn là điều cơ bản nhất để bắt đầu bước đi trên Hành Trình Làm Giàu X.0. Bạn cần biết bạn là ai và bạn có thể làm gì tốt nhất cho cuộc sống của bản thân, gia đình và xã hội.**_ `,
   rightButtonName: "Tìm hiểu thêm",
   rightButtonSrc: "/you-xo",
-  rightAppleSrc: "ss",
-  rightGoogleSrc: "ss",
-  rightWebSrc: "ss",
-  rightImgSrc:
-    "https://res.cloudinary.com/sang-le-tech/image/upload/v1629429447/Galatek.io%20Website/Beige_Minimal_Phone_Mockup_Download_Now_Instagram_Post-3_emlzak.png",
-  rightAlt: "",
+  rightAppleSrc: "/form",
+  rightGoogleSrc: "/form",
+  rightWebSrc: "/form",
+  rightImgSrc: "/assets/youoxo-25-iphone-mockup-1.png",
+  rightAlt: "Hinh anh You X.0 download - Sang Le Tech",
 };
 
 const fin = {
-  //TODO: Add a button "Tìm Hiểu Thêm"
   leftTitle: "FIN X.0",
   leftDescription: `Cho dù bạn đang tiết kiệm cho kỳ nghỉ mơ ước, lên kế hoạch cho tài chính trong tương lai của mình hay chỉ đơn giản là mong muốn quản lý tốt tài chính của bản thân - Fin X.0 là dành cho bạn.`,
 
@@ -137,12 +171,11 @@ const fin = {
 
   leftButtonName: "Tìm Hiểu Thêm",
   leftButtonSrc: "/fin-xo",
-  leftAppleSrc: "#",
-  leftGoogleSrc: "#",
-  leftWebSrc: "#",
-  leftImgSrc:
-    "https://res.cloudinary.com/sang-le-tech/image/upload/v1629428694/Galatek.io%20Website/Sangletech.com/Beige_Minimal_Phone_Mockup_Download_Now_Instagram_Post_wfssti.png",
-  leftAlt: "",
+  leftAppleSrc: "/form",
+  leftGoogleSrc: "/form",
+  leftWebSrc: "/form",
+  leftImgSrc: "/assets/finxo-25-iphone-mockup-1.png",
+  leftAlt: "Hinh anh Fin X.0 download - Sang Le Tech",
 };
 
 const pro = {
@@ -162,22 +195,21 @@ const pro = {
   rightDescription: `KHÁM PHÁ NGAY ỨNG DỤNG HỌC TRỰC TUYẾN 4.0`,
   rightButtonName: "Tìm hiểu thêm",
   rightButtonSrc: "/pro-xo",
-  rightAppleSrc: "#",
-  rightGoogleSrc: "#",
-  rightWebSrc: "#",
+  rightAppleSrc: "/form",
+  rightGoogleSrc: "/form",
+  rightWebSrc: "/form",
   rightImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626085141/Galatek.io%20Website/3D-Freelancers-illustration0023_srsafb.png",
-  rightAlt: "Hinh anh minh Pro X.0",
+  rightAlt: "Hinh anh minh hoa Pro X.0 - Sang Le Tech",
 };
 
 const startup = {
-  //TODO: Add button src
   title: "Startup X.0",
   description: `Sau hơn 10 năm hoạt động kinh doanh ở nhiều lĩnh vực khác nhau, tổn thất hàng trăm ngàn đô la và nhiều đêm mất ngủ, Sang Lê đã học được vô số bài học đắt giá và đưa vào chương trình Startup X.0 để có thể giúp bạn **XÂY DỰNG ƯỚC MƠ KHỞI NGHIỆP**, và bước trên **CON ĐƯỜNG NGẮN NHẤT đến THÀNH CÔNG** trong thời đại 4.0 này.`,
   buttonName: "Tìm Hiểu Ngay",
   imgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1625651836/Galatek.io%20Website/IMG_8057-1024x682_fa7z6z.jpg",
-  alt: "Hinh anh Sang va Royal Wedding",
+  alt: "Hinh anh Sang Le va Royal Wedding",
   buttonSrc: "/startupxo-course",
 };
 
@@ -185,7 +217,7 @@ const youtube = {
   title: "Video Youtube Nổi Bật",
   description: `Nếu bạn muốn đi nhanh thì đi một mình, nếu bạn muốn đi xa thì hãy đi cùng nhau!`,
   buttonName: "Theo Dõi Ngay",
-  buttonLink: "",
+  buttonSrc: "http://youtube.sangletech.com",
 
   videoOneThumbnail:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1631780175/Galatek.io%20Website/Sangletech.com/maxresdefault_cztyhf.jpg",
@@ -210,8 +242,9 @@ const blog = {
     <Icon.InboxInIcon className="w-6 h-6 text-white" aria-hidden="true" />
   ),
   buttonName: "Đọc thêm",
+  buttonSrc: "/blog",
 
-  blogOneThumbnail: "/assets/website-design.jpeg",
+  blogOneThumbnail: "/assets/thumbnail-web-design.jpg",
   blogOneLink: "/posts/thiet-ke-website-ban-hang",
   blogOneCategory: "Startup",
   blogOneTitle: "Làm thế nào thiết kế Website bán được hàng?",
@@ -219,9 +252,9 @@ const blog = {
   blogOneAuthorImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1625719158/Galatek.io%20Website/sangle-profilePic_k2xxkw.jpg",
   blogOneAuthorName: "Sang Le",
-  blogOneReadingTime: "5 min",
+  blogOneReadingTime: "5",
 
-  blogTwoThumbnail: "/assets/brand-identity.jpeg",
+  blogTwoThumbnail: "/assets/thumbnail-branding.jpg",
   blogTwoLink: "/posts/logo-la-thuong-hieu",
   blogTwoCategory: "Marketing",
   blogTwoTitle: "Có phải THƯƠNG HIỆU chỉ đơn giản là LOGO?",
@@ -229,17 +262,17 @@ const blog = {
   blogTwoAuthorImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1625719158/Galatek.io%20Website/sangle-profilePic_k2xxkw.jpg",
   blogTwoAuthorName: "Sang Le",
-  blogTwoReadingTime: "2 min",
+  blogTwoReadingTime: "2",
 
-  blogThreeThumbnail: "/assets/online-marketing.jpeg",
-  blogThreeLink: "",
+  blogThreeThumbnail: "/assets/thumbnail-online-marketing.jpg",
+  blogThreeLink: "/posts/quang-cao-fb-gg-da-du",
   blogThreeCategory: "Marketing",
   blogThreeTitle: "Quảng cáo Facebook & Google đã đủ chưa?",
   blogThreeDescription: `"Mặc dù online marketing bắt đầu phát triển từ những năm 1995, khi các công ty công nghệ bắt đầu bùng nổ trong đó có Ebay, Amazon, Google và nhiều công ty công nghệ khác nữa... Nhưng khi Sang làm việc với các chủ doanh nghiệp, thì họ hầu như chưa nắm rõ định nghĩa về Online Marketing là gì hoặc nói nôm na là Quảng cáo Online."`,
   blogThreeAuthorImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1625719158/Galatek.io%20Website/sangle-profilePic_k2xxkw.jpg",
   blogThreeAuthorName: "Sang Le",
-  blogThreeReadingTime: "4 min",
+  blogThreeReadingTime: "4",
 };
 
 const social = {
@@ -248,7 +281,7 @@ const social = {
   description: `☞ Click để đăng ký tham gia miễn phí cùng hàng ngàn người theo dõi khác ngay trên Facebook Messenger. 
   <br></br>☞ Bạn sẽ nhận các thông tin và bí quyết từ Sang mỗi tuần để giúp bạn bước đi tự tin trên hành trình 4.0!`,
 
-  buttonFacebookLink: "https://www.facebook.com/sangletech/",
+  buttonFacebookLink: "http://www.facebook.com/sangletech/",
   buttonYoutubeLink: "http://youtube.sangletech.com",
   buttonLinkedinLink: "http://linkedin.sangletech.com",
   buttonInstagramLink: "http://instagram.sangletech.com",
@@ -263,7 +296,7 @@ const company = {
   logoOneSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626171786/Galatek.io%20Website/updated-galatek-logo-300x101_ajkugi.png",
 
-  logoOneAlt: "",
+  logoOneAlt: "Galatek logo",
 
   logoTwoName: (
     <Icon.InboxInIcon className="w-6 h-6 text-white" aria-hidden="true" />
@@ -281,32 +314,20 @@ const company = {
 function Home() {
   return (
     <>
-      <HeroWithAngelImageOnRight {...hero} />
+      {/* <HeroWithAngelImageOnRight {...hero} /> */}
+      <HeroWithSocialNStats {...hero} />
+      <Logos {...logos} />
       <BrandPanelWithAppScreenShot {...jow} />
       <AlternatingWithOptionalTestimonial {...sow} {...projectYou} />
       <AlternativeSideBySideWithImages {...fin} {...pro} />
       <BrandPanelWithOverlappingImage {...startup} />
       <ThreeColumnCards {...blog} />
-      {/* <Blog {...test} /> */}
+      <Youtube {...youtube} />
+
+      <SimpleCenterBranded {...social} />
+      <SimpleWithHeading {...company} />
     </>
   );
 }
 
 export default Home;
-
-// export const getStaticProps = async () => {
-//   const allPosts = getAllPosts([
-//     "title",
-//     "date",
-//     "slug",
-//     "author",
-//     "coverImage",
-//     "excerpt",
-//   ]);
-
-//   console.log(`allPosts: ${JSON.stringify(allPosts)}`);
-
-//   return {
-//     props: { allPosts },
-//   };
-// };

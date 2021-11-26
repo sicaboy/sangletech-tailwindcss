@@ -5,6 +5,8 @@ import Layout from "./layout";
 
 interface Props {
   title?: string;
+  height?: number;
+  width?: number;
 }
 
 export default class UnderConstruction extends React.Component<Props> {
@@ -19,16 +21,17 @@ export default class UnderConstruction extends React.Component<Props> {
     };
 
     return (
-      
-        <div className="py-6 bg-white sm:py-8 lg:py-12">
-          <div className="px-4 mx-auto max-w-screen-2xl md:px-8">
-            <div className="flex flex-col items-center max-w-xl mx-auto text-center">
-              <Lottie options={defaultOptions} height={200} width={200} />
-              
-            </div>
+      <div className="py-6 bg-white sm:py-8 lg:py-12">
+        <div className="px-4 mx-auto max-w-screen-2xl md:px-8">
+          <div className="flex flex-col items-center max-w-xl mx-auto text-center">
+            <Lottie
+              options={defaultOptions}
+              height={this.props.height || 200}
+              width={this.props.width || 200}
+            />
           </div>
         </div>
-      
+      </div>
     );
   }
 }

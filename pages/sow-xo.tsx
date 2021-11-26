@@ -4,6 +4,7 @@ import AlternativeSideBySideWithVideoOrImg from "../components/alternative-side-
 import Layout from "../components/layout";
 import BrandPanelWithAppScreenShot from "../components/sections/cta-sections/brand_panel_with_app_screenshot";
 import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/brand_panel_with_overlapping_image";
+import { NextSeo } from "next-seo";
 
 function SowXO() {
   const hero = {
@@ -19,7 +20,7 @@ function SowXO() {
       "https://res.cloudinary.com/sang-le-tech/image/upload/v1628152808/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0000_ucdad0.png",
     videoSrc: "posts/video-hanh-trinh-lam-giau",
     videoCaption: `Hành Trình Làm Giàu X.0`,
-    alt: "Sang Le - Video JOW",
+    alt: "Sang Le Tech - Video Hanh trinh lam giau X.0",
   };
 
   const textOne = {
@@ -28,7 +29,7 @@ function SowXO() {
     leftDescription: `Bẵng đi một thời gian, Sang vẫn... học dở, và vẫn là học sinh cá biệt như ngày nào. Sang không nói quá lên đâu. Ký ức mà Sang nhớ nhất từ lớp Sáu tới lớp Mười là vô phòng thi được các bạn chỉ bài – tất cả các môn, bao gồm cả môn máy tính. Giữa năm lớp 12, Sang được ba cho qua Singapore để học tiếng Anh, một bước chuẩn bị trước khi đi Mỹ du học. **30 ngày ở Singapore, Sang chơi game hết 30 ngày.** Ngày cuối cùng, cô chủ nhà hốt hoảng, hỏi Sang tại sao qua Singapore 30 ngày rồi mà vẫn chưa đi xin giấy nhập học để kéo dài thời hạn visa. Sang thảng thốt. <br></br>Như mọi khi, Sang nghĩ rằng luôn có người ở đó lo cho mình. **Kết quả là Sang bị "đuổi" về Việt Nam.** 30 ngày ở Singapore, Sang chẳng làm được gì cả. Ý tưởng về cái chết đến với Sang như một lựa chọn hiển nhiên. Sang không dám đối diện với ba mẹ và bạn bè. Sang bước ra ban công, suýt nữa đã nhảy xuống. **Nhưng có tiếng nói bên trong giữ Sang lại.** Sang gọi điện về cho ba, xin lỗi ba, và hứa sẽ trở thành một con người khác. Sau khi bị "đuổi" về Việt Nam, Sang bay lại qua Singapore...`,
     leftImgSrc:
       "https://super-static-assets.s3.amazonaws.com/8090ac7d-2195-4ec8-96be-1457b54a8900/images/30eee9fd-601a-484f-9acc-38cc9c05d0e1.png?w=1500&f=webp",
-    leftAlt: "Hinh anh Sang Le voi xe o to",
+    leftAlt: "Hinh anh Sang Le Tech - Hanh trinh lam giau X.0",
   };
 
   const textTwo = {
@@ -37,11 +38,9 @@ function SowXO() {
     rightDescription: `Có một câu mà Sang thấy rất hay và rất đúng với cuộc đời mình, đó là: **Khi rơi xuống vực thẳm, bạn chỉ còn một đường duy nhất, đó là leo lên. Nói cách khác, khi bạn đã chạm đáy, bạn chỉ có duy nhất một sự lựa chọn, đó là tìm cách trèo lên.** <br></br>Thời gian ở Sing và Hồng Kông, Sang cắm mặt vào những cuốn sách, kéo "vali" đi học vì phải đựng quá nhiều sách vở, và học miệt mài từ sáng đến tối. Sang luôn giữ trong mình ý nghĩ: *"Mình không giỏi, vì thế mình phải cố gắng hơn người khác, nghiêm khắc với bản thân hơn người khác."* Cứ thế, sau nhiều năm, Sang tham gia biết bao nhiêu chương trình, đọc biết bao nhiêu sách, đi biết bao nhiêu nước. Cho đến khi có một người khen Sang, với những tính từ mà thậm chí Sang còn không nghĩ rằng những điều đó đang mô tả về mình. **Thì ra, Sang đã không còn là cậu nhóc học dở, sống không mục đích và nghiện game ngày nào nữa.**
     <br></br>Sang bất giác nhận ra một điều, rằng **khi bạn siêng năng và không bỏ cuộc, điểm xuất phát của bạn trở nên ít quan trọng.** Bởi vì bạn sẽ sớm bỏ xa điểm xuất phát ấy khi đã có đủ quyết tâm. Sang tin rằng, có lẽ ba của Sang đã biết trước điều này, nên ông mới bảo Sang tự đi tìm con đường, "chỉ cần không bỏ cuộc là được". Hóa ra khi bạn không bỏ cuộc, khi bạn đủ quyết tâm, thì con đường mà bạn chọn và trạng thái hiện tại của bạn chỉ trở thành điều thứ yếu. <br></br>Xuất phát sau cũng không sao. Chạy nhanh hơn là được!
     <br></br>Điều thú vị là, khi Sang đi tìm câu trả lời cho câu hỏi: *"Ba ơi, làm sao học dở mà vẫn giàu hả ba?"*, Sang lại thu hoạch được những thành quả khác. Sang mường tượng toàn bộ quá trình mà mình đã đi qua giống như một hành trình đi tìm kho báu – ở đó, người ta đồn rằng, có rất nhiều vàng. Nhưng khi đến nơi, Sang không chỉ tìm thấy vàng, mà còn nhìn thấy rất nhiều kim cương – thứ đáng giá hơn vàng rất nhiều.
-    <br></br>***Đó là câu trả lời cho một câu hỏi thậm chí còn quan trọng hơn.***
-`,
-    rightImgSrc:
-      "https://super-static-assets.s3.amazonaws.com/8090ac7d-2195-4ec8-96be-1457b54a8900/images/d508c9e1-75af-4c14-bcd4-eb63b26317f5.png?w=1500&f=webp",
-    rightAlt: "Hinh anh Sang Le voi laptop",
+    <br></br>***Đó là câu trả lời cho một câu hỏi thậm chí còn quan trọng hơn.***`,
+    rightImgSrc: "/assets/seo-jow.jpg",
+    rightAlt: "Hinh anh Sang Le Tech - Video Hanh trinh lam giau X.0",
   };
 
   const textThree = {
@@ -55,7 +54,7 @@ function SowXO() {
     <br></br>**Hành Trình Làm Giàu X.0.**`,
     leftImgSrc:
       "https://super-static-assets.s3.amazonaws.com/8090ac7d-2195-4ec8-96be-1457b54a8900/images/ac4ca78f-1555-4abd-8bff-315ec71e1f67.png?w=288&f=webp",
-    leftAlt: "Hinh anh Logo Hanh Trinh Lam Giau X.0",
+    leftAlt: "Hinh anh Logo Hanh Trinh Lam Giau X.0 - Sang Le Tech",
   };
 
   const textFour = {
@@ -70,7 +69,8 @@ function SowXO() {
     <br></br>VÀ, Sang sẽ là người đồng hành cùng bạn xuyên suốt Hành trình này.`,
     rightImgSrc:
       "https://super-static-assets.s3.amazonaws.com/8090ac7d-2195-4ec8-96be-1457b54a8900/images/8e3cf606-6154-4ea5-993f-643ca4b9312a.png?w=240&f=webp",
-    rightAlt: "Logo Hanh Trinh Lam Giau Chu Thich Tung Chang Duong",
+    rightAlt:
+      "Logo Hanh Trinh Lam Giau Chu Thich Tung Chang Duong - Sang Le Tech",
   };
 
   const textFive = {
@@ -81,7 +81,7 @@ function SowXO() {
     <br></br> **Trong Chặng 1 này, Sang sẽ liệt kê và hướng dẫn bạn cách tư duy như người thành công. Họ có những thói quen gì? Mối quan tâm của họ là gì? Và với họ, điều gì làm nên sự thịnh vượng của một người?**`,
     leftImgSrc:
       "https://super-static-assets.s3.amazonaws.com/8090ac7d-2195-4ec8-96be-1457b54a8900/images/6cf4a796-b37e-4de5-8792-726d4ff6d7c2.png?w=192&f=webp",
-    leftAlt: "Logo Chang Duong 1",
+    leftAlt: "Logo Chang Duong 1 - Hanh trinh lam giau X.0 - Sang Le Tech",
   };
 
   const textSix = {
@@ -92,7 +92,7 @@ function SowXO() {
     <br></br>**Không ai sinh ra đã biết lập trình hay viết lách. Đã gọi là “kỹ năng” thì bạn hoàn toàn có thể học được. Khi những kỹ năng này cho phép bạn tự do tài chính, bạn có thể tự do theo đuổi đam mê!**`,
     rightImgSrc:
       "https://super-static-assets.s3.amazonaws.com/8090ac7d-2195-4ec8-96be-1457b54a8900/images/d6fc4b85-b264-4a44-8fd2-4c761b2bfd14.png?w=192&f=webp",
-    rightAlt: "Logo Chang Duong 2",
+    rightAlt: "Logo Chang Duong 2 - Hanh trinh lam giau X.0 - Sang Le Tech",
   };
 
   const textSeven = {
@@ -102,7 +102,7 @@ function SowXO() {
     <br></br>Trở thành một ông chủ không có nghĩa là bạn hoàn toàn làm chủ, vì nếu thiếu tư duy và kỹ năng, bạn vẫn phải phụ thuộc vào những người có tư duy cao hơn bạn, kỹ năng chắc hơn bạn. Làm thuê không “ai oán” như những gì người ta thường nói, làm thuê không có nghĩa là ai đó thuê bạn xây ước mơ của riêng họ. **Vì nếu bạn đủ Tư duy và Kỹ năng, bạn có sự tự do để rời đi khi cảm thấy không còn đồng điệu về mặt giá trị**.`,
     leftImgSrc:
       "https://super-static-assets.s3.amazonaws.com/8090ac7d-2195-4ec8-96be-1457b54a8900/images/603e2ecf-ee76-4c6a-87d7-84fcd735d74d.png?w=192&f=webp",
-    leftAlt: "Logo Chang Duong 3",
+    leftAlt: "Logo Chang Duong 3 - Hanh trinh lam giau x.0 - Sang Le Tech",
   };
 
   const textEight = {
@@ -112,7 +112,7 @@ function SowXO() {
     <BR></BR>Rốt cuộc thì, nếu không có Chặng 4 này, mọi thứ sẽ kết thúc ở Chặng 3, khi bạn nghĩ rằng có được sự nghiệp là có được tất cả. Nhưng nếu bạn đi tiếp đến Chặng 4, dùng 20 - 30% những gì tích lũy được ở Chặng 3 để đầu tư ngược lại vào những khía cạnh mà bạn quan tâm như giáo dục cho bản thân, tài chính, sức khỏe… thì bạn sẽ lặp lại quá trình trên: Bạn sẽ có tư duy mới, kỹ năng mới, sự nghiệp lên đến một tầm cao mới, và lại một lần nữa đầu tư để có tư duy mới, kỹ năng mới,… Cứ thế.`,
     rightImgSrc:
       "https://super-static-assets.s3.amazonaws.com/8090ac7d-2195-4ec8-96be-1457b54a8900/images/4510334a-00b8-463c-a320-b0bd52b50ba8.png?w=192&f=webp",
-    rightAlt: "Logo Chang Duong 4",
+    rightAlt: "Logo Chang Duong 4 - Hanh Trinh Lam Giau X.0 - Sang Le Tech",
   };
 
   const textNine = {
@@ -122,9 +122,10 @@ function SowXO() {
     <br><br>⟐  Tìm hiểu về những bí ẩn của các con số trong Ngày tháng năm sinh và Họ tên của Bạn để biết bạn thật sự là ai và sứ mệnh của bạn là gì. 
     <br><br>⟐  Nhìn nhận thế giới xung quanh Bạn từ một góc độ khác và cho phép Bạn tập trung phát triển những mặt tích cực ở bản thân.`,
     buttonName: "Xem ngay thông tin Thần Số Học",
+    buttonSrc: "/you-xo",
     imgSrc:
       "https://res.cloudinary.com/sang-le-tech/image/upload/v1628236893/Galatek.io%20Website/logo-04_r3vutm.png",
-    alt: "Logo You X.0",
+    alt: "Logo You X.0 - Sang Le Tech",
   };
 
   const textTen = {
@@ -132,16 +133,38 @@ function SowXO() {
     description: `**BẠN CÓ MUỐN ĐỌC THỬ SÁCH ĐIỆN TỬ ĐỘC QUYỀN TỪ SANG?**
     <br><br>⟐  Làm sao để đứng vững trong Kỷ nguyên 4.0 và Hậu Đại dịch?
     <br><br>⟐  Làm sao để giải phóng tiềm năng của những người trẻ có đam mê?
-    <br></br>⟐  Những ý tưởng và những chiến lược mà Sang rút ra từ những doanh nhân tiếng tăm nhất trên thế giới?
-`,
+    <br></br>⟐  Những ý tưởng và những chiến lược mà Sang rút ra từ những doanh nhân tiếng tăm nhất trên thế giới?`,
     buttonName: "Tìm hiểu thêm về Sách",
+    buttonSrc: "/book-xo",
     imgSrc:
       "https://super-static-assets.s3.amazonaws.com/8090ac7d-2195-4ec8-96be-1457b54a8900/images/c2a88c54-5779-493d-83ec-1d2d5429021f.jpg?w=240&f=webp",
-    alt: "Hinh anh Book Cover",
+    alt: "Sang Le Tech - Anh bia sach Bi Mat Lam Giau X.0",
   };
 
   return (
     <Layout>
+      <NextSeo
+        openGraph={{
+          title: "BÍ MẬT LÀM GIÀU X.0",
+          description: "Sách Điện Tử Độc Quyền từ Sang Lê",
+          url: "https://sangletech.com/book-xo",
+          type: "book",
+          book: {
+            releaseDate: "2021-09-06T11:08:13Z",
+            isbn: "",
+            authors: ["https://sangletech.com/sang-le-la-ai"],
+            tags: ["Book X.0", "Sang Le Tech", "Hanh Trinh Lam Giau X.0"],
+          },
+          images: [
+            {
+              url: "https://sangletech.com/assets/thumbnail-book-xo.jpg",
+              width: 850,
+              height: 650,
+              alt: "Cover of the book",
+            },
+          ],
+        }}
+      />
       <Hero {...hero} />
       <AlternativeSideBySideWithVideoOrImg {...textOne} {...textTwo} />
       <AlternativeSideBySideWithVideoOrImg {...textThree} {...textFour} />

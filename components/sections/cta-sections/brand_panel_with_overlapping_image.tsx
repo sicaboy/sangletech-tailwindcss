@@ -18,6 +18,7 @@
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
+import Link from "next/link";
 
 interface Props {
   title?: string;
@@ -25,6 +26,7 @@ interface Props {
   buttonName?: string;
   imgSrc?: string;
   alt?: string;
+  buttonSrc?: string;
 }
 
 export default function BrandPanelWithOverlappingImage(props: Props) {
@@ -153,13 +155,11 @@ ${props.description}
                 remarkPlugins={[remarkGfm]}
                 className="text-white ext-lg"
               />
-
-              <a
-                className="block w-full px-5 py-3 text-base font-medium text-center text-indigo-700 bg-white border border-transparent rounded-md shadow-md hover:bg-gray-50 sm:inline-block sm:w-auto"
-                href="#"
-              >
-                {props.buttonName || "Enter Button name"}
-              </a>
+              <Link href={props.buttonSrc || "#"}>
+                <a className="block w-full px-5 py-3 text-base font-medium text-center text-indigo-700 bg-white border border-transparent rounded-md shadow-md hover:bg-gray-50 sm:inline-block sm:w-auto">
+                  {props.buttonName || "Enter Button name"}
+                </a>
+              </Link>
             </div>
           </div>
         </div>

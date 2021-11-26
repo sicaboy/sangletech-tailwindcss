@@ -13,7 +13,11 @@
     ],
   }
   ```
+  
 */
+
+import Link from "next/link";
+
 const navigation = {
   solutions: [
     { name: "Book X.0", href: "book-xo" },
@@ -28,21 +32,20 @@ const navigation = {
     { name: "SPM Basic", href: "basic-spm-course" },
   ],
   company: [
-    { name: "Sang Lê", href: "sang-le-la-ai" },
-    { name: "Blog", href: "blog" },
-    { name: "Sách", href: "book-xo" },
-    { name: "Tư Vấn", href: "tu-van" },
-    { name: "Công Việc", href: "#" },
+    { name: "Hành Trình Làm Giàu X.0", href: "/sow-xo" },
+    { name: "Sang Lê là ai?", href: "/sang-le-la-ai" },
+    { name: "Blog", href: "/blog" },
+    { name: "Sách", href: "/book-xo" },
   ],
   legal: [
-    { name: "Galatek", href: "#" },
-    { name: "CafeS", href: "#" },
-    { name: "SPMET", href: "#" },
+    { name: "Galatek", href: "https://galatek.io" },
+    { name: "CafeS", href: "https://www.cafes.vn" },
+    { name: "SPMET", href: "https://sp.edu.vn" },
   ],
   social: [
     {
       name: "Facebook",
-      href: "https://facebook.sangletech.com",
+      href: "http://facebook.sangletech.com",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -55,7 +58,7 @@ const navigation = {
     },
     {
       name: "Instagram",
-      href: "https://instagram.sangletech.com",
+      href: "http://instagram.sangletech.com",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -68,7 +71,7 @@ const navigation = {
     },
     {
       name: "Youtube",
-      href: "https://youtube.sangletech.com",
+      href: "http://youtube.sangletech.com",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -80,7 +83,7 @@ const navigation = {
     },
     {
       name: "Linkedin",
-      href: "https://linkedin.sangletech.com",
+      href: "http://linkedin.sangletech.com",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -111,12 +114,11 @@ export default function FourColumnWithNewsLetterDark() {
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.solutions.map((item) => (
                     <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-base text-gray-300 hover:text-white"
-                      >
-                        {item.name}
-                      </a>
+                      <Link href={item.href}>
+                        <a className="text-base text-gray-300 hover:text-white">
+                          {item.name}
+                        </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -128,12 +130,11 @@ export default function FourColumnWithNewsLetterDark() {
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.support.map((item) => (
                     <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-base text-gray-300 hover:text-white"
-                      >
-                        {item.name}
-                      </a>
+                      <Link href={item.href}>
+                        <a className="text-base text-gray-300 hover:text-white">
+                          {item.name}
+                        </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -147,12 +148,11 @@ export default function FourColumnWithNewsLetterDark() {
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.company.map((item) => (
                     <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-base text-gray-300 hover:text-white"
-                      >
-                        {item.name}
-                      </a>
+                      <Link href={item.href}>
+                        <a className="text-base text-gray-300 hover:text-white">
+                          {item.name}
+                        </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -164,12 +164,11 @@ export default function FourColumnWithNewsLetterDark() {
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.legal.map((item) => (
                     <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-base text-gray-300 hover:text-white"
-                      >
-                        {item.name}
-                      </a>
+                      <Link href={item.href}>
+                        <a className="text-base text-gray-300 hover:text-white">
+                          {item.name}
+                        </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -184,7 +183,7 @@ export default function FourColumnWithNewsLetterDark() {
               Bạn sẽ nhận các thông tin, bí quyết từ Sang mỗi tuần để giúp bạn
               bước đi tự tin trên hành trình 4.0!
             </p>
-            <form className="mt-4 sm:flex sm:max-w-md">
+            {/* <form className="mt-4 sm:flex sm:max-w-md">
               <label htmlFor="email-address" className="sr-only">
                 Địa chỉ email
               </label>
@@ -205,20 +204,30 @@ export default function FourColumnWithNewsLetterDark() {
                   Đăng Ký
                 </button>
               </div>
-            </form>
+            
+            </form> */}
+
+            <div className="mt-8 rounded-md sm:flex-shrink-0">
+              <Link href="/form">
+                <button className="flex items-center justify-center px-4 py-2 text-base font-medium text-white bg-indigo-500 border border-transparent rounded-md hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-indigo-500">
+                  Đăng Ký Ngay!
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
         <div className="pt-8 mt-8 border-t border-gray-700 md:flex md:items-center md:justify-between">
           <div className="flex space-x-6 md:order-2">
             {navigation.social.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="text-gray-400 hover:text-gray-300"
-              >
-                <span className="sr-only">{item.name}</span>
-                <item.icon className="w-6 h-6" aria-hidden="true" />
-              </a>
+              <Link href={item.href}>
+                <a
+                  key={item.name}
+                  className="text-gray-400 hover:text-gray-300"
+                >
+                  <span className="sr-only">{item.name}</span>
+                  <item.icon className="w-6 h-6" aria-hidden="true" />
+                </a>
+              </Link>
             ))}
           </div>
           <p className="mt-8 text-base text-gray-400 md:mt-0 md:order-1">

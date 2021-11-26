@@ -6,19 +6,20 @@ import ThreeColumnCards from "../components/sections/blog-sections/3_column_card
 import BrandPanelWithAppScreenShot from "../components/sections/cta-sections/brand_panel_with_app_screenshot";
 import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/brand_panel_with_overlapping_image";
 import * as Icon from "@heroicons/react/outline";
+import { SoftwareAppJsonLd } from "next-seo";
+import { NextSeo } from "next-seo";
 
 const hero = {
-//TODO: Add 2 button src and with
   titleHighlight: "PRO X.0",
   titleNormal: "Ứng Dụng Học Trực Tuyến 4.0",
   description: `**Trực tiếp xây dựng và phát triển độc quyền bởi Sang Lê**`,
   buttonNormal: "Tìm Hiểu Thêm",
   buttonHighlight: "Xem Khoá Học",
-  buttonNormalSrc: "",
-  buttonHighlightSrc: "/form",
+  buttonNormalSrc: "#learn-more",
+  buttonHighlightSrc: "#courses",
   imgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626085137/Galatek.io%20Website/3D-Freelancers-illustration0005_zjyclx.png",
-  alt: "Hinh anh minh hoa Pro X.0 1",
+  alt: "Hinh anh minh hoa Pro X.0 1 - Sang Le Tech",
 };
 
 const textOne = {
@@ -29,17 +30,17 @@ const textOne = {
   <br></br>Không ai sinh ra đã biết lập trình hay viết lách. Đã gọi là “kỹ năng” thì bạn hoàn toàn có thể học được. **Khi những kỹ năng này cho phép bạn tự do tài chính, bạn có thể tự do theo đuổi đam mê!**`,
   leftImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626085142/Galatek.io%20Website/3D-Freelancers-illustration0027_gwtfhq.png",
-  leftAlt: "Hinh anh minh hoa Proxo 2",
+  leftAlt: "Hinh anh minh hoa Pro X.0 2 - Sang Le Tech",
 };
 
 const textTwo = {
   rightCaption: "SANG LE PROGRAM",
   rightTitle: "PRO X.0 là gì?",
-  rightDescription: `PRO X.0** là 1 nền tảng học trực tuyến mới đầy thú vị được tạo ra bởi Sang Lê. Với các chương trình giảng dạy từ phát triển cá nhân đến kinh doanh online, giúp bạn **bước đi tự tin trong thời đại 4.0**. 
+  rightDescription: `**PRO X.0** là 1 nền tảng học trực tuyến mới đầy thú vị được tạo ra bởi Sang Lê. Với các chương trình giảng dạy từ phát triển cá nhân đến kinh doanh online, giúp bạn **bước đi tự tin trong thời đại 4.0**. 
   <br></br>Tất cả đều được cung cấp trên một nền tảng học tập trực tuyến mang tính giải trí, học cùng một cộng đồng và hành động nhỏ mỗi ngày để **tạo ra những kết quả mới cho bản thân và công việc kinh doanh của bạn** theo những cách mà chương trình học truyền thống không thể làm được.`,
   rightImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626085142/Galatek.io%20Website/3D-Freelancers-illustration0026_axgh6x.png",
-  rightAlt: "Hinh anh minh hoa Proxo 3",
+  rightAlt: "Hinh anh minh hoa Pro X.0 3 - Sang Le Tech",
 };
 
 const coursesOne = {
@@ -48,11 +49,11 @@ const coursesOne = {
   buttonIconName: (
     <Icon.InboxInIcon className="w-6 h-6 text-white" aria-hidden="true" />
   ),
-  buttonName: "Đọc thêm",
+  buttonName: "",
 
   blogOneThumbnail:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1632471036/Galatek.io%20Website/Sangletech.com/1_m3tlvj.jpg",
-  blogOneLink: "",
+  blogOneLink: "/retargeting-course",
   blogOneCategory: "KHOÁ HỌC: QUẢNG CÁO RETARGETING",
   blogOneTitle:
     "Nhắm Lại Khách Hàng Mục Tiêu Của Bạn Bằng Quảng Cáo Retargeting",
@@ -63,11 +64,11 @@ const coursesOne = {
   blogOneAuthorImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1625719158/Galatek.io%20Website/sangle-profilePic_k2xxkw.jpg",
   blogOneAuthorName: "Sang Le",
-  blogOneReadingTime: "5 min",
+  blogOneReadingTime: "",
 
   blogTwoThumbnail:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1625651836/Galatek.io%20Website/IMG_8057-1024x682_fa7z6z.jpg",
-  blogTwoLink: "",
+  blogTwoLink: "/startupxo-course",
   blogTwoCategory: "KHOÁ HỌC: STARTUP X.0",
   blogTwoTitle:
     "7 Tuần Xây Dựng Khởi Nghiệp Của Bạn Từ A-Z & Marketing Ra Thị Trường",
@@ -75,11 +76,11 @@ const coursesOne = {
   blogTwoAuthorImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1625719158/Galatek.io%20Website/sangle-profilePic_k2xxkw.jpg",
   blogTwoAuthorName: "Sang Le",
-  blogTwoReadingTime: "2 min",
+  blogTwoReadingTime: "",
 
   blogThreeThumbnail:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1629366557/Galatek.io%20Website/galatekgame-37-38-39-0000_tskv95.png",
-  blogThreeLink: "",
+  blogThreeLink: "/website-course",
   blogThreeCategory: "KHOÁ HỌC: XÂY DỰNG WEBSITE BẰNG WORDPRESS",
   blogThreeTitle:
     "Thiết Kế & Xây Dựng Website Bằng Wordpress Dành Cho Người Mới Bắt Đầu",
@@ -89,7 +90,7 @@ const coursesOne = {
   blogThreeAuthorImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1625719158/Galatek.io%20Website/sangle-profilePic_k2xxkw.jpg",
   blogThreeAuthorName: "Sang Le",
-  blogThreeReadingTime: "4 min",
+  blogThreeReadingTime: "",
 };
 
 const coursesTwo = {
@@ -102,7 +103,7 @@ const coursesTwo = {
 
   blogOneThumbnail:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1632479964/Galatek.io%20Website/CHIENBINHX0t.jpg_jk8wja.jpg",
-  blogOneLink: "",
+  blogOneLink: "/chienbinhxo-course",
   blogOneCategory: "CHƯƠNG TRÌNH: CHIẾN BINH X.0",
   blogOneTitle:
     "Trở Thành Một Chiến Binh X.0 Bước Đi Tự Tin Trên Hành Trình 4.0",
@@ -111,11 +112,11 @@ const coursesTwo = {
   blogOneAuthorImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1625719158/Galatek.io%20Website/sangle-profilePic_k2xxkw.jpg",
   blogOneAuthorName: "Sang Le",
-  blogOneReadingTime: "5 min",
+  blogOneReadingTime: "",
 
   blogTwoThumbnail:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1632385535/Galatek.io%20Website/IMG_4434_qpajd4.jpg",
-  blogTwoLink: "",
+  blogTwoLink: "/basic-spm-course",
   blogTwoCategory: "KHOÁ HỌC: SPM - Simple Planning Method",
   blogTwoTitle: "SPM - Phương Pháp Lên Kế Hoạch Đơn Giản (Level: Cơ Bản)",
   blogTwoDescription: `Bạn học được gì từ khoá học này?
@@ -124,11 +125,11 @@ const coursesTwo = {
   blogTwoAuthorImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1625719158/Galatek.io%20Website/sangle-profilePic_k2xxkw.jpg",
   blogTwoAuthorName: "Sang Le",
-  blogTwoReadingTime: "2 min",
+  blogTwoReadingTime: "",
 
   blogThreeThumbnail:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1632388562/Galatek.io%20Website/IMG_6519_1_dd5iaq.jpg",
-  blogThreeLink: "",
+  blogThreeLink: "/basic-sales-funnel",
   blogThreeCategory: "KHOÁ HỌC: XÂY DỰNG PHỄU MARKETING",
   blogThreeTitle:
     "Thiết Kế & Xây Dựng Phễu Marketing Đẻ Ra Tiền (Level: Cơ Bản)",
@@ -136,7 +137,7 @@ const coursesTwo = {
   blogThreeAuthorImgSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1625719158/Galatek.io%20Website/sangle-profilePic_k2xxkw.jpg",
   blogThreeAuthorName: "Sang Le",
-  blogThreeReadingTime: "4 min",
+  blogThreeReadingTime: "",
 };
 
 const textFinxo = {
@@ -144,11 +145,11 @@ const textFinxo = {
   titleSecond: "Lên Kế Hoạch & Kiểm Soát Tài Chính",
   description: `Người Eskimo có câu: **"Bão là thời gian thích hợp để đi bắt cá"**. Trong tình trạng mọi hoạt động trên thế giới dường như đều đóng băng do COVID, đây là lúc bạn rèn luyện bản thân để bứt phá. Hãy tranh thủ thời gian này để học và phát triển các kỹ năng. Hãy cụ thể hóa những mục tiêu để bạn có thể dễ dàng đạt được chúng hơn. Khi mọi thứ bình thường trở lại, bạn sẽ thấy, bạn đã đi xa hơn một đoạn rất dài so với các đối thủ của mình.
   <br></br>**Để hỗ trợ bạn thiết lập mục tiêu, cụ thể hóa mục tiêu và review mỗi ngày, Sang đã phát triển một công cụ tài chính có tên là Financial Calculator. Công cụ này sẽ đồng hành cùng bạn trên chặng đường chinh phục mục tiêu. Sang đã hướng dẫn nhiều người thực hiện theo công thức và ai cũng gặt hái thành công.**`,
-  buttonName: "Xem thông tin Thần Số Học của Tôi",
-  imgSrc:
-    "https://res.cloudinary.com/sang-le-tech/image/upload/v1628152810/Galatek.io%20Website/Sangletech.com/galatekgame-37-38-39-0001_c2ukh5.png",
-  alt: "Video Demo Fin X.0",
-  videoSrc: "#",
+  buttonName: "Tìm Hiểu Thêm",
+  buttonSrc: "/fin-xo",
+  imgSrc: "/assets/thumbnail-glt-success.jpg",
+  alt: "Video Bi mat thanh cong cua Sang Le Tech & Galatek 2020",
+  videoSrc: "/posts/video-galatek-success",
 };
 
 const textBookxo = {
@@ -158,17 +159,46 @@ const textBookxo = {
     <br><br>⟐  Làm sao để giải phóng tiềm năng của những người trẻ có đam mê?
     <br></br>⟐  Những ý tưởng và những chiến lược mà Sang rút ra từ những doanh nhân tiếng tăm nhất trên thế giới?`,
   buttonName: "Tìm hiểu thêm về Sách",
+  buttonSrc: "/book-xo",
   imgSrc:
     "https://super-static-assets.s3.amazonaws.com/8090ac7d-2195-4ec8-96be-1457b54a8900/images/c2a88c54-5779-493d-83ec-1d2d5429021f.jpg?w=240&f=webp",
-  alt: "Hinh anh Book Cover",
+  alt: "Sang Le Tech - Bia sach Bi Mat Lam Giau X.0",
 };
 
 function ProX0() {
   return (
     <Layout>
+      {/* For Google Search */}
+      <SoftwareAppJsonLd
+        name="Pro X.0"
+        price="399.000"
+        priceCurrency="VND"
+        aggregateRating={{ ratingValue: "5.0", reviewCount: "1000" }}
+        operatingSystem="ANDROID, IOS, WEB"
+        applicationCategory="Application"
+      />
+      {/* YUNNIE: We need input this SEO again for all the courses and apps */}
+      {/* For Social Preview imgs like Facebook, Instagram,... */}
+      <NextSeo
+        openGraph={{
+          type: "Application",
+          url: "https://www.sangletech.com/pro-xo",
+          title: "Ứng dụng Học trực tuyến Pro X.0",
+          description: "PRO X.0 là 1 nền tảng học trực tuyến mới đầy thú vị được tạo ra bởi Sang Lê. Với các chương trình giảng dạy từ phát triển cá nhân đến kinh doanh online, giúp bạn bước đi tự tin trong thời đại 4.0",
+          images: [
+            {
+              url: "https://sangletech.com/assets/seo-kkcd-intro.jpg",
+              width: 800,
+              height: 600,
+              alt: "Og Image Alt",
+            },
+          ],
+        }}
+      /> 
       <HeroWithAngelImageOnRight {...hero} />
+      <div id="learn-more" />
       <AlternativeSideBySideWithVideoOrImg {...textOne} {...textTwo} />
-      <ThreeColumnCards {...coursesOne} />
+      <ThreeColumnCards {...coursesOne} id="courses" />
       <ThreeColumnCards {...coursesTwo} />
       <BrandPanelWithAppScreenShot {...textFinxo} />
       <BrandPanelWithOverlappingImage {...textBookxo} />

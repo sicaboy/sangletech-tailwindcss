@@ -5,6 +5,7 @@ import Layout from "./layout";
 
 interface Props {
   title?: string;
+  description?: string;
 }
 
 export default class UnderConstruction extends React.Component<Props> {
@@ -29,8 +30,8 @@ export default class UnderConstruction extends React.Component<Props> {
               {/* TODO: Replace Smartie component */}
               <Lottie options={defaultOptions} height={200} width={200} />
               <p className="mb-4 font-semibold text-indigo-500 md:text-lg xl:text-xl md:mb-6">
-                Chào Bạn. Anh Sang và đội ngũ đang xây dựng trang này. Trong lúc
-                chờ đợi. Bạn xem các thông tin khác nhé. Tks!
+                {this.props.description ||
+                  "Chào Bạn. Anh Sang và đội ngũ đang xây dựng trang này. Trong lúc chờ đợi. Bạn xem các thông tin khác nhé. Tks!"}
               </p>
 
               <div className="h-16" />

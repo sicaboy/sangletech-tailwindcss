@@ -61,22 +61,21 @@ Khác
 
 const courses = [
   {
-    //TODO: This shows on Apps part
     name: "Quảng Cáo Retargeting",
     description:
-      "Làm thế nào để Bạn luôn nằm ở vị trí hàng đầu trong tâm trí khách hàng và đưa họ quay trở lại trang web của mình khi họ đã rời đi?",
+      "Làm thế nào để Bạn luôn nằm ở vị trí hàng đầu trong tâm trí khách hàng và đưa họ quay trở lại trang web của Bạn khi họ đã rời đi?",
     href: "/retargeting-course",
     icon: ChartBarIcon,
   },
   {
     name: "Phễu Bán Hàng Basic",
     description:
-      "Bật mí những bí mật từ các Chuyên gia Marketing nổi tiếng thế giới để áp dụng thành công cho việc kinh doanh online của Bạn!",
+      "Bật mí những bí mật từ Chuyên gia xây dựng Phễu Bán Hàng nổi tiếng thế giới để áp dụng thành công cho việc kinh doanh Online của Bạn!",
     href: "/basic-sales-funnel",
     icon: CursorClickIcon,
   },
   {
-    name: "Startup X0",
+    name: "Startup X.0",
     description:
       "7 Tuần xây dựng khởi nghiệp của bạn từ A-Z & Marketing ra thị trường.",
     href: "/startupxo-course",
@@ -84,8 +83,7 @@ const courses = [
   },
   {
     name: "SPM Basic",
-    description:
-      "Phương pháp Lập kế hoạch đơn giản với phần mềm Notion.",
+    description: "Phương pháp Lập kế hoạch đơn giản với phần mềm Notion.",
     href: "/basic-spm-course",
     icon: ViewGridIcon,
   },
@@ -147,26 +145,31 @@ const books = [
 ];
 
 const callsToAction = [
-  { name: "Xem thêm về Sách", href: "/posts/video-book-xo", icon: PlayIcon },
+  {
+    name: "Sách Bí Mật Làm Giàu",
+    href: "/posts/video-book-xo",
+    icon: PlayIcon,
+  },
   { name: "Tra cứu Thần Số Học", href: "/you-xo", icon: CheckCircleIcon },
   { name: "Liên hệ Tư vấn", href: "/tu-van", icon: PhoneIcon },
 ];
 
-//TODO: Add company info
-const company = [
-  { name: "Sang Lê", href: "/sang-le-la-ai", icon: InformationCircleIcon },
-  { name: "Sách", href: "/book-xo", icon: BookOpenIcon },
+const shortcuts = [
+  {
+    name: "Hành Trình Làm Giàu X.0",
+    href: "/sow-xo",
+    icon: InformationCircleIcon,
+  },
+  { name: "Bí Mật Làm Giàu X.0", href: "/book-xo", icon: BookOpenIcon },
   { name: "Blog", href: "/blog", icon: NewspaperIcon },
-  { name: "Phần Mềm", href: "/you-xo", icon: CursorClickIcon },
+  { name: "Ứng Dụng", href: "/you-xo", icon: CursorClickIcon },
   { name: "Khoá Học", href: "/pro-xo", icon: ShieldCheckIcon },
 ];
 
-//TODO: Add resources info
-
-const resources = [
-  { name: "CafeS", href: "#", icon: UserGroupIcon },
-  { name: "Galatek", href: "#", icon: GlobeAltIcon },
-  { name: "SPMET", href: "#", icon: BookmarkAltIcon },
+const company = [
+  { name: "CafeS", href: "https://www.cafes.vn", icon: UserGroupIcon },
+  { name: "Galatek", href: "https://galatek.io", icon: GlobeAltIcon },
+  { name: "SPMET", href: "https://sp.edu.vn", icon: BookmarkAltIcon },
 ];
 
 const blogPosts = [
@@ -203,14 +206,16 @@ export default function WithFullWithFlyOuts() {
       <div className="relative z-20">
         <div className="flex items-center justify-between px-4 py-5 mx-auto max-w-7xl sm:px-6 sm:py-4 lg:px-8 md:justify-start md:space-x-10">
           <div>
-            <a href="#" className="flex">
-              <span className="sr-only">Workflow</span>
-              <img
-                className="w-auto h-8 sm:h-10"
-                src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                alt=""
-              />
-            </a>
+            <Link href="/">
+              <a className="flex">
+                <span className="sr-only">Sang Le Tech</span>
+                <img
+                  className="w-auto h-8 sm:h-12"
+                  src="assets/sangletech-logo.png"
+                  alt="sang le tech"
+                />
+              </a>
+            </Link>
           </div>
           <div className="-my-2 -mr-2 md:hidden">
             <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -244,7 +249,7 @@ export default function WithFullWithFlyOuts() {
                         "group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                       )}
                     >
-                      <span>Phần Mềm</span>
+                      <span>Ứng Dụng</span>
                       <ChevronDownIcon
                         className={classNames(
                           open ? "text-gray-600" : "text-gray-400",
@@ -266,52 +271,52 @@ export default function WithFullWithFlyOuts() {
                       <Popover.Panel className="absolute inset-x-0 z-10 hidden transform bg-white shadow-lg md:block top-full">
                         <div className="grid px-4 py-6 mx-auto max-w-7xl gap-y-6 sm:grid-cols-2 sm:gap-8 sm:px-6 sm:py-8 lg:grid-cols-4 lg:px-8 lg:py-12 xl:py-16">
                           {apps.map((item) => (
-                            <a
-                              key={item.name}
-                              href={item.href}
-                              className="flex flex-col justify-between p-3 -m-3 rounded-lg hover:bg-gray-50"
-                            >
-                              <div className="flex md:h-full lg:flex-col">
-                                <div className="flex-shrink-0">
-                                  <span className="inline-flex items-center justify-center w-10 h-10 text-white bg-indigo-500 rounded-md sm:h-12 sm:w-12">
-                                    <item.icon
-                                      className="w-6 h-6"
-                                      aria-hidden="true"
-                                    />
-                                  </span>
-                                </div>
-                                <div className="ml-4 md:flex-1 md:flex md:flex-col md:justify-between lg:ml-0 lg:mt-4">
-                                  <div>
-                                    <p className="text-base font-medium text-gray-900">
-                                      {item.name}
-                                    </p>
-                                    <p className="mt-1 text-sm text-gray-500">
-                                      {item.description}
+                            <Link href={item.href}>
+                              <a
+                                key={item.name}
+                                className="flex flex-col justify-between p-3 -m-3 rounded-lg hover:bg-gray-50"
+                              >
+                                <div className="flex md:h-full lg:flex-col">
+                                  <div className="flex-shrink-0">
+                                    <span className="inline-flex items-center justify-center w-10 h-10 text-white bg-indigo-500 rounded-md sm:h-12 sm:w-12">
+                                      <item.icon
+                                        className="w-6 h-6"
+                                        aria-hidden="true"
+                                      />
+                                    </span>
+                                  </div>
+                                  <div className="ml-4 md:flex-1 md:flex md:flex-col md:justify-between lg:ml-0 lg:mt-4">
+                                    <div>
+                                      <p className="text-base font-medium text-gray-900">
+                                        {item.name}
+                                      </p>
+                                      <p className="mt-1 text-sm text-gray-500">
+                                        {item.description}
+                                      </p>
+                                    </div>
+                                    <p className="mt-2 text-sm font-medium text-indigo-600 lg:mt-4">
+                                      Tìm Hiểu Ngay{" "}
+                                      <span aria-hidden="true">&rarr;</span>
                                     </p>
                                   </div>
-                                  <p className="mt-2 text-sm font-medium text-indigo-600 lg:mt-4">
-                                    Tìm Hiểu Ngay{" "}
-                                    <span aria-hidden="true">&rarr;</span>
-                                  </p>
                                 </div>
-                              </div>
-                            </a>
+                              </a>
+                            </Link>
                           ))}
                         </div>
                         <div className="bg-gray-50">
                           <div className="px-4 py-5 mx-auto space-y-6 max-w-7xl sm:flex sm:space-y-0 sm:space-x-10 sm:px-6 lg:px-8">
                             {callsToAction.map((item) => (
                               <div key={item.name} className="flow-root">
-                                <a
-                                  href={item.href}
-                                  className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 rounded-md hover:bg-gray-100"
-                                >
-                                  <item.icon
-                                    className="flex-shrink-0 w-6 h-6 text-gray-400"
-                                    aria-hidden="true"
-                                  />
-                                  <span className="ml-3">{item.name}</span>
-                                </a>
+                                <Link href={item.href}>
+                                  <a className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 rounded-md hover:bg-gray-100">
+                                    <item.icon
+                                      className="flex-shrink-0 w-6 h-6 text-gray-400"
+                                      aria-hidden="true"
+                                    />
+                                    <span className="ml-3">{item.name}</span>
+                                  </a>
+                                </Link>
                               </div>
                             ))}
                           </div>
@@ -352,52 +357,52 @@ export default function WithFullWithFlyOuts() {
                       <Popover.Panel className="absolute inset-x-0 z-10 hidden transform bg-white shadow-lg md:block top-full">
                         <div className="grid px-4 py-6 mx-auto max-w-7xl gap-y-6 sm:grid-cols-2 sm:gap-8 sm:px-6 sm:py-8 lg:grid-cols-4 lg:px-8 lg:py-12 xl:py-16">
                           {courses.map((item) => (
-                            <a
-                              key={item.name}
-                              href={item.href}
-                              className="flex flex-col justify-between p-3 -m-3 rounded-lg hover:bg-gray-50"
-                            >
-                              <div className="flex md:h-full lg:flex-col">
-                                <div className="flex-shrink-0">
-                                  <span className="inline-flex items-center justify-center w-10 h-10 text-white bg-indigo-500 rounded-md sm:h-12 sm:w-12">
-                                    <item.icon
-                                      className="w-6 h-6"
-                                      aria-hidden="true"
-                                    />
-                                  </span>
-                                </div>
-                                <div className="ml-4 md:flex-1 md:flex md:flex-col md:justify-between lg:ml-0 lg:mt-4">
-                                  <div>
-                                    <p className="text-base font-medium text-gray-900">
-                                      {item.name}
-                                    </p>
-                                    <p className="mt-1 text-sm text-gray-500">
-                                      {item.description}
+                            <Link href={item.href}>
+                              <a
+                                key={item.name}
+                                className="flex flex-col justify-between p-3 -m-3 rounded-lg hover:bg-gray-50"
+                              >
+                                <div className="flex md:h-full lg:flex-col">
+                                  <div className="flex-shrink-0">
+                                    <span className="inline-flex items-center justify-center w-10 h-10 text-white bg-indigo-500 rounded-md sm:h-12 sm:w-12">
+                                      <item.icon
+                                        className="w-6 h-6"
+                                        aria-hidden="true"
+                                      />
+                                    </span>
+                                  </div>
+                                  <div className="ml-4 md:flex-1 md:flex md:flex-col md:justify-between lg:ml-0 lg:mt-4">
+                                    <div>
+                                      <p className="text-base font-medium text-gray-900">
+                                        {item.name}
+                                      </p>
+                                      <p className="mt-1 text-sm text-gray-500">
+                                        {item.description}
+                                      </p>
+                                    </div>
+                                    <p className="mt-2 text-sm font-medium text-indigo-600 lg:mt-4">
+                                      Tìm Hiểu Ngay{" "}
+                                      <span aria-hidden="true">&rarr;</span>
                                     </p>
                                   </div>
-                                  <p className="mt-2 text-sm font-medium text-indigo-600 lg:mt-4">
-                                    Tìm Hiểu Ngay{" "}
-                                    <span aria-hidden="true">&rarr;</span>
-                                  </p>
                                 </div>
-                              </div>
-                            </a>
+                              </a>
+                            </Link>
                           ))}
                         </div>
                         <div className="bg-gray-50">
                           <div className="px-4 py-5 mx-auto space-y-6 max-w-7xl sm:flex sm:space-y-0 sm:space-x-10 sm:px-6 lg:px-8">
                             {callsToAction.map((item) => (
                               <div key={item.name} className="flow-root">
-                                <a
-                                  href={item.href}
-                                  className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 rounded-md hover:bg-gray-100"
-                                >
-                                  <item.icon
-                                    className="flex-shrink-0 w-6 h-6 text-gray-400"
-                                    aria-hidden="true"
-                                  />
-                                  <span className="ml-3">{item.name}</span>
-                                </a>
+                                <Link href={item.href}>
+                                  <a className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 rounded-md hover:bg-gray-100">
+                                    <item.icon
+                                      className="flex-shrink-0 w-6 h-6 text-gray-400"
+                                      aria-hidden="true"
+                                    />
+                                    <span className="ml-3">{item.name}</span>
+                                  </a>
+                                </Link>
                               </div>
                             ))}
                           </div>
@@ -407,12 +412,11 @@ export default function WithFullWithFlyOuts() {
                   </>
                 )}
               </Popover>
-              <a
-                href="/tu-vanß"
-                className="text-base font-medium text-gray-500 hover:text-gray-900"
-              >
-                Tư Vấn
-              </a>
+              <Link href="/work-with-sang">
+                <a className="text-base font-medium text-gray-500 hover:text-gray-900">
+                  Tuyển dụng
+                </a>
+              </Link>
               <Popover>
                 {({ open }) => (
                   <>
@@ -422,7 +426,7 @@ export default function WithFullWithFlyOuts() {
                         "group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                       )}
                     >
-                      <span>Khác</span>
+                      <span>Thư Viện</span>
                       <ChevronDownIcon
                         className={classNames(
                           open ? "text-gray-600" : "text-gray-400",
@@ -450,42 +454,44 @@ export default function WithFullWithFlyOuts() {
                           <nav className="grid px-4 py-8 bg-white gap-y-10 sm:grid-cols-2 sm:gap-x-8 sm:py-12 sm:px-6 lg:px-8 xl:pr-12">
                             <div>
                               <h3 className="text-sm font-medium tracking-wide text-gray-500 uppercase">
-                                Company
+                                Shortcuts
                               </h3>
                               <ul role="list" className="mt-5 space-y-6">
-                                {company.map((item) => (
+                                {shortcuts.map((item) => (
                                   <li key={item.name} className="flow-root">
-                                    <a
-                                      href={item.href}
-                                      className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 rounded-md hover:bg-gray-50"
-                                    >
-                                      <item.icon
-                                        className="flex-shrink-0 w-6 h-6 text-gray-400"
-                                        aria-hidden="true"
-                                      />
-                                      <span className="ml-4">{item.name}</span>
-                                    </a>
+                                    <Link href={item.href}>
+                                      <a className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 rounded-md hover:bg-gray-50">
+                                        <item.icon
+                                          className="flex-shrink-0 w-6 h-6 text-gray-400"
+                                          aria-hidden="true"
+                                        />
+                                        <span className="ml-4">
+                                          {item.name}
+                                        </span>
+                                      </a>
+                                    </Link>
                                   </li>
                                 ))}
                               </ul>
                             </div>
                             <div>
                               <h3 className="text-sm font-medium tracking-wide text-gray-500 uppercase">
-                                Resources
+                                Công Ty
                               </h3>
                               <ul role="list" className="mt-5 space-y-6">
-                                {resources.map((item) => (
+                                {company.map((item) => (
                                   <li key={item.name} className="flow-root">
-                                    <a
-                                      href={item.href}
-                                      className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 rounded-md hover:bg-gray-50"
-                                    >
-                                      <item.icon
-                                        className="flex-shrink-0 w-6 h-6 text-gray-400"
-                                        aria-hidden="true"
-                                      />
-                                      <span className="ml-4">{item.name}</span>
-                                    </a>
+                                    <Link href={item.href}>
+                                      <a className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 rounded-md hover:bg-gray-50">
+                                        <item.icon
+                                          className="flex-shrink-0 w-6 h-6 text-gray-400"
+                                          aria-hidden="true"
+                                        />
+                                        <span className="ml-4">
+                                          {item.name}
+                                        </span>
+                                      </a>
+                                    </Link>
                                   </li>
                                 ))}
                               </ul>
@@ -499,39 +505,37 @@ export default function WithFullWithFlyOuts() {
                               <ul role="list" className="mt-6 space-y-6">
                                 {blogPosts.map((post) => (
                                   <li key={post.id} className="flow-root">
-                                    <a
-                                      href={post.href}
-                                      className="flex p-3 -m-3 rounded-lg hover:bg-gray-100"
-                                    >
-                                      <div className="flex-shrink-0 hidden sm:block">
-                                        <img
-                                          className="object-cover w-32 h-20 rounded-md"
-                                          src={post.imageUrl}
-                                          alt=""
-                                        />
-                                      </div>
-                                      <div className="flex-1 w-0 sm:ml-8">
-                                        <h4 className="text-base font-medium text-gray-900 truncate">
-                                          {post.name}
-                                        </h4>
-                                        <p className="mt-1 text-sm text-gray-500">
-                                          {post.preview}
-                                        </p>
-                                      </div>
-                                    </a>
+                                    <Link href={post.href}>
+                                      <a className="flex p-3 -m-3 rounded-lg hover:bg-gray-100">
+                                        <div className="flex-shrink-0 hidden sm:block">
+                                          <img
+                                            className="object-cover w-32 h-20 rounded-md"
+                                            src={post.imageUrl}
+                                            alt=""
+                                          />
+                                        </div>
+                                        <div className="flex-1 w-0 sm:ml-8">
+                                          <h4 className="text-base font-medium text-gray-900 truncate">
+                                            {post.name}
+                                          </h4>
+                                          <p className="mt-1 text-sm text-gray-500">
+                                            {post.preview}
+                                          </p>
+                                        </div>
+                                      </a>
+                                    </Link>
                                   </li>
                                 ))}
                               </ul>
                             </div>
                             <div className="mt-6 text-sm font-medium">
-                              <a
-                                href="#"
-                                className="text-indigo-600 hover:text-indigo-500"
-                              >
-                                {" "}
-                                View all posts{" "}
-                                <span aria-hidden="true">&rarr;</span>
-                              </a>
+                              <Link href="/blog">
+                                <a className="text-indigo-600 hover:text-indigo-500">
+                                  {" "}
+                                  Xem thêm{" "}
+                                  <span aria-hidden="true">&rarr;</span>
+                                </a>
+                              </Link>
                             </div>
                           </div>
                         </div>
@@ -576,11 +580,15 @@ export default function WithFullWithFlyOuts() {
             <div className="px-5 pt-5 pb-6 sm:pb-8">
               <div className="flex items-center justify-between">
                 <div>
-                  <img
-                    className="w-auto h-8"
-                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                    alt="Workflow"
-                  />
+                  <Link href="/">
+                    <a className="flex">
+                      <img
+                        className="w-auto h-8 sm:h-12"
+                        src="assets/sangletech-logo.png"
+                        alt="sang le tech"
+                      />
+                    </a>
+                  </Link>
                 </div>
                 <div className="-mr-2">
                   <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -593,18 +601,19 @@ export default function WithFullWithFlyOuts() {
                 <nav>
                   <div className="grid gap-7 sm:grid-cols-2 sm:gap-y-8 sm:gap-x-4">
                     {courses.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className="flex items-center p-3 -m-3 rounded-lg hover:bg-gray-50"
-                      >
-                        <div className="flex items-center justify-center flex-shrink-0 w-10 h-10 text-white bg-indigo-500 rounded-md sm:h-12 sm:w-12">
-                          <item.icon className="w-6 h-6" aria-hidden="true" />
-                        </div>
-                        <div className="ml-4 text-base font-medium text-gray-900">
-                          {item.name}
-                        </div>
-                      </a>
+                      <Link href={item.href}>
+                        <a
+                          key={item.name}
+                          className="flex items-center p-3 -m-3 rounded-lg hover:bg-gray-50"
+                        >
+                          <div className="flex items-center justify-center flex-shrink-0 w-10 h-10 text-white bg-indigo-500 rounded-md sm:h-12 sm:w-12">
+                            <item.icon className="w-6 h-6" aria-hidden="true" />
+                          </div>
+                          <div className="ml-4 text-base font-medium text-gray-900">
+                            {item.name}
+                          </div>
+                        </a>
+                      </Link>
                     ))}
                   </div>
                   <div className="mt-8 text-base">
@@ -622,55 +631,44 @@ export default function WithFullWithFlyOuts() {
             </div>
             <div className="px-5 py-6">
               <div className="grid grid-cols-2 gap-4">
-                <a
-                  href="#"
-                  className="text-base font-medium text-gray-900 rounded-md hover:text-gray-700"
-                >
-                  Book X.0
-                </a>
+                <Link href="book-xo">
+                  <a className="text-base font-medium text-gray-900 rounded-md hover:text-gray-700">
+                    Book X.0
+                  </a>
+                </Link>
+                <Link href="you-xo">
+                  <a className="text-base font-medium text-gray-900 rounded-md hover:text-gray-700">
+                    You X.0
+                  </a>
+                </Link>
+                <Link href="fin-xo">
+                  <a className="text-base font-medium text-gray-900 rounded-md hover:text-gray-700">
+                    Fin X.0
+                  </a>
+                </Link>
 
-                <a
-                  href="book-xo"
-                  className="text-base font-medium text-gray-900 rounded-md hover:text-gray-700"
-                >
-                  You X.0
-                </a>
-
-                <a
-                  href="you-xo"
-                  className="text-base font-medium text-gray-900 rounded-md hover:text-gray-700"
-                >
-                  Fin X.0
-                </a>
-
-                <a
-                  href="fin-xo"
-                  className="text-base font-medium text-gray-900 rounded-md hover:text-gray-700"
-                >
-                  Pro X.0
-                </a>
-
-                <a
-                  href="pro-xo"
-                  className="text-base font-medium text-gray-900 rounded-md hover:text-gray-700"
-                >
-                  Blog
-                </a>
-
-                <a
-                  href="/blog"
-                  className="text-base font-medium text-gray-900 rounded-md hover:text-gray-700"
-                >
-                  Sang Lê là ai?
-                </a>
+                <Link href="pro-xo">
+                  <a className="text-base font-medium text-gray-900 rounded-md hover:text-gray-700">
+                    Pro X.0
+                  </a>
+                </Link>
+                <Link href="blog">
+                  <a className="text-base font-medium text-gray-900 rounded-md hover:text-gray-700">
+                    Blog
+                  </a>
+                </Link>
+                <Link href="/sang-le-la-ai">
+                  <a className="text-base font-medium text-gray-900 rounded-md hover:text-gray-700">
+                    Sang Lê là ai?
+                  </a>
+                </Link>
               </div>
               <div className="mt-6">
-                <a
-                  href="/form"
-                  className="flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700"
-                >
-                  Đăng Ký Nhận Ưu Đãi
-                </a>
+                <Link href="/form">
+                  <a className="flex items-center justify-center w-full px-4 py-2 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700">
+                    Đăng Ký Nhận Ưu Đãi
+                  </a>
+                </Link>
                 {/* <p className="mt-6 text-base font-medium text-center text-gray-500">
                   Existing customer?{" "}
                   <a href="#" className="text-indigo-600 hover:text-indigo-500">
