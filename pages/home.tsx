@@ -51,6 +51,7 @@ type Props = {
 };
 
 const hero = {
+  //TODO: Can not see the titleNormal
   titleHighlight: "VƯƠN TẦM BẢN THÂN",
   titleNormal: "Sang Le Tech",
   description: `Giúp Bạn Bước Đi Tự Tin Trên **Hành Trình 4.0**`,

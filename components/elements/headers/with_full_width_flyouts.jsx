@@ -412,9 +412,9 @@ export default function WithFullWithFlyOuts() {
                   </>
                 )}
               </Popover>
-              <Link href="/tu-van">
+              <Link href="/work-with-sang">
                 <a className="text-base font-medium text-gray-500 hover:text-gray-900">
-                  Tư Vấn
+                  Tuyển dụng
                 </a>
               </Link>
               <Popover>
