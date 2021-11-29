@@ -1,14 +1,14 @@
 import HeroWithSocialNStats from "../components/hero-with-social-n-stats";
 import CompanyAchivement from "../components/company-achivement";
 import SimpleWithHeading from "../components/sections/logo-clouds/simple_with_heading";
-import ThreeColumnsFeatureList from "../components/three-columns-feature-list";
+import OpenPositions from "../components/open-positions";
 import CoreValues from "../components/core-values";
+import Layout from "../components/layout"
 
 import * as Icon from "@heroicons/react/outline";
 
 const hero = {
   //TODO: Why can not see the titleNormal?
-  //TODO: Delete the buttonNormal 
   //TODO: the HighlightButton will lead to Open Positions part below
   titleHighlight: "Are You Ready?",
   titleNormal: "**BECOME ONE OF THE COOLEST WARRIORS IN SANG LE TEAM**",
@@ -22,8 +22,6 @@ const hero = {
 };
 
 const coreValue = {
-  //TODO: Add more Text from listSevenText -> listElevenText
-  //TODO: Delete buttonName 
   //TODO: Change the title font "Core Values" to make it look the same as the the other titles
   title: "Core Values",
   description: `Our core values are the backbone of our company development and all our staffs and partners are always picked based on these values.`,
@@ -53,39 +51,47 @@ const successFormula = {
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1633424964/Galatek.io%20Website/Sangletech.com/Screen_Shot_2021-10-05_at_4.07.47_PM_krwu1i.png",
   imgThreeSrc:
     "/assets/team-smile.jpeg",
-  
-    //TODO: Delete listDescription
+
+  //TODO: Delete listDescription
   listOneIconSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626079598/Galatek.io%20Website/3D_Illustration-Product_Development-Skin-01_f6gpbd.png",
   listOneTitle: "Technology",
-  listOneDescription: false,
+  listOneDescription: "We apply technology in whatever we do",
 
   listTwoIconSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626079584/Galatek.io%20Website/3D_Illustration-Collaborative-Skin-01_hdnobk.png",
   listTwoTitle: "Gamification",
-  listTwoDescription: false,
+  listTwoDescription: "We believe working needa make it fun too",
 
   listThreeIconSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626079608/Galatek.io%20Website/3D_Illustration-Vision_Mission_Skin-01_lnbcgi.png",
   listThreeTitle: " Visualization",
-  listThreeDescription: false,
+  listThreeDescription: "We like to see things with graphics and charts",
 };
 
 const openPositions = {
-  //TODO: Turn each list into button and creat buttonSrc
-  //TODO: Can not see the listTitle
+  //TODO: Input the urls and description
   caption: "Open Positions",
   title: "We Are Looking For",
   description: false,
 
-  listOneTitle: "Front-end Developer",
-  listOneDescription: `Senior`,
-
-  listTwoTitle: "Digital Content Writer",
-  listTwoDescription: `Senior`,
-
-  listThreeTitle: "Video Editor",
-  listThreeDescription: `Senior`,
+  positions: [
+    {
+      position: "Front-end Developer",
+      description: `Click to see more details`,
+      url: "https://sangletech.com",
+    },
+    {
+      position: "Digital Content Writer",
+      description: `Click to see more details`,
+      url: "",
+    },
+    {
+      position: "Video Editor",
+      description: `Click to see more details`,
+      url: "",
+    },
+  ]
 };
 
 const company = {
@@ -114,23 +120,23 @@ const company = {
 
 function Home() {
   return (
-    <>
+    <Layout>
       <HeroWithSocialNStats {...hero} />
       <CoreValues {...coreValue} />
       <CompanyAchivement {...successFormula} />
       <div>
-            <h1 className="text-2xl font-bold text-center"> Application Steps </h1>
-            <img
-              className="w-full rounded-lg"
-              src="/assets/hire-flow.jpg"
-              alt="Galatek-Hire-Steps"
-              width={1310}
-              height={873}
-            />
+        <h1 className="text-4xl font-bold text-center text-black"> Application Steps </h1>
+        <img
+          className="w-full rounded-lg"
+          src="/assets/hire-flow.jpg"
+          alt="Galatek-Hire-Steps"
+          width={1310}
+          height={873}
+        />
       </div>
-      <ThreeColumnsFeatureList {...openPositions} />
+      <OpenPositions {...openPositions} />
       <SimpleWithHeading {...company} />
-    </>
+    </Layout>
   );
 }
 

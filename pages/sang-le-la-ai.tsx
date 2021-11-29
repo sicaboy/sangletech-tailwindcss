@@ -30,6 +30,7 @@ const hero = {
   videoSrc: "/posts/video-khoanh-khac-cuoc-doi",
   videoCaption: `Câu chuyện về Khoảnh Khắc "Lộc Xác" đời Sang Lê`,
   alt: "Sang Le Tech - Video Khoanh Khac Cuoc Doi",
+  stats: true,
 };
 
 const galleryOne = {

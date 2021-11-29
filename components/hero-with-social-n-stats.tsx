@@ -101,14 +101,16 @@ ${props.description}
                     {props.buttonHighlight || "Get started"}
                   </a>
                 </div>
-                <div className="mt-3 sm:mt-0 sm:ml-3">
+
+                {props.buttonNormal && <div className="mt-3 sm:mt-0 sm:ml-3">
                   <a
                     href={props.buttonNormalSrc}
                     className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-indigo-700 bg-indigo-100 border border-transparent rounded-md hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
                   >
                     {props.buttonNormal || "Live demo"}
                   </a>
-                </div>
+                </div>}
+
               </div>
             </div>
             {/* <!-- content - end --> */}
@@ -128,55 +130,58 @@ ${props.description}
             {/* <!-- image - end --> */}
           </section>
 
-          <section className="flex flex-col items-center justify-between gap-10 pt-8 border-t lg:flex-row lg:gap-8">
-            {/* <!-- stats - start --> */}
-            <div className="grid grid-cols-2 gap-4 -mx-6 md:flex md:divide-x md:-mx-8">
-              <div className="px-6 md:px-8">
-                <span className="block text-lg font-bold text-center text-indigo-500 md:text-xl md:text-left">
-                  250 Dự Án
-                </span>
-                <span className="block text-sm font-semibold text-center text-gray-800 md:text-base md:text-left">
-                  đã hoàn thành Đa Quốc Gia
-                </span>
+          {props.stats &&
+
+            <section className="flex flex-col items-center justify-between gap-10 pt-8 border-t lg:flex-row lg:gap-8">
+              {/* <!-- stats - start --> */}
+              <div className="grid grid-cols-2 gap-4 -mx-6 md:flex md:divide-x md:-mx-8">
+                <div className="px-6 md:px-8">
+                  <span className="block text-lg font-bold text-center text-indigo-500 md:text-xl md:text-left">
+                    250 Dự Án
+                  </span>
+                  <span className="block text-sm font-semibold text-center text-gray-800 md:text-base md:text-left">
+                    đã hoàn thành Đa Quốc Gia
+                  </span>
+                </div>
+
+                <div className="px-6 md:px-8">
+                  <span className="block text-lg font-bold text-center text-indigo-500 md:text-xl md:text-left">
+                    10 Giải Thưởng
+                  </span>
+                  <span className="block text-sm font-semibold text-center text-gray-800 md:text-base md:text-left">
+                    Trao Tặng Bởi TopCoders
+                  </span>
+                </div>
+
+                <div className="px-6 md:px-8">
+                  <span className="block text-lg font-bold text-center text-indigo-500 md:text-xl md:text-left">
+                    13 Năm
+                  </span>
+                  <span className="block text-sm font-semibold text-center text-gray-800 md:text-base md:text-left">
+                    Kinh Nghiệm
+                  </span>
+                </div>
               </div>
+              {/* <!-- stats - end --> */}
 
-              <div className="px-6 md:px-8">
-                <span className="block text-lg font-bold text-center text-indigo-500 md:text-xl md:text-left">
-                  10 Giải Thưởng
-                </span>
-                <span className="block text-sm font-semibold text-center text-gray-800 md:text-base md:text-left">
-                  Trao Tặng Bởi TopCoders
-                </span>
+              {/* <!-- social - start --> */}
+
+              <span className="w-12 h-px bg-gray-200"></span>
+              <div className="flex space-x-6 md:order-2">
+                {social.map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className="text-gray-400 hover:text-gray-300"
+                  >
+                    <span className="sr-only">{item.name}</span>
+                    <item.icon className="w-6 h-6" aria-hidden="true" />
+                  </a>
+                ))}
               </div>
-
-              <div className="px-6 md:px-8">
-                <span className="block text-lg font-bold text-center text-indigo-500 md:text-xl md:text-left">
-                  13 Năm
-                </span>
-                <span className="block text-sm font-semibold text-center text-gray-800 md:text-base md:text-left">
-                  Kinh Nghiệm
-                </span>
-              </div>
-            </div>
-            {/* <!-- stats - end --> */}
-
-            {/* <!-- social - start --> */}
-
-            <span className="w-12 h-px bg-gray-200"></span>
-            <div className="flex space-x-6 md:order-2">
-              {social.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="text-gray-400 hover:text-gray-300"
-                >
-                  <span className="sr-only">{item.name}</span>
-                  <item.icon className="w-6 h-6" aria-hidden="true" />
-                </a>
-              ))}
-            </div>
-            {/* <!-- social - end --> */}
-          </section>
+              {/* <!-- social - end --> */}
+            </section>
+          }
         </div>
       </div>
     </div>

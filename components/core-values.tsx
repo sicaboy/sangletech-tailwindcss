@@ -41,7 +41,27 @@ ${props.description}
     {
       id: 6,
       text: props.listSixText || "list text",
+    }, {
+      id: 7,
+      text: props.listSevenText || "list text",
     },
+    {
+      id: 8,
+      text: props.listEightText || "list text",
+    },
+    {
+      id: 9,
+      text: props.listNineText || "list text",
+    },
+    {
+      id: 10,
+      text: props.listTenText || "list text",
+    },
+    {
+      id: 11,
+      text: props.listElevenText || "list text",
+    },
+
   ];
 
   return (
@@ -49,7 +69,7 @@ ${props.description}
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="mb-20 text-center">
-            <h1 className="mb-4 text-2xl font-medium text-center text-gray-900 sm:text-3xl title-font">
+            <h1 className="block mt-6 text-3xl font-extrabold text-indigo-600 sm:text-4xl xl:inline">
               {props.title || "Raw Denim Heirloom Man Braid"}
             </h1>
 
@@ -57,12 +77,12 @@ ${props.description}
               children={description}
               rehypePlugins={[rehypeRaw]}
               remarkPlugins={[remarkGfm]}
-              className="mt-3 text-lg text-gray-500"
+              className="mt-3 text-lg w-1/2 mx-auto text-gray-500"
             />
           </div>
           <div className="flex flex-wrap -mx-2 lg:w-4/5 sm:mx-auto sm:mb-2">
             {list.map((item) => (
-              <div className="w-full p-2 sm:w-1/2" key={item.id}>
+              <div className="w-full p-2 sm:w-1/3" key={item.id}>
                 <div className="flex items-center h-full p-4 bg-gray-100 rounded">
                   <svg
                     fill="none"
