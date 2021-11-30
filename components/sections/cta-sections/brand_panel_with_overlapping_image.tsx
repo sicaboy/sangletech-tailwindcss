@@ -43,7 +43,7 @@ ${props.description}
 </div>`;
 
   return (
-    <div className="relative py-16 bg-white">
+    <div className="relative py-16 m-3 bg-white ">
       <div
         className="absolute inset-x-0 top-0 hidden h-1/2 bg-gray-50 lg:block"
         aria-hidden="true"
@@ -155,6 +155,7 @@ ${props.description}
                 remarkPlugins={[remarkGfm]}
                 className="text-white ext-lg"
               />
+
               <Link href={props.buttonSrc || "#"}>
                 <a className="block w-full px-5 py-3 text-base font-medium text-center text-indigo-700 bg-white border border-transparent rounded-md shadow-md hover:bg-gray-50 sm:inline-block sm:w-auto">
                   {props.buttonName || "Enter Button name"}

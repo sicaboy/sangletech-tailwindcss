@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function Button(props) {
   return (
-    <div>
+    <div className="self-center text-center">
       <Link href={props.url || "#"}>
         <button className="rounded-lg btn btn-primary">
           <svg

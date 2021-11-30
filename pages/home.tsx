@@ -61,6 +61,7 @@ const hero = {
   buttonHighlightSrc: "/posts/video-khoanh-khac-cuoc-doi",
   imgSrc: "/assets/seo-kkcd-intro.jpg",
   alt: "Hinh anh Sang Le Tech - Khoanh Khac Cuoc Doi - Gioi Thieu",
+  stats: true,
 };
 const logos = {
   title: "Các Kênh Truyền Thông Đã Tham Gia",

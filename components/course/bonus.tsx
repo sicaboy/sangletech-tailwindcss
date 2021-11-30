@@ -4,47 +4,16 @@ import rehypeRaw from "rehype-raw";
 import remarkGfm from "remark-gfm";
 import Link from "next/link";
 
-function Bonus(props) {
-  //YUNNIE: Please input bonuses courses here
-  const bonuses = [
-    {
-      caption: "Bonus #1",
-      title: "Semper curabitur ullamcorper ",
-      description:
-        "Semper curabitur ullamcorper posuere nunc sed. Ornare iaculisbibendum malesuada faucibus lacinia porttitor. Pulvinar laoreet sagittis viverra duis. In venenatis sem arcu pretium pharetra at. Lectus viverra dui tellus ornare pharetra.",
-
-      imgSrc: "",
-      alt: "",
-    },
-    {
-      caption: "Bonus #2",
-      title: "Semper curabitur ullamcorper ",
-      description:
-        "Semper curabitur ullamcorper posuere nunc sed. Ornare iaculisbibendum malesuada faucibus lacinia porttitor. Pulvinar laoreet sagittis viverra duis. In venenatis sem arcu pretium pharetra at. Lectus viverra dui tellus ornare pharetra.",
-
-      imgSrc: "",
-      alt: "",
-    },
-    {
-      caption: "Bonus #3",
-      title: "Semper curabitur ullamcorper ",
-      description:
-        "Semper curabitur ullamcorper posuere nunc sed. Ornare iaculisbibendum malesuada faucibus lacinia porttitor. Pulvinar laoreet sagittis viverra duis. In venenatis sem arcu pretium pharetra at. Lectus viverra dui tellus ornare pharetra.",
-
-      imgSrc: "",
-      alt: "",
-    },
-  ];
-
+function Bonus({ bonuses }) {
   return (
-    <div className="my-32">
+    <div className="m-3 my-32 sm:m-8">
       <h2 className="mb-16 text-3xl font-extrabold text-center text-gray-900 sm:text-4xl">
-        {props.title || "Bonus Included When You Join Today"}
+        {bonuses.title || "Bonus Included When You Join Today"}
       </h2>
       <div className="flex flex-col">
-        {bonuses.map((bonus) => (
+        {bonuses.list.map((bonus) => (
           <div
-            className="container p-16 mx-auto my-3 border border-gray-200 rounded-lg shadow-lg"
+            className="contain]er p-8 mx-auto my-3 border border-gray-200 rounded-lg shadow-lg sm:p-16"
             id={bonus.title}
           >
             <div className="relative lg:grid lg:grid-cols-3 lg:gap-8 lg:items-center">

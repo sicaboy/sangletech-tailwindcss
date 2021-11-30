@@ -1,21 +1,32 @@
 import React from "react";
-import ReactPlayer from "react-player";
 
 interface Props {
   url?: string;
 }
 
-export default class VideoPlayer extends React.Component<Props> {
-  render() {
-    return (
-      <div className="relative pt-56.25%">
-        <ReactPlayer
-          className="absolute mt-0 ml-0"
-          url={this.props.url || "https://www.youtube.com/watch?v=ysz5S6PUM-U"}
-          width="100%"
-          height="100%"
-        />
-      </div>
-    );
-  }
+export default function VideoPlayer(props: Props) {
+  return (
+    <div>
+      <iframe
+        className="inset-0 hidden mx-auto my-6 sm:block "
+        src={props.url}
+        // src={`https://player.vimeo.com/video/${vimeoId}`}
+        width="640"
+        height="360"
+        // frameborder="0"
+        allow="autoplay; fullscreen; picture-in-picture"
+        // allowfullscreen
+      ></iframe>
+      <iframe
+        className="inset-0 block py-1 mx-auto my-6 sm:hidden"
+        src={props.url}
+        // src={`https://player.vimeo.com/video/${vimeoId}`}
+        width="320"
+        height="180"
+        // frameborder="0"
+        allow="autoplay; fullscreen; picture-in-picture"
+        // allowfullscreen
+      ></iframe>
+    </div>
+  );
 }

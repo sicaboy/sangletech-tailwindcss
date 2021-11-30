@@ -4,7 +4,7 @@ import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import remarkGfm from "remark-gfm";
 
-export default function ThreeColumnsFeatureList(props) {
+export default function OpenPositions(props) {
   const description = props.description
     ? `<div className="note">
 
@@ -21,74 +21,63 @@ export default function ThreeColumnsFeatureList(props) {
     {
       name: props.listOneTitle || "Invite team members",
       description:
-        props.listOneDescription ||
-        "You can manage phone, email and chat conversations all from a single mailbox.",
+        props.listOneDescription
+      ,
     },
     {
       name: props.listTwoTitle || "List view",
       description:
-        props.listTwoDescription ||
-        "You can manage phone, email and chat conversations all from a single mailbox.",
+        props.listTwoDescription,
     },
     {
       name: props.listThreeTitle || "Keyboard shortcuts",
       description:
-        props.listThreeDescription ||
-        "You can manage phone, email and chat conversations all from a single mailbox.",
+        props.listThreeDescription,
     },
     {
       name: props.listFourTitle || "Calendars",
       description:
-        props.listFourDescription ||
-        "You can manage phone, email and chat conversations all from a single mailbox.",
+        props.listFourDescription,
     },
     {
       name: props.listFiveTitle || "Notifications",
       description:
-        props.listFiveDescription ||
-        "Find what you need with advanced filters, bulk actions, and quick views.",
+        props.listFiveDescription,
     },
     {
       name: props.listSixTitle || "Boards",
       description:
-        props.listSixDescription ||
-        "Find what you need with advanced filters, bulk actions, and quick views.",
+        props.listSixDescription,
     },
     {
       name: props.listSevenTitle || "Reporting",
       description:
-        props.listSevenDescription ||
-        "Find what you need with advanced filters, bulk actions, and quick views.",
+        props.listSevenDescription
     },
     {
       name: props.listEightTitle || "Mobile app",
       description:
-        props.listEightDescription ||
-        "Find what you need with advanced filters, bulk actions, and quick views.",
+        props.listEightDescription,
     },
     {
       name: props.listNineTitle || "Mobile app",
       description:
-        props.listNineDescription ||
-        "Find what you need with advanced filters, bulk actions, and quick views.",
+        props.listNineDescription,
     },
     {
       name: props.listTenTitle || "Mobile app",
       description:
-        props.listTenDescription ||
-        "Find what you need with advanced filters, bulk actions, and quick views.",
+        props.listTenDescription,
     },
     {
       name: props.listElevenTitle || "Mobile app",
       description:
-        props.listElevenDescription ||
-        "Find what you need with advanced filters, bulk actions, and quick views.",
+        props.listElevenDescription,
     },
     {
       name: props.listTwelveTitle || "Mobile app",
       description:
-        props.listTwelveDescription ||
-        "Find what you need with advanced filters, bulk actions, and quick views.",
+        props.listTwelveDescription,
     },
     {
       name: props.listThirteenTitle,
@@ -156,6 +145,7 @@ export default function ThreeColumnsFeatureList(props) {
                       <path d="M22 4L12 14.01l-3-3"></path>
                     </svg>
                     <div>
+                      <h1 className="font-bold text-black font-xl">{item.name}</h1>
                       <p className="text-base text-gray-500 ">
                         {item.description}
                       </p>
