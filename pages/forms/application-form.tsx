@@ -37,14 +37,14 @@ function SignUpForm() {
     }
   ])
 
-  // TODO: YUnnie helps me to change the label to the questions plz. Tks!
   const [urls, setUrls] = useState([
-    { label: "socialUrl label", url: "" },
-    { label: "resumeUrl label", url: "" },
-    { label: "portfolioUrl label", url: "" }
+    { label: "Linkedin/Facebook (Link required)", url: "" },
+    { label: "Your Resume/CV (Link required)", url: "" },
+    { label: "Your Portfolio of Projects You Have Done (Link required)", url: "" }
   ])
+  //TODO: It does not show the label name. Btw, I wanna add the questions required in the video of Video Editor & Content Writer. Do we needa create labelDesscription to add those questions in?
   const [introVideoUrl, setIntroVideoUrl] = useState({
-    label: "videoUrl name label ", url: "none"
+    label: "Your Video Resume (Link required)", url: ""
   }
   )
   const router = useRouter();
@@ -354,7 +354,7 @@ function SignUpForm() {
                 type="submit"
                 className="inline-flex items-center justify-center w-full px-6 py-3 text-base font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
               >
-                Đăng Ký Ngay
+                Submit
               </button>
             </div>
           </form>

@@ -12,7 +12,7 @@ const hero = {
   //TODO: the HighlightButton will lead to Open Positions part below
   titleHighlight: "Are You Ready?",
   titleNormal: "**BECOME ONE OF THE COOLEST WARRIORS IN SANG LE TEAM**",
-  description: `**Become one of the COOLEST WARRIORS in Sang's Team**`,
+  description: `**Become one of the COOLEST WARRIORS in Sang's Team!**`,
   buttonNormal: false,
   buttonNormalSrc: false,
   buttonHighlight: "Open Positions",
@@ -56,40 +56,40 @@ const successFormula = {
   listOneIconSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626079598/Galatek.io%20Website/3D_Illustration-Product_Development-Skin-01_f6gpbd.png",
   listOneTitle: "Technology",
-  listOneDescription: "We apply technology in whatever we do",
+  listOneDescription: "We apply technology in whatever we do.",
 
   listTwoIconSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626079584/Galatek.io%20Website/3D_Illustration-Collaborative-Skin-01_hdnobk.png",
   listTwoTitle: "Gamification",
-  listTwoDescription: "We believe working needa make it fun too",
+  listTwoDescription: "We believe working needa make it fun too.",
 
   listThreeIconSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626079608/Galatek.io%20Website/3D_Illustration-Vision_Mission_Skin-01_lnbcgi.png",
   listThreeTitle: " Visualization",
-  listThreeDescription: "We like to see things with graphics and charts",
+  listThreeDescription: "We like to see things with graphics and charts.",
 };
 
 const openPositions = {
   //TODO: Input the urls and description
-  caption: "Open Positions",
-  title: "We Are Looking For",
+  caption: "We Are Looking For",
+  title: "Open Positions",
   description: false,
 
   positions: [
     {
       position: "Front-end Developer",
-      description: `Click to see more details`,
-      url: "https://sangletech.com",
+      description: `Full-time Role`,
+      url: "posts/frontend-developer",
     },
     {
       position: "Digital Content Writer",
-      description: `Click to see more details`,
-      url: "",
+      description: `Full-time Role`,
+      url: "posts/content-writer",
     },
     {
       position: "Video Editor",
-      description: `Click to see more details`,
-      url: "",
+      description: `Full-time Role`,
+      url: "posts/video-editor",
     },
   ]
 };
