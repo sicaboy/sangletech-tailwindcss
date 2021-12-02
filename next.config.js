@@ -4,5 +4,6 @@ module.exports = {
     domain: "https://res.cloudinary.com",
     loader: "cloudinary",
     path: "https://res.cloudinary.com/sang-le-tech",
+    formats: ["image/avif", "image/webp"],
   },
 };

@@ -7,7 +7,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head />
-        {/* <NextSeoCustom /> */}
+        <NextSeoCustom />
         <body>
           <noscript>
             <iframe

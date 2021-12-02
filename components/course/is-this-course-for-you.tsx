@@ -1,7 +1,7 @@
 import React from "react";
 import Component from "../selectable-left-right-img-video-with-content";
 
-function Requirement(props) {
+function IsThisCourseForYou(props) {
   return (
     <div>
       <Component {...props} />
@@ -9,4 +9,4 @@ function Requirement(props) {
   );
 }
 
-export default Requirement;
+export default IsThisCourseForYou;

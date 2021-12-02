@@ -7,41 +7,35 @@ function CompanyAchivement(props) {
       iconSrc: props.listOneIconSrc || "",
       title: props.listOneTitle || "",
       description:
-        props.listOneDescription ||
-        "Skate ipsum dolor sit amet, alley oop vert mute-air Colby Carter flail 180 berm. Half-cab camel back ollie transition ledge Wes Humpston 1080.",
+        props.listOneDescription,
     },
     {
       id: 2,
       iconSrc: props.listTwoIconSrc || "",
       title: props.listTwoTitle || "",
       description:
-        props.listTwoDescription ||
-        "Skate ipsum dolor sit amet, alley oop vert mute-air Colby Carter flail 180 berm. Half-cab camel back ollie transition ledge Wes Humpston 1080.",
+        props.listTwoDescription,
     },
     {
       id: 3,
       iconSrc: props.listThreeIconSrc || "",
       title: props.listThreeTitle || "",
       description:
-        props.listThreeDescription ||
-        "Skate ipsum dolor sit amet, alley oop vert mute-air Colby Carter flail 180 berm. Half-cab camel back ollie transition ledge Wes Humpston 1080.",
-    },
-  ];
-
+        props.listThreeDescription,
+    }]
   return (
     <div>
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="lg:text-center">
             <h2 className="text-base font-semibold tracking-wide text-indigo-600 uppercase">
-              {props.caption || "Transactions"}
+              {props.caption}
             </h2>
             <p className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl">
               {props.title || "A better way to send money"}
             </p>
             <p className="max-w-2xl mt-4 text-xl text-gray-500 lg:mx-auto">
-              {props.description ||
-                "Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate veritatis in accusamus quisquam."}
+              {props.description}
             </p>
           </div>
         </div>
@@ -68,8 +62,7 @@ function CompanyAchivement(props) {
                       {item.title || " They urge you to put down"}
                     </h6>
                     <p className="mt-2 text-base text-gray-500">
-                      {item.description ||
-                        "Skate ipsum dolor sit amet, alley oop vert mute-air Colby Carter flail 180 berm. Half-cab camel back ollie transition ledge Wes Humpston 1080."}
+                      {item.description}
                     </p>
                   </div>
                 </div>
@@ -104,7 +97,7 @@ function CompanyAchivement(props) {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 }
 

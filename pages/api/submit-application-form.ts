@@ -19,25 +19,60 @@ export default async function handler(req, res) {
       .json({ message: `${req.method} requests are not allowed` });
   }
   try {
-    const { name, email, phone, app, course } = JSON.parse(req.body);
+    const { name,
+      email,
+      phone,
+      socialUrl,
+      applyPosition,
+      resumeUrl,
+      introVideoUrl,
+      portfolioUrl,
+      questions
+    } = JSON.parse(req.body);
+
+
+    // const formatQuestions = questions.map(item => {
+    //   return {
+    //     object: 'block',
+    //     type: 'heading_3',
+    //     heading_3: {
+    //       text: [
+    //         {
+    //           type: ' text',
+    //           text: {
+    //             content: item.question,
+
+    //           }
+    //         }
+    //       ]
+    //     }
+    //   },
+    //   {
+    //     object: 'block',
+    //     type: 'paragraph',
+    //     paragraph: {
+    //       text: [
+    //         {
+    //           type: 'text',
+    //           text: {
+    //             content: item.answer,
+
+    //           }
+    //         }
+    //       ]
+    //     }
+    //   }
+    // })
+    // console.log(JSON.stringify(formatQuestions[0]))
 
     // console.log(`body: ${JSON.stringify(JSON.parse(req.body))}`);
 
-    //Create new App Object to send to Notion
-    const newAppObj = app.map((i) => {
-      return { name: i.value };
-    });
-    //Create a new Course Object to send to Notion
-    const newCourseObj = course.map((i) => {
-      return { name: i.value };
-    });
-
     await notion.pages.create({
       parent: {
-        database_id: "50b684e017fe44bc8ba769bd6143c6d7",
+        database_id: "a4babba63fe34201b4b6be37d77d68d0",
       },
       properties: {
-        Name: {
+        fullName: {
           title: [
             {
               text: {
@@ -46,19 +81,41 @@ export default async function handler(req, res) {
             },
           ],
         },
-        Email: {
+        email: {
           email: email,
         },
-        Phone: {
+        phoneNumber: {
           phone_number: phone,
         },
-        App: {
-          multi_select: newAppObj,
+        socialUrl: {
+          url: socialUrl,
         },
-        Course: {
-          multi_select: newCourseObj,
+        resumeUrl: {
+          url: resumeUrl,
         },
+        introVideoUrl: {
+          url: introVideoUrl,
+        },
+        portfolioUrl: {
+          url: portfolioUrl,
+        },
+        applyPosition: {
+          select: {
+            name: applyPosition,
+          },
+        },
+        questions: {
+          rich_text: [
+            {
+              text: {
+                content: JSON.stringify(questions)
+              }
+            }
+          ]
+        }
       },
+      //  children: formatQuestions,
+
     });
     console.log(
       `Sucessfully send the form with body : ${JSON.stringify(

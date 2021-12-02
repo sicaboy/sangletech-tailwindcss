@@ -137,11 +137,11 @@ ${props.leftDescription}
               <Link href={props.leftVideoSrc || "#"}>
                 <button
                   type="button"
-                  className="relative block w-full overflow-hidden bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                  className="relative block w-full overflow-hidden bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 "
                 >
                   <span className="">{props.leftVideoCaption}</span>
                   <img
-                    className="w-full"
+                    className="w-full "
                     src={
                       props.leftImgSrc ||
                       "https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"

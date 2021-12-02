@@ -38,7 +38,7 @@ ${props.certificateTwoDescription}
               <div className="h-64 overflow-hidden rounded-lg">
                 <img
                   alt={props.certificateOneImgAlt || "sang le tech"}
-                  className="object-contain object-center w-full h-full"
+                  className="object-contain object-center w-full h-full "
                   src={
                     props.certificateOneImgSrc ||
                     "https://dummyimage.com/1201x501"
