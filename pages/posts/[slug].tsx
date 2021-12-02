@@ -26,6 +26,10 @@ const components = {
   // See the notes in README.md for more details.
   VideoPlayer: dynamic(() => import("../../components/video-player")),
   Head,
+  Layout: dynamic(() => import("../../components/layout")),
+  NextSeo,
+  BlogJsonLd,
+  ErrorPage
 };
 
 type Props = {

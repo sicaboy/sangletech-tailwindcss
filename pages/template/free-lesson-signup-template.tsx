@@ -5,9 +5,8 @@ import CallToAction from "../../components/course/call-to-action-bar";
 import Curriculum from "../../components/course/curriculum";
 import MeetYourCoach from "../../components/course/meet-you-coach";
 import Stories from "../../components/course/stories";
-import HeroWithSignUp from "../../components/hero-with-signup"
-import WatchPreview from "../../components/watch-preview"
-
+import HeroWithSignUp from "../../components/hero-with-signup";
+import WatchPreview from "../../components/watch-preview";
 
 const hero = {
   description: ``,
@@ -16,12 +15,12 @@ const hero = {
   imgSrc: "",
   alt: "",
   termUrl: "",
-  cookieUrl: ""
-}
+  cookieUrl: "",
+};
 
 const watchPreview = {
-  vimeoVideoId: "534879325"
-}
+  vimeoVideoId: "534879325",
+};
 
 // export default Hero
 // export default WatchPreview
