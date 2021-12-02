@@ -77,10 +77,11 @@ ${props.description}
             {/* <!-- content - start --> */}
             <div className="text-center lg:text-left">
               <Smartie />
+              <h1 className="block text-xl font-bold text-gray-500 xl:inline">
+                {props.titleNormal}
+              </h1>
+              <div className="my-3" />
               <h1 className="tracking-tight text-gray-500 ">
-                {/* <span className="block text-3xl font-semibold sm:text-4xl xl:inline">
-                  {props.titleNormal || "Data to enrich your"}
-                </span>{" "} */}
                 <span className="block mt-6 text-3xl font-extrabold text-indigo-600 sm:text-4xl xl:inline">
                   {props.titleHighlight || "online business"}
                 </span>

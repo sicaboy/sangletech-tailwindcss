@@ -6,7 +6,7 @@ export default function WatchPreview(props) {
   return (
     <div className="mx-auto text-center">
       <h2 className="text-3xl font-semibold capitalize">Xem Trailer</h2>
-      <iframe className="mx-auto" src={link} width="640" height="564" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      <iframe className="mx-auto" src={link} width="640" height="564" allow="autoplay; fullscreen"></iframe>
     </div>
   )
 }
