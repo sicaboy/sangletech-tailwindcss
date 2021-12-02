@@ -9,9 +9,8 @@ import * as Icon from "@heroicons/react/outline";
 
 const hero = {
   //TODO: Why can not see the titleNormal?
-  //TODO: the HighlightButton will lead to Open Positions part below
   titleHighlight: "Are You Ready?",
-  titleNormal: "**BECOME ONE OF THE COOLEST WARRIORS IN SANG LE TEAM**",
+  titleNormal: false,
   description: `**Become one of the COOLEST WARRIORS in Sang's Team!**`,
   buttonNormal: false,
   buttonNormalSrc: false,
@@ -22,7 +21,6 @@ const hero = {
 };
 
 const coreValue = {
-  //TODO: Change the title font "Core Values" to make it look the same as the the other titles
   title: "Core Values",
   description: `Our core values are the backbone of our company development and all our staffs and partners are always picked based on these values.`,
   buttonName: false,
@@ -41,7 +39,6 @@ const coreValue = {
 };
 
 const successFormula = {
-  //TODO: Delete Caption and Description
   caption: false,
   title: "Our Success Formula",
   description: false,
@@ -52,7 +49,6 @@ const successFormula = {
   imgThreeSrc:
     "/assets/team-smile.jpeg",
 
-  //TODO: Delete listDescription
   listOneIconSrc:
     "https://res.cloudinary.com/sang-le-tech/image/upload/v1626079598/Galatek.io%20Website/3D_Illustration-Product_Development-Skin-01_f6gpbd.png",
   listOneTitle: "Technology",
@@ -70,7 +66,6 @@ const successFormula = {
 };
 
 const openPositions = {
-  //TODO: Input the urls and description
   caption: "We Are Looking For",
   title: "Open Positions",
   description: false,
@@ -134,6 +129,7 @@ function Home() {
           height={873}
         />
       </div>
+      <div id="learn-more" />
       <OpenPositions {...openPositions} />
       <SimpleWithHeading {...company} />
     </Layout>

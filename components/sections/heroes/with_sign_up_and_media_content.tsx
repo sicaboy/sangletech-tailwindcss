@@ -103,11 +103,13 @@ ${props.description}
                   {props.caption || "Coming soon"}
                 </button>
 
-                <span className="mt-1 text-4xl font-extrabold tracking-tight sm:text-5xl xl:text-6xl">
+                <span className="mt-1 text-4xl font-extrabold tracking-wide leading-relaxed sm:text-5xl xl:text-6xl">
                   <span className="text-indigo-600">
                     {props.titleHighlight || "online business"}
                   </span>
-                  <span className="text-gray-900 ">
+
+                  <span className="text-gray-900  font-bold text-4xl">
+
                     {props.titleNormal || "Data to enrich your"}
                   </span>
                 </span>
