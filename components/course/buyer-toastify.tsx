@@ -29,7 +29,7 @@ export const showAlternativeToast = (toasts) => {
       toast.success(`${i} thanh toán thành công`, {
         className: "w-1/2 text-xs mt-3 rounded-lg sm:w-full sm:text-sm",
       });
-    }, 15000)
+    }, 200000) //default 15000
   );
 };
 
