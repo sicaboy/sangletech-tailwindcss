@@ -110,7 +110,7 @@ const solution = {
 
 const whatWillYouLearn = {
   general: {
-    caption: "Gía trị",
+    caption: "Giá trị",
     title: "Bạn Sẽ Học Được Gì Từ Khoá Học Này?",
     description: `Descrition here`,
   },

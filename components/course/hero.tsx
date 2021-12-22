@@ -34,10 +34,10 @@ import Link from "next/link";
 // }
 
 export default function Hero(props) {
-  const shockingStatement = props.description
+  const shockingStatement = props.shockingStatement
     ? `<div class="note">
 
-${props.description}
+${props.shockingStatement}
 
 </div>`
     : `<div class="note">

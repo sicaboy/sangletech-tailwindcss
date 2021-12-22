@@ -58,6 +58,7 @@ export default function WhatWillYouLearn(props) {
                       <path d="M22 4L12 14.01l-3-3"></path>
                     </svg>
                     <div>
+                      <h1 className="font-semibold text-md text-gray-900">{item.name}</h1>
                       <p className="text-base text-gray-500 ">
                         {item.description}
                       </p>
