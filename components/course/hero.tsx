@@ -163,7 +163,7 @@ ${props.shockingStatement}
                 <Link href={props.videoSrc || "#"}>
                   <button
                     type="button"
-                    className="relative block w-full overflow-hidden bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                    className="relative block w-full overflow-hidden text-gray-900 bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                   >
                     <span className="">{props.videoCaption}</span>
                     <img

@@ -146,12 +146,19 @@ function Body({ pricing }) {
               ))}
             </ul>
             {pricing.single.buttonName && (
-              <a
-                href="#"
-                className="block px-8 py-3 text-sm font-semibold text-center text-gray-100 transition duration-100 bg-gray-500 rounded-lg outline-none hover:bg-gray-600 focus-visible:ring ring-indigo-300 active:text-gray-300 md:text-base"
+              <Link
+                href={{
+                  pathname: pricing.single.url,
+                  query: pricing.single.query,
+                }}
               >
-                {pricing.single.buttonName || "Join the Program"}
-              </a>
+                <a
+                  href="#"
+                  className="block px-8 py-3 text-sm font-semibold text-center text-gray-100 transition duration-100 bg-gray-500 rounded-lg outline-none hover:bg-gray-600 focus-visible:ring ring-indigo-300 active:text-gray-300 md:text-base"
+                >
+                  {pricing.single.buttonName || "Join the Program"}
+                </a>
+              </Link>
             )}
           </div>
           {/* <!-- left side - end --> */}

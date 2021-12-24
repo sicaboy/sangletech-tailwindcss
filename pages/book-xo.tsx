@@ -284,8 +284,8 @@ const proxoFeatures = {
     "Ứng dụng Game hoá trong sách",
     "Tích hợp điểm, huy hiệu, bảng xếp hạng",
     "Cộng đồng Chiến Binh X.0",
-    "Chạy trên máy tính bàn, máy tính bản và điện thoại",
-    "Hàng trăn video và hình ảnh đi kèm",
+    "Chạy trên máy tính bàn, máy tính bảng và điện thoại",
+    "Hơn 100 video và hình ảnh đi kèm",
     "Chạy trên Web, Android và iOS",
   ],
 };
@@ -461,9 +461,18 @@ const pricing = {
     description: "Mua đọc & Truy cập từng Chương của Sách.",
     imgSrc: "/assets/hd-device_mock-up_1.jpg",
     alt: "",
-    promotedPrice: "0k",
+    promotedPrice: "99k",
     originalPrice: "159k",
-    buttonName: false,
+    buttonName: "Đặt Mua Ngay",
+    url: "https://slt-payment-manual.vercel.app/",
+    query: {
+      name: "Cột Mốc 1 - Bí Mật Làm Giàu X.0",
+      price: 99000,
+      quality: 1,
+      url: "https://sangletech.com/book-xo",
+      imageSrc: "assets/book-xo.jpg",
+      imageAlt: "Sách Bí Mật Làm Giàu X.0",
+    },
     list: [
       "Truy cập & Đọc từng Chương của Sách tương ứng với từng Cột Mốc của Bí Mật Làm Giàu X.0.",
       "Truy cập & Sử dụng từng ứng dụng hỗ trợ ứng với mỗi Chương của Sách.",
@@ -477,13 +486,13 @@ const pricing = {
       "Mua đọc & Truy cập toàn bộ nội dung sách điện tử Bí Mật Làm Giàu X.0. Sử dụng tất cả ứng dụng hỗ trợ trong suốt hành trình khám phá cuốn sách. Và dĩ nhiên, bạn sẽ nhận được các bonus quà tặng là các khoá học để Kinh doanh online trong thời đại 4.0 (hoàn toàn miễn phí) từ Sang Lê.",
     imgSrc: "",
     alt: "",
-    promotedPrice: "99k",
+    promotedPrice: "199k",
     originalPrice: "399k",
     valueCaption: "SUPER HOT PROGRAM",
     buttonName: "Đặt Mua Ngay",
-    url: "https://localhost:3001",
+    url: "https://slt-payment-manual.vercel.app/",
     query: {
-      name: "Sách Bí Mật Làm Giàu X.0",
+      name: "Truy Cập & Đọc Toàn Bộ Sách Điện Tử",
       price: 99000,
       quality: 1,
       url: "https://sangletech.com/book-xo",
@@ -562,7 +571,7 @@ const toasts = [
   "Mai Anh",
 ];
 
-// function VideoTestimonials() {
+// function VideoTestimonials()
 //   return (
 //     <>
 //       <VideoPlayer url="https://youtu.be/mrtwQSjv8As" />
