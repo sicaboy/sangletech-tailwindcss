@@ -28,7 +28,9 @@ import ButtonPurchaseNow from "../components/button";
 import Layout from "../components/layout";
 import IsThisCourseForYou from "../components/course/is-this-course-for-you";
 
-import VideoPlayer from '../components/video-player'
+import VideoPlayer from "../components/video-player";
+
+import { useRouter } from "next/router";
 
 const hero = {
   caption: "Sách Điện Tử Độc Quyền từ Sang Lê",
@@ -42,17 +44,20 @@ const hero = {
 
 const callToAction = {
   courseLength: "Bạn muốn đọc thử sách Bí Mật Làm Giàu X.0?",
-  dateStart: "Đừng vội bỏ qua một cuốn sách có khả năng thay đổi một đời của bạn.",
+  dateStart:
+    "Đừng vội bỏ qua một cuốn sách có khả năng thay đổi một đời của bạn.",
   buttonName: "Đọc Thử Ngay",
+  link: "#free-lesson",
 };
 
-const countDownMins = 10; // mins
+const countDownMins = 1400; // mins
 
 const problem = {
   defineTheProblem: {
     direction: "left", // left or right
     caption: "VẤN ĐỀ GÌ ĐANG XẢY RA VỚI CHÚNG TA?",
-    title: "Bạn cũng từng là một người bình thường, cho đến khi biến cố xảy ra..",
+    title:
+      "Bạn cũng từng là một người bình thường, cho đến khi biến cố xảy ra..",
     description: `✪ Đại dịch COVID làm đảo lộn cuộc sống của bạn và buộc tất cả những thanh niên như bạn **phải thích ứng một cách gấp rút và vội vã với Thời đại 4.0** – điều mà vốn dĩ, bạn dự định mình sẽ thích ứng từ từ. Bạn chới với khi không nắm công nghệ trong tay. Bạn trở nên lúng túng khi người ta bắt đầu đòi hỏi ở mình những kỹ năng khác – rất khác so với những gì mà bạn từng hình dung.<br></br>✪ Covid-19 khiến **bạn sợ hãi và không biết làm thế nào để tồn tại, kiếm tiền và lo cho gia đình.** Chứng kiến hàng loạt người bị mất việc, bạn lo sợ người tiếp theo sẽ là bạn, hoặc tệ hơn, chính bạn cũng đang lao đao vì thất nghiệp.<br></br>✪ Khi tìm đến sự trợ giúp từ bên ngoài, **không ai có thể giúp bạn**. Họ nói về những thứ chung chung, những định hướng mơ hồ, hoặc chính họ cũng đang hoang mang.`,
     imgSrc: "/assets/old-book-cover.jpg",
     videoSrc: "",
@@ -117,17 +122,20 @@ const whatWillYouLearn = {
   details: [
     {
       name: "Xấp Giấy Nhớ Đáng Tin Cậy.",
-      description: "Cuốn sách sẽ liên tục nhắc bạn nhớ rằng bạn có một mục tiêu cần phải theo đuổi và bạn không được bỏ cuộc trên hành trình đó.",
+      description:
+        "Cuốn sách sẽ liên tục nhắc bạn nhớ rằng bạn có một mục tiêu cần phải theo đuổi và bạn không được bỏ cuộc trên hành trình đó.",
       icon: Icon.FilterIcon,
     },
     {
       name: "Người Dẫn Đường Nhiệt Thành.",
-      description: "Trên từng chặng, bạn sẽ được chỉ dẫn rất kỹ lưỡng. Việc của bạn chỉ là đọc và thực hành theo, đồng thời theo sát tiến độ của mình đến cùng.",
+      description:
+        "Trên từng chặng, bạn sẽ được chỉ dẫn rất kỹ lưỡng. Việc của bạn chỉ là đọc và thực hành theo, đồng thời theo sát tiến độ của mình đến cùng.",
       icon: Icon.LightBulbIcon,
     },
     {
       name: "Lộ Trình Đi Đến Thành Công.",
-      description: "Bạn sẽ thấy rất rõ từng chặng mà mình đã, đang, sắp, và sẽ đi qua.",
+      description:
+        "Bạn sẽ thấy rất rõ từng chặng mà mình đã, đang, sắp, và sẽ đi qua.",
       icon: Icon.EyeIcon,
     },
   ],
@@ -161,7 +169,7 @@ const bonuses = {
   list: [
     {
       caption: "Bonus #1 - Khoá học Quảng cáo Retargeting",
-      title: "Hướng Dẫn Cách Chạy Quảng Cáo Retargeting Từ A-Z", 
+      title: "Hướng Dẫn Cách Chạy Quảng Cáo Retargeting Từ A-Z",
       description:
         "**TỔNG GIÁ TRỊ: 1.999.000đ**<br></br>Khi bạn chọn mua cuốn sách điện tử đầu tay Bí Mật Làm Giàu X.0, Sang sẽ gửi tặng đến bạn hơn **4+ giờ training từ Khoá học Quảng cáo Retargeting/Remarketing** với nội dung video chất lượng và hướng dẫn chi tiết để **giúp bạn thiết lập Chiến lược Quảng cáo nhắm lại 95% những khách hàng đã rời khỏi trang web của bạn và chuyển đổi thành khách mua hàng.**<br></br>**‼️ HOÀN TOÀN MIỄN PHÍ KHI BẠN ĐẶT MUA CUỐN SÁCH BÍ MẬT LÀM GIÀU X.0 NGAY HÔM NAY ‼️**",
 
@@ -171,8 +179,7 @@ const bonuses = {
     {
       caption: "Bonus #2 - Khoá học Phễu Bán Hàng Basic",
       title: "Làm Thế Nào Xây Dựng Phễu Bán Hàng Đẻ Ra Tiền?",
-      description:
-        `**TỔNG GIÁ TRỊ: 999.000đ**<br></br>Tiếp theo, bạn sẽ nhận được **Khoá học Xây Dựng Phễu Bán Hàng Cơ Bản** của Sang - Tại đây Sang sẽ **bật mí những bí mật từ Chuyên gia xây dựng Phễu Bán Hàng nổi tiếng thế giới Russell Brunson để áp dụng thành công cho việc kinh doanh online của bạn**.<br></br>Với các video training và hướng dẫn chi tiết những Chiến lược mà chính Sang đã áp dụng thành công cho doanh nghiệp của mình — ngay cả khi công nghệ luôn liên tục thay đổi, để bạn có thể **tạo ra Phễu Bán Hàng "Đẻ Ra Tiền" giúp tăng doanh số kinh doanh Online theo cấp số nhân**.<br></br>**‼️ HOÀN TOÀN MIỄN PHÍ KHI BẠN ĐẶT MUA CUỐN SÁCH BÍ MẬT LÀM GIÀU X.0 NGAY HÔM NAY ‼️**`,
+      description: `**TỔNG GIÁ TRỊ: 999.000đ**<br></br>Tiếp theo, bạn sẽ nhận được **Khoá học Xây Dựng Phễu Bán Hàng Cơ Bản** của Sang - Tại đây Sang sẽ **bật mí những bí mật từ Chuyên gia xây dựng Phễu Bán Hàng nổi tiếng thế giới Russell Brunson để áp dụng thành công cho việc kinh doanh online của bạn**.<br></br>Với các video training và hướng dẫn chi tiết những Chiến lược mà chính Sang đã áp dụng thành công cho doanh nghiệp của mình — ngay cả khi công nghệ luôn liên tục thay đổi, để bạn có thể **tạo ra Phễu Bán Hàng "Đẻ Ra Tiền" giúp tăng doanh số kinh doanh Online theo cấp số nhân**.<br></br>**‼️ HOÀN TOÀN MIỄN PHÍ KHI BẠN ĐẶT MUA CUỐN SÁCH BÍ MẬT LÀM GIÀU X.0 NGAY HÔM NAY ‼️**`,
 
       imgSrc: "/assets/thumbnail-sales-funnel.jpg",
       alt: "Video Pheu Ban Hang - Sang Le Tech",
@@ -180,8 +187,7 @@ const bonuses = {
     {
       caption: "Bonus #3 - Khoá học Lập Kế Hoạch Đơn Giản SPM",
       title: "Cách Lên Kế Hoạch Đơn Giản với Notion - Cấp độ Cơ bản",
-      description:
-        `**TỔNG GIÁ TRỊ: 999.000đ**<br></br>Phần quà Bonus tiếp theo là **Khoá học Lập Kế Hoạch Đơn Giản SPM** được tạo ra bởi Sang sau gần 10 năm nghiên cứu và phát triển. Trong khoá học này, Sang sẽ hướng dẫn Bạn **cách thức Lên kế hoạch mà Sang đã nghiên cứu và áp dụng thành công cho việc quản lý cuộc sống cá nhân và công việc của Sang**.<br></br>Phương pháp Lên Kế Hoạch Đơn Giản SPM này được Sang kết hợp giữa cách thức lên kế hoạch truyền thống và công nghệ hiện đại với sự "hỗ trợ đắc lực" của phần mềm Notion. SPM Basic sẽ giúp bạn **hoạch định kế hoạch một cách toàn diện nhất trong cả công việc và cuộc sống cá nhân!**<br></br>**‼️ HOÀN TOÀN MIỄN PHÍ KHI BẠN ĐẶT MUA CUỐN SÁCH BÍ MẬT LÀM GIÀU X.0 NGAY HÔM NAY ‼️**`,
+      description: `**TỔNG GIÁ TRỊ: 999.000đ**<br></br>Phần quà Bonus tiếp theo là **Khoá học Lập Kế Hoạch Đơn Giản SPM** được tạo ra bởi Sang sau gần 10 năm nghiên cứu và phát triển. Trong khoá học này, Sang sẽ hướng dẫn Bạn **cách thức Lên kế hoạch mà Sang đã nghiên cứu và áp dụng thành công cho việc quản lý cuộc sống cá nhân và công việc của Sang**.<br></br>Phương pháp Lên Kế Hoạch Đơn Giản SPM này được Sang kết hợp giữa cách thức lên kế hoạch truyền thống và công nghệ hiện đại với sự "hỗ trợ đắc lực" của phần mềm Notion. SPM Basic sẽ giúp bạn **hoạch định kế hoạch một cách toàn diện nhất trong cả công việc và cuộc sống cá nhân!**<br></br>**‼️ HOÀN TOÀN MIỄN PHÍ KHI BẠN ĐẶT MUA CUỐN SÁCH BÍ MẬT LÀM GIÀU X.0 NGAY HÔM NAY ‼️**`,
       imgSrc: "/assets/thumbnail-why-planning.jpg",
       alt: "Sang Le Tech - Hinh anh video Tai sao can len ke hoach SPM",
     },
@@ -194,8 +200,7 @@ const curriculum = {
     caption: "",
     title: "ĐÂY LÀ CUỐN SÁCH VỀ…",
     description: `**✪ Làm sao để đứng vững trong Kỷ nguyên 4.0 và Hậu Đại dịch.** Xuất thân là dân công nghệ, Sang hiểu rõ những xu hướng công nghệ hiện tại và có thể phần nào phán đoán những xu thế của tương lai. Khi ai cũng nói về 4.0 và sự đổ bộ đáng sợ của các công nghệ mới, Sang sẽ cho bạn thấy thực sự thì 4.0 là gì và giúp bạn vững vàng trong kỷ nguyên này. Khi mọi người hoảng loạn vì sự tàn khốc của Đại dịch, Sang sẽ chỉ cho bạn thấy cơ hội mà bạn có thể nắm bắt trong chính cơn khủng hoảng đó.<br></br>**✪ Làm sao để giải phóng tiềm năng của những người trẻ có đam mê**. Vì Sang cũng từng là người bị “mắc kẹt” như bạn, cũng từng không biết bước tiếp theo mình cần làm là gì, nên Sang hiểu rất rõ tâm trạng của bạn hiện tại. Vì Sang đã thành công đi qua giai đoạn loay hoay tìm hướng đi cho cuộc đời mình, nên Sang hiểu rất rõ hiện tại bạn đang cần gì.<br></br>**✪ Những ý tưởng và những chiến lược mà Sang rút ra từ những doanh nhân tiếng tăm nhất thế giới**. Không có bài học nào trong cuốn sách này mà Sang chưa áp dụng vào thực tế đời sống cũng như công việc.<br></br><span className="text-lg text-indigo-500">**- CUỐN SÁCH SẼ ĐƯỢC RA MẮT THEO TỪNG CỘT MỐC TƯƠNG ỨNG VỚI MỐC THỜI GIAN KHÁC NHAU:** </span>`,
-    imgSrc:
-      "https://storyblok-cdn.mindvalley.com/f/60579/2068x1110/37b76048b1/sb_sp_devices_curriculum.png?trans?quality=30&dpr=2&width=752",
+    imgSrc: "/assets/hd-device_mock-up_1.jpg",
     videoSrc: "",
     videoCaption: "",
     alt: "",
@@ -227,7 +232,6 @@ const curriculum = {
       <span className="mr-3 text-indigo-500">✓</span>   **Chặng #13:** Bí Mật Đầu Tư Như Thế Nào Là Đúng?<br></r><span className="mr-3 text-indigo-500">✓</span>   **Chặng #14:** Bí Mật Đầu Tư Vào Bản Thân</br>
       <span className="mr-3 text-indigo-500">✓</span>   **Chặng #15:** Bí Mật Đầu Tư Chứng Khoán</br>
       <span className="mr-3 text-indigo-500">✓</span>   **Chặng #16:** Bí Mật Đầu Tư Tiền Ảo</br>
-      <span className="mr-3 text-indigo-500">✓</span>   **Chặng #17:** Bí Mật Đầu Tư Đất Đai</br>
       <span className="mr-3 text-indigo-500">✓</span>   **Chặng #18:** Bí Mật Kinh Doanh Online`,
     },
   ],
@@ -248,7 +252,8 @@ const guarantee = {
     },
     {
       title: "Nâng Cấp Miễn Phí",
-      description: "Sang & đội ngũ liên tục nâng cấp các phiên bản mới của Sách và các phần mềm mỗi tháng. Tất cả các tính năng được nâng cấp đều miễn phí.",
+      description:
+        "Sang & đội ngũ liên tục nâng cấp các phiên bản mới của Sách và các phần mềm mỗi tháng. Tất cả các tính năng được nâng cấp đều miễn phí.",
     },
     {
       title: "Ưu Đãi Có Hạn",
@@ -279,6 +284,9 @@ const proxoFeatures = {
     "Ứng dụng Game hoá trong sách",
     "Tích hợp điểm, huy hiệu, bảng xếp hạng",
     "Cộng đồng Chiến Binh X.0",
+    "Chạy trên máy tính bàn, máy tính bản và điện thoại",
+    "Hàng trăn video và hình ảnh đi kèm",
+    "Chạy trên Web, Android và iOS",
   ],
 };
 
@@ -413,8 +421,7 @@ const youtube = {
   buttonName: "Theo Dõi Ngay",
   buttonSrc: "http://youtube.sangletech.com",
 
-  videoOneThumbnail:
-    "",
+  videoOneThumbnail: "",
   videoOneLink: "https://youtu.be/mrtwQSjv8As",
   videoOneAlt: "Sang Le Tech - 3 ly do ban nen but pha ngay thoi diem nay",
 
@@ -431,13 +438,15 @@ const youtube = {
 
 const pricing = {
   header: {
-    caption: "",
+    caption: "Giá Trị",
     primaryTitle: "Truy cập mọi lúc mọi nơi",
-    primaryDescription: "Nhận quyền truy cập online toàn bộ cuốn sách và các phần mềm trên tất cả các thiết bị: Android, iOS, Máy tính để bàn và máy tính bảng.",
-    imgSrc: "",
+    primaryDescription:
+      "Nhận quyền truy cập online toàn bộ cuốn sách và các phần mềm trên tất cả các thiết bị: Android, iOS, Máy tính để bàn và máy tính bảng.",
+    imgSrc: "/assets/hd-device_mock-up_1.jpg",
     alt: "",
     secondaryTitle: "Thành Viên Trọn Đời",
-    secondaryDescription: "Bí Mật Làm Giàu X.0 không phải là cuốn sách giấy bình thường. Mà đây là quyển Guideline điện tử giúp bạn bước đi tự tin trên Hành Trình Làm Giàu X.0!",
+    secondaryDescription:
+      "Bí Mật Làm Giàu X.0 không phải là cuốn sách giấy bình thường. Mà đây là quyển Guideline điện tử giúp bạn bước đi tự tin trên Hành Trình Làm Giàu X.0!",
     listTitle: "Bao gồm",
   },
 
@@ -450,11 +459,11 @@ const pricing = {
   single: {
     title: "Đăng Ký Đọc Theo Chương",
     description: "Mua đọc & Truy cập từng Chương của Sách.",
-    imgSrc: "",
+    imgSrc: "/assets/hd-device_mock-up_1.jpg",
     alt: "",
-    promotedPrice: "99k",
+    promotedPrice: "0k",
     originalPrice: "159k",
-    buttonName: "Đặt Mua",
+    buttonName: false,
     list: [
       "Truy cập & Đọc từng Chương của Sách tương ứng với từng Cột Mốc của Bí Mật Làm Giàu X.0.",
       "Truy cập & Sử dụng từng ứng dụng hỗ trợ ứng với mỗi Chương của Sách.",
@@ -464,13 +473,23 @@ const pricing = {
 
   membership: {
     title: "Truy Cập & Đọc Toàn Bộ Sách Điện Tử",
-    description: "Mua đọc & Truy cập toàn bộ nội dung sách điện tử Bí Mật Làm Giàu X.0. Sử dụng tất cả ứng dụng hỗ trợ trong suốt hành trình khám phá cuốn sách. Và dĩ nhiên, bạn sẽ nhận được các bonus quà tặng là các khoá học để Kinh doanh online trong thời đại 4.0 (hoàn toàn miễn phí) từ Sang Lê.",
+    description:
+      "Mua đọc & Truy cập toàn bộ nội dung sách điện tử Bí Mật Làm Giàu X.0. Sử dụng tất cả ứng dụng hỗ trợ trong suốt hành trình khám phá cuốn sách. Và dĩ nhiên, bạn sẽ nhận được các bonus quà tặng là các khoá học để Kinh doanh online trong thời đại 4.0 (hoàn toàn miễn phí) từ Sang Lê.",
     imgSrc: "",
     alt: "",
-    promotedPrice: "299k",
-    originalPrice: "699k",
+    promotedPrice: "99k",
+    originalPrice: "399k",
     valueCaption: "SUPER HOT PROGRAM",
     buttonName: "Đặt Mua Ngay",
+    url: "https://localhost:3001",
+    query: {
+      name: "Sách Bí Mật Làm Giàu X.0",
+      price: 99000,
+      quality: 1,
+      url: "https://sangletech.com/book-xo",
+      imageSrc: "assets/book-xo.jpg",
+      imageAlt: "Sách Bí Mật Làm Giàu X.0",
+    },
     list: [
       "Toàn quyền truy cập và đọc toàn bộ nội dung Sách điện tử Bí Mật Làm Giàu X.0, cộng với các khoá học đào tạo của Sang Lê trong ứng dụng Học Trực Tuyến - Pro X.0. (Tổng trị giá lên đến: 4.000.000đ+)",
       "Nâng cấp miễn phí tất cả những phiên bản mới với các tính năng mới của Sách và các ứng dụng hỗ trợ: You X.0, Fin X.0 & Pro X.0 mỗi tháng.",
@@ -484,12 +503,15 @@ const pricing = {
   membershipPrograms: [
     { src: "/assets/thumbnail-sales-funnel.jpg", alt: "sang le tech program" },
     { src: "/assets/thumbnail-planning.png", alt: "sang le tech program" },
-    { src: "/assets/thumbnail-retargeting-explainer.jpg", alt: "sang le tech program" },
+    {
+      src: "/assets/thumbnail-retargeting-explainer.jpg",
+      alt: "sang le tech program",
+    },
     { src: "/assets/bookxo-logo.jpg", alt: "sang le tech program" },
     { src: "/assets/finxo-logo.jpg", alt: "sang le tech program" },
     { src: "/assets/youxo-logo.png", alt: "sang le tech program" },
-    { src: "https://dummyimage.com/500x300", alt: "sang le tech program" },
-    { src: "https://dummyimage.com/500x300", alt: "sang le tech program" },
+    { src: "/assets/invest-xo-logo.png", alt: "sang le tech program" },
+    { src: "/assets/pro-xo-logo.png", alt: "sang le tech program" },
   ],
 };
 
@@ -498,17 +520,19 @@ const faqs = {
     title: "Câu Hỏi Thường Gặp",
     videoSrc: "",
     videoCaption: "",
-    imgSrc: "/assets/bookxo-logo.jpg",
+    imgSrc: "/assets/faq.jpg",
     alt: "Sang le tech - book logo",
   },
   details: [
     {
-      question: "Ai nên đọc cuốn sách này? Tôi có cần phải ở một cấp độ cụ thể trong nghề nghiệp của mình không?",
+      question:
+        "Ai nên đọc cuốn sách này? Tôi có cần phải ở một cấp độ cụ thể trong nghề nghiệp của mình không?",
       answer:
         "Bí Mật Làm Giàu X.0 được thiết kế cho bất kỳ ai đang muốn phát huy hết khả năng của họ. Thực sự không quan trọng bạn hiện đang ở đâu trong cuộc sống hoặc thậm chí là bạn muốn đi bao xa. Cuốn sách này sẽ đặc biệt có lợi cho bạn nếu bạn muốn chơi một trò chơi lớn hơn và khám phá những gì bạn thực sự có khả năng – trong công việc và cuộc sống. Nó cũng sẽ rất có lợi nếu bạn đang tìm cách vượt qua bất kỳ thói quen, niềm tin hoặc  suy nghĩ tích cực nào mà bạn biết đang kéo bạn xuống – như sự trì hoãn hoặc thiếu tự tin.",
     },
     {
-      question: "Tôi có một thói quen xấu đặc biệt mà tôi dường như không thể bỏ được cho dù tôi làm gì. Cuốn sách này có thể giúp tôi được không?",
+      question:
+        "Tôi có một thói quen xấu đặc biệt mà tôi dường như không thể bỏ được cho dù tôi làm gì. Cuốn sách này có thể giúp tôi được không?",
       answer:
         "Đó chính xác là những gì cuốn sách Bí Mật Làm Giàu và các công cụ phần mềm hỗ trợ của Sang được thiết kế. Thông qua một loạt các nguyên tắc tâm lý học, Sang sẽ giải phóng bạn một cách có hệ thống khỏi bất kỳ loại thói quen, hành vi hoặc khuôn mẫu suy nghĩ nào cản trở bạn khỏi công việc tốt nhất và hiệu suất cao nhất.",
     },
@@ -529,19 +553,26 @@ const freeLession = {
   buttonSrc: "Sang le tech - book free trial",
 };
 
-const toasts = ["Sang Le", "Carmen Wong", "Yunnie Nguyen"];
+const toasts = [
+  "Ngọc Giàu",
+  "Linh",
+  "Vinh Phúc",
+  "Lộc Nguyễn",
+  "Tấn Tài",
+  "Mai Anh",
+];
 
-function VideoTestimonials(){
+function VideoTestimonials() {
   return (
     <>
-      <VideoPlayer url="https://youtu.be/mrtwQSjv8As" /> 
+      <VideoPlayer url="https://youtu.be/mrtwQSjv8As" />
       <VideoPlayer url="https://youtu.be/AC3bN9ijZVc" />
       <VideoPlayer url="https://youtu.be/RSf1XqClqfg" />
       <VideoPlayer url="https://youtu.be/ygZ6SN-yiCY" />
       <VideoPlayer url="https://youtu.be/7IlXBhS6F-I" />
       <VideoPlayer url="https://youtu.be/IKcgCDK3A9Y" />
     </>
-  )
+  );
 }
 
 function CoursePageTemplate() {
@@ -549,7 +580,23 @@ function CoursePageTemplate() {
     showAlternativeToast(toasts);
   }, []);
 
+  const router = useRouter();
+
   const Divider = () => <div className="my-16" />;
+
+  function handleClick() {
+    return router.push({
+      pathname: "https://pay.sangletech.com",
+      query: {
+        name: "Sách Bí Mật Làm Giàu X.0",
+        price: 99000,
+        quality: 1,
+        url: "https://sangletech.com/book-xo",
+        imageSrc: "assets/book-xo.jpg",
+        imageAlt: "Sách Bí Mật Làm Giàu X.0",
+      },
+    });
+  }
 
   return (
     <Layout>
@@ -557,7 +604,10 @@ function CoursePageTemplate() {
       <Countdown expiryTimestamp={countDownMins} />
       <CallToAction {...callToAction} />
 
-      <Problem defineTheProblem={problem.defineTheProblem} agitate={problem.agitate} />
+      <Problem
+        defineTheProblem={problem.defineTheProblem}
+        agitate={problem.agitate}
+      />
       <Solution
         caption={solution.general.caption}
         title={solution.general.title}
@@ -570,9 +620,11 @@ function CoursePageTemplate() {
       />
       <MeetYourCoach />
       <Stories stories={stories} />
-     
-      <Youtube {...youtube} />
-      <ButtonPurchaseNow />
+
+      {/* <Youtube {...youtube} /> */}
+      <div className="text-center mx-center">
+        <ButtonPurchaseNow name="Tối muốn đọc ngay" url="#pricing" />
+      </div>
       <WhatWillYouLearn
         caption={whatWillYouLearn.general.caption}
         title={whatWillYouLearn.general.title}
@@ -586,7 +638,9 @@ function CoursePageTemplate() {
       <Divider />
       <Bonus bonuses={bonuses} />
       <Divider />
-      <ButtonPurchaseNow />
+      <div className="text-center mx-center">
+        <ButtonPurchaseNow name="Tối muốn đọc ngay" url="#pricing" />
+      </div>
 
       {/* <Testimonial /> */}
       <Guarantee guarantee={guarantee} />
@@ -596,6 +650,7 @@ function CoursePageTemplate() {
         features={courseSummary.features}
         heading={courseSummary.heading}
       />
+      <div id="pricing" />
       <Pricing pricing={pricing} />
       <Stories stories={stories} />
       <FAQ
@@ -607,7 +662,9 @@ function CoursePageTemplate() {
         alt={faqs.general.alt}
       />
       {/* <Pricing /> */}
+      <div id="free-lesson" />
       <FreeLesson {...freeLession} />
+
       <BuyerToastify />
 
       {/* <ToastContainer

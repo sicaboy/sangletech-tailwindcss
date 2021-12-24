@@ -15,7 +15,7 @@ function CallToAction(props) {
             </p>
           </div>
 
-          <Link href="#">
+          <Link href={props.link || "#"}>
             <a className="inline-block px-8 py-3 text-sm font-semibold text-center text-white transition duration-100 bg-pink-500 rounded-lg outline-none hover:bg-pink-600 active:bg-pink-700 focus-visible:ring ring-pink-300 md:text-base">
               {props.buttonName || "Start now"}
             </a>

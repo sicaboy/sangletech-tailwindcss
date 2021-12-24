@@ -2,7 +2,7 @@ import React from "react";
 import Hero from "../components/sections/heroes/with_sign_up_and_media_content";
 import Layout from "../components/layout";
 import AlternativeSideBySideWithVideoOrImg from "../components/alternative-side-by-side-with-video-img";
-import MyAchievement from "../components/sections/fe bookature-sections/with_feature_list";
+import MyAchievement from "../components/sections/feature-sections/with_feature_list";
 import ThreeColumnCards from "../components/sections/blog-sections/3_column_cards";
 import BrandPanelWithAppScreenShot from "../components/sections/cta-sections/brand_panel_with_app_screenshot";
 import BrandPanelWithOverlappingImage from "../components/sections/cta-sections/brand_panel_with_overlapping_image";
@@ -13,6 +13,8 @@ import FAQ from "../components/sections/faq-sections/centered_accordion";
 import { CourseJsonLd } from "next-seo";
 import { NextSeo } from "next-seo";
 import Bonus from "../components/course/bonus";
+
+import { useRouter } from "next/router";
 
 const hero = {
   caption: "KHOÁ HỌC: RETARGETING",
@@ -183,7 +185,9 @@ const textPayment = {
   titleFirst: "Tham Gia Khoá Học Quảng Cáo Retargeting",
   titleSecond: "Không Yêu Cầu Kinh Nghiệm",
   description: `Với mức giá thấp hơn nhiều so với một bữa tối cùng gia đình, bạn sẽ nhận được hơn 10 giờ video bài giảng, quyền truy cập vào diễn đàn thảo luận dành cho các Chiến binh X.0 của Sang và bạn có thể hỏi Sang bất kỳ câu hỏi nào trong xuyên suốt khóa học.
-  <br></br>Hơn hết, bạn nhận được quyền truy cập trọn đời và 3 ngày đảm bảo hoàn tiền 100%!`,
+  <br></br>Hơn hết, bạn nhận được quyền truy cập trọn đời và 3 ngày đảm bảo hoàn tiền 100%!
+  <br></br><h1>1.999.000đ</h1>
+  `,
   buttonName: "THAM GIA KHOÁ HỌC",
   buttonSrc: "/form",
   imgSrc: "/assets/thumbnail-retargeting-explainer.jpg",
@@ -228,6 +232,22 @@ const faqs = {
 };
 
 function RetargetingCourse() {
+  const router = useRouter();
+
+  function handleClick() {
+    return router.push({
+      pathname: "https://pay.sangletech.com",
+      query: {
+        name: "Lớp Học Retargeting",
+        price: 1999000,
+        quality: 1,
+        url: "https://sangletech.com/retargeting-course",
+        imageSrc: "assets/thumbnail-retargeting-explainer.jpg",
+        imageAlt: "Lớp Học Retargeting",
+      },
+    });
+  }
+
   return (
     <Layout>
       <CourseJsonLd
@@ -241,7 +261,8 @@ function RetargetingCourse() {
           type: "website",
           url: "https://www.sangletech.com/retargeting-course",
           title: "Khoá học: Quảng cáo Retargeting từ A-Z",
-          description: "Làm thế nào để Bạn luôn nằm ở vị trí hàng đầu trong tâm trí khách hàng và đưa họ quay trở lại trang web của Bạn khi họ đã rời đi?",
+          description:
+            "Làm thế nào để Bạn luôn nằm ở vị trí hàng đầu trong tâm trí khách hàng và đưa họ quay trở lại trang web của Bạn khi họ đã rời đi?",
           images: [
             {
               url: "https://sangletech.com/assets/thumbnail-retargeting-explainer.jpg",
@@ -251,15 +272,15 @@ function RetargetingCourse() {
             },
           ],
         }}
-      /> 
+      />
       <Hero {...hero} />
       <AlternativeSideBySideWithVideoOrImg {...textOne} {...textTwo} />
       <MyAchievement {...courseDescript} />
       <AlternativeSideBySideWithVideoOrImg {...textThree} {...textFour} />
       {/* Mew three column list */}
       <ThreeColumnsFeatureList {...courseValue} />
-      <BrandPanelWithAppScreenShot {...textPayment} />
-      <BrandPanelWithOverlappingImage {...textBookxo} />
+      <BrandPanelWithAppScreenShot {...textPayment} onClick={handleClick} />
+      <BrandPanelWithOverlappingImage {...textBookxo} onClick={handleClick} />
       {/* <Bonus /> */}
     </Layout>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import { CheckCircleIcon, ShieldCheckIcon } from "@heroicons/react/solid";
+import Link from "next/link";
 
 function Pricing({ pricing }) {
   return (
@@ -144,13 +145,14 @@ function Body({ pricing }) {
                 </li>
               ))}
             </ul>
-
-            <a
-              href="#"
-              className="block px-8 py-3 text-sm font-semibold text-center text-gray-100 transition duration-100 bg-gray-500 rounded-lg outline-none hover:bg-gray-600 focus-visible:ring ring-indigo-300 active:text-gray-300 md:text-base"
-            >
-              {pricing.single.buttonName || "Join the Program"}
-            </a>
+            {pricing.single.buttonName && (
+              <a
+                href="#"
+                className="block px-8 py-3 text-sm font-semibold text-center text-gray-100 transition duration-100 bg-gray-500 rounded-lg outline-none hover:bg-gray-600 focus-visible:ring ring-indigo-300 active:text-gray-300 md:text-base"
+              >
+                {pricing.single.buttonName || "Join the Program"}
+              </a>
+            )}
           </div>
           {/* <!-- left side - end --> */}
           {/* <!-- right side - start --> */}
@@ -203,13 +205,16 @@ function Body({ pricing }) {
                 </li>
               ))}
             </ul>
-
-            <a
-              href="#"
-              className="block px-8 py-3 text-sm font-semibold text-center text-white transition duration-100 bg-indigo-200 bg-opacity-50 rounded-lg outline-none hover:bg-indigo-300 active:bg-indigo-400 focus-visible:ring ring-indigo-300 md:text-base"
+            <Link
+              href={{
+                pathname: pricing.membership.url,
+                query: pricing.membership.query,
+              }}
             >
-              {pricing.membership.buttonName || "Join the Program"}
-            </a>
+              <a className="block px-8 py-3 text-sm font-semibold text-center text-white transition duration-100 bg-indigo-200 bg-opacity-50 rounded-lg outline-none hover:bg-indigo-300 active:bg-indigo-400 focus-visible:ring ring-indigo-300 md:text-base">
+                {pricing.membership.buttonName || "Join the Program"}
+              </a>
+            </Link>
           </div>
           {/* <!-- right side - end --> */}
         </div>
