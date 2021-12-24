@@ -324,7 +324,6 @@ function Home() {
       <BrandPanelWithOverlappingImage {...startup} />
       <ThreeColumnCards {...blog} />
       <Youtube {...youtube} />
-
       <SimpleCenterBranded {...social} />
       <SimpleWithHeading {...company} />
     </>
