@@ -19,10 +19,10 @@ function Stories({ stories }) {
     <div className="my-8">
       <div className="flex flex-col flex-wrap items-center w-full mb-10 text-center">
         <h2 className="block px-3 py-1 mb-3 text-sm font-semibold tracking-wide text-white uppercase bg-indigo-600 rounded-full cursor-text sm:text-base lg:text-sm xl:text-base">
-          {stories.general.caption || "Everything you need"}
+          {stories.general.caption && stories.general.caption}
         </h2>
         <p className="mx-3 mt-2 text-3xl font-extrabold text-gray-900">
-          {stories.general.title || " All-in-one platform"}
+          {stories.general.title && stories.general.title}
         </p>
         {stories.general.description && (
           <ReactMarkdown
@@ -34,9 +34,9 @@ function Stories({ stories }) {
         )}
       </div>
 
-      <div className="flex flex-col items-center w-full gap-8 p-6 mb-8 sm:p-8 md:flex-row md:mb-0 flex-between">
+      <div className="flex flex-col flex-wrap items-center w-full gap-8 p-6 mb-8 sm:p-8 md:flex-row md:mb-0 flex-between">
         {stories.details.map((story) => (
-          <div className="w-full p-6 mx-auto bg-white shadow-lg dark:bg-gray-800 rounded-xl">
+          <div className="relative w-full p-6 mx-auto bg-white shadow-lg dark:bg-gray-800 rounded-xl">
             <p className="text-gray-600 dark:text-white">
               <span className="text-lg font-bold text-indigo-500">“</span>
               {story.quote ||

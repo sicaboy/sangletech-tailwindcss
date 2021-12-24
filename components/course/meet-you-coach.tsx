@@ -56,39 +56,39 @@ Với cơ hội làm việc với những người thành đạt tại Việt Na
 
 const myAchivement = {
   general: {
-    caption: "Thành Tựu",
-    title: "",
-    description: `Descrition here`,
+    caption: "Thành tựu",
+    title: "Thành Tựu Đã Đạt Được",
+    description: ``,
   },
   details: [
     {
-      name: "Title 1",
-      description: "Description 1",
+      name: "",
+      description: "Học, sống và làm việc tại Singapore, Hồng Kông, Mỹ và Trung Quốc.",
       icon: Icon.FilterIcon,
     },
     {
-      name: "Title 2",
-      description: "Description 2",
+      name: "",
+      description: "Hoàn thành lớp 11-12 với tấm bằng Canada trong 9 tháng thay vì 2 năm.",
       icon: Icon.LightBulbIcon,
     },
     {
-      name: "Title 3",
-      description: "Description 3",
+      name: "",
+      description: "Tốt nghiệp đại học Mỹ trong vòng 2 năm 9 tháng thay vì 4-5 năm.",
       icon: Icon.EyeIcon,
     },
     {
-      name: "Title 4",
-      description: "Description 4",
+      name: "",
+      description: "Đồng sáng lập và là CEO Công ty Công nghệ Galatek Hồng Kông và Việt Nam.",
       icon: Icon.EmojiHappyIcon,
     },
     {
-      name: "Title 5",
-      description: "Description 5",
+      name: "",
+      description: "Đồng sáng lập và là Phó Hiệu Trưởng trường Cao đẳng Kỹ Thuật Thiết Bị Y Tế Miền Nam.",
       icon: Icon.PresentationChartBarIcon,
     },
     {
-      name: "Title 6",
-      description: "Title 6",
+      name: "",
+      description: "Nhà sáng lập trang báo CafeS.vn.",
       icon: Icon.SparklesIcon,
     },
   ],
