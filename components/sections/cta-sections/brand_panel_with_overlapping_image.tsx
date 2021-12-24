@@ -27,7 +27,6 @@ interface Props {
   imgSrc?: string;
   alt?: string;
   buttonSrc?: string;
-  onClick;
 }
 
 export default function BrandPanelWithOverlappingImage(props: Props) {

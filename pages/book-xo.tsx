@@ -562,18 +562,18 @@ const toasts = [
   "Mai Anh",
 ];
 
-function VideoTestimonials() {
-  return (
-    <>
-      <VideoPlayer url="https://youtu.be/mrtwQSjv8As" />
-      <VideoPlayer url="https://youtu.be/AC3bN9ijZVc" />
-      <VideoPlayer url="https://youtu.be/RSf1XqClqfg" />
-      <VideoPlayer url="https://youtu.be/ygZ6SN-yiCY" />
-      <VideoPlayer url="https://youtu.be/7IlXBhS6F-I" />
-      <VideoPlayer url="https://youtu.be/IKcgCDK3A9Y" />
-    </>
-  );
-}
+// function VideoTestimonials() {
+//   return (
+//     <>
+//       <VideoPlayer url="https://youtu.be/mrtwQSjv8As" />
+//       <VideoPlayer url="https://youtu.be/AC3bN9ijZVc" />
+//       <VideoPlayer url="https://youtu.be/RSf1XqClqfg" />
+//       <VideoPlayer url="https://youtu.be/ygZ6SN-yiCY" />
+//       <VideoPlayer url="https://youtu.be/7IlXBhS6F-I" />
+//       <VideoPlayer url="https://youtu.be/IKcgCDK3A9Y" />
+//     </>
+//   );
+// }
 
 function CoursePageTemplate() {
   React.useEffect(() => {

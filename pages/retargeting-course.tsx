@@ -279,8 +279,8 @@ function RetargetingCourse() {
       <AlternativeSideBySideWithVideoOrImg {...textThree} {...textFour} />
       {/* Mew three column list */}
       <ThreeColumnsFeatureList {...courseValue} />
-      <BrandPanelWithAppScreenShot {...textPayment} onClick={handleClick} />
-      <BrandPanelWithOverlappingImage {...textBookxo} onClick={handleClick} />
+      <BrandPanelWithAppScreenShot {...textPayment} />
+      <BrandPanelWithOverlappingImage {...textBookxo} />
       {/* <Bonus /> */}
     </Layout>
   );
