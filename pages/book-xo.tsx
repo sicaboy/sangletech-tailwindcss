@@ -464,13 +464,13 @@ const pricing = {
     promotedPrice: "99k",
     originalPrice: "159k",
     buttonName: "Đặt Mua Ngay",
-    url: "https://slt-payment-manual.vercel.app/",
+    url: "https://slt-payment-manual.vercel.app/checkout",
     query: {
       name: "Cột Mốc 1 - Bí Mật Làm Giàu X.0",
       price: 99000,
       quality: 1,
       url: "https://sangletech.com/book-xo",
-      imageSrc: "assets/book-xo.jpg",
+      imageSrc: "https://sangletech.com/assets/old-book-cover.jpg",
       imageAlt: "Sách Bí Mật Làm Giàu X.0",
     },
     list: [
@@ -490,13 +490,13 @@ const pricing = {
     originalPrice: "399k",
     valueCaption: "SUPER HOT PROGRAM",
     buttonName: "Đặt Mua Ngay",
-    url: "https://slt-payment-manual.vercel.app/",
+    url: "https://slt-payment-manual.vercel.app/checkout",
     query: {
       name: "Truy Cập & Đọc Toàn Bộ Sách Điện Tử",
       price: 99000,
       quality: 1,
       url: "https://sangletech.com/book-xo",
-      imageSrc: "assets/book-xo.jpg",
+      imageSrc: "https://sangletech.com/assets/old-book-cover.jpg",
       imageAlt: "Sách Bí Mật Làm Giàu X.0",
     },
     list: [
