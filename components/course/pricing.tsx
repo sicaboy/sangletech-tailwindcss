@@ -152,10 +152,7 @@ function Body({ pricing }) {
                   query: pricing.single.query,
                 }}
               >
-                <a
-                  href="#"
-                  className="block px-8 py-3 text-sm font-semibold text-center text-gray-100 transition duration-100 bg-gray-500 rounded-lg outline-none hover:bg-gray-600 focus-visible:ring ring-indigo-300 active:text-gray-300 md:text-base"
-                >
+                <a className="block px-8 py-3 text-sm font-semibold text-center text-gray-100 transition duration-100 bg-gray-500 rounded-lg outline-none hover:bg-gray-600 focus-visible:ring ring-indigo-300 active:text-gray-300 md:text-base">
                   {pricing.single.buttonName || "Join the Program"}
                 </a>
               </Link>
