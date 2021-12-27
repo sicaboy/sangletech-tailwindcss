@@ -464,14 +464,10 @@ const pricing = {
     promotedPrice: "99k",
     originalPrice: "159k",
     buttonName: "Đặt Mua Ngay",
-    url: "https://slt-payment-manual.vercel.app/checkout",
+    url: "https://api-routes-rest-olive-eight.vercel.app/api/create-payment-url",
     query: {
-      name: "Cột Mốc 1 - Bí Mật Làm Giàu X.0",
-      price: 99000,
-      quality: 1,
-      url: "https://sangletech.com/book-xo",
-      imageSrc: "https://sangletech.com/assets/old-book-cover.jpg",
-      imageAlt: "Sách Bí Mật Làm Giàu X.0",
+      amount: 99000,
+      orderDescription: "sow-book-one-chapter",
     },
     list: [
       "Truy cập & Đọc từng Chương của Sách tương ứng với từng Cột Mốc của Bí Mật Làm Giàu X.0.",
@@ -490,14 +486,10 @@ const pricing = {
     originalPrice: "399k",
     valueCaption: "SUPER HOT PROGRAM",
     buttonName: "Đặt Mua Ngay",
-    url: "https://slt-payment-manual.vercel.app/checkout",
+    url: "https://api-routes-rest-olive-eight.vercel.app/api/create-payment-url",
     query: {
-      name: "Truy Cập & Đọc Toàn Bộ Sách Điện Tử",
-      price: 99000,
-      quality: 1,
-      url: "https://sangletech.com/book-xo",
-      imageSrc: "https://sangletech.com/assets/old-book-cover.jpg",
-      imageAlt: "Sách Bí Mật Làm Giàu X.0",
+      amount: 199000,
+      orderDescription: "sow-book-all-chapter",
     },
     list: [
       "Toàn quyền truy cập và đọc toàn bộ nội dung Sách điện tử Bí Mật Làm Giàu X.0, cộng với các khoá học đào tạo của Sang Lê trong ứng dụng Học Trực Tuyến - Pro X.0. (Tổng trị giá lên đến: 4.000.000đ+)",
@@ -595,14 +587,10 @@ function CoursePageTemplate() {
 
   function handleClick() {
     return router.push({
-      pathname: "https://pay.sangletech.com",
+      pathname: "https://api-routes-rest-olive-eight.vercel.app/api/create-payment-url",
       query: {
-        name: "Sách Bí Mật Làm Giàu X.0",
-        price: 99000,
-        quality: 1,
-        url: "https://sangletech.com/book-xo",
-        imageSrc: "assets/book-xo.jpg",
-        imageAlt: "Sách Bí Mật Làm Giàu X.0",
+        amount: 99000,
+        orderDescription: "sow-book-one-chapter",
       },
     });
   }
